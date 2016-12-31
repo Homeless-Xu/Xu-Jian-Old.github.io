@@ -1,0 +1,82 @@
+<div id="cateDiv">
+<!-- ----------------------------------------------------------------------------------------------- -->
+<!-- All 按钮 -->
+<div id="cateDiv-All"> 
+    <i class="fa fa-sort " aria-hidden="true";             id="cateDiv-sort1"; onclick="cateCustomfilter();  return false;"></i>
+    <i class="fa fa-sort-numeric-desc " aria-hidden="true" id="cateDiv-sort2"; onclick="cateNumfilter();     return false;" ></i>
+  	<a href onclick="showAllTagsandPosts(); return false;"   id="cateDiv-Allicon"> 
+      <i class="fa  fa-tags " aria-hidden="true" ></i>
+      <sup style="font-size:0.7em; float:none; ">{{site.tags | size }}</sup>
+  	</a>  
+</div>
+
+<!-- ----------------------------------------------------------------------------------------------- -->
+<!-- 默认排序:按照文件是时间顺序 不是按照文章数量. 也不是按照自定义. 
+这个需要一直隐藏. 一加载页面就隐藏这个. 然后用js 来实现自定义排序.所以其实 一开始显示的是 自定义排序. -->
+<ul id="cateDivFlex" class="CLcateDivFlex hidden">	
+{% for someCate in site.categories %}
+    {% assign cateClicked = someCate | first %}    
+    {% assign catePosts = someCate | last %}
+    <!-- 下面的class/id 是给大类排序用的 -->
+        <li style="order: 100; padding-bottom:5px;"; class="cate-status" id="{{cateClicked}}" style="width: 90%, background-color:red;";> 
+           <a href onclick="catefilter('{{ cateClicked }}'); return false;" >			
+            {{ cateClicked }}<sup>{{catePosts | size }}</sup>
+           </a>
+        </li>
+    
+{% endfor %}
+</ul>
+
+
+<span id="ymlCateName" class="hidden">{{ site.ymlCateSort }}</span> 
+<span id="ymlCateSortDefault" class="hidden">{{ site.ymlCateSortDefault }}</span> 
+<!-- ★★★★★ span是 为了js可以获取到 yml里面的信息 而添加的中转功能 ★★★★★ -->
+
+
+<!-- ----------------------------------------------------------------------------------------------- -->
+
+<!-- 按照分类下的文章数量排序: 默认隐藏.-->
+<!-- 这个也必须 用onclick, 把当前选择的分类名 当作参数 .传给 cateFilter 函数... 过滤出对应的 tags -->
+<div id="cateDiv1-numberSort" class="CLcateDiv1-numberSort hidden">		
+    {% assign max_cate_count = 0 %}
+      {% for cate in site.categories %}
+        {% if cate[1].size > max_cate_count %}
+          {% assign max_cate_count = cate[1].size %}
+        {% endif %}
+     {% endfor %}
+     {% for i in (1..max_cate_count) reversed %}
+        {% for cate in site.categories %}
+          {% if cate[1].size == i %}
+              <li class="cate-status2" id="{{cate[0]}}-num">
+              <a href onclick="catefilter('{{ cate[0] }}'); return false;" >		
+                {{ cate[0] }}<sup>{{ i }}</sup>
+              </a>	
+              </li>
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+</div>
+
+
+<!--
+怎么获得 下标的数字呢...  就是 felx order 么
+这里需要处理的是, 单击某个大类. 把这个大类的名称 传入 catefilter 这个函数.
+这个函数 根据传入的 大类名称.  
+	在tagDiv 中先隐藏所有的标签.
+	然后把这个大类下的标签 设置不隐藏. 就过滤出 某类别的标签了.
+	
+	对比每个大类里面的text值.和yml里面的名称.
+	如果能在yml 里面找到名称 就取出对应名称的值. 然后设置给这个的 flex order
+
+
+设置默认宽度.
+
+-->
+				
+</div>
+
+
+
+
+
+

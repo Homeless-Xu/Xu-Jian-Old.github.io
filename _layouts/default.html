@@ -1,0 +1,99 @@
+{% include header.html %}      <!-- 所有文章头部 -->
+
+<div id="bigDiv">          <!-- 	最外层div:山下结构: 上面topbar + 下面DIV  -->
+	{% include topbar.html %}
+
+	<div id="Div">
+		<!-- 		这个是最主要的部分了. 全部是左右结构,包括如下: -->
+		<!-- 		cateDiv 大类; tagDiv 小类; filenameDiv 文件名; contentDiv 文件内容 -->
+
+		{% include cateDiv.html %}
+		{% include  tagDiv.html %}
+		
+
+
+
+
+<!-- 下面再加一个 lineleftFlex 是为了 里面的元素也用felx排列. -->
+<div id="lineLeft"> 
+  <div class="lineFlex">
+    <div id="lineLeft-left">  </div>
+      <div class="lineInDiv"> </div> 
+    <div id="lineLeft-right"> </div>
+  </div>
+</div>	
+
+
+		{% include  filenameDiv.html %}
+
+<div id="lineRight"> 
+  <div class="lineFlex">
+    <div id="lineRight-left">  </div>
+      <div class="lineInDiv"> </div> 
+    <div id="lineRight-right"> </div>
+  </div>
+</div>	
+
+
+
+
+<!-- ----------------------------------------------------------------------------------------------- -->
+<!-- 主要内容部分 -->
+<div id="contentDiv">
+    <div id="contentDiv-Buttons" style="display: flex" >
+        {% if page.previous %}
+            <a href="{{ page.previous.url }}"> <button class="contentButton">
+             <i class="fa fa-backward" aria-hidden="true"></i>: {{ page.previous.title }} </button>  
+            </a>
+        {% endif %}	
+        						
+        <span style="flex-shrink: 1 ;flex-grow: 1;text-align: center;">{{ page.title }}</span>	
+
+        {% if page.next %}
+            <a href="{{ page.next.url }}">	<button class="contentButton">
+              {{ page.next.title }} <i class="fa fa-forward" aria-hidden="true"></i></button>	
+            </a>
+        {% endif %}	
+    </div><br>
+
+
+<div id="xx"></div>
+
+
+
+
+
+
+
+    {{ content }} 			
+</div>
+	
+
+<!-- ----------------------------------------------------------------------------------------------- -->
+<div id="testDiv" class="hidden"> 
+    <button class="btn btn-block btn-info"   id="toggleLeft"  >显/隐左边       </button>    
+    <button class="btn btn-block btn-info"   id="toggleMiddle">显/隐中间       </button>    
+
+    <button class="btn btn-block btn-danger" id="finger"   >双指左右: 未完成</button>    
+</div>
+
+
+
+
+
+		<div id="sidebarDiv"> sidebarDiv </div>	
+	</div>
+</div>
+ 
+
+
+
+<!-- 绝对定位 导航条  右下角: 三个箭头而已. -->
+<div id="arrowNav">
+	<i class="fa fa-arrow-left"      aria-hidden="true" id="leftBtn"></i>
+	<i class="fa fa-angle-double-up" aria-hidden="true"></i>
+	<i class="fa fa-arrow-right"     aria-hidden="true" id="rightBtn"></i>
+</div>
+
+
+{% include footer.html %}   <!-- 所有文章尾部 -->

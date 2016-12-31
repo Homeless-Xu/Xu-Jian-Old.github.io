@@ -1,0 +1,817 @@
+{% assign tags = "all" %}
+{% for post in site.posts %}
+    {% for tag in post.tags %}
+        {% unless tags contains tag %}
+            {% capture tags %}{{ tags }}|{{ tag }}{% endcapture %}
+        {% endunless %}
+    {% endfor %}
+{% endfor %}
+
+{% assign alltags = tags | split: '|' %}
+<ul class="tags">
+{% for tag in alltags %}
+<a href="javascript:;" data-rel="{{ tag }}" class="filter tag {% if tag == 'all'  %}active{% endif %}" >{{ tag }}</a>
+{% endfor %}
+</ul>
+
+
+<!-- 方法2 列出 tags -->
+
+
+
+
+github_category_index.html
+
+---
+layout: page
+---
+
+
+<div class="posts-list">
+  {% for post in site.categories[page.category] %}
+  <article class="post-preview">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+      <h2 class="post-title">{{ post.title }}</h2>
+    
+      {% if post.subtitle %}
+      <h3 class="post-subtitle">
+        {{ post.subtitle }}
+      </h3>
+      {% endif %}  
+    </a>
+
+    <p class="post-meta">
+      <!-- Posted on {{ post.date | date: "%B %-d, %Y" }} -->
+      Posted on {{ post.date | date: "%Y-%m-%d" }}
+    </p>
+  
+    <div class="post-entry">
+      {{ post.content | truncatewords: 20 | strip_html | xml_escape}}
+      <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
+    </div>
+  
+   </article>
+  {% endfor %}
+</div>
+
+
+
+
+
+
+
+github_tag_index.html
+
+---
+layout: page
+---
+
+<div class="posts-list">
+  {% for post in site.tags[page.tag] %}
+  <article class="post-preview">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+      <h2 class="post-title">{{ post.title }}</h2>
+    
+      {% if post.subtitle %}
+      <h3 class="post-subtitle">
+        {{ post.subtitle }}
+      </h3>
+      {% endif %}  
+    </a>
+
+    <p class="post-meta">
+      <!-- Posted on {{ post.date | date: "%B %-d, %Y" }} -->
+      Posted on {{ post.date | date: "%Y-%m-%d" }}
+    </p>
+  
+    <div class="post-entry">
+      {{ post.content | truncatewords: 20 | strip_html | xml_escape}}
+      <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
+    </div>
+  
+   </article>
+  {% endfor %}
+</div>
+
+
+
+<ul class="posts">
+{% for post in site.posts %}
+    {% if post.categories contains 'demography' %}
+        <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+    {% endif %}
+{% endfor %}
+</ul>
+
+
+
+
+
+
+js 获取 liquid 变量方法:
+
+
+1. 先给 html里 那个变量加上个 id/或者class
+2. js 里  先定义变量 .
+3. 然后输出就可以了....
+
+
+
+
+
+
+
+{% capture tags %}
+  {% for tag in site.tags %}
+    {{ tag[0] }}
+  {% endfor %}
+{% endcapture %}
+{% assign sortedtags = tags | split:' ' | sort %}
+
+{% for tag in sortedtags %}
+  <h3 id="{{ tag }}">{{ tag }}</h3>
+  <ul>
+  {% for post in site.tags[tag] %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+  </ul>
+{% endfor %}
+
+
+
+
+
+{% capture tags %}
+  {% for tag in site.tags %}
+    {{ tag[0] }}
+  {% endfor %}
+{% endcapture %}
+{% assign sortedtags = tags | split:' ' | sort %}
+{% for tag in sortedtags %}
+    <a href="/tags/{{ tag }}/">{{ tag }}</a><br>
+{% endfor %}
+This will generate a list of links like this:
+
+<ul>
+    <li><a href="/tags/.net/">.net</a></li>
+    <li><a href="/tags/authentication/">authentication</a></li>
+    <li><a href="/tags/backup/">backup</a></li>
+</ul>
+
+
+逻辑操作
+
+如下例，可以通过条件语句调整输出结果，只有当 show_heading 为 true 时才显示 <h1>：
+
+---
+heading: I like cupcakes
+show_heading: true
+---
+...
+
+{% if page.show_heading %}
+  <h1>{{ page.heading | upcase | truncate: 8 }}</h1>
+{% endif %}
+
+...
+下例增加了 elsif 语句进行多个条件的判断，当 show_heading 不为真时，判断 heading 中是否包含 “cupcake”：
+
+---
+heading: I like cupcakes
+show_heading: false
+---
+...
+
+{% if page.show_heading %}
+  <h1>{{ page.heading | upcase | truncate: 8 }}</h1>
+{% elsif page.heading contains "cupcake" %}
+  <h1>I want cupcakes</h1>
+{% else %}
+  <h1>I don't want cupcakes</h1>
+{% endif %}
+
+...
+除了 if 外，Liquid 中的 for 循环也很简单：
+
+---
+heading: I like cupcakes
+show_heading: false
+cupcakes:
+  - chocolate
+  - lemon
+  - strawberry
+---
+...
+<ul>
+
+{% for cupcake in page.cupcakes %}
+  <li>{{ cupcake }}</li>
+{% endfor %}
+
+</ul>
+...
+上面，将 front matter 中定义的 “cupcakes” 循环输出到列表中。另外 case 也是支持的：
+
+<p class="rating">
+  
+  {% case cupcake.rating %}
+    {% when 1 %}
+      <img src="/images/rating/sick.png"/>
+    {% when 2 %}
+      <img src="/images/rating/unhappy.png"/>
+    {% when 3 %}
+      <img src="/images/rating/ok.png"/>
+    {% when 4 %}
+      <img src="/images/rating/happy.png"/>
+    {% when 5 %}
+      <img src="/images/rating/super_happy.png"/>
+  {% endcase %}
+  
+</p>
+LIQUID 中的 FILTER
+
+下表是 Liquid 中常用的 filter，你也可以访问 Jekyll Cheat Sheet 查看所有可用的 filter 及样例。
+
+filter	输出
+{{ "cupcake" | prepend: "chocolate " }}	chocolate cupcake
+{{ "lemon" | append: " cake" }}	lemon cake
+{{ "i like cupcakes" | capitalize }}	I like cupcakes
+{{ "BakeryStore" | downcase }}	bakerystore
+{{ "apple pie" | upcase }}	APPLE PIE
+{{ "muffin&cupcake?" | cgi_escape }}	muffin%26cupcake%3F
+{{ "<h1>Banana Split</h1>" | escape }}	<h1>Banana Split</h1>
+{{ "blueberry muffin.html" | slugify }}	blueberry-muffin-html
+{{ "<h1>Greentea cheesecake</h1>" | strip_html }}	Greentea cheesecake
+{{ "**Sour dough** bread" | markdownify }}	Sour dough bread
+{{ "I really really like cupcakes" | remove_first: 'really' }}	I really like cupcakes
+{{ "I really really like cupcakes" | remove: 'really' }}	I like cupcakes
+{{ "I really really like cupcakes" | replace_first: "really", "truly" }}	I truly really like cupcakes
+{{ "I really really like cupcakes" | replace: "really", "truly" }}	I truly truly like cupcakes
+{{ "Carrot cake" | size }}	11
+{{ "Peanut butter cheesecake" | number_of_words }}	3
+{{ "Souffle" | slice: 0 }}	S
+{{ "Souffle" | slice: 1 }}	o
+{{ "Souffle" | slice: -2 }}	l
+{{ "Souffle" | slice: 2,4 }}	uffl
+{{ "apple,banana,carrot" | split:"," | jsonify }}	[“apple”,”banana”,”carrot”]
+{{ "The freshest bread in San Francisco" | truncate: 15 }}	The freshest…
+{{ "Who ate all the cupcakes?" | truncatewords: 3 }}	Who ate all…
+
+
+
+
+上面这个网页中，不同图片使用了不同的 filter 样式，我们可以结合 Liquid 中的 cycle 和 for 循环实现：
+
+---
+layout: page
+title: Muffins
+---
+<h1>Our cupcakes</h1>
+
+<div class="cupcakes">
+  
+  {% for cupcake in site.cupcakes %}
+    <div class="cupcake">
+      <div class="image">
+        <img src="{{ cupcake.image_path }}" alt="{{ cupcake.type }}" style="-webkit-filter: {% cycle "grayscale", "sepia", "invert" %}(100%)" />
+      </div>
+      <h2>{{ cupcake.type }}</h2>
+      <p>{{ cupcake.description }}</p>
+    </div>
+  {% endfor %}
+  
+</div>
+通过 forloop.index 还能获得当前循环的次数：
+
+...
+<h2>{{ forloop.index }}. {{ cupcake.type }}</h2>
+
+
+
+
+
+
+
+如果要从 “0” 还是计数，可以改为：
+
+...
+<h2>{{ forloop.index0 }}. {{ cupcake.type }}</h2>
+...
+另外，可以使用 reversed 使 for 循环逆向进行：
+
+...
+
+{% for cupcake in site.cupcakes reversed %}
+
+...
+要限制 for 循环的输出个数可以使用 limit，而要跳过前 x 个输出可以使用 offset：
+
+...
+
+{% for cupcake in site.cupcakes reversed limit: 3 offset: 3 %}
+
+...
+
+
+
+
+
+
+
+ 	
+	
+	{{testpara}}
+	
+	{% assign xujian = site.tags %}
+	
+	 	{% capture test %}  
+	{{ "site.tags" | append: ".Jekyll" }}
+		{% endcapture %}
+test: {{ test }}
+{% for cab in test %}
+	{{cab.title}}
+{% endfor %}
+
+<hr>	哈哈
+
+{% for ca in site.tags.AJAX %}
+	{{ca.title}}
+{% endfor %}
+<hr> 爸爸
+
+<hr> xx
+
+
+
+<ul class="tagsLink">
+		<li class="tagLink" data-filter="all">全部文章</li>
+    {% for tagName in post.tags.AJAX %}
+    <a href="{{ tagName.url | prepend: site.baseurl }}">    
+    <li class="tagLink" data-filter="{{ tagName | first }}">
+    {{ tagName | first }}
+    </li>
+    {% endfor %}
+  </ul>
+
+<br>  哈哈哈 <br>
+
+
+
+
+
+
+<!--
+	这里 要改的就是 .code  改成别的
+	给这行加个 id标签xx 好用JavaScript 来改. 
+	然后就是js了
+	别人用的 是 data-filter.....  然后js里用 data.filter....
+	
+	<ul id="sidebar-tags">
+      <li class="sidebar-tag active" data-filter="all">全部文章</li>
+      {% for tag in site.tags %}
+      <li class="sidebar-tag" data-filter="{{ tag | first }}">{{ tag | first }}</li>
+      {% endfor %}
+    </ul>
+
+
+	 // Tags Filter
+  $('#sidebar-tags').on('click', '.sidebar-tag', function() {
+    var filter = $(this).data('filter');
+    if (filter === 'all') {
+      toc.fadeIn(350);
+    } else {
+      toc.hide();
+      $('.toc-link[data-tags~=' + filter + ']').fadeIn(350);
+    }
+    $(this).addClass('active').siblings().removeClass('active');
+  });
+
+
+
+	
+	 -->
+
+
+
+
+
+	    <p class="tagFor1"> for tagName in site.tags </p>
+		    <p class="tagFor2" > {{ tagName | first }} </p>
+	    <p class="tagFor3">endfor</p>
+
+
+
+
+
+if(window.location.hash) {
+  var tag = window.location.hash.split('#')[1];
+  console.log(tag);
+  // 丫的 这是 一个函数啊... 而不是 jquery的 那个filter??
+    filter(tag);
+
+}
+
+
+
+
+
+
+
+
+<hr> 所有标签 ✔︎ <hr>
+ <ul class="blog-tags-list">
+  {% assign sorted_tags = site.tags | sort %}
+  
+  {% for tag in sorted_tags %}
+    {% assign tt = tag | first %}
+    {% assign postst = tag | last %}
+    <li class="blog-tag-item" id="{{ tt }}-item">
+      <a href onclick="filter('{{ tt }}'); return false;">{{ tt }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
+ 
+ {% for tag in site.tags %}
+  {% assign t = tag | first %}
+  {% assign posts = tag | last %}
+  <div class="blog-list-container hidden" id="{{ t }}-container">
+    <ul class="blog-list">
+      {% for post in posts %}
+        {% if post.tags contains t %}
+          <li>
+            <span class="blog-item-date">{{ post.date | date: "%d %b %Y" }}</span>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+
+    {% assign numPosts = posts | size %}
+    {% if numPosts == 1 %}
+      <p>{{ posts | size }} post containing tag <b>{{ t }}</b></p>
+    {% else %}
+      <p>{{ posts | size }} posts containing tag <b>{{ t }}</b></p>
+    {% endif %}
+  </div>
+{% endfor %}
+
+
+
+
+
+
+
+		
+<hr> coe类标签✔︎ <hr>
+	{% for someCate in site.categories.coe %}
+			{{ someCate.tags }} <br>
+	{% endfor %}
+<hr><br><br>
+
+
+
+
+
+
+<hr> 所有类✔︎ testing <hr>		
+
+<ul class="cateUL">
+	
+{% for cateDiv in site.categories %}
+ 某分类✔︎:  {{ cateDiv.first }}	<br>
+ 		
+ 所有标签✔︎: <br>
+	{% for sometag in site.tags %}
+	   {{sometag.first}}  	
+	{% endfor %} <br>
+
+
+
+<!-- 循环输出 所有分类 ✔︎ -->
+
+
+		<li class="cateLI" data-catefilter="{{cateDiv.first }}">
+		
+			<a href="#" class="cateLIa">
+			{% capture haha %}
+				 {{ site.categories }}	 
+			{% endcapture%}
+			类数组✔︎: <br> {{ site.categories }} <br>
+			<!-- haha : {"code"=>[#, #], "code5"=>[#], "code2"=>[#], "jekyll"=>[#]}
+				某文章有两个大类 就会出现两个#  所以用,号分割不准确.用 => 来分割最好. 
+			-->
+				
+			类数量✔︎: {{ site.categories | split: "," | size }} <br>
+			
+	
+	
+	
+						
+			</a>
+		</li> <br>
+
+	{% endfor %}
+</ul>	 <hr><br><br>	
+
+
+
+
+
+
+
+
+<hr> 所有分类+文件名+url ✔︎ <hr>
+{% for category in site.categories %}
+	<span>分类:{{ category | first }}</span>
+	<span>文章数:{{ category | last | size }}</span>
+		<ul class="arc-list">
+			{% for post in category.last %}
+			    <li>{{ post.date | date:"%d/%m/%Y"}}
+			    	<a href="{{ post.url }}">{{ post.title }}</a>
+			    </li>
+			{% endfor %}
+		</ul> <br>
+{% endfor %}
+<hr><br><br>
+
+
+
+
+<hr> 各签各文章数 方法1 ✔︎ <hr>
+ {% for tag in site.tags %}
+   {% assign TagName = tag | first %}
+   {% assign TagNum = tag | last %}
+  	 {{TagName | downcase | replace:" ","-" }} has {{ TagNum | size }} posts <br>
+ {% endfor %}
+<hr><br><br>
+
+<hr> 各签各文章数 方法2 ✔︎ <hr>
+  {% for tag in site.tags %}
+      <a href="#{{ tag[0] }}">{{ tag[0] }}</a> <sup>{{ tag[1].size }}</sup>
+  {% endfor %}
+<hr><br><br>
+
+<hr> code类标签(单标签适用)✔︎ <hr>
+	{% for someCate in site.categories.code %}
+			{{ someCate.tags }} <br>
+	{% endfor %}
+<hr><br><br>
+
+<hr> code类标签(多标签适用)✗  <hr>
+	{% for someCate in site.categories.code %}
+			{{ someCate.tags }} <br>
+	{% endfor %}
+<hr><br><br>
+
+
+
+<hr> AJAX标签文章名+url ✔︎ <hr>
+{% for ca in site.tags.AJAX %}
+         {{ ca.title }}<br>
+         {{ ca.url }}  <br>
+{% endfor %}
+<hr><br><br>
+
+
+<hr> Misc标签文章名+url ✔︎ <hr>
+{% for ca in site.tags.Misc %}
+         {{ ca.title }} <br>
+         {{ ca.url }}   <br>
+{% endfor %}
+<hr><br><br>
+
+
+<hr> 各标签文章名+url ✔︎ <hr>
+<ul class="listing">
+  {% for tag in site.tags %}
+  <li class="listing-seperator" id="{{ tag[0] }}">{{ tag[0] }}</li>
+    {% for post in tag[1] %}
+    <li class="listing-item">
+        <time >{{ post.date | date:"%Y-%m-%d" }}</time>
+        <a href="{{ post.url }}" >{{ post.title }}</a>
+    </li>
+    {% endfor %}
+{% endfor %}
+</ul>
+
+
+		
+		
+<!-- 
+	
+	获取 code 类的长度...
+	html 存数据. css 获取数据 然后用 capture 捕获数据 给liquid用.
+	
+	一旦 jekyll 开始编译 . 就可以获得几乎所有数据. 
+	但是 怎么把数据 保存出来. 然后在点击标签/类的时候 提取数据就可以了.
+	怎么保存数据.  
+	先 定义一个数组. 定义变量试试.
+	然后 push 进去.... push.
+	
+	
+	
+	怎么循环出 某标签下的所有.
+	
+	分类以及确定.
+	分类下 第一个标签也有了.
+	第二个标签 怎么循环出来.
+	
+	也就是某类下的 所有标签.
+	<hr> code类标签(单标签适用)✔︎ <hr>
+	{% for someCate in site.categories.code %}
+			{{ someCate.tags }} <br>
+	{% endfor %}
+<hr><br><br>
+
+
+怎么把一个变量  输入到 html中.....  
+
+列出所有的 大类.
+把大类 储存进一个数组
+
+然后再遍历 数组里面的每一个值.
+
+
+	 -->		
+
+
+
+
+
+	
+<hr> code类 所有文件名✔︎+URL <hr>			
+	{% for ca in site.categories.code %}
+    <a href="{{ca.url}}">   {{ ca.title }}   </a>
+	{% endfor %}
+<hr><br><br>
+
+<hr> 所有标签✔︎ <hr>
+ {% for tag in site.tags %}
+  	 {{tag | first }} <br>
+ {% endfor %}
+<hr><br><br>
+	
+	
+	
+	
+<!-- 
+	解析:
+	
+	显示所有 分类.
+	
+	给每一个分类  一个特别的id:  自己的分类名-cateItem
+	
+	然后 一旦点击这个分类 就执行一个 函数: cateFilter()
+	这个函数会把当前点击的 分类名  当作参数 传入到js 函数里面进行 操作.
+	
+		
+	
+	
+	
+	
+	
+	 -->
+
+
+
+
+
+		 
+tagDiv:
+	div1: 全部标签 class: tags-container;          id: all-tagsContainer
+	div2: 某类标签 class: tags-container hidden;   id: 某类-tagsContainer.
+
+	全部标签.点击 触发 对应的tag.  隐藏filename 下 所有的 blog-list-container .  显示某签-container .
+
+
+filenameDiv:
+	div1: 全部文章名 class: blog-list-container;         id: all-container
+  div2: 某签文章名 class: blog-list-container hidden;  id: 某签-container
+
+
+{% assign finalTags = "all" %}
+{% for cate in site.categories %}      <!-- 遍历出所有的大类. -->
+	{% assign Ca = cate | first %}       <!-- Ca 是分类名. -->
+	{% assign PP = cate | last %}        <!-- PP 是该类下的所有数据集合... -->
+
+	<div class="tagDiv2-catetags" id="{{Ca}}-cate">   <!-- 给每个分类一个ID -->
+		{% for A in PP  %}   
+      {% if A.categories contains Ca %}
+      		{% unless finalTags contains A.tags  %} 
+	      		{% capture finalTags %}
+	      			{{ finalTags }}|{{ A.tags }}
+	      		{% endcapture %}
+      		{% endunless %}
+      		
+	        <div class="tagDiv3-catetags" id="{{A.tags}}-cate">
+	        	<a href onclick="filter('{{ t }}'); return false;">
+		       	 div2:{{ A.tags }}
+		        </a>
+	        </div> <br>
+      {% endif %}
+    {% endfor %} 
+</div>      
+{% endfor %}
+
+
+
+
+{% for cate in site.categories %}       <!-- 遍历出所有的大类. -->
+	{% assign Ca = cate | first %}        <!-- Ca 是分类名. -->
+	{% assign PP = cate | last %}         <!-- PP 是该类下的所有文章集合... -->
+
+	<div class="tagDiv2-catetags" id="{{Ca}}-cate">   <!-- 给每个分类一个ID -->
+		{% for A in PP  %}       					  <!-- 遍历每篇文章中的数据 -->
+      {% if A.categories contains Ca %} <!-- 如果这篇文章yml信息.包含当前分类 -->
+
+	        <div class="tagDiv3-catetags" id="{{A.tags}}-cate">
+	        	<a href onclick="filter('{{ t }}'); return false;">
+		       	 div2:{{ A.tags }}<br>          <!-- 那么就输出这篇文章的 标签. -->
+
+		        </a>
+	        </div> <br>
+	        
+	        
+	        
+				{% capture capturedTag %}
+					{{A.tags}}
+	      {% endcapture %}		        
+				<!-- 捕获每次遍历出来的 tags. 这里还是有重复的. 要先过滤重复的.应为你是根据文章来过滤的. 如果 遍历出所有tag先. 然后 如果tag下的文章 -->
+	        
+      {% endif %}
+    {% endfor %} 
+</div>      
+{% endfor %}
+
+
+
+
+
+
+{% for A in site.categories %}       <!-- 循环处理所有的大类. -->
+{% assign A1 = A | first %}          <!-- 开始处理一个个大类 -->
+<hr>循环类:{{A1}}<br>
+	{% for B in site.tags %}           <!-- 循环处理所有标签. -->
+	{% assign B1 = B | first %}	       <!-- 开始处理一个标签. -->
+	{% assign B2 = B | last %}	       <!-- 第一个标签.的所有文章 -->
+		{% for C in B2 %}     					 <!-- 遍历 第一个标签下的所有文章 -->
+			{% capture xxoo %}
+				{% if C.categories contains A1 %}
+					{{ B1 }}
+				{% endif %}
+			{% endcapture %}	
+		{% endfor %}         <!-- 结束第一个标签下. 所有文章的处理 -->
+			{{ xxoo }}       <!-- 这个就是当前类下的 标签!!!!!! -->
+	{% endfor %}       <!-- 结束第一个大类下的. 所有标签的处理 -->   
+{% endfor %}
+
+★★★★★  这段可用. 每个类下 的标签.
+
+
+
+
+		<div class="tagDiv3-catetags" id="{{A.tags}}-cate">
+			<a href onclick="filter('{{ t }}'); return false;">
+				
+{% unless xxoo == '' %}
+	div2:{{xxoo}}<br>
+{% endunless %}
+				
+				
+		  </a>
+		</div> <br>
+
+
+
+
+
+
+{% for A in site.categories %}       <!-- 循环处理所有的大类. -->
+{% assign A1 = A | first %}          <!-- 开始处理一个个大类 -->
+<div class="tagDiv2-catetags" id="{{A1}}-cate"> 
+<!-- <hr>循环类:{{A1}} -->
+	{% for B in site.tags %}           <!-- 循环处理所有标签. -->
+	{% assign B1 = B | first %}	       <!-- 开始处理一个标签. -->
+	{% assign B2 = B | last %}	       <!-- 第一个标签.的所有文章 -->
+		{% for C in B2 %}     					 <!-- 遍历 第一个标签下的所有文章 -->
+			{% capture xxoo %}
+				{% if C.categories contains A1 %}
+					{{ B1 }}
+				{% endif %}
+			{% endcapture %}	
+		{% endfor %}         <!-- 结束第一个标签下. 所有文章的处理 -->
+		<div class="tagDiv3-catetags" id="{{B1}}-cate">
+			<a href onclick="filter('{{ xxoo }}'); return false;">
+				{% unless xxoo == '' %}
+					<span class="delEmptyrow-C"; id="{{xxoo}}-id">{{xxoo}}</span>
+				{% endunless %}
+			</a>
+	  </div>
+	{% endfor %}       <!-- 结束第一个大类下的. 所有标签的处理 --> 
+</div>  	
+{% endfor %}
+
+
+
+

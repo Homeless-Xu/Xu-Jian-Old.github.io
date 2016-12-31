@@ -1,0 +1,327 @@
+{% include header.html %}
+<div id="bigDiv">                    
+{% include topbar.html %}
+<div id="Div">
+	
+	<div id="cateDiv">  #cateDiv  <hr>
+
+<hr> 所有类: ✔︎ <hr>
+	{% for someCate in site.categories %}
+		{{ someCate.first }} <br>
+	{% endfor %}
+<hr><br><br>	
+		
+		
+<hr> coe类标签✔︎ <hr>
+	{% for someCate in site.categories.coe %}
+			{{ someCate.tags }} <br>
+	{% endfor %}
+<hr><br><br>
+
+
+
+
+		
+		
+<!-- 
+	
+	获取 code 类的长度...
+	html 存数据. css 获取数据 然后用 capture 捕获数据 给liquid用.
+	
+	一旦 jekyll 开始编译 . 就可以获得几乎所有数据. 
+	但是 怎么把数据 保存出来. 然后在点击标签/类的时候 提取数据就可以了.
+	怎么保存数据.  
+	先 定义一个数组. 定义变量试试.
+	然后 push 进去.... push.
+	
+	
+	
+	怎么循环出 某标签下的所有.
+	
+	分类以及确定.
+	分类下 第一个标签也有了.
+	第二个标签 怎么循环出来.
+	
+	也就是某类下的 所有标签.
+	<hr> code类标签(单标签适用)✔︎ <hr>
+	{% for someCate in site.categories.code %}
+			{{ someCate.tags }} <br>
+	{% endfor %}
+<hr><br><br>
+
+
+怎么把一个变量  输入到 html中.....  
+
+列出所有的 大类.
+把大类 储存进一个数组
+
+然后再遍历 数组里面的每一个值.
+
+
+	 -->		
+
+
+
+
+
+	
+<hr> code类 所有文件名✔︎+URL <hr>			
+	{% for ca in site.categories.code %}
+    <a href="{{ca.url}}">   {{ ca.title }}   </a>
+	{% endfor %}
+<hr><br><br>
+
+<hr> 所有标签✔︎ <hr>
+ {% for tag in site.tags %}
+  	 {{tag | first }} <br>
+ {% endfor %}
+<hr><br><br>
+	
+	
+	
+</div>    <hr><br><br>
+
+
+	<div id="tagDiv"> 	#tagDiv <hr>
+<!-- --------------------------------------------------------------------------------- -->
+
+
+
+<hr> 所有类✔︎ testing <hr>		
+
+<ul class="cateUL">
+	
+{% for cateDiv in site.categories %}
+ 某分类✔︎:  {{ cateDiv.first }}	<br>
+ 		
+ 所有标签✔︎: <br>
+	{% for sometag in site.tags %}
+	   {{sometag.first}}  	
+	{% endfor %} <br>
+
+
+
+<!-- 循环输出 所有分类 ✔︎ -->
+
+
+		<li class="cateLI" data-catefilter="{{cateDiv.first }}">
+		
+			<a href="#" class="cateLIa">
+			{% capture haha %}
+				 {{ site.categories }}	 
+			{% endcapture%}
+			类数组✔︎: <br> {{ site.categories }} <br>
+			<!-- haha : {"code"=>[#, #], "code5"=>[#], "code2"=>[#], "jekyll"=>[#]}
+				某文章有两个大类 就会出现两个#  所以用,号分割不准确.用 => 来分割最好. 
+			-->
+				
+			类数量✔︎: {{ site.categories | split: "," | size }} <br>
+			
+	
+	
+	
+						
+			</a>
+		</li> <br>
+
+	{% endfor %}
+</ul>	 <hr><br><br>	
+
+
+
+
+
+
+
+
+<hr> 所有分类+文件名+url ✔︎ <hr>
+{% for category in site.categories %}
+	<span>分类:{{ category | first }}</span>
+	<span>文章数:{{ category | last | size }}</span>
+		<ul class="arc-list">
+			{% for post in category.last %}
+			    <li>{{ post.date | date:"%d/%m/%Y"}}
+			    	<a href="{{ post.url }}">{{ post.title }}</a>
+			    </li>
+			{% endfor %}
+		</ul> <br>
+{% endfor %}
+<hr><br><br>
+
+
+
+
+<hr> 各签各文章数 方法1 ✔︎ <hr>
+ {% for tag in site.tags %}
+   {% assign TagName = tag | first %}
+   {% assign TagNum = tag | last %}
+  	 {{TagName | downcase | replace:" ","-" }} has {{ TagNum | size }} posts <br>
+ {% endfor %}
+<hr><br><br>
+
+<hr> 各签各文章数 方法2 ✔︎ <hr>
+  {% for tag in site.tags %}
+      <a href="#{{ tag[0] }}">{{ tag[0] }}</a> <sup>{{ tag[1].size }}</sup>
+  {% endfor %}
+<hr><br><br>
+
+<hr> code类标签(单标签适用)✔︎ <hr>
+	{% for someCate in site.categories.code %}
+			{{ someCate.tags }} <br>
+	{% endfor %}
+<hr><br><br>
+
+<hr> code类标签(多标签适用)✗  <hr>
+	{% for someCate in site.categories.code %}
+			{{ someCate.tags }} <br>
+	{% endfor %}
+<hr><br><br>
+
+
+
+<hr> AJAX标签文章名+url ✔︎ <hr>
+{% for ca in site.tags.AJAX %}
+         {{ ca.title }}<br>
+         {{ ca.url }}  <br>
+{% endfor %}
+<hr><br><br>
+
+
+<hr> Misc标签文章名+url ✔︎ <hr>
+{% for ca in site.tags.Misc %}
+         {{ ca.title }} <br>
+         {{ ca.url }}   <br>
+{% endfor %}
+<hr><br><br>
+
+
+<hr> 各标签文章名+url ✔︎ <hr>
+<ul class="listing">
+  {% for tag in site.tags %}
+  <li class="listing-seperator" id="{{ tag[0] }}">{{ tag[0] }}</li>
+    {% for post in tag[1] %}
+    <li class="listing-item">
+        <time >{{ post.date | date:"%Y-%m-%d" }}</time>
+        <a href="{{ post.url }}" >{{ post.title }}</a>
+    </li>
+    {% endfor %}
+{% endfor %}
+</ul>
+
+
+
+
+</div>
+
+
+<div id="lineLeft"> <div class="lineInDiv"></div> </div>
+<!--  ------------------------------------------------------------------------------ -->		
+<div id="filenameDiv">   #filenameDiv <hr>
+<ul>
+  {% for fileName in site.posts %}
+    <a  class="fileLink" data-tags="{{ fileName.tags | join: ' ' }}" href="{{ fileName.url }}">
+   	 {{ fileName.title }}  <br>   
+    </a>
+  {% endfor %}
+</ul>  <hr><br><br><br>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<hr> 所有标签 ✔︎ <hr>
+ <ul class="blog-tags-list">
+  {% assign sorted_tags = site.tags | sort %}
+  
+  {% for tag in sorted_tags %}
+    {% assign tt = tag | first %}
+    {% assign postst = tag | last %}
+    <li class="blog-tag-item" id="{{ tt }}-item">
+      <a href onclick="filter('{{ tt }}'); return false;">{{ tt }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
+ 
+ {% for tag in site.tags %}
+  {% assign t = tag | first %}
+  {% assign posts = tag | last %}
+  <div class="blog-list-container hidden" id="{{ t }}-container">
+    <ul class="blog-list">
+      {% for post in posts %}
+        {% if post.tags contains t %}
+          <li>
+            <span class="blog-item-date">{{ post.date | date: "%d %b %Y" }}</span>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+
+    {% assign numPosts = posts | size %}
+    {% if numPosts == 1 %}
+      <p>{{ posts | size }} post containing tag <b>{{ t }}</b></p>
+    {% else %}
+      <p>{{ posts | size }} posts containing tag <b>{{ t }}</b></p>
+    {% endif %}
+  </div>
+{% endfor %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+<!-- 
+	重点就是这个 onclick . 一旦点击 就会触发后面的 js函数.
+	这个函数 有很多功能:
+	
+	
+	
+	
+	
+	
+	
+			
+-->
+
+
+	
+</div>
+<div id="lineRight"> <div class="lineInDiv"></div> </div>
+<!--  -------------------------------------------------------------------------------------------------------------------------- -->		
+	<div id="contentDiv">  #cotentDiv  <hr> {{ content }}  </div>
+	<div id="contentDiv2">  #cotentDiv2  <hr> 哈哈</div>
+
+	<div id="testDiv"> 
+	
+			
+		<button class="btn btn-block btn-info"   id="toggleLeft"  >显/隐左边       </button>    
+		<button class="btn btn-block btn-info"   id="toggleMiddle">显/隐中间       </button>    
+		<button class="btn btn-block btn-info"   id="mouseLeft"   >连续左移        </button>    
+		<button class="btn btn-block btn-info"   id="mouseRight"  >连续右移        </button>    
+		<button class="btn btn-block btn-danger" id="finger"   >双指左右: 未完成</button>    
+	</div>
+
+<!--  -------------------------------------------------------------------------------------------------------------------------- -->
+	<div id="sidebarDiv"> sidebarDiv </div>
+</div>
+</div>
+ 
+{% include footer.html %}
