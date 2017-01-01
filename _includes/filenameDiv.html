@@ -17,7 +17,7 @@
 			  	 onclick="filenameActiveCT('{{post.tags}}', '{{post.categories}}'); filenameActiveThis(); catefilterPart('{{ post.categories }}');" >
 	         	 <i class="fa fa-angle-double-right" aria-hidden="true"></i>			  
 			 	 {{ post.title }} 
-			  <sup>{{post.order}}</sup></a>
+			  <sup class="fileNameCustonOrder">{{post.order}}</sup></a>
 			</li>
 		{% endfor %}
 		</ul>
@@ -38,7 +38,7 @@
 	            style="order: 219" class="blog-list-container22"  id="{{ post.title }}-tag" >
 	            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
 	          	{{ post.title }}
-	          <sup>{{post.order}}</sup></a>
+	          <sup class="fileNameCustonOrder">{{post.order}}</sup></a>
 	        </li>
 	      {% endif %}
 	    {% endfor %}
@@ -58,7 +58,7 @@
 			    	  <a href="{{zz.url}}" onclick="filenameActiveCT('{{zz.tags}}', '{{zz.categories}}'); filenameActiveThis();">
 						<i class="fa fa-angle-double-right" aria-hidden="true"></i>
 							{{zz.title}}
-						<sup>{{zz.order}}</sup></a>
+						<sup class="fileNameCustonOrder">{{zz.order}}</sup></a>
 					</li>
 	      {% endif %}
 	  {% endfor %}
