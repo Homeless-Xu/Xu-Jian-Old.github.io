@@ -52,7 +52,7 @@ function cateCustomfilter(){
 function tagAbcfilter(){
 
     $(".tagDiv2-catetags").attr("class","tagDiv2-catetags hidden");        //隐藏 tag过滤出来的某类下的标签 
-    $("#all-tagsContainer").attr("class","tagsDiv1-allTags hidden");       //隐藏 time div
+    $("#alltagsContainer").attr("class","tagsDiv1-allTags hidden");       //隐藏 time div
     $("#tagDiv1-numberSort").attr("class","CLtagDiv1-numberSort hidden");  //隐藏  num div
     $("#tagDiv1-letterSort").attr("class","tagDiv1-letterSort");           //显示  abc div
 }
@@ -62,13 +62,13 @@ function tagTimefilter(){
     $(".tagDiv2-catetags").attr("class","tagDiv2-catetags hidden");        //隐藏 tag过滤出来的某类下的标签   
     $("#tagDiv1-numberSort").attr("class","CLtagDiv1-numberSort hidden");  //隐藏  num div
     $("#tagDiv1-letterSort").attr("class","tagDiv1-letterSort hidden");    //隐藏  abc div
-    $("#all-tagsContainer").attr("class","tagsDiv1-allTags");              //显示 time div    
+    $("#alltagsContainer").attr("class","tagsDiv1-allTags");              //显示 time div    
 }
 
 // 数量排序: → 隐藏 abc + time ; 显示num 
 function tagNumfilter(){
     $(".tagDiv2-catetags").attr("class","tagDiv2-catetags hidden");        //隐藏 tag过滤出来的某类下的标签   
-    $("#all-tagsContainer").attr("class","tagsDiv1-allTags hidden");       //隐藏 time div    
+    $("#alltagsContainer").attr("class","tagsDiv1-allTags hidden");       //隐藏 time div    
     $("#tagDiv1-letterSort").attr("class","tagDiv1-letterSort hidden");    //隐藏  abc div
     $("#tagDiv1-numberSort").attr("class","CLtagDiv1-numberSort");         //显示  num div
 }

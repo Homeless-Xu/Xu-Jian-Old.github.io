@@ -13,7 +13,7 @@
 <!-- ----------------------------------------------------------------------------------------------- -->
 <!-- 默认排序:按照文件是时间顺序 不是按照文章数量. 也不是按照自定义. 
 这个需要一直隐藏. 一加载页面就隐藏这个. 然后用js 来实现自定义排序.所以其实 一开始显示的是 自定义排序. -->
-<ul id="cateDivFlex" class="CLcateDivFlex hidden">	
+<ul id="cateDivFlex" class="CLcateDivFlex hidden" style="overflow: scroll;" >	
 {% for someCate in site.categories %}
     {% assign cateClicked = someCate | first %}    
     {% assign catePosts = someCate | last %}
@@ -37,7 +37,7 @@
 
 <!-- 按照分类下的文章数量排序: 默认隐藏.-->
 <!-- 这个也必须 用onclick, 把当前选择的分类名 当作参数 .传给 cateFilter 函数... 过滤出对应的 tags -->
-<div id="cateDiv1-numberSort" class="CLcateDiv1-numberSort hidden">		
+<div id="cateDiv1-numberSort" class="CLcateDiv1-numberSort hidden" style="overflow: scroll;">		
     {% assign max_cate_count = 0 %}
       {% for cate in site.categories %}
         {% if cate[1].size > max_cate_count %}

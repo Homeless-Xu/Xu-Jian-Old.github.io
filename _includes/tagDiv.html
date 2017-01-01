@@ -23,8 +23,8 @@
 
 <!-- 默认排序. 按照时间. 越旧越上面. -->	
 <!-- 显示所有的标签  这里的 id: -item 是给设置active 用的... -->
-<div id="tagDiv1">	
-    <ul class="tagsDiv1-allTags" id="all-tagsContainer">
+<div id="tagDiv1"  >	
+    <ul class="tagsDiv1-allTags" id="alltagsContainer" style="overflow: scroll;" >
         {% for tag in site.tags %}
             {% assign t = tag | first %}
             {% assign files = tag | last %}
@@ -42,7 +42,7 @@
 <!-- ----------------------------------------------------------------------------------------------- -->
 
 <!-- 某标签文章数量排序 -->
-<div id="tagDiv1-numberSort" class="CLtagDiv1-numberSort hidden">		
+<div id="tagDiv1-numberSort" class="CLtagDiv1-numberSort hidden" style="overflow: scroll;">		
     {% assign max_tag_count = 0 %}
       {% for tag in site.tags %}
         {% if tag[1].size > max_tag_count %}
@@ -84,7 +84,7 @@
 
 
 <!-- 这个div是 按照 字母顺序 排列的 -->
-<div id="tagDiv1-letterSort" class="tagDiv1-letterSort hidden">		
+<div id="tagDiv1-letterSort" class="tagDiv1-letterSort hidden" style="overflow: scroll;">		
 	<!--  h c j a r j -->
 	{% capture letterTags %}
 		{% for xxtag in site.tags %}
@@ -127,7 +127,7 @@
 <!-- 某大类标签: 默认 . 时间排序. 越早越上面.  -->	
 {% for A in site.categories %}       <!-- 循环处理所有的大类. -->
 {% assign A1 = A | first %}          <!-- 开始处理一个个大类 -->
-<div class="tagDiv2-catetags hidden" id="{{A1}}-cate"> 
+<div class="tagDiv2-catetags hidden" id="{{A1}}-cate" style="overflow: scroll;"> 
 <!-- <hr>循环类:{{A1}} -->
 	{% for B in site.tags %}           <!-- 循环处理所有标签. -->
 	{% assign B1 = B | first %}	       <!-- 开始处理一个标签. -->

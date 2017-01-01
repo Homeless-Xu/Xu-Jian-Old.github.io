@@ -10,18 +10,25 @@ sup                  { color: red; float:right; font-size:0.7em; }
 
 .sortDeafuleBtn { border: solid 1px black ; }
 .active {background-color: yellow}
-/*  html { overflow: hidden; }  强制隐藏滚动条. 不知为什么会有滚动条... */
+  html { overflow: hidden; }  
+/* 强制隐藏滚动条. 不知为什么会有滚动条... */
 
 #bigDiv     { height: 100%; }
-<!-- 这里必须用 100%  而不能用100vh. 不然会在safari 网页放大缩小的时候有问题. --> 
+/* 这里必须用 100%  而不能用100vh. 不然会在safari 网页放大缩小的时候有问题. */
 
 
-<!-- 下面是设置滚动条的: 既可以滚动 .又不显示滚动条.  -->
-    #cateDiv::-webkit-scrollbar {display:none}
-     #tagDiv::-webkit-scrollbar {display:none}
-#filenameDiv::-webkit-scrollbar {display:none}
- #contentDiv::-webkit-scrollbar {display:none}
+/* 下面是设置滚动条的: 既可以滚动 .又不显示滚动条.   */
+       #all-container::-webkit-scrollbar {display:none}
+     #overflowHeighr2::-webkit-scrollbar {display:none}
+.blog-list-container3::-webkit-scrollbar {display:none}
+         #cateDivFlex::-webkit-scrollbar {display:none}
+ #cateDiv1-numberSort::-webkit-scrollbar {display:none}
+    #alltagsContainer::-webkit-scrollbar {display:none}
+  #tagDiv1-numberSort::-webkit-scrollbar {display:none}
+  #tagDiv1-letterSort::-webkit-scrollbar {display:none}
+    .tagDiv2-catetags::-webkit-scrollbar {display:none}
 
+ 
 
 
 
@@ -116,7 +123,7 @@ sup                  { color: red; float:right; font-size:0.7em; }
 
 #cateDiv {
 	flex-basis:80px; flex-grow: 0; flex-shrink: 0;  max-width: 300px; min-width: 14px;
-	position: relative; background-color:rgba(92, 47, 125, 0.34);  overflow:scroll;
+	position: relative; background-color:rgba(92, 47, 125, 0.34); 
     padding: 4px 4px 4px 4px;  display:relative;  }
 #cateDivFlex {	display:flex; flex-direction:column; }
 /* 排序问题: 手动给每个子项目设置order.要根据id来设置.  直接写?? css 里是不行的. 取不到id啊...只能用js. */
@@ -134,7 +141,7 @@ sup                  { color: red; float:right; font-size:0.7em; }
 
 #filenameDiv {
 	flex-basis: 170px; flex-grow: 0; flex-shrink: 0;  max-width: 1450px; min-width: 100px;background-color:pink;
-	 overflow: scroll;  position: relative;     padding: 4px 0px 4px 0px;  display:relative;                                   }
+	position: relative;     padding: 4px 0px 4px 0px;  display:relative;                                   }
 }
 
 

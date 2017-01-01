@@ -9,7 +9,7 @@
 
 <!-- ----------------------------------------------------------------------------------------------- -->
 <!-- 	filenameDiv1 显示所有文章 默认的时间顺序 + flex自定义排序 ✔︎ -->
-	<div class="blog-list-container" id="all-container" >
+	<div class="blog-list-container" id="all-container" ; style="overflow: scroll;">
 		<ul class="blog-list" ; id="filenameDivFlex" style="display: flex ; flex-direction: column">
 		{% for post in site.posts %}
 			<li style="order: 219"  class="fileNameFlexOrder" id="{{post.title}}";  >
@@ -30,7 +30,7 @@
 		{% assign t = tag | first %}      <!--   这是第一个 标签 -->
 		{% assign posts = tag | last %}   <!--   这是 所有文章 -->	
 	<div class="blog-list-container2 hidden" id="{{ t }}-container">
-	  <ul class="blog-list" style="display: flex ; flex-direction: column" >
+	  <ul class="blog-list" id="overflowHeighr2" style="display: flex ; flex-direction: column; overflow: scroll;" >
 	    {% for post in posts %}
 	      {% if post.tags contains t %}
 	          <li >
@@ -51,7 +51,7 @@
 {% for CatePosts in site.categories %}
 	{% assign CateName = CatePosts | first %} 
 	{% assign Cateposts = CatePosts | last %}
-	<div class="blog-list-container3 hidden" id="{{CateName}}-filenames" style="display: flex ; flex-direction: column" >	
+	<div class="blog-list-container3 hidden" id="{{CateName}}-filenames" style="display: flex ; flex-direction: column; overflow: scroll;" >	
 		{% for zz in Cateposts  %}
 	    	{% if zz.categories contains CateName %}
 					<li style="order: 219"; class="blog-list-container4" id="{{zz.title}}-filename" >
