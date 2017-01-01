@@ -15,6 +15,16 @@ sup                  { color: red; float:right; font-size:0.7em; }
 #bigDiv     { height: 100%; }
 <!-- 这里必须用 100%  而不能用100vh. 不然会在safari 网页放大缩小的时候有问题. --> 
 
+
+<!-- 下面是设置滚动条的: 既可以滚动 .又不显示滚动条.  -->
+    #cateDiv::-webkit-scrollbar {display:none}
+     #tagDiv::-webkit-scrollbar {display:none}
+#filenameDiv::-webkit-scrollbar {display:none}
+ #contentDiv::-webkit-scrollbar {display:none}
+
+
+
+
 /* padding margin 设置 还有点击链接的有效区域设置... */
 #cateDivFlex              {margin-top: 10px;}
 #cateDivFlex li           {padding-top: 5px;}
