@@ -12,7 +12,8 @@ sup                  { color: red; float:right; font-size:0.7em; }
 .active {background-color: yellow}
 /*  html { overflow: hidden; }  强制隐藏滚动条. 不知为什么会有滚动条... */
 
-#bigDiv     { height: 100vh; } 
+#bigDiv     { height: 100%; }
+<!-- 这里必须用 100%  而不能用100vh. 不然会在safari 网页放大缩小的时候有问题. --> 
 
 /* padding margin 设置 还有点击链接的有效区域设置... */
 #cateDivFlex              {margin-top: 10px;}

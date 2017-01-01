@@ -34,7 +34,7 @@ lineLeft.onmousedown = function(e) {
             //console.log("实际鼠标位置(不带px)= "+ realMouse);               //  不带px
           var leftPaddingNum = parseFloat($("#tagDiv").css("padding"));  // 这个是 获取tagDiv 的padding. 需要单独减去.. .. 去掉px.只需要数值.
             //console.log("leftPaddingNum 不带px= "+ leftPaddingNum);       //  不带px 
-          var zz = realMouse - yy -leftPaddingNum*2 - aa ;               // 鼠标实时坐标 - 一定的差距 =  实时的左边div 的宽度
+          var zz = realMouse - yy -leftPaddingNum - aa ;               // 鼠标实时坐标 - 一定的差距 =  实时的左边div 的宽度
             //console.log("zz= "+ zz);                                     // 也不带px
             $("#tagDiv").css("flex-basis",zz);    // 这里就能实时拖动了.
           
@@ -68,7 +68,7 @@ lineRight.onmousedown = function(e) {
             var middlePaddingNum = parseFloat(middlePaddingPX);
             //console.log("filenameDiv padding 无px= " +middlePaddingNum);  
 
-            var realMiddle = realMouse - middleWidth - gap - middlePaddingNum*2;
+            var realMiddle = realMouse - middleWidth - gap - middlePaddingNum;
             $("#filenameDiv").css("flex-basis",realMiddle); 
 
         document.onmouseup = function() { 
