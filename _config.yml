@@ -41,8 +41,8 @@ ymlCateSort: ^1,-Appes^2,-Linux^3,HTML^11,CSS^12,jQuery^13,RegExp^14,Pl
 
 
 
-ymlTagSortDefault: abc
-# ymlTagSortDefault: num
+# ymlTagSortDefault: abc
+ymlTagSortDefault: num
 # 这两个是tag的排序. 默认按照时间顺序.  也支持 按照 字母顺序/文章数量顺序.
 
 

@@ -25,12 +25,38 @@ function setActiveCate(cateClicked) {
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // 点击 所有标签 就显示 所有的tagdiv 和 filenamediv
+// 这里 需要 点击的时候 按照yml的排序 来进行 显示.
+// 这里进行判断把. 如果tag默认排序是 abc 那就 ....
+// 如果tag默认排序是 num 那就...
+// 如果tag排序没设置 就是默认的时间顺序.. 
+// 先来判断 yml 里面的 tag值.   只有abc 或者 num . 不写就是时间默认顺序.
+//  id="ymlTagSortDefault"  这个就是 tag的值
 function showAllTagsandPosts () {
-	// 下面是 tagDiv 的if过滤
-	$(".tagsDiv1-allTags").attr("class","tagsDiv1-allTags");
-	$(".tagDiv2-catetags").attr("class","tagDiv2-catetags hidden"); 	   //隐藏  大类过滤出来的 低V2EX
-	$("#tagDiv1-numberSort").attr("class","CLtagDiv1-numberSort hidden");  //隐藏  num div
-	$("#tagDiv1-letterSort").attr("class","tagDiv1-letterSort hidden");    //隐藏  abc div
+	var tagValueinYML =  $("#ymlTagSortDefault").text();
+	// console.log(tagValueinYML );
+	// 正常应该是可以获取到 abc的...
+
+	if ( tagValueinYML == "abc" ){
+		$("#tagDiv1-letterSort").attr("class","tagDiv1-letterSort ");          //  abc div		
+		$(".tagsDiv1-allTags").attr("class","tagsDiv1-allTags hidden");        //  默认所有标签时间排序
+		$(".tagDiv2-catetags").attr("class","tagDiv2-catetags hidden"); 	   //  大类过滤出来的 低V2EX
+		$("#tagDiv1-numberSort").attr("class","CLtagDiv1-numberSort hidden");  //  num div
+	}
+	else if ( tagValueinYML == "num") {
+		$("#tagDiv1-numberSort").attr("class","CLtagDiv1-numberSort ");        //  num div		
+		$(".tagsDiv1-allTags").attr("class","tagsDiv1-allTags hidden");        //  默认所有标签时间排序
+		$(".tagDiv2-catetags").attr("class","tagDiv2-catetags hidden"); 	   //  大类过滤出来的 低V2EX
+		$("#tagDiv1-letterSort").attr("class","tagDiv1-letterSort hidden");    //  abc div
+	}
+	else {
+		// 下面是 tagDiv 的if过滤
+		$(".tagsDiv1-allTags").attr("class","tagsDiv1-allTags");               //  默认所有标签时间排序
+		$(".tagDiv2-catetags").attr("class","tagDiv2-catetags hidden"); 	   //  大类过滤出来的 低V2EX
+		$("#tagDiv1-numberSort").attr("class","CLtagDiv1-numberSort hidden");  //  num div
+		$("#tagDiv1-letterSort").attr("class","tagDiv1-letterSort hidden");    //  abc div
+	}
+
+
 
 	// 下面是 filenameDiv的if过滤 
 	$(".blog-list-container").attr("class","blog-list-container");
@@ -39,7 +65,7 @@ function showAllTagsandPosts () {
 
 	// 显示所有标签是时候 要去除cate + tag + filename的 所有高亮
 	$("#cateDiv li").each( function() {  	$(this).removeClass('active');        });
- 	$("#tagDiv li").each( function() {  	$(this).removeClass('active');  	});
+	$("#tagDiv li").each( function() {  	$(this).removeClass('active');  	});
 	$("#filenameDiv li").each( function() {  	$(this).removeClass('active');  	});
 
 }
