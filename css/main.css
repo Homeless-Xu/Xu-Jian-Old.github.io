@@ -152,7 +152,7 @@ sup                  { color: red; float:right; font-size:0.7em; }
 
 
 #cateDiv {
-	flex-basis:80px; flex-grow: 0; flex-shrink: 0;  max-width: 300px; min-width: 14px;
+	flex-basis:88px; flex-grow: 0; flex-shrink: 0;  max-width: 300px; min-width: 14px;
 	position: relative; background-color:rgba(92, 47, 125, 0.34); 
     padding: 4px 4px 4px 4px;  display:relative;  }
 #cateDivFlex {	display:flex; flex-direction:column; }
@@ -160,7 +160,7 @@ sup                  { color: red; float:right; font-size:0.7em; }
 
 
 #tagDiv {
-	flex-basis:115px; flex-grow: 0; flex-shrink: 0;  max-width: 300px; min-width: 100px;
+	flex-basis:120px; flex-grow: 0; flex-shrink: 0;  max-width: 300px; min-width: 100px;
 	position: relative ; background-color:rgba(212, 117, 204, 0.53) ;   overflow:scroll ;       	
     padding: 4px 0px 4px 4px; display:relative;                                   }
 	}
@@ -170,7 +170,7 @@ sup                  { color: red; float:right; font-size:0.7em; }
 
 
 #filenameDiv {
-	flex-basis: 170px; flex-grow: 0; flex-shrink: 0;  max-width: 1450px; min-width: 100px;background-color:pink;
+	flex-basis: 188px; flex-grow: 0; flex-shrink: 0;  max-width: 1450px; min-width: 100px;background-color:pink;
 	position: relative;     padding: 4px 0px 4px 0px;  display:relative;                                   }
 }
 

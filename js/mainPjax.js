@@ -5,7 +5,7 @@
 
 $(function(){
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-$(document).pjax("a", '#contentDiv', { fragment: '#contentDiv', timeout:5000}	);	
+$(document).pjax("a", '#contentDiv', { fragment: '#contentDiv', timeout:8000}	);	
 
 
 $(document).on('pjax:start', function() { NProgress.start(); });
