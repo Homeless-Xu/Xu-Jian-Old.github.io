@@ -5,26 +5,30 @@ $(function button(){
 // 判断 所有的都不在.就显示. 不然就隐藏;   隐藏(none) → 就显示左边 3个+两拖动条;  显示(block):→隐藏左边三个+两拖动条 
 $("#sidebarToggle").click(   function(){ 
   if ( $("#filenameDiv").css("display") == "none" && $("#tagDiv").css("display") == "none" && $("#cateDiv").css("display") == "none" ) {
-      $("#filenameDiv").show(219);
-      $("#tagDiv").show(219);
-      $("#cateDiv").show(219);
-      $("#lineLeft").show(219);
-      $("#lineRight").show(219);
+      $("#filenameDiv").show('slide', {direction:'left'}, 100);
+      $("#tagDiv").show('slide', {direction:'left'}, 100);
+      $("#cateDiv").show('slide', {direction:'left'}, 100);
+      $("#lineLeft").show('slide', {direction:'left'}, 100);
+      $("#lineRight").show('slide', {direction:'left'}, 100);
      } else {
-      $("#filenameDiv").hide(219);
-      $("#tagDiv").hide(219);
-      $("#cateDiv").hide(219);
-      $("#lineLeft").hide(219);
-      $("#lineRight").hide(219);
+      $("#filenameDiv").hide('slide', {direction:'left'}, 100);
+      $("#tagDiv").hide('slide', {direction:'left'}, 100);
+      $("#cateDiv").hide('slide', {direction:'left'}, 100);
+      $("#lineLeft").hide('slide', {direction:'left'}, 100);
+      $("#lineRight").hide('slide', {direction:'left'}, 100);
      }
 });
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // 下面进行 左按钮设计.隐藏顺序 cate>tag>filename. 
 // 如果if cate在就隐藏cate . cate不再的情况下:else if 如果tag在就隐藏tag;; 不然就隐藏 filename
+
+//                   $('#userNav').hide('slide',{direction:'left'},1000);
+
+
 $("#leftBtn").click(   function(){ 
-  if      ( $("#cateDiv").css("display") != "none" ) { $("#cateDiv").hide(219); } 
-  else if ( $("#tagDiv").css("display") != "none"  ) { $("#tagDiv").hide(219);      $("#lineLeft").hide(219);  }
-  else                                               { $("#filenameDiv").hide(219); $("#lineRight").hide(219); }
+  if      ( $("#cateDiv").css("display") != "none" ) { $("#cateDiv").hide(    'slide', {direction:'left'}, 100); } 
+  else if ( $("#tagDiv").css("display") != "none"  ) { $("#tagDiv").hide(     'slide', {direction:'left'}, 100); $("#lineLeft").hide( 'slide', {direction:'left'}, 100); }
+  else                                               { $("#filenameDiv").hide('slide', {direction:'left'}, 100); $("#lineRight").hide('slide', {direction:'left'}, 100); }
 });
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // 下面进行 右钮设计.显示顺序 cate<tag<filename.
@@ -32,9 +36,9 @@ $("#leftBtn").click(   function(){
 // 如果 filename在 tag不在 就显示tag.+ 左线
 // 否则就是 filename在 tag在. 显示cate
 $("#rightBtn").click(   function(){ 
-  if      ( $("#filenameDiv").css("display") == "none" ) { $("#filenameDiv").show(219); $("#lineRight").show(219); } 
-  else if ( $("#tagDiv").css("display") == "none"  )     { $("#tagDiv").show(219);      $("#lineLeft").show(219);  }
-  else                                                   { $("#cateDiv").show(219);  }
+  if      ( $("#filenameDiv").css("display") == "none" ) { $("#filenameDiv").show('slide', {direction:'left'}, 100); $("#lineRight").show('slide', {direction:'left'}, 100); } 
+  else if ( $("#tagDiv").css("display") == "none"  )     { $("#tagDiv").show('slide', {direction:'left'}, 100);      $("#lineLeft").show('slide', {direction:'left'}, 100);  }
+  else                                                   { $("#cateDiv").show('slide', {direction:'left'}, 100);  }
 });
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

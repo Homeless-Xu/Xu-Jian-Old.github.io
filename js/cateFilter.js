@@ -71,18 +71,18 @@ function showAllTagsandPosts () {
 }
 
 
-// 下面是 点击大类 过滤出对应的tag 和 filename..
+// 下面是 点击大类 过滤出对应的tag 和 filename..  这里  也要进行yml 默认tag 排序的判断
+// 这个就麻烦了...  大类过滤出来的tag 就需要写三个 ..   后面的.... 暂时不支持把...
 function showTagsandPosts(cateClicked) {
-	$(".tagsDiv1-allTags").attr("class","tagsDiv1-allTags hidden");
-	//$(".tagsDiv1-allTags").css("display","none");
+
+	$(".tagsDiv1-allTags").attr("class","tagsDiv1-allTags hidden");       //$(".tagsDiv1-allTags").css("display","none");
 	$(".tagDiv2-catetags").attr("class","tagDiv2-catetags hidden");
-	$("#"+ cateClicked +"-cate").attr("class","tagDiv2-catetags"); 
-	// 把这个元素的class 改成 ... 没有hidden的.
+	$("#"+ cateClicked +"-cate").attr("class","tagDiv2-catetags");         // 把这个元素的class 改成 ... 没有hidden的.
 	$("#tagDiv1-letterSort").attr("class","tagDiv1-letterSort hidden");    //隐藏  abc div
 	$("#tagDiv1-numberSort").attr("class","CLtagDiv1-numberSort hidden");  //隐藏  num div
 	$("#all-tagsContainer").attr("class","tagsDiv1-allTags hidden");       //隐藏 time div
 
-	// 下面是 filenameDiv 的else 
+	// 下面是 filenameDiv 的 
 	$(".blog-list-container").attr("class","blog-list-container hidden");
 	$(".blog-list-container2").attr("class","blog-list-container2 hidden");
 	$(".blog-list-container3").attr("class","blog-list-container3 hidden");
