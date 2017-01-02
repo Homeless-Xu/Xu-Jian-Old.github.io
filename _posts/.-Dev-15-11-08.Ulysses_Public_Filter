@@ -19,11 +19,11 @@
 						<key>options</key>
 						<integer>129</integer>
 						<key>searchString</key>
-						<string>2015-11-11</string>
+						<string>2015-11-08</string>
 					</dict>
 				</array>
 				<key>queryString</key>
-				<string>2015-11-11</string>
+				<string>2015-11-08</string>
 				<key>scopeMask</key>
 				<string></string>
 				<key>searchOptions</key>
@@ -40,8 +40,12 @@
 	<key>resolutionData</key>
 	<dict>
 		<key>query</key>
-		<real>503752572.96707398</real>
+		<real>505044542.12387103</real>
+		<key>sheetOrder</key>
+		<real>505040025.864326</real>
 	</dict>
+	<key>sheetOrder</key>
+	<string>creationDate</string>
 	<key>storeFormatVersion</key>
 	<integer>1</integer>
 	<key>versioning</key>
@@ -49,7 +53,12 @@
 		<key>query</key>
 		<dict>
 			<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-			<integer>11</integer>
+			<integer>17</integer>
+		</dict>
+		<key>sheetOrder</key>
+		<dict>
+			<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+			<integer>6</integer>
 		</dict>
 	</dict>
 </dict>
