@@ -101,7 +101,7 @@ function delRows() {
 			var thisALLText = $(this).text();
 			var thisSpanText = $(this).find("span").text();
 			var textSpanLength =　 $(this).find("span").text().length ;
-			console.log(thisSpanText+"标签长度"+textSpanLength);
+			//console.log(thisSpanText+"标签长度"+textSpanLength);
 			if ( $(this).find("span").text().length == 0 )	{	$(this).attr("class","delEmptyrow-C hidden");	}
 		});
 	}

@@ -3,36 +3,22 @@
 // 需要 绑定选择器... 这个属性会自动寻找标签中的超链接..
 
 
-
-
-
 $(function(){
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 $(document).pjax("a", '#contentDiv', { fragment: '#contentDiv', timeout:5000}	);	
 
 
-$(document).on({
-		'pjax:click': function(){  	NProgress.start();  },
-		'pjax:end':   function(){   NProgress.done();   }
-	});
-
-	
+$(document).on('pjax:start', function() { NProgress.start(); });
+$(document).on('pjax:end',   function() { NProgress.done();  });
 
 
 
-
-
-	// open links(do not need pjax) in new tab.
-	// 正文 也就是 所有的post 会有各种链接. 这里需要过滤.
+// open links(do not need pjax) in new tab.
+// 正文 也就是 所有的post 会有各种链接. 这里需要过滤.
 //	var afterPjax = function() {
 //		$('#contentDivDiv').find('a').filter(function() { return this.hostname != window.location.hostname; }).attr('target', '_blank');
 //	};
-
 //	afterPjax();
-
-
-
-
 // 这才是最关键的 . 特别是 后面那个 fragment 参数...
 
 
