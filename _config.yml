@@ -25,7 +25,14 @@ exclude:
 
 
 
-ymlCateSort: ^1,-Appes^2,-Linux^3,HTML^11,CSS^12,jQuery^13,RegExp^14,Plugins^15,Bootstrap^16,jekyll^17,Themes^18,FE-Misc^19,Misc^99
+ymlCateSort: > 
+  🛠^1,🌐^2,👓^3,
+  ^11,-Tips^12,-App^13,-CMD^14,-Dev^15,💻^19,
+  HTML^21,CSS^22,jQuery^23,RegExp^24,Plugins^25,Bootstrap^26,jekyll^27,Themes^28,FE-Misc^29,
+  Misc^99
+
+
+
 # ★★★★★ 改大类的自定义显示顺序!    大类名 + '^' + '排序' + ',' 
 # ★★★★★ ymlCateSort 这个变量名 千万别改了...  
 # ★★★★★ 每个大类用 逗号分开!!!!!!!!!   
