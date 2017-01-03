@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linux Commands:  
+title: Linux Commands  
 tags: Misc
 categories: -CMD
 ---
@@ -12,4 +12,3 @@ categories: -CMD
 
 `-S`  size       按照文件大小排列  
 `-r`  reverse    反序排列
-

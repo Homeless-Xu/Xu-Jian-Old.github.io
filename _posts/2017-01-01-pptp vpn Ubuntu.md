@@ -1,6 +1,6 @@
 ---
 layout: post
-title: pptp vpn Ubuntu:
+title: pptp vpn Ubuntu
 tags: 
 categories: 🛠
 ---
@@ -22,7 +22,7 @@ remoteip 192.168.0.201-245
 4. 添加登录用户
 vi /etc/ppp/chap-secrets
 添加一行，格式如下
-用户名 pptpd "你想要的密码" * 用户名不要引号
+用户名 pptpd "你想要的密码" \* 用户名不要引号
 密码要用半角双引号括起来
 千万不能忘了 星号.星号是说允许从任何IP地址联接，如果你想单独设定IP地址也可以。
 
@@ -35,7 +35,6 @@ vi /etc/ppp/chap-secrets
 
 设置DNS解析，编辑pptpd-options
 vi /etc/ppp/pptpd-options
-
 
 
 

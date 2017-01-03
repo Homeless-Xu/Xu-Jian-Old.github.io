@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Proxy : Socks & Http
+title: Socks & Http
 tags: 
 categories: 🛠
 ---
 
-## Proxy : Socks & Http  … 
+## Proxy : Socks & Http  …
 
-- 代理解释 :    
+- 代理解释 :
 	1. 找别人去做 本该自己亲自去做的某件事.
 		2. 客户端 通过代理服务器 与 服务器 进行非直接的连接.
 		3. 一堵外网和客户端(电脑) 之间的墙. 提供流量和安全管理.
@@ -21,7 +21,7 @@ categories: 🛠
 网关 路由器有代理功能. 保证安全 防止攻击.
 
 ## 翻墙 :
-*绕过 IP 封锁, 端口封锁 , 内容过滤 , 域名劫持 等等.....
+\*绕过 IP 封锁, 端口封锁 , 内容过滤 , 域名劫持 等等.....
 
 中国封锁力度最大. 草榴 / BBC / Facebook / Twitter ….
 
