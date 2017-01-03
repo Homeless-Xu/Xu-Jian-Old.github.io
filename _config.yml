@@ -26,10 +26,7 @@ exclude:
 
 
 ymlCateSort: > 
-  🛠^1,🌐^2,👓^3,
-  ^11,-Tips^12,-App^13,-CMD^14,-Dev^15,💻^19,
-  HTML^21,CSS^22,jQuery^23,RegExp^24,Plugins^25,Bootstrap^26,jekyll^27,Themes^28,FE-Misc^29,
-  Misc^99
+  🛠^1,🌐^2,👓^3,^11,-Tips^12,-App^13,-CMD^14,-Dev^15,💻^19,HTML^21,CSS^22,jQuery^23,RegExp^24,Plugins^25,Bootstrap^26,jekyll^27,Themes^28,FE-Misc^29,Misc^99
 
 
 
