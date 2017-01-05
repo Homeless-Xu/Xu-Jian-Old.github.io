@@ -1,10 +1,6 @@
 title: Xu.Jian
 email: xx2610@gmail.com
 
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
@@ -25,8 +21,8 @@ exclude:
 
 
 
-ymlCateSort: > 
-  🛠^1,🌐^2,👓^3,^11,-Tips^12,-App^13,-CMD^14,-Dev^15,💻^19,HTML^21,CSS^22,jQuery^23,RegExp^24,Plugins^25,Bootstrap^26,jekyll^27,Themes^28,FE-Misc^29,Misc^99
+# ymlCateSort: > 
+#  🛠^1,🌐^2,👓^3,^11,-Tips^12,-App^13,-CMD^14,-Dev^15,💻^19,HTML^21,CSS^22,jQuery^23,RegExp^24,Plugins^25,Bootstrap^26,jekyll^27,Themes^28,FE-Misc^29,Misc^99
 
 
 
@@ -46,7 +42,7 @@ ymlCateSort: >
 
 
 # ymlTagSortDefault: abc
-ymlTagSortDefault: abc
+# ymlTagSortDefault: abc
 # 这两个是tag的排序. 默认按照时间顺序.  也支持 按照 字母顺序/文章数量顺序.
 
 

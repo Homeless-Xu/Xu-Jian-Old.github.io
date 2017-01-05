@@ -244,7 +244,7 @@ sup                  { color: red; float:right; font-size:0.7em; }
 
 
 /* 下面是网页宽度小于414px的布局(iphone 6+) */
-@media all and (max-width: 414px ) {
+@media all and (max-width: 219px ) {
 
    * {padding: 0; margin:0 ;}
 #Div { flex-direction: column; }
