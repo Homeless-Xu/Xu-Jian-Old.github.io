@@ -3,7 +3,12 @@
 // 需要 绑定选择器... 这个属性会自动寻找标签中的超链接..
 
 
-$(function(){
+function toTop() {  $("#contentDiv").scrollTop(0); }
+// 这个是 回到顶部的函数....
+
+
+
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 $(document).pjax("a", '#contentDiv', { fragment: '#contentDiv', timeout:8000}	);	
 
@@ -27,7 +32,6 @@ $(document).on('pjax:end',   function() { NProgress.done();  });
 
 	
 
-});
 
 
 /*

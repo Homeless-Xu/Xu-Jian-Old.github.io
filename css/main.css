@@ -3,7 +3,6 @@ li  { list-style: none;      }
 a   { text-decoration: none; color:black;       } 
 
 
-
 #slide {
     position: absolute;
     left: -100px;
@@ -23,13 +22,6 @@ a   { text-decoration: none; color:black;       }
 @keyframes slide {
     100% { left: 0; }
 }
-
-
-
-
-
-
-
 
 
 
@@ -63,25 +55,14 @@ sup                  { color: red; float:right; font-size:0.7em; }
 
 
 /* padding margin 设置 还有点击链接的有效区域设置... */
-#cateDivFlex              {margin-top: 10px;}
 #cateDivFlex li           {padding-top: 5px;}
 #cateDivFlex li a         {display: block;  width: 100%; height: 100%;}
-#cateDiv1-numberSort      {margin-top: 10px;}
-#cateDiv1-numberSort li   {padding-top: 5px;}
-#cateDiv1-numberSort li a {display: block;  width: 100%; height: 100%;}
 /* a 设置100 是为了 标签空白的地方 也可以点击... */
 
 
-#tagDiv1                 {margin-top: 10px}
 #tagDiv1 li              {padding-top: 5px}
 #tagDiv1 li a            {display: block;  width: 100%; height: 100%;}
-#tagDiv1-numberSort      {margin-top: 10px}
-#tagDiv1-numberSort li   {padding-top: 5px}
-#tagDiv1-numberSort li a {display: block;  width: 100%; height: 100%;}
-#tagDiv1-letterSort      {margin-top: 10px}
-#tagDiv1-letterSort li   {padding-top: 5px}
-#tagDiv1-letterSort li a {display: block;  width: 100%; height: 100%;}
-.tagDiv2-catetags        {margin-top: 10px}
+
 .tagDiv2-catetags li     {padding-top: 5px}
 .tagDiv2-catetags li a   {display: block;  width: 100%; height: 100%;}
 
@@ -101,29 +82,12 @@ sup                  { color: red; float:right; font-size:0.7em; }
 
 
 
-/* 设置cate排序按钮的间距+位置. */
-#cateDiv-All     { position: relative;                   }
-#cateDiv-sort1   { position: relative; left:0;    top:0; }
-#cateDiv-sort2   { position: absolute; left:30%;  top:0; }
-#cateDiv-Allicon { position: absolute; right:0;   top:0; }
-
-/* 设置Tag排序按钮的间距+位置. */
-#tagDiv-All     { position: relative;}
-
-#tagDiv-sort1   { position: absolute; left:0;   top:0; }
-#tagDiv-sort2   { position: absolute; left:25%; top:0; }
-#tagDiv-sort3   { position: absolute; left:45%; top:0; }
-#tagDiv-Allicon { position: absolute; right:0;  top:0; }
-
-
-
-
-/* 设置filenameDiv排序按钮的间距+位置. */
+/* 设置filenameDiv 排序按钮的间距+位置.   这里还要实现居中.. todo */
 #filenameDiv-Btnes   { position: relative;                  }
-#filenameDiv-sort1   { position: absolute; left:0;   top:0; }
-#filenameDiv-sort2   { position: absolute; left:30%; top:0; }
-#filenameDiv-sort3   { position: absolute; left:60%; top:0; }
-#filenameDiv-sort4   { position: absolute; right:0;  top:0; }
+#filenameDiSearch    { position: absolute; left:0;   top:0; }
+#allCateTagPostBtn   { position: absolute; left:30%; top:0; }
+
+#filenameDivDate     { position: absolute; right:0;  top:0; }
 
 
 
@@ -154,7 +118,7 @@ sup                  { color: red; float:right; font-size:0.7em; }
 #cateDiv {
 	flex-basis:88px; flex-grow: 0; flex-shrink: 0;  max-width: 300px; min-width: 14px;
 	position: relative; background-color:rgba(92, 47, 125, 0.34); 
-    padding: 4px 4px 4px 4px;  display:relative;  }
+    padding: 0px 4px 4px 4px;  display:relative;  }
 #cateDivFlex {	display:flex; flex-direction:column; }
 /* 排序问题: 手动给每个子项目设置order.要根据id来设置.  直接写?? css 里是不行的. 取不到id啊...只能用js. */
 
@@ -162,7 +126,7 @@ sup                  { color: red; float:right; font-size:0.7em; }
 #tagDiv {
 	flex-basis:120px; flex-grow: 0; flex-shrink: 0;  max-width: 300px; min-width: 100px;
 	position: relative ; background-color:rgba(212, 117, 204, 0.53) ;   overflow:scroll ;       	
-    padding: 4px 0px 4px 4px; display:relative;                                   }
+    padding: 0px 0px 4px 4px; display:relative;                                   }
 	}
 #tagDiv-All { padding-bottom: 10px;}
 
@@ -170,7 +134,7 @@ sup                  { color: red; float:right; font-size:0.7em; }
 
 
 #filenameDiv {
-	flex-basis: 188px; flex-grow: 0; flex-shrink: 0;  max-width: 1450px; min-width: 100px;background-color:pink;
+	flex-basis: 200px; flex-grow: 0; flex-shrink: 0;  max-width: 1450px; min-width: 100px;background-color:pink;
 	position: relative;     padding: 4px 0px 4px 0px;  display:relative;                                   }
 }
 

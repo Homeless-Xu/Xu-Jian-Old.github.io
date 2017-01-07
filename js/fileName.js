@@ -1,18 +1,21 @@
 // 显示隐藏 文件自定义排序的角标. + 切换 显示隐藏按钮图标 
-function fileNameSortNum() {
-  $(".fileNameCustonOrder").toggle();
+// 这里是显示 文件排序的  改成 文件时间
+function fileNameDate() {
   // console.log( $(".fileNameCustonOrder").css("display")   );
   // 判断 某元素显示隐藏状态. 显示:block  隐藏:none
-  var fileNameSortNumStatus = $(".fileNameCustonOrder").css("display")
+ 
+  var fileNameSortNumStatus = $(".fileNameDate").css("display");
     if ( fileNameSortNumStatus ==  "none" ) {
-         $("#filenameDiv-sort4").removeClass("fa fa-eye")  ;
-         $("#filenameDiv-sort4").addClass("fa fa-eye-slash");
+         $("#filenameDivDate").removeClass("fa fa-eye-slash")  ;
+         $("#filenameDivDate").addClass("fa fa-eye");
+         $(".fileNameDate").removeClass("hidden");
        } else {
-         $("#filenameDiv-sort4").removeClass("fa fa-eye-slash")  ;
-         $("#filenameDiv-sort4").addClass("fa fa-eye");
+         $("#filenameDivDate").removeClass("fa fa-eye")  ;
+         $("#filenameDivDate").addClass("fa fa-eye-slash");
+         $(".fileNameDate").addClass("hidden");
        }
 }
-// 要把 排序栏目 设置成不滚动的  .. 下面的内容才滚动...
+
 
 
 
