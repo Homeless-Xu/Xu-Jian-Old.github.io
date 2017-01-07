@@ -9,6 +9,7 @@
 		<string>.89 - MyTheme.Ulysses_Public_Filter</string>
 		<string>.90 - HTML.Ulysses_Public_Filter</string>
 		<string>.91 - CSS.Ulysses_Public_Filter</string>
+		<string>.92 - jQuery.Ulysses_Public_Filter</string>
 		<string>.IT 2017-01-01.Ulysses_Public_Filter</string>
 		<string>.Net-2017-01-02.Ulysses_Public_Filter</string>
 		<string>.OSI-2017-01-03.Ulysses_Public_Filter</string>
@@ -26,7 +27,6 @@
 		<string>.Database-16-08-08.Ulysses_Public_Filter</string>
 		<string>.Crack --- 16-10-23.Ulysses_Public_Filter</string>
 		<string>.硬件----16-11-22.Ulysses_Public_Filter</string>
-		<string>.jQuery-- 12-12-12.Ulysses_Public_Filter</string>
 		<string>.PHP-- 13-12-12.Ulysses_Public_Filter</string>
 		<string>.Apache-13-12-11.Ulysses_Public_Filter</string>
 		<string>.RegExp 16-10-11.Ulysses_Public_Filter</string>
@@ -70,6 +70,16 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>336</integer>
+				</dict>
+			</dict>
+			<key>.92 - jQuery.Ulysses_Public_Filter</key>
+			<dict>
+				<key>lastModification</key>
+				<real>505470753.42736</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>340</integer>
 				</dict>
 			</dict>
 			<key>.Apache-13-12-11.Ulysses_Public_Filter</key>
@@ -300,16 +310,6 @@
 					<integer>296</integer>
 				</dict>
 			</dict>
-			<key>.jQuery-- 12-12-12.Ulysses_Public_Filter</key>
-			<dict>
-				<key>lastModification</key>
-				<real>504871454.152188</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>164</integer>
-				</dict>
-			</dict>
 			<key>.jekyll-09-09-09.Ulysses_Public_Filter</key>
 			<dict>
 				<key>lastModification</key>
@@ -399,10 +399,6 @@
 			</dict>
 			<key>1989-01-01-大类栏.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505470401.87383997</real>
 				<key>lastModification</key>
 				<real>505470401.87383997</real>
 				<key>version</key>
@@ -413,10 +409,6 @@
 			</dict>
 			<key>1989-01-02-标签栏.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505470401.85038</real>
 				<key>lastModification</key>
 				<real>505470401.85038</real>
 				<key>version</key>
@@ -427,10 +419,6 @@
 			</dict>
 			<key>1989-01-03-文件栏.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505470401.85579902</real>
 				<key>lastModification</key>
 				<real>505470401.85579902</real>
 				<key>version</key>
@@ -441,10 +429,6 @@
 			</dict>
 			<key>1989-01-03-谷歌Analytics统计分析工具.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505470401.87723303</real>
 				<key>lastModification</key>
 				<real>505470401.87723303</real>
 				<key>version</key>
@@ -455,10 +439,6 @@
 			</dict>
 			<key>1989-01-04-文件栏功能.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.07572901</real>
 				<key>lastModification</key>
 				<real>505463307.07572901</real>
 				<key>version</key>
@@ -469,10 +449,6 @@
 			</dict>
 			<key>1989-01-05-标签栏功能.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.074386</real>
 				<key>lastModification</key>
 				<real>505463307.074386</real>
 				<key>version</key>
@@ -511,10 +487,6 @@
 			</dict>
 			<key>1989-02-02-03-本主题排序设计.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.05996001</real>
 				<key>lastModification</key>
 				<real>505463307.05996001</real>
 				<key>version</key>
@@ -525,10 +497,6 @@
 			</dict>
 			<key>1989-10-03-03- CateFlex排序.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.081855</real>
 				<key>lastModification</key>
 				<real>505463307.081855</real>
 				<key>version</key>
@@ -539,10 +507,6 @@
 			</dict>
 			<key>1989-10-03-03- Cate文件数量排序.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.13437003</real>
 				<key>lastModification</key>
 				<real>505463307.13437003</real>
 				<key>version</key>
@@ -553,10 +517,6 @@
 			</dict>
 			<key>1989-11-03-03- Tag多种排序.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.12733197</real>
 				<key>lastModification</key>
 				<real>505463307.12733197</real>
 				<key>version</key>
@@ -567,10 +527,6 @@
 			</dict>
 			<key>1989-11-03-03- Tag字母排序.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.14335901</real>
 				<key>lastModification</key>
 				<real>505463307.14335901</real>
 				<key>version</key>
@@ -581,10 +537,6 @@
 			</dict>
 			<key>1989-11-03-03- Tag数量排序.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.08314198</real>
 				<key>lastModification</key>
 				<real>505463307.08314198</real>
 				<key>version</key>
@@ -595,10 +547,6 @@
 			</dict>
 			<key>1989-12-03-01-文件标题.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.12047899</real>
 				<key>lastModification</key>
 				<real>505463307.12047899</real>
 				<key>version</key>
@@ -609,10 +557,6 @@
 			</dict>
 			<key>1989-12-03-02-文件链接.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.113401</real>
 				<key>lastModification</key>
 				<real>505463307.113401</real>
 				<key>version</key>
@@ -623,10 +567,6 @@
 			</dict>
 			<key>1989-12-03-03- FileFlex排序.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463306.95908099</real>
 				<key>lastModification</key>
 				<real>505463306.95908099</real>
 				<key>version</key>
@@ -637,10 +577,6 @@
 			</dict>
 			<key>1989-12-03-03-文件内容.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.04618698</real>
 				<key>lastModification</key>
 				<real>505463307.04618698</real>
 				<key>version</key>
@@ -651,10 +587,6 @@
 			</dict>
 			<key>1989-12-03-03-文件摘录.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.12304997</real>
 				<key>lastModification</key>
 				<real>505463307.12304997</real>
 				<key>version</key>
@@ -665,10 +597,6 @@
 			</dict>
 			<key>1989-12-03-03-文件时间.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.08706701</real>
 				<key>lastModification</key>
 				<real>505463307.08706701</real>
 				<key>version</key>
@@ -679,10 +607,6 @@
 			</dict>
 			<key>1989-12-03-文件逆序排列.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.09523302</real>
 				<key>lastModification</key>
 				<real>505463307.09523302</real>
 				<key>version</key>
@@ -693,10 +617,6 @@
 			</dict>
 			<key>1990-01-01-字体大小.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463306.90084302</real>
 				<key>lastModification</key>
 				<real>505463306.90084302</real>
 				<key>version</key>
@@ -707,10 +627,6 @@
 			</dict>
 			<key>1990-02-01-垂直对齐vertical-align.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463306.91195798</real>
 				<key>lastModification</key>
 				<real>505463306.91195798</real>
 				<key>version</key>
@@ -721,10 +637,6 @@
 			</dict>
 			<key>1990-10-10-01-按钮.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.05546898</real>
 				<key>lastModification</key>
 				<real>505463307.05546898</real>
 				<key>version</key>
@@ -735,10 +647,6 @@
 			</dict>
 			<key>1990-10-10-02-单选-多选按钮.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.08958399</real>
 				<key>lastModification</key>
 				<real>505463307.08958399</real>
 				<key>version</key>
@@ -749,10 +657,6 @@
 			</dict>
 			<key>1990-10-10-03-按钮状态.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463306.87078202</real>
 				<key>lastModification</key>
 				<real>505463306.87078202</real>
 				<key>version</key>
@@ -763,10 +667,6 @@
 			</dict>
 			<key>1990-10-10-21-data.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.04032999</real>
 				<key>lastModification</key>
 				<real>505463307.04032999</real>
 				<key>version</key>
@@ -777,10 +677,6 @@
 			</dict>
 			<key>1990-10-10-21-display.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.06593001</real>
 				<key>lastModification</key>
 				<real>505463307.06593001</real>
 				<key>version</key>
@@ -791,10 +687,6 @@
 			</dict>
 			<key>1990-10-10-21-label.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.11086601</real>
 				<key>lastModification</key>
 				<real>505463307.11086601</real>
 				<key>version</key>
@@ -805,10 +697,6 @@
 			</dict>
 			<key>1990-10-10-21-overflow.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.097224</real>
 				<key>lastModification</key>
 				<real>505463307.097224</real>
 				<key>version</key>
@@ -819,10 +707,6 @@
 			</dict>
 			<key>1990-10-10-21-setAttribute().md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463306.93298101</real>
 				<key>lastModification</key>
 				<real>505463306.93298101</real>
 				<key>version</key>
@@ -833,10 +717,6 @@
 			</dict>
 			<key>1990-10-10-21-链接打开方式.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.072923</real>
 				<key>lastModification</key>
 				<real>505463307.072923</real>
 				<key>version</key>
@@ -847,10 +727,6 @@
 			</dict>
 			<key>1991-11-11-21-Active.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463306.88954902</real>
 				<key>lastModification</key>
 				<real>505463306.88954902</real>
 				<key>version</key>
@@ -861,10 +737,6 @@
 			</dict>
 			<key>1991-11-11-21-CSS - 2.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.06951499</real>
 				<key>lastModification</key>
 				<real>505463307.06951499</real>
 				<key>version</key>
@@ -875,10 +747,6 @@
 			</dict>
 			<key>1991-11-11-21-CSS.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.09202701</real>
 				<key>lastModification</key>
 				<real>505463307.09202701</real>
 				<key>version</key>
@@ -889,10 +757,6 @@
 			</dict>
 			<key>1991-11-11-21-CSS1.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.07984197</real>
 				<key>lastModification</key>
 				<real>505463307.07984197</real>
 				<key>version</key>
@@ -903,10 +767,6 @@
 			</dict>
 			<key>1991-11-11-21-Display.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.056858</real>
 				<key>lastModification</key>
 				<real>505463307.056858</real>
 				<key>version</key>
@@ -917,10 +777,6 @@
 			</dict>
 			<key>1991-11-11-21-Div 高度100%.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463306.94704002</real>
 				<key>lastModification</key>
 				<real>505463306.94704002</real>
 				<key>version</key>
@@ -931,10 +787,6 @@
 			</dict>
 			<key>1991-11-11-21-Layout Intro.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.14069301</real>
 				<key>lastModification</key>
 				<real>505463307.14069301</real>
 				<key>version</key>
@@ -945,10 +797,6 @@
 			</dict>
 			<key>1991-11-11-21-Position.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.12878799</real>
 				<key>lastModification</key>
 				<real>505463307.12878799</real>
 				<key>version</key>
@@ -959,10 +807,6 @@
 			</dict>
 			<key>1991-11-11-21-SASS-LESS.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463306.98449999</real>
 				<key>lastModification</key>
 				<real>505463306.98449999</real>
 				<key>version</key>
@@ -973,10 +817,6 @@
 			</dict>
 			<key>1991-11-11-21-animate.css.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463306.92208803</real>
 				<key>lastModification</key>
 				<real>505463306.92208803</real>
 				<key>version</key>
@@ -987,10 +827,6 @@
 			</dict>
 			<key>1991-11-11-21-box-sizing.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.138246</real>
 				<key>lastModification</key>
 				<real>505463307.138246</real>
 				<key>version</key>
@@ -1001,10 +837,6 @@
 			</dict>
 			<key>1991-11-11-21-cursor.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463306.98712301</real>
 				<key>lastModification</key>
 				<real>505463306.98712301</real>
 				<key>version</key>
@@ -1015,10 +847,6 @@
 			</dict>
 			<key>1991-11-11-21-flex 布局.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.07700598</real>
 				<key>lastModification</key>
 				<real>505463307.07700598</real>
 				<key>version</key>
@@ -1029,10 +857,6 @@
 			</dict>
 			<key>1991-11-11-21-keyframes.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.084387</real>
 				<key>lastModification</key>
 				<real>505463307.084387</real>
 				<key>version</key>
@@ -1043,10 +867,6 @@
 			</dict>
 			<key>1991-11-11-21-margin.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.11216402</real>
 				<key>lastModification</key>
 				<real>505463307.11216402</real>
 				<key>version</key>
@@ -1057,10 +877,6 @@
 			</dict>
 			<key>1991-11-11-21-max-width.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.11720502</real>
 				<key>lastModification</key>
 				<real>505463307.11720502</real>
 				<key>version</key>
@@ -1071,10 +887,6 @@
 			</dict>
 			<key>1991-11-11-21-slideToggle.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.13142103</real>
 				<key>lastModification</key>
 				<real>505463307.13142103</real>
 				<key>version</key>
@@ -1085,10 +897,6 @@
 			</dict>
 			<key>1991-11-11-21-ul-li.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.01423699</real>
 				<key>lastModification</key>
 				<real>505463307.01423699</real>
 				<key>version</key>
@@ -1099,10 +907,6 @@
 			</dict>
 			<key>1991-11-11-21-vertical-align.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.09080601</real>
 				<key>lastModification</key>
 				<real>505463307.09080601</real>
 				<key>version</key>
@@ -1113,10 +917,6 @@
 			</dict>
 			<key>1991-11-11-21-vh-vw.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.03389698</real>
 				<key>lastModification</key>
 				<real>505463307.03389698</real>
 				<key>version</key>
@@ -1127,10 +927,6 @@
 			</dict>
 			<key>1991-11-11-21-三列布局.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.13300902</real>
 				<key>lastModification</key>
 				<real>505463307.13300902</real>
 				<key>version</key>
@@ -1141,10 +937,6 @@
 			</dict>
 			<key>1991-11-11-21-上下自适应.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.04322702</real>
 				<key>lastModification</key>
 				<real>505463307.04322702</real>
 				<key>version</key>
@@ -1155,10 +947,6 @@
 			</dict>
 			<key>1991-11-11-21-下划线.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.05193198</real>
 				<key>lastModification</key>
 				<real>505463307.05193198</real>
 				<key>version</key>
@@ -1169,10 +957,6 @@
 			</dict>
 			<key>1991-11-11-21-下拉按钮.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.09969401</real>
 				<key>lastModification</key>
 				<real>505463307.09969401</real>
 				<key>version</key>
@@ -1183,10 +967,6 @@
 			</dict>
 			<key>1991-11-11-21-伪类.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.11912698</real>
 				<key>lastModification</key>
 				<real>505463307.11912698</real>
 				<key>version</key>
@@ -1197,10 +977,6 @@
 			</dict>
 			<key>1991-11-11-21-伪类2.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.061575</real>
 				<key>lastModification</key>
 				<real>505463307.061575</real>
 				<key>version</key>
@@ -1211,10 +987,6 @@
 			</dict>
 			<key>1991-11-11-21-元素位置.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.04966801</real>
 				<key>lastModification</key>
 				<real>505463307.04966801</real>
 				<key>version</key>
@@ -1225,10 +997,6 @@
 			</dict>
 			<key>1991-11-11-21-动画.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463306.96758699</real>
 				<key>lastModification</key>
 				<real>505463306.96758699</real>
 				<key>version</key>
@@ -1239,10 +1007,6 @@
 			</dict>
 			<key>1991-11-11-21-后代选择器.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.05830503</real>
 				<key>lastModification</key>
 				<real>505463307.05830503</real>
 				<key>version</key>
@@ -1253,10 +1017,6 @@
 			</dict>
 			<key>1991-11-11-21-字体属性.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.08567798</real>
 				<key>lastModification</key>
 				<real>505463307.08567798</real>
 				<key>version</key>
@@ -1267,10 +1027,6 @@
 			</dict>
 			<key>1991-11-11-21-居中.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.09325099</real>
 				<key>lastModification</key>
 				<real>505463307.09325099</real>
 				<key>version</key>
@@ -1281,10 +1037,6 @@
 			</dict>
 			<key>1991-11-11-21-按钮.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.03902</real>
 				<key>lastModification</key>
 				<real>505463307.03902</real>
 				<key>version</key>
@@ -1295,10 +1047,6 @@
 			</dict>
 			<key>1991-11-11-21-按钮状态.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.13949001</real>
 				<key>lastModification</key>
 				<real>505463307.13949001</real>
 				<key>version</key>
@@ -1309,10 +1057,6 @@
 			</dict>
 			<key>1991-11-11-21-按钮设计简介.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.067213</real>
 				<key>lastModification</key>
 				<real>505463307.067213</real>
 				<key>version</key>
@@ -1323,10 +1067,6 @@
 			</dict>
 			<key>1991-11-11-21-文字竖排.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.06335598</real>
 				<key>lastModification</key>
 				<real>505463307.06335598</real>
 				<key>version</key>
@@ -1337,10 +1077,6 @@
 			</dict>
 			<key>1991-11-11-21-显-隐-占位-不占位.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.12176901</real>
 				<key>lastModification</key>
 				<real>505463307.12176901</real>
 				<key>version</key>
@@ -1351,10 +1087,6 @@
 			</dict>
 			<key>1991-11-11-21-渐变.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.07153702</real>
 				<key>lastModification</key>
 				<real>505463307.07153702</real>
 				<key>version</key>
@@ -1365,10 +1097,6 @@
 			</dict>
 			<key>1991-11-11-21-盒模型.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.14194399</real>
 				<key>lastModification</key>
 				<real>505463307.14194399</real>
 				<key>version</key>
@@ -1379,10 +1107,6 @@
 			</dict>
 			<key>1991-11-11-21-绝对位置.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.05348802</real>
 				<key>lastModification</key>
 				<real>505463307.05348802</real>
 				<key>version</key>
@@ -1393,10 +1117,6 @@
 			</dict>
 			<key>1991-11-11-21-选择器.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.03732401</real>
 				<key>lastModification</key>
 				<real>505463307.03732401</real>
 				<key>version</key>
@@ -1407,10 +1127,6 @@
 			</dict>
 			<key>1991-11-11-21-链接状态.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.12428898</real>
 				<key>lastModification</key>
 				<real>505463307.12428898</real>
 				<key>version</key>
@@ -1421,10 +1137,6 @@
 			</dict>
 			<key>1991-11-11-CSS-HR ✔︎.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.13009697</real>
 				<key>lastModification</key>
 				<real>505463307.13009697</real>
 				<key>version</key>
@@ -1435,10 +1147,6 @@
 			</dict>
 			<key>1991-11-11-CSS-内滚动布局.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.02237201</real>
 				<key>lastModification</key>
 				<real>505463307.02237201</real>
 				<key>version</key>
@@ -1449,10 +1157,6 @@
 			</dict>
 			<key>1991-11-11-CSS-滚动条 - 2.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.13702703</real>
 				<key>lastModification</key>
 				<real>505463307.13702703</real>
 				<key>version</key>
@@ -1463,10 +1167,6 @@
 			</dict>
 			<key>1991-11-11-CSS-滚动条.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.11477703</real>
 				<key>lastModification</key>
 				<real>505463307.11477703</real>
 				<key>version</key>
@@ -1477,16 +1177,42 @@
 			</dict>
 			<key>1991-11-11-Position.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505463307.13572001</real>
 				<key>lastModification</key>
 				<real>505463307.13572001</real>
 				<key>version</key>
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>10289</integer>
+				</dict>
+			</dict>
+			<key>1992-12-12-Click事件.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>505470728.774481</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>10335</integer>
+				</dict>
+			</dict>
+			<key>1992-12-12-键盘事件.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>505470736.42317998</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>10339</integer>
+				</dict>
+			</dict>
+			<key>1992-12-12-页面回顶部.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>505470723.98353201</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>10331</integer>
 				</dict>
 			</dict>
 			<key>2009-09-09-01-文章排序.md</key>
@@ -2133,20 +1859,6 @@
 					<integer>9969</integer>
 				</dict>
 			</dict>
-			<key>2012-12-12-Click事件.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505470401.86521202</real>
-				<key>lastModification</key>
-				<real>505470401.86521202</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>10326</integer>
-				</dict>
-			</dict>
 			<key>2012-12-12-Jquery-简介.md</key>
 			<dict>
 				<key>explicitUnassignment</key>
@@ -2257,34 +1969,6 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>9652</integer>
-				</dict>
-			</dict>
-			<key>2012-12-12-键盘事件.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505470401.75119197</real>
-				<key>lastModification</key>
-				<real>505470401.75119197</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>10322</integer>
-				</dict>
-			</dict>
-			<key>2012-12-12-页面回顶部.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505470401.86186498</real>
-				<key>lastModification</key>
-				<real>505470401.86186498</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>10325</integer>
 				</dict>
 			</dict>
 			<key>2013-01-01-01-Bootstrap.md</key>
@@ -12840,13 +12524,13 @@
 			<string>1989-02-02-03-本主题排序设计.md</string>
 		</array>
 		<array>
-			<string>2012-12-12-页面回顶部.md</string>
+			<string>1992-12-12-页面回顶部.md</string>
 		</array>
 		<array>
-			<string>2012-12-12-Click事件.md</string>
+			<string>1992-12-12-Click事件.md</string>
 		</array>
 		<array>
-			<string>2012-12-12-键盘事件.md</string>
+			<string>1992-12-12-键盘事件.md</string>
 		</array>
 		<array>
 			<string>1989-01-03-谷歌Analytics统计分析工具.md</string>
@@ -12881,12 +12565,12 @@
 		<key>childOrder</key>
 		<dict>
 			<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-			<integer>336</integer>
+			<integer>340</integer>
 		</dict>
 		<key>sheetClusters</key>
 		<dict>
 			<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-			<integer>10328</integer>
+			<integer>10340</integer>
 		</dict>
 		<key>sheetOrder</key>
 		<dict>

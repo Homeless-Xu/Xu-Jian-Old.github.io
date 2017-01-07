@@ -44,13 +44,9 @@ sup                  { color: red; float:right; font-size:0.7em; }
      #overflowHeighr2::-webkit-scrollbar {display:none}
 .blog-list-container3::-webkit-scrollbar {display:none}
          #cateDivFlex::-webkit-scrollbar {display:none}
- #cateDiv1-numberSort::-webkit-scrollbar {display:none}
     #alltagsContainer::-webkit-scrollbar {display:none}
-  #tagDiv1-numberSort::-webkit-scrollbar {display:none}
-  #tagDiv1-letterSort::-webkit-scrollbar {display:none}
     .tagDiv2-catetags::-webkit-scrollbar {display:none}
 
- 
 
 
 
@@ -125,7 +121,7 @@ sup                  { color: red; float:right; font-size:0.7em; }
 
 #tagDiv {
 	flex-basis:120px; flex-grow: 0; flex-shrink: 0;  max-width: 300px; min-width: 100px;
-	position: relative ; background-color:rgba(212, 117, 204, 0.53) ;   overflow:scroll ;       	
+	position: relative ; background-color:rgba(212, 117, 204, 0.53) ;         	
     padding: 0px 0px 4px 4px; display:relative;                                   }
 	}
 #tagDiv-All { padding-bottom: 10px;}
