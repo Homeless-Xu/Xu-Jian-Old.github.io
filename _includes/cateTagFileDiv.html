@@ -1,0 +1,71 @@
+<div id="cateDiv">
+    <ul id="cateDivFlex" style="overflow: scroll;" >	
+        {% for someCate in site.categories %}
+            {% assign cateClicked = someCate | first %}    
+            {% assign catePosts = someCate | last %}
+                <li id="{{cateClicked}}" class="cateNames"><span>{{ cateClicked }}</span><sup>{{catePosts | size }}</sup></a></li>
+        {% endfor %}
+    </ul>
+</div>
+
+<!-- ----------------------------------------------------------------------------------------------- -->
+
+<div id="tagDiv"> 
+    <ul class="tagsDiv1-allTags" id="alltagsContainer" style="overflow: scroll;" >
+        {% for tag in site.tags %}
+            {% assign t = tag | first %}
+            {% assign files = tag | last %}
+              <li class="tagNames" data-TagCate="{{ files[0].categories }}"><i class="fa fa-chevron-right faa-spin animated-hover" aria-hidden="true"></i><span>{{ t }}</span><sup>{{files | size}}</sup></li>
+        {% endfor %}
+    </ul>
+</div>
+
+<!-- ----------------------------------------------------------------------------------------------- -->
+
+<div id="lineLeft"> 
+  <div class="lineFlex">
+    <div id="lineLeft-left">  </div>
+      <div class="lineInDiv"> </div> 
+    <div id="lineLeft-right"> </div>
+  </div>
+</div>
+
+	<div id="filenameDiv" >
+		<!--  顶部按钮 栏 -->
+		<li id="filenameDiv-Btnes">
+			<i class="fa fa-search fa-fw" aria-hidden="true"        id="filenameDiSearch"; onclick="   return false;" ></i>
+			<a href onclick="showAllTagsandPosts(); return false;"   id="allCateTagPostBtn"> 
+			  <!-- 这个函数 在 catefilter.js 里面 -->
+			  <i class="fa fa-folder-open " aria-hidden="true" ></i>
+			  <sup style="font-size:0.7em; float:none; ">{{site.categories | size }}</sup>    	
+			  <i class="fa  fa-tags " aria-hidden="true" ></i>
+			  <sup style="font-size:0.7em; float:none; ">{{site.tags | size }}</sup>
+			  <i class="fa fa-files-o " aria-hidden="true" ></i>
+			  <sup style="font-size:0.7em; float:none;">{{site.posts | size }}</sup>
+			</a>  
+			<i class="fa fa-eye-slash fa-fw" aria-hidden="true"           id="filenameDivDate"; onclick="fileNameDate();  return false;" ></i>
+			<!-- 这个显隐函数 在  filename.js 里 -->
+		</li>
+
+		<ul>
+			{% for post in site.posts reversed %}
+				<li class="allPostsList" data-cate="{{post.categories}}" data-tag="{{post.tags}}">
+				  <a href="{{ post.url }}">
+					 {{ post.title }} 
+				</a>
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+
+<div id="lineRight"> 
+  <div class="lineFlex">
+    <div id="lineRight-left">  </div>
+      <div class="lineInDiv"> </div> 
+    <div id="lineRight-right"> </div>
+  </div>
+</div>	
+
+<!-- ----------------------------------------------------------------------------------------------- -->
+
+

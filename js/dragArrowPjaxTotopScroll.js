@@ -164,7 +164,7 @@ $(function (){
 　　 }
 	// xyz是 浏览器的高度; xy是 filenameDiv 距离浏览器上边距的距离;  x 是 CateDiv 和 tagDiv 的距离.(这两个 水平的)
 	var xyz = document.documentElement.clientHeight;
-	var  xy = getElementTop(filenameDivFlex);
+	var  xy = getElementTop(filenameDiv);
 	var   x = getElementTop(cateDiv);
 	var xxyy = xyz - xy;
 		$("#filenameDivFlex").css("height",xxyy)

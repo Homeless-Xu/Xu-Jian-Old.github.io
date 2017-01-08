@@ -123,3 +123,86 @@ function cateFilenameFlex() {
 
 
 
+<ul id="cateDivFlex" class="CLcateDivFlex" style="overflow: scroll;" >	
+{% for someCate in site.categories %}
+    {% assign cateClicked = someCate | first %}    
+    {% assign catePosts = someCate | last %}
+    <!-- 下面的class/id 是给大类排序用的 -->
+        <li style="order: 100; padding-bottom:5px;"; class="cate-status" id="{{cateClicked}}" style="width: 90%, background-color:red;";> 
+           <a href onclick="catefilter('{{ cateClicked }}'); return false;" >			
+            {{ cateClicked }}<sup>{{catePosts | size }}</sup>
+           </a>
+        </li>
+    
+{% endfor %}
+</ul>
+
+
+
+
+
+<!-- ----------------------------------------------------------------------------------------------- -->
+<!-- 	filenameDiv1 显示所有文章 默认的时间顺序 + flex自定义排序 ✔︎ -->
+	<div class="blog-list-container" id="all-container" ; style="overflow: scroll;">
+		<ul class="blog-list" ; id="filenameDivFlex" style="display: flex ; flex-direction: column">
+		{% for post in site.posts reversed %}
+			<li style="order: 219"  class="fileNameFlexOrder" id="{{post.title}}";  >
+			  <a href="{{ post.url }}" 
+			  	 onclick="filenameActiveCT('{{post.tags}}', '{{post.categories}}'); filenameActiveThis(); catefilterPart('{{ post.categories }}');" >
+	         	 <i class="fa fa-angle-double-right" aria-hidden="true"></i>			  
+			 	 {{ post.title }} 
+			  <sup class="fileNameDate hidden">{{ post.date | date: "%Y-%m-%d" }}</sup></a>
+			</li>
+		{% endfor %}
+		</ul>
+	</div>
+
+<!--   -->
+<!-- ----------------------------------------------------------------------------------------------- -->
+
+<!-- filenameDiv2  某标签下的文章-->
+	{% for tag in site.tags %}
+		{% assign t = tag | first %}      <!--   这是第一个 标签 -->
+		{% assign posts = tag | last %}   <!--   这是 所有文章 -->	
+	<div class="blog-list-container2 hidden" id="{{ t }}-container">
+	  <ul class="blog-list" id="overflowHeighr2" style="display: flex ; flex-direction: column; overflow: scroll;" >
+	    {% for post in posts reversed %}
+	      {% if post.tags contains t %}
+	          <li >
+	            <a href="{{ post.url }}" onclick="filenameActiveCT('{{post.tags}}', '{{post.categories}}'); filenameActiveThis();"
+	            style="order: 219" class="blog-list-container22"  id="{{ post.title }}-tag" >
+	            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+	          	{{ post.title }}
+	          <sup class="fileNameDate hidden">{{ post.date | date: "%Y-%m-%d"  }}</sup></a>
+	        </li>
+	      {% endif %}
+	    {% endfor %}
+	  </ul>
+	</div>
+	{% endfor %}
+
+<!-- ----------------------------------------------------------------------------------------------- -->
+<!-- filenameDiv3: 	某大类下的所有文章. -->
+{% for CatePosts in site.categories %}
+	{% assign CateName = CatePosts | first %} 
+	{% assign Cateposts = CatePosts | last %}
+	<div class="blog-list-container3 hidden" id="{{CateName}}-filenames" style="display: flex ; flex-direction: column; overflow: scroll;" >	
+		{% for zz in Cateposts  reversed %}
+	    	{% if zz.categories contains CateName %}
+					<li style="order: 219"; class="blog-list-container4" id="{{zz.title}}-filename" >
+			    	  <a href="{{zz.url}}" onclick="filenameActiveCT('{{zz.tags}}', '{{zz.categories}}'); filenameActiveThis();">
+						<i class="fa fa-angle-double-right" aria-hidden="true"></i>
+							{{zz.title}}
+						<sup class="fileNameDate hidden">{{ zz.date | date: "%Y-%m-%d" }}</sup></a>
+					</li>
+	      {% endif %}
+	  {% endfor %}
+	</div>  	
+{% endfor %}	
+
+
+
+
+
+
+

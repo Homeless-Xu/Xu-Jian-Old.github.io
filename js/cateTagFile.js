@@ -1,3 +1,5 @@
+/*
+
 // 这个函数 传入的变量是 cateDiv 里面的 点击某个分类时候的 分类名:   cateClicked
 function catefilter(cateClicked) { showTagsandPosts(cateClicked); delRows(); setActiveCate(cateClicked); }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -162,6 +164,53 @@ function showAllTagsandPosts () {
 	$("#tagDiv li").each( function()      { $(this).removeClass('active'); });
 	$("#filenameDiv li").each( function() { $(this).removeClass('active'); });
 }
+
+
+
+
+
+
+
+*/
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// 点击大类过滤 对应的文章:先隐藏所有文章 再显示点击大类的文章
+// 大类下的 按钮 一旦点击 就执行. this 获取大类名. 然后对应到 filename下的 data属性 来显示隐藏对应的....
+$(".cateNames").click(   function() {
+	var clickedCateName = $( this ).children('span').text()
+	// console.log( clickedCateName );
+	// 可以获取 jQuery. 
+	// 隐藏所有tag 显示某类tag
+	$(".tagDivLies").hide()
+	$("[data-TagCate="+ clickedCateName +"]").show()
+	// 先隐藏所有文件. 显示某类文件
+	$(".allPostsList").hide()
+	$("[data-cate="+ clickedCateName +"]").show()
+});
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// ↓ 点击标签 过滤出对应的文章
+$(".tagNames").click(   function() {
+	var clickedTagName = $( this ).children('span').text()
+	// 先隐藏所有文件. 显示某类文件
+	$(".allPostsList").hide()
+	$("[data-tag="+ clickedTagName +"]").show()
+});
+
+
+
+
+
+
+
+
+
+
+
 
 
 
