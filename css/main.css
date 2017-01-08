@@ -39,43 +39,14 @@ sup                  { color: red; float:right; font-size:0.7em; }
 /* 这里必须用 100%  而不能用100vh. 不然会在safari 网页放大缩小的时候有问题. */
 
 
+
 /* 下面是设置滚动条的: 既可以滚动 .又不显示滚动条.   */
-       #all-container::-webkit-scrollbar {display:none}
-     #overflowHeighr2::-webkit-scrollbar {display:none}
-.blog-list-container3::-webkit-scrollbar {display:none}
-         #cateDivFlex::-webkit-scrollbar {display:none}
-    #alltagsContainer::-webkit-scrollbar {display:none}
-    .tagDiv2-catetags::-webkit-scrollbar {display:none}
-
-
-
+#catenameUL::-webkit-scrollbar {display:none}
+ #tagnameUL::-webkit-scrollbar {display:none}
+#filenameUL::-webkit-scrollbar {display:none}
+ 
 
 /* padding margin 设置 还有点击链接的有效区域设置... */
-#cateDivFlex li           {padding-top: 5px;}
-#cateDivFlex li a         {display: block;  width: 100%; height: 100%;}
-/* a 设置100 是为了 标签空白的地方 也可以点击... */
-
-
-#tagDiv1 li              {padding-top: 5px}
-#tagDiv1 li a            {display: block;  width: 100%; height: 100%;}
-
-.tagDiv2-catetags li     {padding-top: 5px}
-.tagDiv2-catetags li a   {display: block;  width: 100%; height: 100%;}
-
-
-.blog-list-container     {margin-top: 32px }
-.blog-list-container li  {margin-top: 0px; }
-.blog-list-container li a   {display: block;  width: 100%; height: 100%;}
-
-.blog-list-container2    {margin-top: 32px }
-.blog-list-container2 li {margin-top: 0px  }
-.blog-list-container2 li a   {display: block;  width: 100%; height: 100%;}
-
-.blog-list-container3    {margin-top: 32px }
-.blog-list-container3 li {margin-top: 0px  }
-.blog-list-container3 li a   {display: block;  width: 100%; height: 100%;}
-
-
 
 
 /* 设置filenameDiv 排序按钮的间距+位置.   这里还要实现居中.. todo */
@@ -115,23 +86,17 @@ sup                  { color: red; float:right; font-size:0.7em; }
 	flex-basis:88px; flex-grow: 0; flex-shrink: 0;  max-width: 300px; min-width: 14px;
 	position: relative; background-color:rgba(92, 47, 125, 0.34); 
     padding: 0px 4px 4px 4px;  display:relative;  }
-#cateDivFlex {	display:flex; flex-direction:column; }
-/* 排序问题: 手动给每个子项目设置order.要根据id来设置.  直接写?? css 里是不行的. 取不到id啊...只能用js. */
 
 
 #tagDiv {
 	flex-basis:120px; flex-grow: 0; flex-shrink: 0;  max-width: 300px; min-width: 100px;
 	position: relative ; background-color:rgba(212, 117, 204, 0.53) ;         	
-    padding: 0px 0px 4px 4px; display:relative;                                   }
+    padding: 0px 0px 4px 4px; display:relative;                                   
 	}
-#tagDiv-All { padding-bottom: 10px;}
-
-
-
 
 #filenameDiv {
 	flex-basis: 200px; flex-grow: 0; flex-shrink: 0;  max-width: 1450px; min-width: 100px;background-color:pink;
-	position: relative;     padding: 4px 0px 4px 0px;  display:relative;                                   }
+	position: relative;     padding: 4px 0px 4px 0px;  display:relative;                                  
 }
 
 
