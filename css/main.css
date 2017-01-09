@@ -94,7 +94,7 @@ sup                  { color: red; float:right; font-size:0.7em; }
 
 * { padding: 0; margin:0 ;}
 
-#cateDiv     { flex-basis: 20px; }
+#cateDiv     { flex-basis: 44px; }
 .cateSup     { display: none     }
 #tagDiv      { display: none     }
 #lineLeft    { display: none     }

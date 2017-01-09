@@ -10,6 +10,7 @@
 		<string>.92 - jQuery.Ulysses_Public_Filter</string>
 		<string>.93 - Web.Ulysses_Public_Filter</string>
 		<string>.94 - MWeb.Ulysses_Public_Filter</string>
+		<string>.95 - UI.Ulysses_Public_Filter</string>
 		<string>.IT 2017-01-01.Ulysses_Public_Filter</string>
 		<string>.Net-2017-01-02.Ulysses_Public_Filter</string>
 		<string>.OSI-2017-01-03.Ulysses_Public_Filter</string>
@@ -100,6 +101,20 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>348</integer>
+				</dict>
+			</dict>
+			<key>.95 - UI.Ulysses_Public_Filter</key>
+			<dict>
+				<key>explicitUnassignment</key>
+				<true/>
+				<key>firstUnassignment</key>
+				<real>505651981.07974702</real>
+				<key>lastModification</key>
+				<real>505651981.07974702</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>352</integer>
 				</dict>
 			</dict>
 			<key>.Apache-13-12-11.Ulysses_Public_Filter</key>
@@ -3131,6 +3146,16 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>11498</integer>
+				</dict>
+			</dict>
+			<key>1993-01-01-按钮大小.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>505652025.62919497</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>11708</integer>
 				</dict>
 			</dict>
 			<key>1994-01-Media Queries.md</key>
@@ -10480,6 +10505,9 @@
 			<string>Untitled - 9.md</string>
 		</array>
 		<array>
+			<string>1993-01-01-按钮大小.md</string>
+		</array>
+		<array>
 			<string>1992-01-01-判断显隐.md</string>
 		</array>
 		<array>
@@ -13179,12 +13207,12 @@
 		<key>childOrder</key>
 		<dict>
 			<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-			<integer>348</integer>
+			<integer>352</integer>
 		</dict>
 		<key>sheetClusters</key>
 		<dict>
 			<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-			<integer>11703</integer>
+			<integer>11709</integer>
 		</dict>
 		<key>sheetOrder</key>
 		<dict>
