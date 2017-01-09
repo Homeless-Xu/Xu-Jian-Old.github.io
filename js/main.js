@@ -10,11 +10,12 @@ $(".cateNames").click(   function() {
       // 进行屏幕宽度的判断. 如果屏幕宽度<= 414 那就支持手机端的js: 比pc多两步 要先显示tag&filename栏.
       // 这里还要进行判断.如果 已经显示了tag filename 那么就隐藏他们!!
       if( $("#tagDiv").css("display") == "none" ) {
-          // 设置高亮
-          $("#cateDiv li").each(     function() {  $(this).removeClass('active'); });    
-          $("#tagDiv li").each(      function() {  $(this).removeClass('active'); });    
-          $("#filenameDiv li").each( function() {  $(this).removeClass('active'); });      
-          $(this).addClass('active');
+
+            $("#cateDiv li").each(     function() {  $(this).removeClass('active'); });    
+    $("#tagDiv li").each(      function() {  $(this).removeClass('active'); });    
+    $("#filenameDiv li").each( function() {  $(this).removeClass('active'); });      
+    $(this).addClass('active'); 
+
           //显示 tag 和filename
                $("#tagDiv").show()
           $("#filenameDiv").show()
@@ -32,7 +33,9 @@ $(".cateNames").click(   function() {
           $("#tagDiv li").each(      function() {  $(this).removeClass('active'); });    
           $("#filenameDiv li").each( function() {  $(this).removeClass('active'); }); 
        }
-       
+
+
+
   } else {
     // 执行pc端的js 点击大类: 1. 去除所有大类+标签+文件高亮; 2. 高亮被点击大类 
     $("#cateDiv li").each(     function() {  $(this).removeClass('active'); });    

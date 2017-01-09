@@ -1,14 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
 *   { padding: 0; margin: 0; }
 li  { list-style: none;      }  
 a   { text-decoration: none; color:black;       } 
@@ -94,14 +83,13 @@ sup                  { color: red; float:right; font-size:0.7em; }
 
 * { padding: 0; margin:0 ;}
 
-#cateDiv     { flex-basis: 44px; }
+#cateDiv     { flex-basis: 44px; font-size: 2.5em }
 .cateSup     { display: none     }
 #tagDiv      { display: none     }
 #lineLeft    { display: none     }
 #filenameDiv { display: none     }
 #lineRight   { display: none     }
-
-
+#arrowNav    { display: none     }
 
 
 }
