@@ -10,12 +10,6 @@ $(".cateNames").click(   function() {
       // 进行屏幕宽度的判断. 如果屏幕宽度<= 414 那就支持手机端的js: 比pc多两步 要先显示tag&filename栏.
       // 这里还要进行判断.如果 已经显示了tag filename 那么就隐藏他们!!
       if( $("#tagDiv").css("display") == "none" ) {
-
-            $("#cateDiv li").each(     function() {  $(this).removeClass('active'); });    
-    $("#tagDiv li").each(      function() {  $(this).removeClass('active'); });    
-    $("#filenameDiv li").each( function() {  $(this).removeClass('active'); });      
-    $(this).addClass('active'); 
-
           //显示 tag 和filename
                $("#tagDiv").show()
           $("#filenameDiv").show()
@@ -26,14 +20,33 @@ $(".cateNames").click(   function() {
           $(".postNames").hide()
           $("[data-cate="+ clickedCateName +"]").show()
        }else {  
-          $("#tagDiv").hide();  
-          $("#filenameDiv").hide();    // 隐藏 tag 和 filename 
-          // 取消所有高亮
-          $("#cateDiv li").each(     function() {  $(this).removeClass('active'); });    
-          $("#tagDiv li").each(      function() {  $(this).removeClass('active'); });    
-          $("#filenameDiv li").each( function() {  $(this).removeClass('active'); }); 
+       // 这里 如果是高亮的那就隐藏(按的同一个大类), 如果不是高亮那就过滤出对应的tag
+           if ( $(this).hasClass('active') ){
+              $("#tagDiv").hide();  
+              $("#filenameDiv").hide();    // 隐藏 tag 和 filename 
+           } else {
+              $(".tagNames").hide()
+              $("[data-tagcate="+ clickedCateName +"]").show()
+              // 先隐藏所有文件. 显示某类文件
+              $(".postNames").hide()
+              $("[data-cate="+ clickedCateName +"]").show()             
+           }
+       
        }
 
+      // 手机端的 高亮设置
+      var activeStatus = $(this).hasClass('active');
+      console.log( activeStatus );
+      if (activeStatus) {
+        $(this).removeClass('active'); 
+        console.log("执行1");   
+      } else {
+        $("#cateDiv li").each(     function() {  $(this).removeClass('active'); });    
+        $("#tagDiv li").each(      function() {  $(this).removeClass('active'); });    
+        $("#filenameDiv li").each( function() {  $(this).removeClass('active'); });      
+        $(this).addClass('active');
+        console.log("执行2");
+      }
 
 
   } else {
