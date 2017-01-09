@@ -9,6 +9,7 @@
 		<string>.91 - CSS.Ulysses_Public_Filter</string>
 		<string>.92 - jQuery.Ulysses_Public_Filter</string>
 		<string>.93 - Web.Ulysses_Public_Filter</string>
+		<string>.94 - MWeb.Ulysses_Public_Filter</string>
 		<string>.IT 2017-01-01.Ulysses_Public_Filter</string>
 		<string>.Net-2017-01-02.Ulysses_Public_Filter</string>
 		<string>.OSI-2017-01-03.Ulysses_Public_Filter</string>
@@ -89,6 +90,16 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>345</integer>
+				</dict>
+			</dict>
+			<key>.94 - MWeb.Ulysses_Public_Filter</key>
+			<dict>
+				<key>lastModification</key>
+				<real>505641661.80361903</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>348</integer>
 				</dict>
 			</dict>
 			<key>.Apache-13-12-11.Ulysses_Public_Filter</key>
@@ -1974,10 +1985,6 @@
 			</dict>
 			<key>1990-01-01-404页面.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635396.841766</real>
 				<key>lastModification</key>
 				<real>505635396.841766</real>
 				<key>version</key>
@@ -1988,10 +1995,6 @@
 			</dict>
 			<key>1990-01-01-字体大小.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.06772798</real>
 				<key>lastModification</key>
 				<real>505635399.06772798</real>
 				<key>version</key>
@@ -2002,10 +2005,6 @@
 			</dict>
 			<key>1990-02-01-垂直对齐vertical-align.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.164015</real>
 				<key>lastModification</key>
 				<real>505635399.164015</real>
 				<key>version</key>
@@ -2016,10 +2015,6 @@
 			</dict>
 			<key>1990-10-10-01-按钮.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.38246697</real>
 				<key>lastModification</key>
 				<real>505635399.38246697</real>
 				<key>version</key>
@@ -2030,10 +2025,6 @@
 			</dict>
 			<key>1990-10-10-02-单选-多选按钮.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.43527001</real>
 				<key>lastModification</key>
 				<real>505635399.43527001</real>
 				<key>version</key>
@@ -2044,10 +2035,6 @@
 			</dict>
 			<key>1990-10-10-03-按钮状态.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.35064</real>
 				<key>lastModification</key>
 				<real>505635398.35064</real>
 				<key>version</key>
@@ -2058,10 +2045,6 @@
 			</dict>
 			<key>1990-10-10-21-data.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.66774303</real>
 				<key>lastModification</key>
 				<real>505635400.66774303</real>
 				<key>version</key>
@@ -2072,10 +2055,6 @@
 			</dict>
 			<key>1990-10-10-21-display.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.74003398</real>
 				<key>lastModification</key>
 				<real>505635400.74003398</real>
 				<key>version</key>
@@ -2086,10 +2065,6 @@
 			</dict>
 			<key>1990-10-10-21-label.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.63442397</real>
 				<key>lastModification</key>
 				<real>505635400.63442397</real>
 				<key>version</key>
@@ -2100,10 +2075,6 @@
 			</dict>
 			<key>1990-10-10-21-overflow.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.65783501</real>
 				<key>lastModification</key>
 				<real>505635399.65783501</real>
 				<key>version</key>
@@ -2114,10 +2085,6 @@
 			</dict>
 			<key>1990-10-10-21-setAttribute().md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.17846203</real>
 				<key>lastModification</key>
 				<real>505635399.17846203</real>
 				<key>version</key>
@@ -2128,10 +2095,6 @@
 			</dict>
 			<key>1990-10-10-21-链接打开方式.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.07937503</real>
 				<key>lastModification</key>
 				<real>505635400.07937503</real>
 				<key>version</key>
@@ -2142,10 +2105,6 @@
 			</dict>
 			<key>1991-11-11-21-Active.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.97732198</real>
 				<key>lastModification</key>
 				<real>505635398.97732198</real>
 				<key>version</key>
@@ -2156,10 +2115,6 @@
 			</dict>
 			<key>1991-11-11-21-CSS - 2.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.39226002</real>
 				<key>lastModification</key>
 				<real>505635400.39226002</real>
 				<key>version</key>
@@ -2170,10 +2125,6 @@
 			</dict>
 			<key>1991-11-11-21-CSS.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.193483</real>
 				<key>lastModification</key>
 				<real>505635400.193483</real>
 				<key>version</key>
@@ -2184,10 +2135,6 @@
 			</dict>
 			<key>1991-11-11-21-CSS1.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.58780199</real>
 				<key>lastModification</key>
 				<real>505635399.58780199</real>
 				<key>version</key>
@@ -2198,10 +2145,6 @@
 			</dict>
 			<key>1991-11-11-21-Display.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.21712601</real>
 				<key>lastModification</key>
 				<real>505635400.21712601</real>
 				<key>version</key>
@@ -2212,10 +2155,6 @@
 			</dict>
 			<key>1991-11-11-21-Div 高度100%.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.15230501</real>
 				<key>lastModification</key>
 				<real>505635398.15230501</real>
 				<key>version</key>
@@ -2226,10 +2165,6 @@
 			</dict>
 			<key>1991-11-11-21-Layout Intro.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.73846602</real>
 				<key>lastModification</key>
 				<real>505635400.73846602</real>
 				<key>version</key>
@@ -2240,10 +2175,6 @@
 			</dict>
 			<key>1991-11-11-21-Position.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.25557202</real>
 				<key>lastModification</key>
 				<real>505635400.25557202</real>
 				<key>version</key>
@@ -2254,10 +2185,6 @@
 			</dict>
 			<key>1991-11-11-21-SASS-LESS.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.13973099</real>
 				<key>lastModification</key>
 				<real>505635400.13973099</real>
 				<key>version</key>
@@ -2268,10 +2195,6 @@
 			</dict>
 			<key>1991-11-11-21-animate.css.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.174824</real>
 				<key>lastModification</key>
 				<real>505635399.174824</real>
 				<key>version</key>
@@ -2282,10 +2205,6 @@
 			</dict>
 			<key>1991-11-11-21-box-sizing.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.51840198</real>
 				<key>lastModification</key>
 				<real>505635400.51840198</real>
 				<key>version</key>
@@ -2296,10 +2215,6 @@
 			</dict>
 			<key>1991-11-11-21-cursor.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.29692101</real>
 				<key>lastModification</key>
 				<real>505635400.29692101</real>
 				<key>version</key>
@@ -2310,10 +2225,6 @@
 			</dict>
 			<key>1991-11-11-21-flex 布局.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.01921701</real>
 				<key>lastModification</key>
 				<real>505635400.01921701</real>
 				<key>version</key>
@@ -2324,10 +2235,6 @@
 			</dict>
 			<key>1991-11-11-21-keyframes.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.43862402</real>
 				<key>lastModification</key>
 				<real>505635399.43862402</real>
 				<key>version</key>
@@ -2338,10 +2245,6 @@
 			</dict>
 			<key>1991-11-11-21-margin.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.60038602</real>
 				<key>lastModification</key>
 				<real>505635400.60038602</real>
 				<key>version</key>
@@ -2352,10 +2255,6 @@
 			</dict>
 			<key>1991-11-11-21-max-width.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.27251101</real>
 				<key>lastModification</key>
 				<real>505635399.27251101</real>
 				<key>version</key>
@@ -2366,10 +2265,6 @@
 			</dict>
 			<key>1991-11-11-21-slideToggle.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.12868798</real>
 				<key>lastModification</key>
 				<real>505635400.12868798</real>
 				<key>version</key>
@@ -2380,10 +2275,6 @@
 			</dict>
 			<key>1991-11-11-21-ul-li.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.03693902</real>
 				<key>lastModification</key>
 				<real>505635399.03693902</real>
 				<key>version</key>
@@ -2394,10 +2285,6 @@
 			</dict>
 			<key>1991-11-11-21-vertical-align.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.02586401</real>
 				<key>lastModification</key>
 				<real>505635399.02586401</real>
 				<key>version</key>
@@ -2408,10 +2295,6 @@
 			</dict>
 			<key>1991-11-11-21-vh-vw.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.42876297</real>
 				<key>lastModification</key>
 				<real>505635398.42876297</real>
 				<key>version</key>
@@ -2422,10 +2305,6 @@
 			</dict>
 			<key>1991-11-11-21-三列布局.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.67099202</real>
 				<key>lastModification</key>
 				<real>505635400.67099202</real>
 				<key>version</key>
@@ -2436,10 +2315,6 @@
 			</dict>
 			<key>1991-11-11-21-上下自适应.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.35562301</real>
 				<key>lastModification</key>
 				<real>505635398.35562301</real>
 				<key>version</key>
@@ -2450,10 +2325,6 @@
 			</dict>
 			<key>1991-11-11-21-下划线.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.18046099</real>
 				<key>lastModification</key>
 				<real>505635400.18046099</real>
 				<key>version</key>
@@ -2464,10 +2335,6 @@
 			</dict>
 			<key>1991-11-11-21-下拉按钮.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.26743901</real>
 				<key>lastModification</key>
 				<real>505635400.26743901</real>
 				<key>version</key>
@@ -2478,10 +2345,6 @@
 			</dict>
 			<key>1991-11-11-21-伪类.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.73592699</real>
 				<key>lastModification</key>
 				<real>505635399.73592699</real>
 				<key>version</key>
@@ -2492,10 +2355,6 @@
 			</dict>
 			<key>1991-11-11-21-伪类2.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.90012002</real>
 				<key>lastModification</key>
 				<real>505635398.90012002</real>
 				<key>version</key>
@@ -2506,10 +2365,6 @@
 			</dict>
 			<key>1991-11-11-21-元素位置.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.58331198</real>
 				<key>lastModification</key>
 				<real>505635399.58331198</real>
 				<key>version</key>
@@ -2520,10 +2375,6 @@
 			</dict>
 			<key>1991-11-11-21-动画.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635397.83108997</real>
 				<key>lastModification</key>
 				<real>505635397.83108997</real>
 				<key>version</key>
@@ -2534,10 +2385,6 @@
 			</dict>
 			<key>1991-11-11-21-后代选择器.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.386069</real>
 				<key>lastModification</key>
 				<real>505635399.386069</real>
 				<key>version</key>
@@ -2548,10 +2395,6 @@
 			</dict>
 			<key>1991-11-11-21-字体属性.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.92285901</real>
 				<key>lastModification</key>
 				<real>505635399.92285901</real>
 				<key>version</key>
@@ -2562,10 +2405,6 @@
 			</dict>
 			<key>1991-11-11-21-居中.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.53006202</real>
 				<key>lastModification</key>
 				<real>505635399.53006202</real>
 				<key>version</key>
@@ -2576,10 +2415,6 @@
 			</dict>
 			<key>1991-11-11-21-按钮.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.53055698</real>
 				<key>lastModification</key>
 				<real>505635398.53055698</real>
 				<key>version</key>
@@ -2590,10 +2425,6 @@
 			</dict>
 			<key>1991-11-11-21-按钮状态.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635397.17530501</real>
 				<key>lastModification</key>
 				<real>505635397.17530501</real>
 				<key>version</key>
@@ -2604,10 +2435,6 @@
 			</dict>
 			<key>1991-11-11-21-按钮设计简介.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.297153</real>
 				<key>lastModification</key>
 				<real>505635399.297153</real>
 				<key>version</key>
@@ -2618,10 +2445,6 @@
 			</dict>
 			<key>1991-11-11-21-文字竖排.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.21689397</real>
 				<key>lastModification</key>
 				<real>505635399.21689397</real>
 				<key>version</key>
@@ -2632,10 +2455,6 @@
 			</dict>
 			<key>1991-11-11-21-显-隐-占位-不占位.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.61513197</real>
 				<key>lastModification</key>
 				<real>505635400.61513197</real>
 				<key>version</key>
@@ -2646,10 +2465,6 @@
 			</dict>
 			<key>1991-11-11-21-渐变.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.38756102</real>
 				<key>lastModification</key>
 				<real>505635398.38756102</real>
 				<key>version</key>
@@ -2660,10 +2475,6 @@
 			</dict>
 			<key>1991-11-11-21-盒模型.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.54852998</real>
 				<key>lastModification</key>
 				<real>505635398.54852998</real>
 				<key>version</key>
@@ -2674,10 +2485,6 @@
 			</dict>
 			<key>1991-11-11-21-绝对位置.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.18463898</real>
 				<key>lastModification</key>
 				<real>505635400.18463898</real>
 				<key>version</key>
@@ -2688,10 +2495,6 @@
 			</dict>
 			<key>1991-11-11-21-选择器.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.443479</real>
 				<key>lastModification</key>
 				<real>505635398.443479</real>
 				<key>version</key>
@@ -2702,10 +2505,6 @@
 			</dict>
 			<key>1991-11-11-21-链接状态.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.509633</real>
 				<key>lastModification</key>
 				<real>505635398.509633</real>
 				<key>version</key>
@@ -2716,10 +2515,6 @@
 			</dict>
 			<key>1991-11-11-CSS-HR ✔︎.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.65693301</real>
 				<key>lastModification</key>
 				<real>505635400.65693301</real>
 				<key>version</key>
@@ -2730,10 +2525,6 @@
 			</dict>
 			<key>1991-11-11-CSS-内滚动布局.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.08458298</real>
 				<key>lastModification</key>
 				<real>505635399.08458298</real>
 				<key>version</key>
@@ -2744,10 +2535,6 @@
 			</dict>
 			<key>1991-11-11-CSS-滚动条 - 2.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.86087102</real>
 				<key>lastModification</key>
 				<real>505635399.86087102</real>
 				<key>version</key>
@@ -2758,10 +2545,6 @@
 			</dict>
 			<key>1991-11-11-CSS-滚动条.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.77843797</real>
 				<key>lastModification</key>
 				<real>505635399.77843797</real>
 				<key>version</key>
@@ -2772,10 +2555,6 @@
 			</dict>
 			<key>1991-11-11-Position.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.44140399</real>
 				<key>lastModification</key>
 				<real>505635399.44140399</real>
 				<key>version</key>
@@ -2786,10 +2565,6 @@
 			</dict>
 			<key>1992-01-01-This子元素.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.94371301</real>
 				<key>lastModification</key>
 				<real>505635398.94371301</real>
 				<key>version</key>
@@ -2798,12 +2573,28 @@
 					<integer>11223</integer>
 				</dict>
 			</dict>
+			<key>1992-01-01-判断显隐.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>505649950.35106802</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>11702</integer>
+				</dict>
+			</dict>
+			<key>1992-01-01-屏幕宽度.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>505648565.04849797</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>11696</integer>
+				</dict>
+			</dict>
 			<key>1992-12-12 01-改class.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.43013901</real>
 				<key>lastModification</key>
 				<real>505635400.43013901</real>
 				<key>version</key>
@@ -2814,10 +2605,6 @@
 			</dict>
 			<key>1992-12-12-01-.attr.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.64753801</real>
 				<key>lastModification</key>
 				<real>505635400.64753801</real>
 				<key>version</key>
@@ -2828,10 +2615,6 @@
 			</dict>
 			<key>1992-12-12-01-.data()&amp;data-.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.31368399</real>
 				<key>lastModification</key>
 				<real>505635400.31368399</real>
 				<key>version</key>
@@ -2842,10 +2625,6 @@
 			</dict>
 			<key>1992-12-12-01-.index.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.58215302</real>
 				<key>lastModification</key>
 				<real>505635400.58215302</real>
 				<key>version</key>
@@ -2856,10 +2635,6 @@
 			</dict>
 			<key>1992-12-12-01-AJAX.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635396.92610002</real>
 				<key>lastModification</key>
 				<real>505635396.92610002</real>
 				<key>version</key>
@@ -2870,10 +2645,6 @@
 			</dict>
 			<key>1992-12-12-01-DOM.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.42930102</real>
 				<key>lastModification</key>
 				<real>505635399.42930102</real>
 				<key>version</key>
@@ -2884,10 +2655,6 @@
 			</dict>
 			<key>1992-12-12-01-Hide-Show.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.20164102</real>
 				<key>lastModification</key>
 				<real>505635399.20164102</real>
 				<key>version</key>
@@ -2898,10 +2665,6 @@
 			</dict>
 			<key>1992-12-12-01-JavaScriptAPI.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.54876</real>
 				<key>lastModification</key>
 				<real>505635400.54876</real>
 				<key>version</key>
@@ -2912,10 +2675,6 @@
 			</dict>
 			<key>1992-12-12-01-each.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.37882698</real>
 				<key>lastModification</key>
 				<real>505635400.37882698</real>
 				<key>version</key>
@@ -2926,10 +2685,6 @@
 			</dict>
 			<key>1992-12-12-01-filter().md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.175928</real>
 				<key>lastModification</key>
 				<real>505635400.175928</real>
 				<key>version</key>
@@ -2940,10 +2695,6 @@
 			</dict>
 			<key>1992-12-12-01-find().md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.34441</real>
 				<key>lastModification</key>
 				<real>505635398.34441</real>
 				<key>version</key>
@@ -2954,10 +2705,6 @@
 			</dict>
 			<key>1992-12-12-01-jQueryUI.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.796615</real>
 				<key>lastModification</key>
 				<real>505635399.796615</real>
 				<key>version</key>
@@ -2968,10 +2715,6 @@
 			</dict>
 			<key>1992-12-12-01-jquery正则式匹配.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.57510602</real>
 				<key>lastModification</key>
 				<real>505635400.57510602</real>
 				<key>version</key>
@@ -2982,10 +2725,6 @@
 			</dict>
 			<key>1992-12-12-01-siblings.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.521797</real>
 				<key>lastModification</key>
 				<real>505635399.521797</real>
 				<key>version</key>
@@ -2996,10 +2735,6 @@
 			</dict>
 			<key>1992-12-12-01-switch().md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.52417302</real>
 				<key>lastModification</key>
 				<real>505635400.52417302</real>
 				<key>version</key>
@@ -3010,10 +2745,6 @@
 			</dict>
 			<key>1992-12-12-01-target.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.262972</real>
 				<key>lastModification</key>
 				<real>505635400.262972</real>
 				<key>version</key>
@@ -3024,10 +2755,6 @@
 			</dict>
 			<key>1992-12-12-01-underscore.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.278184</real>
 				<key>lastModification</key>
 				<real>505635400.278184</real>
 				<key>version</key>
@@ -3038,10 +2765,6 @@
 			</dict>
 			<key>1992-12-12-01-事件.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.05939299</real>
 				<key>lastModification</key>
 				<real>505635399.05939299</real>
 				<key>version</key>
@@ -3052,10 +2775,6 @@
 			</dict>
 			<key>1992-12-12-01-动画.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.54280698</real>
 				<key>lastModification</key>
 				<real>505635400.54280698</real>
 				<key>version</key>
@@ -3066,10 +2785,6 @@
 			</dict>
 			<key>1992-12-12-01-扩展.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.66436899</real>
 				<key>lastModification</key>
 				<real>505635399.66436899</real>
 				<key>version</key>
@@ -3080,10 +2795,6 @@
 			</dict>
 			<key>1992-12-12-01-查找过滤.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.15265501</real>
 				<key>lastModification</key>
 				<real>505635399.15265501</real>
 				<key>version</key>
@@ -3094,10 +2805,6 @@
 			</dict>
 			<key>1992-12-12-01-选择器.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.05012798</real>
 				<key>lastModification</key>
 				<real>505635399.05012798</real>
 				<key>version</key>
@@ -3108,10 +2815,6 @@
 			</dict>
 			<key>1992-12-12-02-Canvas.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.75007999</real>
 				<key>lastModification</key>
 				<real>505635399.75007999</real>
 				<key>version</key>
@@ -3122,10 +2825,6 @@
 			</dict>
 			<key>1992-12-12-02-DOM.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.315624</real>
 				<key>lastModification</key>
 				<real>505635398.315624</real>
 				<key>version</key>
@@ -3136,10 +2835,6 @@
 			</dict>
 			<key>1992-12-12-02-ES6.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.408957</real>
 				<key>lastModification</key>
 				<real>505635400.408957</real>
 				<key>version</key>
@@ -3150,10 +2845,6 @@
 			</dict>
 			<key>1992-12-12-02-JavaScriptAPI.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.10765898</real>
 				<key>lastModification</key>
 				<real>505635398.10765898</real>
 				<key>version</key>
@@ -3164,10 +2855,6 @@
 			</dict>
 			<key>1992-12-12-02-Object.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.56422001</real>
 				<key>lastModification</key>
 				<real>505635398.56422001</real>
 				<key>version</key>
@@ -3178,10 +2865,6 @@
 			</dict>
 			<key>1992-12-12-02-Promise.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.08409202</real>
 				<key>lastModification</key>
 				<real>505635400.08409202</real>
 				<key>version</key>
@@ -3192,10 +2875,6 @@
 			</dict>
 			<key>1992-12-12-02-clientX,offsetX,screenX,pageX区别.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.53701001</real>
 				<key>lastModification</key>
 				<real>505635399.53701001</real>
 				<key>version</key>
@@ -3206,10 +2885,6 @@
 			</dict>
 			<key>1992-12-12-02-jQuery回到顶部.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.74562198</real>
 				<key>lastModification</key>
 				<real>505635399.74562198</real>
 				<key>version</key>
@@ -3220,10 +2895,6 @@
 			</dict>
 			<key>1992-12-12-02-location.hash.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.639956</real>
 				<key>lastModification</key>
 				<real>505635400.639956</real>
 				<key>version</key>
@@ -3234,10 +2905,6 @@
 			</dict>
 			<key>1992-12-12-02-onclick 执行多个函数.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.707838</real>
 				<key>lastModification</key>
 				<real>505635398.707838</real>
 				<key>version</key>
@@ -3248,10 +2915,6 @@
 			</dict>
 			<key>1992-12-12-02-split().md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.93391103</real>
 				<key>lastModification</key>
 				<real>505635399.93391103</real>
 				<key>version</key>
@@ -3262,10 +2925,6 @@
 			</dict>
 			<key>1992-12-12-02-删除指定内容元素.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.345065</real>
 				<key>lastModification</key>
 				<real>505635400.345065</real>
 				<key>version</key>
@@ -3276,10 +2935,6 @@
 			</dict>
 			<key>1992-12-12-02-回到顶部.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.20318502</real>
 				<key>lastModification</key>
 				<real>505635400.20318502</real>
 				<key>version</key>
@@ -3290,10 +2945,6 @@
 			</dict>
 			<key>1992-12-12-02-数组常用函数.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.560875</real>
 				<key>lastModification</key>
 				<real>505635400.560875</real>
 				<key>version</key>
@@ -3304,10 +2955,6 @@
 			</dict>
 			<key>1992-12-12-02-文件.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.73452598</real>
 				<key>lastModification</key>
 				<real>505635398.73452598</real>
 				<key>version</key>
@@ -3318,10 +2965,6 @@
 			</dict>
 			<key>1992-12-12-02-浏览器.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.533418</real>
 				<key>lastModification</key>
 				<real>505635399.533418</real>
 				<key>version</key>
@@ -3332,10 +2975,6 @@
 			</dict>
 			<key>1992-12-12-02-表单.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.33851898</real>
 				<key>lastModification</key>
 				<real>505635400.33851898</real>
 				<key>version</key>
@@ -3346,10 +2985,6 @@
 			</dict>
 			<key>1992-12-12-02-转义介绍.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.37582099</real>
 				<key>lastModification</key>
 				<real>505635398.37582099</real>
 				<key>version</key>
@@ -3360,10 +2995,6 @@
 			</dict>
 			<key>1992-12-12-02-面向对象.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.66759998</real>
 				<key>lastModification</key>
 				<real>505635399.66759998</real>
 				<key>version</key>
@@ -3374,10 +3005,6 @@
 			</dict>
 			<key>1992-12-12-02-鼠标拖动改变Div大小.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635397.23297298</real>
 				<key>lastModification</key>
 				<real>505635397.23297298</real>
 				<key>version</key>
@@ -3388,10 +3015,6 @@
 			</dict>
 			<key>1992-12-12-Click事件.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.39265299</real>
 				<key>lastModification</key>
 				<real>505635399.39265299</real>
 				<key>version</key>
@@ -3402,10 +3025,6 @@
 			</dict>
 			<key>1992-12-12-Jquery-简介.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.39437997</real>
 				<key>lastModification</key>
 				<real>505635400.39437997</real>
 				<key>version</key>
@@ -3416,10 +3035,6 @@
 			</dict>
 			<key>1992-12-12-jQuery-JSON.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.04684502</real>
 				<key>lastModification</key>
 				<real>505635400.04684502</real>
 				<key>version</key>
@@ -3430,10 +3045,6 @@
 			</dict>
 			<key>1992-12-12-preventDefault().md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.67377198</real>
 				<key>lastModification</key>
 				<real>505635399.67377198</real>
 				<key>version</key>
@@ -3444,10 +3055,6 @@
 			</dict>
 			<key>1992-12-12-ready()&amp;Onload().md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.14885902</real>
 				<key>lastModification</key>
 				<real>505635399.14885902</real>
 				<key>version</key>
@@ -3458,10 +3065,6 @@
 			</dict>
 			<key>1992-12-12-this子元素.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.11081302</real>
 				<key>lastModification</key>
 				<real>505635400.11081302</real>
 				<key>version</key>
@@ -3472,10 +3075,6 @@
 			</dict>
 			<key>1992-12-12-查找过滤.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.718692</real>
 				<key>lastModification</key>
 				<real>505635400.718692</real>
 				<key>version</key>
@@ -3486,10 +3085,6 @@
 			</dict>
 			<key>1992-12-12-选择器.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.00234097</real>
 				<key>lastModification</key>
 				<real>505635400.00234097</real>
 				<key>version</key>
@@ -3500,10 +3095,6 @@
 			</dict>
 			<key>1992-12-12-通过标签名获取元素.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635396.91572398</real>
 				<key>lastModification</key>
 				<real>505635396.91572398</real>
 				<key>version</key>
@@ -3514,10 +3105,6 @@
 			</dict>
 			<key>1992-12-12-键盘事件.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.679537</real>
 				<key>lastModification</key>
 				<real>505635400.679537</real>
 				<key>version</key>
@@ -3528,10 +3115,6 @@
 			</dict>
 			<key>1992-12-12-页面回顶部.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635396.89416701</real>
 				<key>lastModification</key>
 				<real>505635396.89416701</real>
 				<key>version</key>
@@ -3542,16 +3125,22 @@
 			</dict>
 			<key>1993-01-01-SEO技巧.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.09815198</real>
 				<key>lastModification</key>
 				<real>505635400.09815198</real>
 				<key>version</key>
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>11498</integer>
+				</dict>
+			</dict>
+			<key>1994-01-Media Queries.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>505644029.71643198</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>11690</integer>
 				</dict>
 			</dict>
 			<key>2009-09-09-01-文章排序.md</key>
@@ -4284,10 +3873,6 @@
 			</dict>
 			<key>2013-01-01-01-Bootstrap.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.10362899</real>
 				<key>lastModification</key>
 				<real>505635399.10362899</real>
 				<key>version</key>
@@ -4298,10 +3883,6 @@
 			</dict>
 			<key>2013-01-01-01-按钮组.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.49609798</real>
 				<key>lastModification</key>
 				<real>505635398.49609798</real>
 				<key>version</key>
@@ -4396,10 +3977,6 @@
 			</dict>
 			<key>2013-11-11-Cisco 防火墙 &amp; Switch &amp; VLAN &amp; TFTP.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.25863099</real>
 				<key>lastModification</key>
 				<real>505635399.25863099</real>
 				<key>version</key>
@@ -4410,10 +3987,6 @@
 			</dict>
 			<key>2013-11-11-IP Address - Subnet.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.00834101</real>
 				<key>lastModification</key>
 				<real>505635400.00834101</real>
 				<key>version</key>
@@ -4424,10 +3997,6 @@
 			</dict>
 			<key>2013-11-11-Ipconfig - ifconfig - ip addr.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.23055899</real>
 				<key>lastModification</key>
 				<real>505635400.23055899</real>
 				<key>version</key>
@@ -4438,10 +4007,6 @@
 			</dict>
 			<key>2013-11-11-Netstat.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.61223298</real>
 				<key>lastModification</key>
 				<real>505635400.61223298</real>
 				<key>version</key>
@@ -4452,10 +4017,6 @@
 			</dict>
 			<key>2013-11-11-Nslookup.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.878124</real>
 				<key>lastModification</key>
 				<real>505635398.878124</real>
 				<key>version</key>
@@ -4466,10 +4027,6 @@
 			</dict>
 			<key>2013-11-11-OSI-7.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.01592201</real>
 				<key>lastModification</key>
 				<real>505635400.01592201</real>
 				<key>version</key>
@@ -4480,10 +4037,6 @@
 			</dict>
 			<key>2013-11-11-Ping utility.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.50122201</real>
 				<key>lastModification</key>
 				<real>505635399.50122201</real>
 				<key>version</key>
@@ -4494,10 +4047,6 @@
 			</dict>
 			<key>2013-11-11-Traceroute.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.73938602</real>
 				<key>lastModification</key>
 				<real>505635398.73938602</real>
 				<key>version</key>
@@ -4508,10 +4057,6 @@
 			</dict>
 			<key>2013-11-11-封包.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.46988201</real>
 				<key>lastModification</key>
 				<real>505635399.46988201</real>
 				<key>version</key>
@@ -4522,10 +4067,6 @@
 			</dict>
 			<key>2013-11-11-网络协议.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.89433098</real>
 				<key>lastModification</key>
 				<real>505635399.89433098</real>
 				<key>version</key>
@@ -4620,10 +4161,6 @@
 			</dict>
 			<key>2013-12-11-Apache - Web Server.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.38312101</real>
 				<key>lastModification</key>
 				<real>505635400.38312101</real>
 				<key>version</key>
@@ -4634,10 +4171,6 @@
 			</dict>
 			<key>2013-12-12- - 2.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.64911002</real>
 				<key>lastModification</key>
 				<real>505635400.64911002</real>
 				<key>version</key>
@@ -4732,10 +4265,6 @@
 			</dict>
 			<key>2013-12-12-Composer.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.17892599</real>
 				<key>lastModification</key>
 				<real>505635398.17892599</real>
 				<key>version</key>
@@ -4746,10 +4275,6 @@
 			</dict>
 			<key>2013-12-12-Example.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.49279702</real>
 				<key>lastModification</key>
 				<real>505635399.49279702</real>
 				<key>version</key>
@@ -4760,10 +4285,6 @@
 			</dict>
 			<key>2013-12-12-PHP - 2.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.181144</real>
 				<key>lastModification</key>
 				<real>505635399.181144</real>
 				<key>version</key>
@@ -4774,10 +4295,6 @@
 			</dict>
 			<key>2013-12-12-PHP Sources Center.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.41642499</real>
 				<key>lastModification</key>
 				<real>505635400.41642499</real>
 				<key>version</key>
@@ -4788,10 +4305,6 @@
 			</dict>
 			<key>2013-12-12-PHP The Right Way.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.48073101</real>
 				<key>lastModification</key>
 				<real>505635398.48073101</real>
 				<key>version</key>
@@ -4802,10 +4315,6 @@
 			</dict>
 			<key>2013-12-12-PHP.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.29565603</real>
 				<key>lastModification</key>
 				<real>505635398.29565603</real>
 				<key>version</key>
@@ -4816,10 +4325,6 @@
 			</dict>
 			<key>2013-12-12-PHP5 → PHP7 Mac.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.07634997</real>
 				<key>lastModification</key>
 				<real>505635399.07634997</real>
 				<key>version</key>
@@ -4830,10 +4335,6 @@
 			</dict>
 			<key>2013-12-12-misc1.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.61001599</real>
 				<key>lastModification</key>
 				<real>505635399.61001599</real>
 				<key>version</key>
@@ -4844,10 +4345,6 @@
 			</dict>
 			<key>2013-12-12-misc2.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.33148199</real>
 				<key>lastModification</key>
 				<real>505635400.33148199</real>
 				<key>version</key>
@@ -4858,10 +4355,6 @@
 			</dict>
 			<key>2013-12-12-php 学习方法.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.45490301</real>
 				<key>lastModification</key>
 				<real>505635400.45490301</real>
 				<key>version</key>
@@ -4872,10 +4365,6 @@
 			</dict>
 			<key>2013-12-12-phpinfo.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.80687702</real>
 				<key>lastModification</key>
 				<real>505635399.80687702</real>
 				<key>version</key>
@@ -4886,10 +4375,6 @@
 			</dict>
 			<key>2014-11-11- - 8.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.59729201</real>
 				<key>lastModification</key>
 				<real>505635398.59729201</real>
 				<key>version</key>
@@ -4900,10 +4385,6 @@
 			</dict>
 			<key>2014-11-11- Forget Root Passwd.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.37381399</real>
 				<key>lastModification</key>
 				<real>505635400.37381399</real>
 				<key>version</key>
@@ -4914,10 +4395,6 @@
 			</dict>
 			<key>2014-11-11- Linux Permission.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.40280902</real>
 				<key>lastModification</key>
 				<real>505635399.40280902</real>
 				<key>version</key>
@@ -4928,10 +4405,6 @@
 			</dict>
 			<key>2014-11-11-.-configure.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.74029499</real>
 				<key>lastModification</key>
 				<real>505635399.74029499</real>
 				<key>version</key>
@@ -4942,10 +4415,6 @@
 			</dict>
 			<key>2014-11-11-Bash &amp; ZSH &amp; Plugins.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.48821199</real>
 				<key>lastModification</key>
 				<real>505635400.48821199</real>
 				<key>version</key>
@@ -4956,10 +4425,6 @@
 			</dict>
 			<key>2014-11-11-CentOS 常用命令.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.10605901</real>
 				<key>lastModification</key>
 				<real>505635400.10605901</real>
 				<key>version</key>
@@ -4970,10 +4435,6 @@
 			</dict>
 			<key>2014-11-11-Debian PPTP - 2.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.282884</real>
 				<key>lastModification</key>
 				<real>505635400.282884</real>
 				<key>version</key>
@@ -4984,10 +4445,6 @@
 			</dict>
 			<key>2014-11-11-Debian PPTP.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.39893502</real>
 				<key>lastModification</key>
 				<real>505635399.39893502</real>
 				<key>version</key>
@@ -4998,10 +4455,6 @@
 			</dict>
 			<key>2014-11-11-Docker - Sim.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.24492902</real>
 				<key>lastModification</key>
 				<real>505635400.24492902</real>
 				<key>version</key>
@@ -5012,10 +4465,6 @@
 			</dict>
 			<key>2014-11-11-Docker vi.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.306104</real>
 				<key>lastModification</key>
 				<real>505635398.306104</real>
 				<key>version</key>
@@ -5026,10 +4475,6 @@
 			</dict>
 			<key>2014-11-11-Docker.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.289469</real>
 				<key>lastModification</key>
 				<real>505635399.289469</real>
 				<key>version</key>
@@ -5040,10 +4485,6 @@
 			</dict>
 			<key>2014-11-11-File - Linux.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.17063302</real>
 				<key>lastModification</key>
 				<real>505635399.17063302</real>
 				<key>version</key>
@@ -5054,10 +4495,6 @@
 			</dict>
 			<key>2014-11-11-File Permission.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.23408002</real>
 				<key>lastModification</key>
 				<real>505635399.23408002</real>
 				<key>version</key>
@@ -5068,10 +4505,6 @@
 			</dict>
 			<key>2014-11-11-File Type.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.20905399</real>
 				<key>lastModification</key>
 				<real>505635400.20905399</real>
 				<key>version</key>
@@ -5082,10 +4515,6 @@
 			</dict>
 			<key>2014-11-11-File in use.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.65751702</real>
 				<key>lastModification</key>
 				<real>505635398.65751702</real>
 				<key>version</key>
@@ -5096,10 +4525,6 @@
 			</dict>
 			<key>2014-11-11-File-Search.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.72797501</real>
 				<key>lastModification</key>
 				<real>505635400.72797501</real>
 				<key>version</key>
@@ -5110,10 +4535,6 @@
 			</dict>
 			<key>2014-11-11-Find - Kali-Debian.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.24835098</real>
 				<key>lastModification</key>
 				<real>505635399.24835098</real>
 				<key>version</key>
@@ -5152,10 +4573,6 @@
 			</dict>
 			<key>2014-11-11-HASH &amp; MD5.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.61906499</real>
 				<key>lastModification</key>
 				<real>505635400.61906499</real>
 				<key>version</key>
@@ -5166,10 +4583,6 @@
 			</dict>
 			<key>2014-11-11-LS.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.08018601</real>
 				<key>lastModification</key>
 				<real>505635399.08018601</real>
 				<key>version</key>
@@ -5180,10 +4593,6 @@
 			</dict>
 			<key>2014-11-11-Linux Structure.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.36133099</real>
 				<key>lastModification</key>
 				<real>505635398.36133099</real>
 				<key>version</key>
@@ -5194,10 +4603,6 @@
 			</dict>
 			<key>2014-11-11-Linux-Basic.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.82587397</real>
 				<key>lastModification</key>
 				<real>505635399.82587397</real>
 				<key>version</key>
@@ -5208,10 +4613,6 @@
 			</dict>
 			<key>2014-11-11-Man ls.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.84118098</real>
 				<key>lastModification</key>
 				<real>505635399.84118098</real>
 				<key>version</key>
@@ -5222,10 +4623,6 @@
 			</dict>
 			<key>2014-11-11-Mapper.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.644575</real>
 				<key>lastModification</key>
 				<real>505635400.644575</real>
 				<key>version</key>
@@ -5236,10 +4633,6 @@
 			</dict>
 			<key>2014-11-11-Misc-center.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.70163602</real>
 				<key>lastModification</key>
 				<real>505635400.70163602</real>
 				<key>version</key>
@@ -5250,10 +4643,6 @@
 			</dict>
 			<key>2014-11-11-Mount - 2.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.37063998</real>
 				<key>lastModification</key>
 				<real>505635398.37063998</real>
 				<key>version</key>
@@ -5264,10 +4653,6 @@
 			</dict>
 			<key>2014-11-11-Mount.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.534814</real>
 				<key>lastModification</key>
 				<real>505635400.534814</real>
 				<key>version</key>
@@ -5278,10 +4663,6 @@
 			</dict>
 			<key>2014-11-11-PRI - NI (Nice).md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.32653302</real>
 				<key>lastModification</key>
 				<real>505635399.32653302</real>
 				<key>version</key>
@@ -5292,10 +4673,6 @@
 			</dict>
 			<key>2014-11-11-Passwd.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.61615598</real>
 				<key>lastModification</key>
 				<real>505635399.61615598</real>
 				<key>version</key>
@@ -5306,10 +4683,6 @@
 			</dict>
 			<key>2014-11-11-SSH Autorun.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.731709</real>
 				<key>lastModification</key>
 				<real>505635399.731709</real>
 				<key>version</key>
@@ -5320,10 +4693,6 @@
 			</dict>
 			<key>2014-11-11-Shell - 2.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.56826901</real>
 				<key>lastModification</key>
 				<real>505635399.56826901</real>
 				<key>version</key>
@@ -5334,10 +4703,6 @@
 			</dict>
 			<key>2014-11-11-Shell 脚本.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.79701</real>
 				<key>lastModification</key>
 				<real>505635398.79701</real>
 				<key>version</key>
@@ -5348,10 +4713,6 @@
 			</dict>
 			<key>2014-11-11-Shell.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.59413499</real>
 				<key>lastModification</key>
 				<real>505635400.59413499</real>
 				<key>version</key>
@@ -5362,10 +4723,6 @@
 			</dict>
 			<key>2014-11-11-TTL.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.91711402</real>
 				<key>lastModification</key>
 				<real>505635399.91711402</real>
 				<key>version</key>
@@ -5376,10 +4733,6 @@
 			</dict>
 			<key>2014-11-11-TTY.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.80108899</real>
 				<key>lastModification</key>
 				<real>505635399.80108899</real>
 				<key>version</key>
@@ -5390,10 +4743,6 @@
 			</dict>
 			<key>2014-11-11-Tar Compress - uncompress.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.462237</real>
 				<key>lastModification</key>
 				<real>505635399.462237</real>
 				<key>version</key>
@@ -5404,10 +4753,6 @@
 			</dict>
 			<key>2014-11-11-Terimal.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.65224802</real>
 				<key>lastModification</key>
 				<real>505635400.65224802</real>
 				<key>version</key>
@@ -5418,10 +4763,6 @@
 			</dict>
 			<key>2014-11-11-UID &amp; GID.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635397.46718103</real>
 				<key>lastModification</key>
 				<real>505635397.46718103</real>
 				<key>version</key>
@@ -5432,10 +4773,6 @@
 			</dict>
 			<key>2014-11-11-UUID.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.71639699</real>
 				<key>lastModification</key>
 				<real>505635398.71639699</real>
 				<key>version</key>
@@ -5446,10 +4783,6 @@
 			</dict>
 			<key>2014-11-11-Ubuntu.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.57025999</real>
 				<key>lastModification</key>
 				<real>505635400.57025999</real>
 				<key>version</key>
@@ -5460,10 +4793,6 @@
 			</dict>
 			<key>2014-11-11-Update - Upgrade.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.585823</real>
 				<key>lastModification</key>
 				<real>505635400.585823</real>
 				<key>version</key>
@@ -5474,10 +4803,6 @@
 			</dict>
 			<key>2014-11-11-User - Passwd Linux.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.65279597</real>
 				<key>lastModification</key>
 				<real>505635399.65279597</real>
 				<key>version</key>
@@ -5488,10 +4813,6 @@
 			</dict>
 			<key>2014-11-11-User Group Command.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.255032</real>
 				<key>lastModification</key>
 				<real>505635399.255032</real>
 				<key>version</key>
@@ -5502,10 +4823,6 @@
 			</dict>
 			<key>2014-11-11-User-Group Files.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.60210299</real>
 				<key>lastModification</key>
 				<real>505635399.60210299</real>
 				<key>version</key>
@@ -5516,10 +4833,6 @@
 			</dict>
 			<key>2014-11-11-User-Group passwd File.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.37282997</real>
 				<key>lastModification</key>
 				<real>505635399.37282997</real>
 				<key>version</key>
@@ -5530,10 +4843,6 @@
 			</dict>
 			<key>2014-11-11-User-Group.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.275509</real>
 				<key>lastModification</key>
 				<real>505635398.275509</real>
 				<key>version</key>
@@ -5544,10 +4853,6 @@
 			</dict>
 			<key>2014-11-11-VPN - 流控.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.52566099</real>
 				<key>lastModification</key>
 				<real>505635398.52566099</real>
 				<key>version</key>
@@ -5558,10 +4863,6 @@
 			</dict>
 			<key>2014-11-11-Vim.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.13098001</real>
 				<key>lastModification</key>
 				<real>505635399.13098001</real>
 				<key>version</key>
@@ -5572,10 +4873,6 @@
 			</dict>
 			<key>2014-11-11-Web building.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.74316299</real>
 				<key>lastModification</key>
 				<real>505635400.74316299</real>
 				<key>version</key>
@@ -5586,10 +4883,6 @@
 			</dict>
 			<key>2014-11-11-Web server 网络服务器.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.28969198</real>
 				<key>lastModification</key>
 				<real>505635400.28969198</real>
 				<key>version</key>
@@ -5600,10 +4893,6 @@
 			</dict>
 			<key>2014-11-11-find 概览.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.754511</real>
 				<key>lastModification</key>
 				<real>505635400.754511</real>
 				<key>version</key>
@@ -5614,10 +4903,6 @@
 			</dict>
 			<key>2014-11-11-find－exec.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.46054798</real>
 				<key>lastModification</key>
 				<real>505635399.46054798</real>
 				<key>version</key>
@@ -5628,10 +4913,6 @@
 			</dict>
 			<key>2014-11-11-find－xargs.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.05862302</real>
 				<key>lastModification</key>
 				<real>505635400.05862302</real>
 				<key>version</key>
@@ -5642,10 +4923,6 @@
 			</dict>
 			<key>2014-11-11-inode.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.09158802</real>
 				<key>lastModification</key>
 				<real>505635400.09158802</real>
 				<key>version</key>
@@ -5656,10 +4933,6 @@
 			</dict>
 			<key>2014-11-11-locate.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.51131099</real>
 				<key>lastModification</key>
 				<real>505635399.51131099</real>
 				<key>version</key>
@@ -5670,10 +4943,6 @@
 			</dict>
 			<key>2014-11-11-proxy chains.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.63236398</real>
 				<key>lastModification</key>
 				<real>505635400.63236398</real>
 				<key>version</key>
@@ -5684,10 +4953,6 @@
 			</dict>
 			<key>2014-11-11-readme.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.566903</real>
 				<key>lastModification</key>
 				<real>505635400.566903</real>
 				<key>version</key>
@@ -5698,10 +4963,6 @@
 			</dict>
 			<key>2014-11-11-rpm,apt,yum,brew.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.36016703</real>
 				<key>lastModification</key>
 				<real>505635400.36016703</real>
 				<key>version</key>
@@ -5712,10 +4973,6 @@
 			</dict>
 			<key>2014-11-11-shadowsocks.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.66140002</real>
 				<key>lastModification</key>
 				<real>505635400.66140002</real>
 				<key>version</key>
@@ -5726,10 +4983,6 @@
 			</dict>
 			<key>2014-11-11-where is.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.85520399</real>
 				<key>lastModification</key>
 				<real>505635398.85520399</real>
 				<key>version</key>
@@ -5740,10 +4993,6 @@
 			</dict>
 			<key>2014-11-11-xx.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.46561497</real>
 				<key>lastModification</key>
 				<real>505635399.46561497</real>
 				<key>version</key>
@@ -5754,10 +5003,6 @@
 			</dict>
 			<key>2014-11-11-删除顽固文件（加锁）.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.96470398</real>
 				<key>lastModification</key>
 				<real>505635399.96470398</real>
 				<key>version</key>
@@ -5768,10 +5013,6 @@
 			</dict>
 			<key>2014-11-11-字符串的输出.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.98281699</real>
 				<key>lastModification</key>
 				<real>505635398.98281699</real>
 				<key>version</key>
@@ -5782,10 +5023,6 @@
 			</dict>
 			<key>2014-11-11-开关机.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.59765202</real>
 				<key>lastModification</key>
 				<real>505635400.59765202</real>
 				<key>version</key>
@@ -5796,10 +5033,6 @@
 			</dict>
 			<key>2014-11-11-指令语法.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.63779199</real>
 				<key>lastModification</key>
 				<real>505635399.63779199</real>
 				<key>version</key>
@@ -5810,10 +5043,6 @@
 			</dict>
 			<key>2014-11-11-换行回车区别.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.60735899</real>
 				<key>lastModification</key>
 				<real>505635399.60735899</real>
 				<key>version</key>
@@ -5824,10 +5053,6 @@
 			</dict>
 			<key>2014-11-11-文件操作.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.132595</real>
 				<key>lastModification</key>
 				<real>505635398.132595</real>
 				<key>version</key>
@@ -5838,10 +5063,6 @@
 			</dict>
 			<key>2014-11-11-文件权限.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.93231302</real>
 				<key>lastModification</key>
 				<real>505635398.93231302</real>
 				<key>version</key>
@@ -5852,10 +5073,6 @@
 			</dict>
 			<key>2014-11-11-源代码编译.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.290645</real>
 				<key>lastModification</key>
 				<real>505635398.290645</real>
 				<key>version</key>
@@ -5866,10 +5083,6 @@
 			</dict>
 			<key>2014-11-11-环境变量.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.89944702</real>
 				<key>lastModification</key>
 				<real>505635399.89944702</real>
 				<key>version</key>
@@ -5880,10 +5093,6 @@
 			</dict>
 			<key>2014-11-11-用户密码.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.68097299</real>
 				<key>lastModification</key>
 				<real>505635399.68097299</real>
 				<key>version</key>
@@ -5894,10 +5103,6 @@
 			</dict>
 			<key>2014-11-11-目录操作.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.43939197</real>
 				<key>lastModification</key>
 				<real>505635400.43939197</real>
 				<key>version</key>
@@ -5908,10 +5113,6 @@
 			</dict>
 			<key>2014-11-11-端口 Port.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.99327803</real>
 				<key>lastModification</key>
 				<real>505635398.99327803</real>
 				<key>version</key>
@@ -5922,10 +5123,6 @@
 			</dict>
 			<key>2014-11-11-简介.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.41102499</real>
 				<key>lastModification</key>
 				<real>505635399.41102499</real>
 				<key>version</key>
@@ -5936,10 +5133,6 @@
 			</dict>
 			<key>2014-11-11-编码-乱码.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.98608798</real>
 				<key>lastModification</key>
 				<real>505635399.98608798</real>
 				<key>version</key>
@@ -5950,10 +5143,6 @@
 			</dict>
 			<key>2014-11-11-软件是否安装.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.54327798</real>
 				<key>lastModification</key>
 				<real>505635399.54327798</real>
 				<key>version</key>
@@ -6034,10 +5223,6 @@
 			</dict>
 			<key>2015-11-07-MAMP 集成 Web 服务器环境.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.13817698</real>
 				<key>lastModification</key>
 				<real>505635399.13817698</real>
 				<key>version</key>
@@ -6048,10 +5233,6 @@
 			</dict>
 			<key>2015-11-07-Mac PHP5.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.14966601</real>
 				<key>lastModification</key>
 				<real>505635400.14966601</real>
 				<key>version</key>
@@ -6062,10 +5243,6 @@
 			</dict>
 			<key>2015-11-07-MySQL PHP Apache.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.206236</real>
 				<key>lastModification</key>
 				<real>505635399.206236</real>
 				<key>version</key>
@@ -6076,10 +5253,6 @@
 			</dict>
 			<key>2015-11-07-MySQL phpAdmin Apache php.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.16545498</real>
 				<key>lastModification</key>
 				<real>505635399.16545498</real>
 				<key>version</key>
@@ -6132,10 +5305,6 @@
 			</dict>
 			<key>2015-11-08- - 13.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.74516499</real>
 				<key>lastModification</key>
 				<real>505635400.74516499</real>
 				<key>version</key>
@@ -6160,10 +5329,6 @@
 			</dict>
 			<key>2015-11-08-Apache Basic.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.22952998</real>
 				<key>lastModification</key>
 				<real>505635399.22952998</real>
 				<key>version</key>
@@ -6174,10 +5339,6 @@
 			</dict>
 			<key>2015-11-08-Apache.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.73244798</real>
 				<key>lastModification</key>
 				<real>505635400.73244798</real>
 				<key>version</key>
@@ -6188,10 +5349,6 @@
 			</dict>
 			<key>2015-11-08-Autojump ZSH Plugin.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.59186298</real>
 				<key>lastModification</key>
 				<real>505635399.59186298</real>
 				<key>version</key>
@@ -6202,10 +5359,6 @@
 			</dict>
 			<key>2015-11-08-Httpd - Mac.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.12733698</real>
 				<key>lastModification</key>
 				<real>505635399.12733698</real>
 				<key>version</key>
@@ -6216,10 +5369,6 @@
 			</dict>
 			<key>2015-11-08-Httpd .conf 配置文件详解.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.166601</real>
 				<key>lastModification</key>
 				<real>505635400.166601</real>
 				<key>version</key>
@@ -6230,10 +5379,6 @@
 			</dict>
 			<key>2015-11-08-Mac Web Dev 配置手册.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.29981202</real>
 				<key>lastModification</key>
 				<real>505635400.29981202</real>
 				<key>version</key>
@@ -6244,10 +5389,6 @@
 			</dict>
 			<key>2015-11-08-MySQL php Apache php.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.365206</real>
 				<key>lastModification</key>
 				<real>505635399.365206</real>
 				<key>version</key>
@@ -6258,10 +5399,6 @@
 			</dict>
 			<key>2015-11-08-MySQL phpAdmin Apache php.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.461577</real>
 				<key>lastModification</key>
 				<real>505635400.461577</real>
 				<key>version</key>
@@ -6272,10 +5409,6 @@
 			</dict>
 			<key>2015-11-08-PHP -Web Build.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.24047297</real>
 				<key>lastModification</key>
 				<real>505635399.24047297</real>
 				<key>version</key>
@@ -6286,10 +5419,6 @@
 			</dict>
 			<key>2015-11-08-PHP.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.14215398</real>
 				<key>lastModification</key>
 				<real>505635399.14215398</real>
 				<key>version</key>
@@ -6300,10 +5429,6 @@
 			</dict>
 			<key>2015-11-08-Website Mac.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.47299403</real>
 				<key>lastModification</key>
 				<real>505635400.47299403</real>
 				<key>version</key>
@@ -6314,10 +5439,6 @@
 			</dict>
 			<key>2015-11-08-ZSH &amp; iTerm2 &amp; oh-my-zsh install.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.15996999</real>
 				<key>lastModification</key>
 				<real>505635400.15996999</real>
 				<key>version</key>
@@ -6328,10 +5449,6 @@
 			</dict>
 			<key>2015-11-08-ZSH.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.50570601</real>
 				<key>lastModification</key>
 				<real>505635400.50570601</real>
 				<key>version</key>
@@ -6342,10 +5459,6 @@
 			</dict>
 			<key>2015-11-08-iTerm2.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.64541399</real>
 				<key>lastModification</key>
 				<real>505635399.64541399</real>
 				<key>version</key>
@@ -6356,10 +5469,6 @@
 			</dict>
 			<key>2015-11-08-启用-测试 PHP 5.0.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.927526</real>
 				<key>lastModification</key>
 				<real>505635398.927526</real>
 				<key>version</key>
@@ -6370,10 +5479,6 @@
 			</dict>
 			<key>2015-11-08-开发环境.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.53028601</real>
 				<key>lastModification</key>
 				<real>505635400.53028601</real>
 				<key>version</key>
@@ -6412,10 +5517,6 @@
 			</dict>
 			<key>2015-11-09- - 9.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.09207797</real>
 				<key>lastModification</key>
 				<real>505635399.09207797</real>
 				<key>version</key>
@@ -6426,10 +5527,6 @@
 			</dict>
 			<key>2015-11-09-Apt-get update - upgrade - dist-upgrade.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.49761403</real>
 				<key>lastModification</key>
 				<real>505635400.49761403</real>
 				<key>version</key>
@@ -6440,10 +5537,6 @@
 			</dict>
 			<key>2015-11-09-CAT.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.03141701</real>
 				<key>lastModification</key>
 				<real>505635400.03141701</real>
 				<key>version</key>
@@ -6454,10 +5547,6 @@
 			</dict>
 			<key>2015-11-09-Caupture Fileter.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635397.623739</real>
 				<key>lastModification</key>
 				<real>505635397.623739</real>
 				<key>version</key>
@@ -6468,10 +5557,6 @@
 			</dict>
 			<key>2015-11-09-Command Center.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.15561801</real>
 				<key>lastModification</key>
 				<real>505635400.15561801</real>
 				<key>version</key>
@@ -6482,10 +5567,6 @@
 			</dict>
 			<key>2015-11-09-Echo.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.51744002</real>
 				<key>lastModification</key>
 				<real>505635399.51744002</real>
 				<key>version</key>
@@ -6496,10 +5577,6 @@
 			</dict>
 			<key>2015-11-09-Fliter - Wireshark.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.72426897</real>
 				<key>lastModification</key>
 				<real>505635399.72426897</real>
 				<key>version</key>
@@ -6510,10 +5587,6 @@
 			</dict>
 			<key>2015-11-09-Linux Commands.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.03601903</real>
 				<key>lastModification</key>
 				<real>505635400.03601903</real>
 				<key>version</key>
@@ -6524,10 +5597,6 @@
 			</dict>
 			<key>2015-11-09-Man.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.68800902</real>
 				<key>lastModification</key>
 				<real>505635400.68800902</real>
 				<key>version</key>
@@ -6538,10 +5607,6 @@
 			</dict>
 			<key>2015-11-09-More.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.96191299</real>
 				<key>lastModification</key>
 				<real>505635399.96191299</real>
 				<key>version</key>
@@ -6552,10 +5617,6 @@
 			</dict>
 			<key>2015-11-09-PID.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.68279999</real>
 				<key>lastModification</key>
 				<real>505635400.68279999</real>
 				<key>version</key>
@@ -6566,10 +5627,6 @@
 			</dict>
 			<key>2015-11-09-SCP.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.40677798</real>
 				<key>lastModification</key>
 				<real>505635399.40677798</real>
 				<key>version</key>
@@ -6580,10 +5637,6 @@
 			</dict>
 			<key>2015-11-09-TOP - Htop.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.594715</real>
 				<key>lastModification</key>
 				<real>505635399.594715</real>
 				<key>version</key>
@@ -6594,10 +5647,6 @@
 			</dict>
 			<key>2015-11-09-WireShark.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.65522099</real>
 				<key>lastModification</key>
 				<real>505635400.65522099</real>
 				<key>version</key>
@@ -6608,10 +5657,6 @@
 			</dict>
 			<key>2015-11-09-Wireshark - 2.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.34789401</real>
 				<key>lastModification</key>
 				<real>505635399.34789401</real>
 				<key>version</key>
@@ -6622,10 +5667,6 @@
 			</dict>
 			<key>2015-11-09-chmod.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.806337</real>
 				<key>lastModification</key>
 				<real>505635398.806337</real>
 				<key>version</key>
@@ -6636,10 +5677,6 @@
 			</dict>
 			<key>2015-11-09-find.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.07190698</real>
 				<key>lastModification</key>
 				<real>505635399.07190698</real>
 				<key>version</key>
@@ -6650,10 +5687,6 @@
 			</dict>
 			<key>2015-11-09-head &amp; tail.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.97966599</real>
 				<key>lastModification</key>
 				<real>505635399.97966599</real>
 				<key>version</key>
@@ -6664,10 +5697,6 @@
 			</dict>
 			<key>2015-11-09-iterm2 自动登录. telnet.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.87798202</real>
 				<key>lastModification</key>
 				<real>505635399.87798202</real>
 				<key>version</key>
@@ -6678,10 +5707,6 @@
 			</dict>
 			<key>2015-11-09-ls -more.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.93997401</real>
 				<key>lastModification</key>
 				<real>505635399.93997401</real>
 				<key>version</key>
@@ -6692,10 +5717,6 @@
 			</dict>
 			<key>2015-11-09-lsof.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.792952</real>
 				<key>lastModification</key>
 				<real>505635398.792952</real>
 				<key>version</key>
@@ -6706,10 +5727,6 @@
 			</dict>
 			<key>2015-11-09-misc.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.95332599</real>
 				<key>lastModification</key>
 				<real>505635399.95332599</real>
 				<key>version</key>
@@ -6720,10 +5737,6 @@
 			</dict>
 			<key>2015-11-09-mkdir-rmdir.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.54667598</real>
 				<key>lastModification</key>
 				<real>505635399.54667598</real>
 				<key>version</key>
@@ -6734,10 +5747,6 @@
 			</dict>
 			<key>2015-11-09-shutdown - halt - reboot.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.998097</real>
 				<key>lastModification</key>
 				<real>505635399.998097</real>
 				<key>version</key>
@@ -6748,10 +5757,6 @@
 			</dict>
 			<key>2015-11-09-xx.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.29387403</real>
 				<key>lastModification</key>
 				<real>505635400.29387403</real>
 				<key>version</key>
@@ -6762,10 +5767,6 @@
 			</dict>
 			<key>2015-11-09-常用命令.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.04030597</real>
 				<key>lastModification</key>
 				<real>505635400.04030597</real>
 				<key>version</key>
@@ -6776,10 +5777,6 @@
 			</dict>
 			<key>2015-11-09-文件和目录.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.91573697</real>
 				<key>lastModification</key>
 				<real>505635398.91573697</real>
 				<key>version</key>
@@ -6790,10 +5787,6 @@
 			</dict>
 			<key>2015-11-09-文件操作.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.86282301</real>
 				<key>lastModification</key>
 				<real>505635398.86282301</real>
 				<key>version</key>
@@ -6804,10 +5797,6 @@
 			</dict>
 			<key>2015-11-09-文件解压打包.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.907848</real>
 				<key>lastModification</key>
 				<real>505635399.907848</real>
 				<key>version</key>
@@ -6818,10 +5807,6 @@
 			</dict>
 			<key>2015-11-09-查找文件.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.99548399</real>
 				<key>lastModification</key>
 				<real>505635399.99548399</real>
 				<key>version</key>
@@ -6832,10 +5817,6 @@
 			</dict>
 			<key>2015-11-09-混杂模式.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.692608</real>
 				<key>lastModification</key>
 				<real>505635398.692608</real>
 				<key>version</key>
@@ -6846,10 +5827,6 @@
 			</dict>
 			<key>2015-11-09-用户 组 密码 文件.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.51138097</real>
 				<key>lastModification</key>
 				<real>505635400.51138097</real>
 				<key>version</key>
@@ -6860,10 +5837,6 @@
 			</dict>
 			<key>2015-11-09-系统状态.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.67518002</real>
 				<key>lastModification</key>
 				<real>505635400.67518002</real>
 				<key>version</key>
@@ -6874,10 +5847,6 @@
 			</dict>
 			<key>2015-11-10- 输入法.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.56422502</real>
 				<key>lastModification</key>
 				<real>505635399.56422502</real>
 				<key>version</key>
@@ -6944,10 +5913,6 @@
 			</dict>
 			<key>2015-11-10-01- - 5 - 4 - 8.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.78230101</real>
 				<key>lastModification</key>
 				<real>505635399.78230101</real>
 				<key>version</key>
@@ -7014,10 +5979,6 @@
 			</dict>
 			<key>2015-11-10-01- Garaband.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.62723303</real>
 				<key>lastModification</key>
 				<real>505635398.62723303</real>
 				<key>version</key>
@@ -7028,10 +5989,6 @@
 			</dict>
 			<key>2015-11-10-01-Alfred 3.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.58394498</real>
 				<key>lastModification</key>
 				<real>505635400.58394498</real>
 				<key>version</key>
@@ -7042,10 +5999,6 @@
 			</dict>
 			<key>2015-11-10-01-AppCleaner.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.221551</real>
 				<key>lastModification</key>
 				<real>505635400.221551</real>
 				<key>version</key>
@@ -7056,10 +6009,6 @@
 			</dict>
 			<key>2015-11-10-01-Automator.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.45170403</real>
 				<key>lastModification</key>
 				<real>505635399.45170403</real>
 				<key>version</key>
@@ -7070,10 +6019,6 @@
 			</dict>
 			<key>2015-11-10-01-BetterSnapTool.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.576213</real>
 				<key>lastModification</key>
 				<real>505635398.576213</real>
 				<key>version</key>
@@ -7084,10 +6029,6 @@
 			</dict>
 			<key>2015-11-10-01-Bettertouchtool.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.69091803</real>
 				<key>lastModification</key>
 				<real>505635400.69091803</real>
 				<key>version</key>
@@ -7098,10 +6039,6 @@
 			</dict>
 			<key>2015-11-10-01-FRP.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.20963001</real>
 				<key>lastModification</key>
 				<real>505635399.20963001</real>
 				<key>version</key>
@@ -7112,10 +6049,6 @@
 			</dict>
 			<key>2015-11-10-01-Final Cut Pro.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635397.20849001</real>
 				<key>lastModification</key>
 				<real>505635397.20849001</real>
 				<key>version</key>
@@ -7126,10 +6059,6 @@
 			</dict>
 			<key>2015-11-10-01-Github.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.46462703</real>
 				<key>lastModification</key>
 				<real>505635400.46462703</real>
 				<key>version</key>
@@ -7140,10 +6069,6 @@
 			</dict>
 			<key>2015-11-10-01-Homebrew.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635397.63696498</real>
 				<key>lastModification</key>
 				<real>505635397.63696498</real>
 				<key>version</key>
@@ -7154,10 +6079,6 @@
 			</dict>
 			<key>2015-11-10-01-MacDown.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.88572401</real>
 				<key>lastModification</key>
 				<real>505635398.88572401</real>
 				<key>version</key>
@@ -7182,10 +6103,6 @@
 			</dict>
 			<key>2015-11-10-01-Macvim.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.098804</real>
 				<key>lastModification</key>
 				<real>505635399.098804</real>
 				<key>version</key>
@@ -7196,10 +6113,6 @@
 			</dict>
 			<key>2015-11-10-01-NERDTree.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.63450098</real>
 				<key>lastModification</key>
 				<real>505635399.63450098</real>
 				<key>version</key>
@@ -7210,10 +6123,6 @@
 			</dict>
 			<key>2015-11-10-01-Nerdtree 使用方法.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.74897897</real>
 				<key>lastModification</key>
 				<real>505635398.74897897</real>
 				<key>version</key>
@@ -7224,10 +6133,6 @@
 			</dict>
 			<key>2015-11-10-01-Network Utility 网络实用工具( Mac ).md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.22585303</real>
 				<key>lastModification</key>
 				<real>505635400.22585303</real>
 				<key>version</key>
@@ -7238,10 +6143,6 @@
 			</dict>
 			<key>2015-11-10-01-Nginx.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.48808801</real>
 				<key>lastModification</key>
 				<real>505635399.48808801</real>
 				<key>version</key>
@@ -7252,10 +6153,6 @@
 			</dict>
 			<key>2015-11-10-01-Ngrok.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.35423499</real>
 				<key>lastModification</key>
 				<real>505635400.35423499</real>
 				<key>version</key>
@@ -7266,10 +6163,6 @@
 			</dict>
 			<key>2015-11-10-01-OmniGraffle.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.76608801</real>
 				<key>lastModification</key>
 				<real>505635399.76608801</real>
 				<key>version</key>
@@ -7280,10 +6173,6 @@
 			</dict>
 			<key>2015-11-10-01-Ulysses.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.05018997</real>
 				<key>lastModification</key>
 				<real>505635400.05018997</real>
 				<key>version</key>
@@ -7294,10 +6183,6 @@
 			</dict>
 			<key>2015-11-10-01-Vundle 安装插件.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.62703198</real>
 				<key>lastModification</key>
 				<real>505635399.62703198</real>
 				<key>version</key>
@@ -7308,10 +6193,6 @@
 			</dict>
 			<key>2015-11-10-01-Vundle.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.31219602</real>
 				<key>lastModification</key>
 				<real>505635399.31219602</real>
 				<key>version</key>
@@ -7322,10 +6203,6 @@
 			</dict>
 			<key>2015-11-10-01-karabiner&amp;Seil.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.24861598</real>
 				<key>lastModification</key>
 				<real>505635400.24861598</real>
 				<key>version</key>
@@ -7336,10 +6213,6 @@
 			</dict>
 			<key>2015-11-10-01-safari.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.01087999</real>
 				<key>lastModification</key>
 				<real>505635399.01087999</real>
 				<key>version</key>
@@ -7350,10 +6223,6 @@
 			</dict>
 			<key>2015-11-10-01-简介.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.306907</real>
 				<key>lastModification</key>
 				<real>505635400.306907</real>
 				<key>version</key>
@@ -7364,10 +6233,6 @@
 			</dict>
 			<key>2015-11-10-02-KeyboardMaestro.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.96927601</real>
 				<key>lastModification</key>
 				<real>505635399.96927601</real>
 				<key>version</key>
@@ -7378,10 +6243,6 @@
 			</dict>
 			<key>2015-11-10-Chrome &amp; 插件.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635397.68801302</real>
 				<key>lastModification</key>
 				<real>505635397.68801302</real>
 				<key>version</key>
@@ -7392,10 +6253,6 @@
 			</dict>
 			<key>2015-11-10-Chrome.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.45684999</real>
 				<key>lastModification</key>
 				<real>505635400.45684999</real>
 				<key>version</key>
@@ -7406,10 +6263,6 @@
 			</dict>
 			<key>2015-11-10-Keynote.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.911883</real>
 				<key>lastModification</key>
 				<real>505635398.911883</real>
 				<key>version</key>
@@ -7420,10 +6273,6 @@
 			</dict>
 			<key>2015-11-10-MindNode.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.41464901</real>
 				<key>lastModification</key>
 				<real>505635399.41464901</real>
 				<key>version</key>
@@ -7434,10 +6283,6 @@
 			</dict>
 			<key>2015-11-10-Navicat.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.45510799</real>
 				<key>lastModification</key>
 				<real>505635399.45510799</real>
 				<key>version</key>
@@ -7448,10 +6293,6 @@
 			</dict>
 			<key>2015-11-10-OmniFocus2.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.13480997</real>
 				<key>lastModification</key>
 				<real>505635399.13480997</real>
 				<key>version</key>
@@ -7462,10 +6303,6 @@
 			</dict>
 			<key>2015-11-10-iMovie.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.76339</real>
 				<key>lastModification</key>
 				<real>505635399.76339</real>
 				<key>version</key>
@@ -7476,10 +6313,6 @@
 			</dict>
 			<key>2015-11-10-iPhoto.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.57688701</real>
 				<key>lastModification</key>
 				<real>505635399.57688701</real>
 				<key>version</key>
@@ -7490,10 +6323,6 @@
 			</dict>
 			<key>2015-11-10-vimium.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.40014398</real>
 				<key>lastModification</key>
 				<real>505635398.40014398</real>
 				<key>version</key>
@@ -7504,10 +6333,6 @@
 			</dict>
 			<key>2015-11-10-推荐软件.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.18501598</real>
 				<key>lastModification</key>
 				<real>505635399.18501598</real>
 				<key>version</key>
@@ -7658,10 +6483,6 @@
 			</dict>
 			<key>2015-11-11-01-影片加水印.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.39927101</real>
 				<key>lastModification</key>
 				<real>505635400.39927101</real>
 				<key>version</key>
@@ -7672,10 +6493,6 @@
 			</dict>
 			<key>2015-11-11-01-影片提取音频.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.58200002</real>
 				<key>lastModification</key>
 				<real>505635398.58200002</real>
 				<key>version</key>
@@ -7686,10 +6503,6 @@
 			</dict>
 			<key>2015-11-11-01-显隐文件-重启Finder.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.22473103</real>
 				<key>lastModification</key>
 				<real>505635399.22473103</real>
 				<key>version</key>
@@ -7700,10 +6513,6 @@
 			</dict>
 			<key>2015-11-11-01-视频分割合并转换.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.55506998</real>
 				<key>lastModification</key>
 				<real>505635400.55506998</real>
 				<key>version</key>
@@ -7714,10 +6523,6 @@
 			</dict>
 			<key>2015-11-11-01-视频格式转换.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.33388299</real>
 				<key>lastModification</key>
 				<real>505635399.33388299</real>
 				<key>version</key>
@@ -7728,10 +6533,6 @@
 			</dict>
 			<key>2015-11-11-01-软件安装位置.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.12622702</real>
 				<key>lastModification</key>
 				<real>505635398.12622702</real>
 				<key>version</key>
@@ -7742,10 +6543,6 @@
 			</dict>
 			<key>2015-11-11-Apple-Mac DNS.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.48372197</real>
 				<key>lastModification</key>
 				<real>505635399.48372197</real>
 				<key>version</key>
@@ -7756,10 +6553,6 @@
 			</dict>
 			<key>2015-11-11-Beta 升级检测专用代码.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.44750297</real>
 				<key>lastModification</key>
 				<real>505635400.44750297</real>
 				<key>version</key>
@@ -7770,10 +6563,6 @@
 			</dict>
 			<key>2015-11-11-Browser.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.66467798</real>
 				<key>lastModification</key>
 				<real>505635400.66467798</real>
 				<key>version</key>
@@ -7784,10 +6573,6 @@
 			</dict>
 			<key>2015-11-11-DMG 加密.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.70596302</real>
 				<key>lastModification</key>
 				<real>505635400.70596302</real>
 				<key>version</key>
@@ -7798,10 +6583,6 @@
 			</dict>
 			<key>2015-11-11-DS-Store文件禁止生成.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.95095301</real>
 				<key>lastModification</key>
 				<real>505635399.95095301</real>
 				<key>version</key>
@@ -7812,10 +6593,6 @@
 			</dict>
 			<key>2015-11-11-Facetime 自动连接.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.55078202</real>
 				<key>lastModification</key>
 				<real>505635399.55078202</real>
 				<key>version</key>
@@ -7826,10 +6603,6 @@
 			</dict>
 			<key>2015-11-11-Finder.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.97326398</real>
 				<key>lastModification</key>
 				<real>505635399.97326398</real>
 				<key>version</key>
@@ -7840,10 +6613,6 @@
 			</dict>
 			<key>2015-11-11-FireWall.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.06198603</real>
 				<key>lastModification</key>
 				<real>505635400.06198603</real>
 				<key>version</key>
@@ -7854,10 +6623,6 @@
 			</dict>
 			<key>2015-11-11-Google Skilles.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.699323</real>
 				<key>lastModification</key>
 				<real>505635399.699323</real>
 				<key>version</key>
@@ -7868,10 +6633,6 @@
 			</dict>
 			<key>2015-11-11-Google.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.47403097</real>
 				<key>lastModification</key>
 				<real>505635399.47403097</real>
 				<key>version</key>
@@ -7882,10 +6643,6 @@
 			</dict>
 			<key>2015-11-11-Misc.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.37631899</real>
 				<key>lastModification</key>
 				<real>505635399.37631899</real>
 				<key>version</key>
@@ -7896,10 +6653,6 @@
 			</dict>
 			<key>2015-11-11-PID &amp; Port → Program -Mac OS.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.64821398</real>
 				<key>lastModification</key>
 				<real>505635399.64821398</real>
 				<key>version</key>
@@ -7910,10 +6663,6 @@
 			</dict>
 			<key>2015-11-11-Pacifist 配置文件恢复.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.48518997</real>
 				<key>lastModification</key>
 				<real>505635400.48518997</real>
 				<key>version</key>
@@ -7924,10 +6673,6 @@
 			</dict>
 			<key>2015-11-11-Rootless 机制.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.36803001</real>
 				<key>lastModification</key>
 				<real>505635400.36803001</real>
 				<key>version</key>
@@ -7938,10 +6683,6 @@
 			</dict>
 			<key>2015-11-11-Shortcuts.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.84616202</real>
 				<key>lastModification</key>
 				<real>505635399.84616202</real>
 				<key>version</key>
@@ -7952,10 +6693,6 @@
 			</dict>
 			<key>2015-11-11-Umount disk.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.34075898</real>
 				<key>lastModification</key>
 				<real>505635398.34075898</real>
 				<key>version</key>
@@ -7966,10 +6703,6 @@
 			</dict>
 			<key>2015-11-11-vpn Setup.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635397.319511</real>
 				<key>lastModification</key>
 				<real>505635397.319511</real>
 				<key>version</key>
@@ -7980,10 +6713,6 @@
 			</dict>
 			<key>2015-11-11-三指拖移.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.55054098</real>
 				<key>lastModification</key>
 				<real>505635400.55054098</real>
 				<key>version</key>
@@ -7994,10 +6723,6 @@
 			</dict>
 			<key>2015-11-11-个性垃圾桶.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.331864</real>
 				<key>lastModification</key>
 				<real>505635398.331864</real>
 				<key>version</key>
@@ -8008,10 +6733,6 @@
 			</dict>
 			<key>2015-11-11-删除文件要求输入密码.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.42166698</real>
 				<key>lastModification</key>
 				<real>505635399.42166698</real>
 				<key>version</key>
@@ -8022,10 +6743,6 @@
 			</dict>
 			<key>2015-11-11-命令.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.36594498</real>
 				<key>lastModification</key>
 				<real>505635398.36594498</real>
 				<key>version</key>
@@ -8036,10 +6753,6 @@
 			</dict>
 			<key>2015-11-11-文件分类技巧.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.606888</real>
 				<key>lastModification</key>
 				<real>505635398.606888</real>
 				<key>version</key>
@@ -8050,10 +6763,6 @@
 			</dict>
 			<key>2015-11-11-电脑技巧.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.15840399</real>
 				<key>lastModification</key>
 				<real>505635399.15840399</real>
 				<key>version</key>
@@ -8064,10 +6773,6 @@
 			</dict>
 			<key>2015-11-11-电脑语音销毁.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.35706502</real>
 				<key>lastModification</key>
 				<real>505635399.35706502</real>
 				<key>version</key>
@@ -8078,10 +6783,6 @@
 			</dict>
 			<key>2015-11-11-终端显示彩色目录列表.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.68133801</real>
 				<key>lastModification</key>
 				<real>505635398.68133801</real>
 				<key>version</key>
@@ -8092,10 +6793,6 @@
 			</dict>
 			<key>2015-11-11-缩写技巧.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.32370901</real>
 				<key>lastModification</key>
 				<real>505635400.32370901</real>
 				<key>version</key>
@@ -8218,10 +6915,6 @@
 			</dict>
 			<key>2016-07-07-Docker.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.42541498</real>
 				<key>lastModification</key>
 				<real>505635399.42541498</real>
 				<key>version</key>
@@ -8232,10 +6925,6 @@
 			</dict>
 			<key>2016-07-07-Kitematic.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.41807199</real>
 				<key>lastModification</key>
 				<real>505635399.41807199</real>
 				<key>version</key>
@@ -8246,10 +6935,6 @@
 			</dict>
 			<key>2016-07-07-ssh.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.74922597</real>
 				<key>lastModification</key>
 				<real>505635400.74922597</real>
 				<key>version</key>
@@ -8344,10 +7029,6 @@
 			</dict>
 			<key>2016-08-08-MariaDB.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.27934003</real>
 				<key>lastModification</key>
 				<real>505635399.27934003</real>
 				<key>version</key>
@@ -8358,10 +7039,6 @@
 			</dict>
 			<key>2016-08-08-MySQL - Mac.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.11346197</real>
 				<key>lastModification</key>
 				<real>505635400.11346197</real>
 				<key>version</key>
@@ -8372,10 +7049,6 @@
 			</dict>
 			<key>2016-08-08-MySQL Cluster 数据库集群.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.00627899</real>
 				<key>lastModification</key>
 				<real>505635400.00627899</real>
 				<key>version</key>
@@ -8386,10 +7059,6 @@
 			</dict>
 			<key>2016-08-08-MySQL.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.23765701</real>
 				<key>lastModification</key>
 				<real>505635399.23765701</real>
 				<key>version</key>
@@ -8400,10 +7069,6 @@
 			</dict>
 			<key>2016-08-08-Mysql Remote (Mac).md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.08849502</real>
 				<key>lastModification</key>
 				<real>505635399.08849502</real>
 				<key>version</key>
@@ -8498,10 +7163,6 @@
 			</dict>
 			<key>2016-09-09-Aircrack-ng.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.61675799</real>
 				<key>lastModification</key>
 				<real>505635400.61675799</real>
 				<key>version</key>
@@ -8512,10 +7173,6 @@
 			</dict>
 			<key>2016-09-09-Apple 蓝牙键盘连接.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.54017198</real>
 				<key>lastModification</key>
 				<real>505635399.54017198</real>
 				<key>version</key>
@@ -8526,10 +7183,6 @@
 			</dict>
 			<key>2016-09-09-CAIN.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.02978098</real>
 				<key>lastModification</key>
 				<real>505635399.02978098</real>
 				<key>version</key>
@@ -8540,10 +7193,6 @@
 			</dict>
 			<key>2016-09-09-Hack Workflow.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.69552898</real>
 				<key>lastModification</key>
 				<real>505635400.69552898</real>
 				<key>version</key>
@@ -8554,10 +7203,6 @@
 			</dict>
 			<key>2016-09-09-Kali 换源 sources.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.69167399</real>
 				<key>lastModification</key>
 				<real>505635399.69167399</real>
 				<key>version</key>
@@ -8568,10 +7213,6 @@
 			</dict>
 			<key>2016-09-09-Kali.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.48057902</real>
 				<key>lastModification</key>
 				<real>505635400.48057902</real>
 				<key>version</key>
@@ -8582,10 +7223,6 @@
 			</dict>
 			<key>2016-09-09-LVM info.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.61061198</real>
 				<key>lastModification</key>
 				<real>505635400.61061198</real>
 				<key>version</key>
@@ -8596,10 +7233,6 @@
 			</dict>
 			<key>2016-09-09-LVM.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.14486301</real>
 				<key>lastModification</key>
 				<real>505635400.14486301</real>
 				<key>version</key>
@@ -8610,10 +7243,6 @@
 			</dict>
 			<key>2016-09-09-Luks - Cryptsetup.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.31609303</real>
 				<key>lastModification</key>
 				<real>505635399.31609303</real>
 				<key>version</key>
@@ -8624,10 +7253,6 @@
 			</dict>
 			<key>2016-09-09-Luks - Ubuntu LVM Change pssswd.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.38088</real>
 				<key>lastModification</key>
 				<real>505635398.38088</real>
 				<key>version</key>
@@ -8638,10 +7263,6 @@
 			</dict>
 			<key>2016-09-09-Nmap.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.94693798</real>
 				<key>lastModification</key>
 				<real>505635399.94693798</real>
 				<key>version</key>
@@ -8652,10 +7273,6 @@
 			</dict>
 			<key>2016-09-09-SSH.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.06629503</real>
 				<key>lastModification</key>
 				<real>505635400.06629503</real>
 				<key>version</key>
@@ -8666,10 +7283,6 @@
 			</dict>
 			<key>2016-09-09-keyboard history hack.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.70918202</real>
 				<key>lastModification</key>
 				<real>505635400.70918202</real>
 				<key>version</key>
@@ -8680,10 +7293,6 @@
 			</dict>
 			<key>2016-09-09-分布式破解.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.09507698</real>
 				<key>lastModification</key>
 				<real>505635399.09507698</real>
 				<key>version</key>
@@ -8694,10 +7303,6 @@
 			</dict>
 			<key>2016-09-09-密码分析.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.04179001</real>
 				<key>lastModification</key>
 				<real>505635399.04179001</real>
 				<key>version</key>
@@ -8708,10 +7313,6 @@
 			</dict>
 			<key>2016-09-09-抓取握手包破解.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635397.99438298</real>
 				<key>lastModification</key>
 				<real>505635397.99438298</real>
 				<key>version</key>
@@ -8722,10 +7323,6 @@
 			</dict>
 			<key>2016-09-09-有一定联系性规律性密码.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.14063603</real>
 				<key>lastModification</key>
 				<real>505635398.14063603</real>
 				<key>version</key>
@@ -8736,10 +7333,6 @@
 			</dict>
 			<key>2016-09-09-社交工程.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.556629</real>
 				<key>lastModification</key>
 				<real>505635400.556629</real>
 				<key>version</key>
@@ -8890,10 +7483,6 @@
 			</dict>
 			<key>2016-10-11-21-00-RegExp.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.72289902</real>
 				<key>lastModification</key>
 				<real>505635400.72289902</real>
 				<key>version</key>
@@ -8904,10 +7493,6 @@
 			</dict>
 			<key>2016-10-11-21-01-Grep AWK SED.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.24031401</real>
 				<key>lastModification</key>
 				<real>505635400.24031401</real>
 				<key>version</key>
@@ -8918,10 +7503,6 @@
 			</dict>
 			<key>2016-10-11-21-02-GREP.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.60801101</real>
 				<key>lastModification</key>
 				<real>505635400.60801101</real>
 				<key>version</key>
@@ -8932,10 +7513,6 @@
 			</dict>
 			<key>2016-10-11-21-03-AWK.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.52638</real>
 				<key>lastModification</key>
 				<real>505635400.52638</real>
 				<key>version</key>
@@ -8946,10 +7523,6 @@
 			</dict>
 			<key>2016-10-11-21-04-SED.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.49263299</real>
 				<key>lastModification</key>
 				<real>505635400.49263299</real>
 				<key>version</key>
@@ -8960,10 +7533,6 @@
 			</dict>
 			<key>2016-10-11-21-05-ECHO.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.69550002</real>
 				<key>lastModification</key>
 				<real>505635398.69550002</real>
 				<key>version</key>
@@ -8974,10 +7543,6 @@
 			</dict>
 			<key>2016-10-11-21-05-Grep AWK SED.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.67104602</real>
 				<key>lastModification</key>
 				<real>505635398.67104602</real>
 				<key>version</key>
@@ -8988,10 +7553,6 @@
 			</dict>
 			<key>2016-10-11-21-05-Grep.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.67712802</real>
 				<key>lastModification</key>
 				<real>505635398.67712802</real>
 				<key>version</key>
@@ -9002,10 +7563,6 @@
 			</dict>
 			<key>2016-10-11-21-05-Perl.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.19777203</real>
 				<key>lastModification</key>
 				<real>505635399.19777203</real>
 				<key>version</key>
@@ -9016,10 +7573,6 @@
 			</dict>
 			<key>2016-10-11-21-05-正则式编辑器 regexrx.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.477548</real>
 				<key>lastModification</key>
 				<real>505635399.477548</real>
 				<key>version</key>
@@ -9030,10 +7583,6 @@
 			</dict>
 			<key>2016-10-11-21-RegExp JS.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.97554898</real>
 				<key>lastModification</key>
 				<real>505635399.97554898</real>
 				<key>version</key>
@@ -9044,10 +7593,6 @@
 			</dict>
 			<key>2016-10-11-21-Regular Expression.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.84487098</real>
 				<key>lastModification</key>
 				<real>505635398.84487098</real>
 				<key>version</key>
@@ -9058,10 +7603,6 @@
 			</dict>
 			<key>2016-10-11-21-常用正则式.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.61532903</real>
 				<key>lastModification</key>
 				<real>505635398.61532903</real>
 				<key>version</key>
@@ -9072,10 +7613,6 @@
 			</dict>
 			<key>2016-10-22-21- - 2.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.11273199</real>
 				<key>lastModification</key>
 				<real>505635398.11273199</real>
 				<key>version</key>
@@ -9170,10 +7707,6 @@
 			</dict>
 			<key>2016-10-22-21-Commands.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.94748503</real>
 				<key>lastModification</key>
 				<real>505635398.94748503</real>
 				<key>version</key>
@@ -9184,10 +7717,6 @@
 			</dict>
 			<key>2016-10-22-21-Excel 技巧.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.69646198</real>
 				<key>lastModification</key>
 				<real>505635399.69646198</real>
 				<key>version</key>
@@ -9198,10 +7727,6 @@
 			</dict>
 			<key>2016-10-22-21-File in use.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.95689201</real>
 				<key>lastModification</key>
 				<real>505635399.95689201</real>
 				<key>version</key>
@@ -9212,10 +7737,6 @@
 			</dict>
 			<key>2016-10-22-21-Guest Account.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.43379998</real>
 				<key>lastModification</key>
 				<real>505635400.43379998</real>
 				<key>version</key>
@@ -9226,10 +7747,6 @@
 			</dict>
 			<key>2016-10-22-21-IIS.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.04589403</real>
 				<key>lastModification</key>
 				<real>505635399.04589403</real>
 				<key>version</key>
@@ -9240,10 +7757,6 @@
 			</dict>
 			<key>2016-10-22-21-Keyboard Listen.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.55268401</real>
 				<key>lastModification</key>
 				<real>505635399.55268401</real>
 				<key>version</key>
@@ -9254,10 +7767,6 @@
 			</dict>
 			<key>2016-10-22-21-Log Event.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.81520599</real>
 				<key>lastModification</key>
 				<real>505635399.81520599</real>
 				<key>version</key>
@@ -9268,10 +7777,6 @@
 			</dict>
 			<key>2016-10-22-21-Messy code 乱码.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.54495502</real>
 				<key>lastModification</key>
 				<real>505635400.54495502</real>
 				<key>version</key>
@@ -9282,10 +7787,6 @@
 			</dict>
 			<key>2016-10-22-21-NTFS 权限.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.45886999</real>
 				<key>lastModification</key>
 				<real>505635399.45886999</real>
 				<key>version</key>
@@ -9296,10 +7797,6 @@
 			</dict>
 			<key>2016-10-22-21-Office - 恢复未保存文件.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.33922398</real>
 				<key>lastModification</key>
 				<real>505635399.33922398</real>
 				<key>version</key>
@@ -9310,10 +7807,6 @@
 			</dict>
 			<key>2016-10-22-21-Outlook Problems.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.38011903</real>
 				<key>lastModification</key>
 				<real>505635399.38011903</real>
 				<key>version</key>
@@ -9324,10 +7817,6 @@
 			</dict>
 			<key>2016-10-22-21-Radmin - Remote.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.32093298</real>
 				<key>lastModification</key>
 				<real>505635398.32093298</real>
 				<key>version</key>
@@ -9338,10 +7827,6 @@
 			</dict>
 			<key>2016-10-22-21-Radmin.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.501113</real>
 				<key>lastModification</key>
 				<real>505635400.501113</real>
 				<key>version</key>
@@ -9352,10 +7837,6 @@
 			</dict>
 			<key>2016-10-22-21-SAM.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.92571998</real>
 				<key>lastModification</key>
 				<real>505635399.92571998</real>
 				<key>version</key>
@@ -9366,10 +7847,6 @@
 			</dict>
 			<key>2016-10-22-21-Shutdown - 2.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.71836501</real>
 				<key>lastModification</key>
 				<real>505635399.71836501</real>
 				<key>version</key>
@@ -9380,10 +7857,6 @@
 			</dict>
 			<key>2016-10-22-21-Shutdown.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.19744998</real>
 				<key>lastModification</key>
 				<real>505635400.19744998</real>
 				<key>version</key>
@@ -9394,10 +7867,6 @@
 			</dict>
 			<key>2016-10-22-21-WDS &amp; PXE.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.46448803</real>
 				<key>lastModification</key>
 				<real>505635398.46448803</real>
 				<key>version</key>
@@ -9408,10 +7877,6 @@
 			</dict>
 			<key>2016-10-22-21-Windows 2008.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.64374399</real>
 				<key>lastModification</key>
 				<real>505635399.64374399</real>
 				<key>version</key>
@@ -9422,10 +7887,6 @@
 			</dict>
 			<key>2016-10-22-21-Windows Server.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.59170997</real>
 				<key>lastModification</key>
 				<real>505635400.59170997</real>
 				<key>version</key>
@@ -9436,10 +7897,6 @@
 			</dict>
 			<key>2016-10-22-21-修改3389端口 (XP &amp; Win003).md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.200032</real>
 				<key>lastModification</key>
 				<real>505635400.200032</real>
 				<key>version</key>
@@ -9450,10 +7907,6 @@
 			</dict>
 			<key>2016-10-22-21-文件权限.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.64772397</real>
 				<key>lastModification</key>
 				<real>505635398.64772397</real>
 				<key>version</key>
@@ -9464,10 +7917,6 @@
 			</dict>
 			<key>2016-10-22-21-硬盘格式化成EXFAT.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635397.61400598</real>
 				<key>lastModification</key>
 				<real>505635397.61400598</real>
 				<key>version</key>
@@ -9478,10 +7927,6 @@
 			</dict>
 			<key>2016-10-22-21-禁止改IP.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.30380201</real>
 				<key>lastModification</key>
 				<real>505635399.30380201</real>
 				<key>version</key>
@@ -9492,10 +7937,6 @@
 			</dict>
 			<key>2016-10-22-21-网上邻居.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.88290203</real>
 				<key>lastModification</key>
 				<real>505635399.88290203</real>
 				<key>version</key>
@@ -9604,10 +8045,6 @@
 			</dict>
 			<key>2016-10-23-Adobe cc 破解 亲测.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.34377903</real>
 				<key>lastModification</key>
 				<real>505635399.34377903</real>
 				<key>version</key>
@@ -9618,10 +8055,6 @@
 			</dict>
 			<key>2016-10-23-Autocad 2015 mac 破解.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.117567</real>
 				<key>lastModification</key>
 				<real>505635400.117567</real>
 				<key>version</key>
@@ -9632,10 +8065,6 @@
 			</dict>
 			<key>2016-10-23-Microsoft-Office Crack.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.66110802</real>
 				<key>lastModification</key>
 				<real>505635399.66110802</real>
 				<key>version</key>
@@ -10038,10 +8467,6 @@
 			</dict>
 			<key>2016-11-22-PC AFK.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.63139802</real>
 				<key>lastModification</key>
 				<real>505635398.63139802</real>
 				<key>version</key>
@@ -10052,10 +8477,6 @@
 			</dict>
 			<key>2016-11-22-分区表.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.55803901</real>
 				<key>lastModification</key>
 				<real>505635399.55803901</real>
 				<key>version</key>
@@ -10066,10 +8487,6 @@
 			</dict>
 			<key>2016-11-22-打印.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.22013599</real>
 				<key>lastModification</key>
 				<real>505635399.22013599</real>
 				<key>version</key>
@@ -10080,10 +8497,6 @@
 			</dict>
 			<key>2016-11-22-电源好坏.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.63122302</real>
 				<key>lastModification</key>
 				<real>505635399.63122302</real>
 				<key>version</key>
@@ -10094,10 +8507,6 @@
 			</dict>
 			<key>2016-11-22-电脑故障.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635397.20274001</real>
 				<key>lastModification</key>
 				<real>505635397.20274001</real>
 				<key>version</key>
@@ -10108,10 +8517,6 @@
 			</dict>
 			<key>2016-11-22-硬件基础.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635397.13882899</real>
 				<key>lastModification</key>
 				<real>505635397.13882899</real>
 				<key>version</key>
@@ -10122,10 +8527,6 @@
 			</dict>
 			<key>2016-11-22-硬盘常识.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.99821502</real>
 				<key>lastModification</key>
 				<real>505635398.99821502</real>
 				<key>version</key>
@@ -10136,10 +8537,6 @@
 			</dict>
 			<key>2016-11-22-网线.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.78957498</real>
 				<key>lastModification</key>
 				<real>505635399.78957498</real>
 				<key>version</key>
@@ -10150,10 +8547,6 @@
 			</dict>
 			<key>2016-12-02-02-结构简介.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.64083201</real>
 				<key>lastModification</key>
 				<real>505635399.64083201</real>
 				<key>version</key>
@@ -10164,10 +8557,6 @@
 			</dict>
 			<key>2016-12-02-NPM.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.21359599</real>
 				<key>lastModification</key>
 				<real>505635399.21359599</real>
 				<key>version</key>
@@ -10178,10 +8567,6 @@
 			</dict>
 			<key>2016-12-02-Node.js.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.89463001</real>
 				<key>lastModification</key>
 				<real>505635398.89463001</real>
 				<key>version</key>
@@ -10192,10 +8577,6 @@
 			</dict>
 			<key>2016-12-02-Node使用.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.72737998</real>
 				<key>lastModification</key>
 				<real>505635398.72737998</real>
 				<key>version</key>
@@ -10206,10 +8587,6 @@
 			</dict>
 			<key>2016-12-02-Node安装.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.62561399</real>
 				<key>lastModification</key>
 				<real>505635400.62561399</real>
 				<key>version</key>
@@ -10220,10 +8597,6 @@
 			</dict>
 			<key>2016-12-02-Node开发环境.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.11047798</real>
 				<key>lastModification</key>
 				<real>505635399.11047798</real>
 				<key>version</key>
@@ -10234,10 +8607,6 @@
 			</dict>
 			<key>2016-12-02-模块.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.71241701</real>
 				<key>lastModification</key>
 				<real>505635398.71241701</real>
 				<key>version</key>
@@ -10248,10 +8617,6 @@
 			</dict>
 			<key>2016-12-02-第一个node程序.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.42515802</real>
 				<key>lastModification</key>
 				<real>505635400.42515802</real>
 				<key>version</key>
@@ -10262,10 +8627,6 @@
 			</dict>
 			<key>2016-12-11-Jekyll Cards Theme.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.480268</real>
 				<key>lastModification</key>
 				<real>505635399.480268</real>
 				<key>version</key>
@@ -10276,10 +8637,6 @@
 			</dict>
 			<key>2016-12-11-Jekyll-Theme.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.41197097</real>
 				<key>lastModification</key>
 				<real>505635400.41197097</real>
 				<key>version</key>
@@ -10290,10 +8647,6 @@
 			</dict>
 			<key>2016-12-11-拖动条设计.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.72828299</real>
 				<key>lastModification</key>
 				<real>505635399.72828299</real>
 				<key>version</key>
@@ -10304,10 +8657,6 @@
 			</dict>
 			<key>2016-12-22-02-Ajax.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635396.79883897</real>
 				<key>lastModification</key>
 				<real>505635396.79883897</real>
 				<key>version</key>
@@ -10318,10 +8667,6 @@
 			</dict>
 			<key>2016-12-22-02-Pjax&amp;jQuery.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.94266897</real>
 				<key>lastModification</key>
 				<real>505635399.94266897</real>
 				<key>version</key>
@@ -10332,10 +8677,6 @@
 			</dict>
 			<key>2016-12-22-02-Pjax-Ajax.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.25146699</real>
 				<key>lastModification</key>
 				<real>505635400.25146699</real>
 				<key>version</key>
@@ -10346,10 +8687,6 @@
 			</dict>
 			<key>2016-12-22-02-Pjax3.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.21410298</real>
 				<key>lastModification</key>
 				<real>505635400.21410298</real>
 				<key>version</key>
@@ -10360,10 +8697,6 @@
 			</dict>
 			<key>2016-12-22-02-Pjax中文文档.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.46806502</real>
 				<key>lastModification</key>
 				<real>505635400.46806502</real>
 				<key>version</key>
@@ -10374,10 +8707,6 @@
 			</dict>
 			<key>2016-12-22-02-Pjax实测.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.75931501</real>
 				<key>lastModification</key>
 				<real>505635400.75931501</real>
 				<key>version</key>
@@ -10388,10 +8717,6 @@
 			</dict>
 			<key>2016-12-22-CDN简介.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.32634002</real>
 				<key>lastModification</key>
 				<real>505635398.32634002</real>
 				<key>version</key>
@@ -10402,10 +8727,6 @@
 			</dict>
 			<key>2016-12-22-FontawesomeCDN.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.33676201</real>
 				<key>lastModification</key>
 				<real>505635398.33676201</real>
 				<key>version</key>
@@ -10416,10 +8737,6 @@
 			</dict>
 			<key>2016-12-22-拖动条设计.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.59262598</real>
 				<key>lastModification</key>
 				<real>505635398.59262598</real>
 				<key>version</key>
@@ -10500,10 +8817,6 @@
 			</dict>
 			<key>2016-12-31-SS &amp; Wall SS-Share.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.44263899</real>
 				<key>lastModification</key>
 				<real>505635400.44263899</real>
 				<key>version</key>
@@ -10514,10 +8827,6 @@
 			</dict>
 			<key>2016-12-31-SS 翻墙.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.88896102</real>
 				<key>lastModification</key>
 				<real>505635399.88896102</real>
 				<key>version</key>
@@ -10528,10 +8837,6 @@
 			</dict>
 			<key>2016-12-31-Shadowsocks.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.266563</real>
 				<key>lastModification</key>
 				<real>505635399.266563</real>
 				<key>version</key>
@@ -10542,10 +8847,6 @@
 			</dict>
 			<key>2016-12-31-Surge - Wall.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.72278303</real>
 				<key>lastModification</key>
 				<real>505635398.72278303</real>
 				<key>version</key>
@@ -10654,10 +8955,6 @@
 			</dict>
 			<key>2017-01-01-AHCI - BIOS.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.12414098</real>
 				<key>lastModification</key>
 				<real>505635399.12414098</real>
 				<key>version</key>
@@ -10668,10 +8965,6 @@
 			</dict>
 			<key>2017-01-01-Active Directory.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.38884598</real>
 				<key>lastModification</key>
 				<real>505635400.38884598</real>
 				<key>version</key>
@@ -10682,10 +8975,6 @@
 			</dict>
 			<key>2017-01-01-Apple USB Make.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.44752902</real>
 				<key>lastModification</key>
 				<real>505635399.44752902</real>
 				<key>version</key>
@@ -10696,10 +8985,6 @@
 			</dict>
 			<key>2017-01-01-BIOS CMOS 系统安装.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.18821502</real>
 				<key>lastModification</key>
 				<real>505635399.18821502</real>
 				<key>version</key>
@@ -10710,10 +8995,6 @@
 			</dict>
 			<key>2017-01-01-CURL.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.90456897</real>
 				<key>lastModification</key>
 				<real>505635399.90456897</real>
 				<key>version</key>
@@ -10724,10 +9005,6 @@
 			</dict>
 			<key>2017-01-01-Cent os 7.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.83041</real>
 				<key>lastModification</key>
 				<real>505635399.83041</real>
 				<key>version</key>
@@ -10738,10 +9015,6 @@
 			</dict>
 			<key>2017-01-01-DD-WRT.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.226367</real>
 				<key>lastModification</key>
 				<real>505635399.226367</real>
 				<key>version</key>
@@ -10752,10 +9025,6 @@
 			</dict>
 			<key>2017-01-01-DiskGenius.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.554645</real>
 				<key>lastModification</key>
 				<real>505635399.554645</real>
 				<key>version</key>
@@ -10766,10 +9035,6 @@
 			</dict>
 			<key>2017-01-01-FTP &amp; IIS.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.83765298</real>
 				<key>lastModification</key>
 				<real>505635399.83765298</real>
 				<key>version</key>
@@ -10780,10 +9045,6 @@
 			</dict>
 			<key>2017-01-01-FTP - VSFTPD.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.3301</real>
 				<key>lastModification</key>
 				<real>505635399.3301</real>
 				<key>version</key>
@@ -10794,10 +9055,6 @@
 			</dict>
 			<key>2017-01-01-FTP Server.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.115771</real>
 				<key>lastModification</key>
 				<real>505635399.115771</real>
 				<key>version</key>
@@ -10808,10 +9065,6 @@
 			</dict>
 			<key>2017-01-01-FireWall.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.410151</real>
 				<key>lastModification</key>
 				<real>505635398.410151</real>
 				<key>version</key>
@@ -10822,10 +9075,6 @@
 			</dict>
 			<key>2017-01-01-Grub.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.44465297</real>
 				<key>lastModification</key>
 				<real>505635399.44465297</real>
 				<key>version</key>
@@ -10836,10 +9085,6 @@
 			</dict>
 			<key>2017-01-01-Hosts 文件.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.26892197</real>
 				<key>lastModification</key>
 				<real>505635399.26892197</real>
 				<key>version</key>
@@ -10850,10 +9095,6 @@
 			</dict>
 			<key>2017-01-01-IP.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.095833</real>
 				<key>lastModification</key>
 				<real>505635400.095833</real>
 				<key>version</key>
@@ -10864,10 +9105,6 @@
 			</dict>
 			<key>2017-01-01-IP解析.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.78059202</real>
 				<key>lastModification</key>
 				<real>505635398.78059202</real>
 				<key>version</key>
@@ -10878,10 +9115,6 @@
 			</dict>
 			<key>2017-01-01-ISO 镜像.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.35501599</real>
 				<key>lastModification</key>
 				<real>505635399.35501599</real>
 				<key>version</key>
@@ -10892,10 +9125,6 @@
 			</dict>
 			<key>2017-01-01-IT.Admin 入门.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.457798</real>
 				<key>lastModification</key>
 				<real>505635398.457798</real>
 				<key>version</key>
@@ -10906,10 +9135,6 @@
 			</dict>
 			<key>2017-01-01-KVM ESX 虚拟化.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.63006002</real>
 				<key>lastModification</key>
 				<real>505635400.63006002</real>
 				<key>version</key>
@@ -10920,10 +9145,6 @@
 			</dict>
 			<key>2017-01-01-KVM 虚拟化.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.41517001</real>
 				<key>lastModification</key>
 				<real>505635398.41517001</real>
 				<key>version</key>
@@ -10934,10 +9155,6 @@
 			</dict>
 			<key>2017-01-01-Kali USB Make.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.81317902</real>
 				<key>lastModification</key>
 				<real>505635398.81317902</real>
 				<key>version</key>
@@ -10948,10 +9165,6 @@
 			</dict>
 			<key>2017-01-01-Localhost.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.87115198</real>
 				<key>lastModification</key>
 				<real>505635398.87115198</real>
 				<key>version</key>
@@ -10962,10 +9175,6 @@
 			</dict>
 			<key>2017-01-01-MHDD.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.49503797</real>
 				<key>lastModification</key>
 				<real>505635399.49503797</real>
 				<key>version</key>
@@ -10976,10 +9185,6 @@
 			</dict>
 			<key>2017-01-01-Mail Server.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.50769103</real>
 				<key>lastModification</key>
 				<real>505635399.50769103</real>
 				<key>version</key>
@@ -10990,10 +9195,6 @@
 			</dict>
 			<key>2017-01-01-Mobotix.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.58985198</real>
 				<key>lastModification</key>
 				<real>505635400.58985198</real>
 				<key>version</key>
@@ -11004,10 +9205,6 @@
 			</dict>
 			<key>2017-01-01-NAS.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.57295102</real>
 				<key>lastModification</key>
 				<real>505635400.57295102</real>
 				<key>version</key>
@@ -11018,10 +9215,6 @@
 			</dict>
 			<key>2017-01-01-NAT - 2.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.51540798</real>
 				<key>lastModification</key>
 				<real>505635400.51540798</real>
 				<key>version</key>
@@ -11032,10 +9225,6 @@
 			</dict>
 			<key>2017-01-01-NAT 端口转发.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.55911201</real>
 				<key>lastModification</key>
 				<real>505635398.55911201</real>
 				<key>version</key>
@@ -11046,10 +9235,6 @@
 			</dict>
 			<key>2017-01-01-NAT.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.69870698</real>
 				<key>lastModification</key>
 				<real>505635400.69870698</real>
 				<key>version</key>
@@ -11060,10 +9245,6 @@
 			</dict>
 			<key>2017-01-01-NTFS &amp; File Permission.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.95996797</real>
 				<key>lastModification</key>
 				<real>505635398.95996797</real>
 				<key>version</key>
@@ -11074,10 +9255,6 @@
 			</dict>
 			<key>2017-01-01-NetGear 6300.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.60228097</real>
 				<key>lastModification</key>
 				<real>505635400.60228097</real>
 				<key>version</key>
@@ -11088,10 +9265,6 @@
 			</dict>
 			<key>2017-01-01-PE.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.25120002</real>
 				<key>lastModification</key>
 				<real>505635399.25120002</real>
 				<key>version</key>
@@ -11102,10 +9275,6 @@
 			</dict>
 			<key>2017-01-01-PING.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.35134399</real>
 				<key>lastModification</key>
 				<real>505635399.35134399</real>
 				<key>version</key>
@@ -11116,10 +9285,6 @@
 			</dict>
 			<key>2017-01-01-Printer.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.16020399</real>
 				<key>lastModification</key>
 				<real>505635399.16020399</real>
 				<key>version</key>
@@ -11130,10 +9295,6 @@
 			</dict>
 			<key>2017-01-01-SNMP.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.677356</real>
 				<key>lastModification</key>
 				<real>505635399.677356</real>
 				<key>version</key>
@@ -11144,10 +9305,6 @@
 			</dict>
 			<key>2017-01-01-SSH &amp; Telnet &amp; RDP &amp; VNC.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.774988</real>
 				<key>lastModification</key>
 				<real>505635399.774988</real>
 				<key>version</key>
@@ -11158,10 +9315,6 @@
 			</dict>
 			<key>2017-01-01-Skill List.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.01156098</real>
 				<key>lastModification</key>
 				<real>505635400.01156098</real>
 				<key>version</key>
@@ -11172,10 +9325,6 @@
 			</dict>
 			<key>2017-01-01-Socks &amp; Http.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.87385201</real>
 				<key>lastModification</key>
 				<real>505635399.87385201</real>
 				<key>version</key>
@@ -11186,10 +9335,6 @@
 			</dict>
 			<key>2017-01-01-Sync Toy.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.07301998</real>
 				<key>lastModification</key>
 				<real>505635400.07301998</real>
 				<key>version</key>
@@ -11200,10 +9345,6 @@
 			</dict>
 			<key>2017-01-01-TFTP (MAC &amp; Win).md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.56088698</real>
 				<key>lastModification</key>
 				<real>505635399.56088698</real>
 				<key>version</key>
@@ -11214,10 +9355,6 @@
 			</dict>
 			<key>2017-01-01-Telnet &amp; RDP &amp; VNC.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.20360202</real>
 				<key>lastModification</key>
 				<real>505635399.20360202</real>
 				<key>version</key>
@@ -11228,10 +9365,6 @@
 			</dict>
 			<key>2017-01-01-USB Console 配置线.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.912332</real>
 				<key>lastModification</key>
 				<real>505635399.912332</real>
 				<key>version</key>
@@ -11242,10 +9375,6 @@
 			</dict>
 			<key>2017-01-01-USB 启动盘.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.23478103</real>
 				<key>lastModification</key>
 				<real>505635400.23478103</real>
 				<key>version</key>
@@ -11256,10 +9385,6 @@
 			</dict>
 			<key>2017-01-01-Ubuntu USB-CD Maker.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.61954898</real>
 				<key>lastModification</key>
 				<real>505635399.61954898</real>
 				<key>version</key>
@@ -11270,10 +9395,6 @@
 			</dict>
 			<key>2017-01-01-U盘 量产.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.33724499</real>
 				<key>lastModification</key>
 				<real>505635399.33724499</real>
 				<key>version</key>
@@ -11284,10 +9405,6 @@
 			</dict>
 			<key>2017-01-01-VLAN.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.577981</real>
 				<key>lastModification</key>
 				<real>505635400.577981</real>
 				<key>version</key>
@@ -11298,10 +9415,6 @@
 			</dict>
 			<key>2017-01-01-VLANs.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.05494201</real>
 				<key>lastModification</key>
 				<real>505635399.05494201</real>
 				<key>version</key>
@@ -11312,10 +9425,6 @@
 			</dict>
 			<key>2017-01-01-VMware tool 增强工具.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.40510201</real>
 				<key>lastModification</key>
 				<real>505635400.40510201</real>
 				<key>version</key>
@@ -11326,10 +9435,6 @@
 			</dict>
 			<key>2017-01-01-VPN.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.28332198</real>
 				<key>lastModification</key>
 				<real>505635399.28332198</real>
 				<key>version</key>
@@ -11340,10 +9445,6 @@
 			</dict>
 			<key>2017-01-01-VPS Rebuild (Debian).md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.063227</real>
 				<key>lastModification</key>
 				<real>505635399.063227</real>
 				<key>version</key>
@@ -11354,10 +9455,6 @@
 			</dict>
 			<key>2017-01-01-VirtualBox.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635396.82340002</real>
 				<key>lastModification</key>
 				<real>505635396.82340002</real>
 				<key>version</key>
@@ -11368,10 +9465,6 @@
 			</dict>
 			<key>2017-01-01-WEB 服务器维护.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.315795</real>
 				<key>lastModification</key>
 				<real>505635400.315795</real>
 				<key>version</key>
@@ -11382,10 +9475,6 @@
 			</dict>
 			<key>2017-01-01-Web server 网络服务器.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.14377201</real>
 				<key>lastModification</key>
 				<real>505635399.14377201</real>
 				<key>version</key>
@@ -11396,10 +9485,6 @@
 			</dict>
 			<key>2017-01-01-Zabbix.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.18952298</real>
 				<key>lastModification</key>
 				<real>505635400.18952298</real>
 				<key>version</key>
@@ -11410,10 +9495,6 @@
 			</dict>
 			<key>2017-01-01-ddwrt.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.44995099</real>
 				<key>lastModification</key>
 				<real>505635400.44995099</real>
 				<key>version</key>
@@ -11424,10 +9505,6 @@
 			</dict>
 			<key>2017-01-01-fdisk &amp; df.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.53977603</real>
 				<key>lastModification</key>
 				<real>505635400.53977603</real>
 				<key>version</key>
@@ -11438,10 +9515,6 @@
 			</dict>
 			<key>2017-01-01-firewall 防火墙.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.29313499</real>
 				<key>lastModification</key>
 				<real>505635399.29313499</real>
 				<key>version</key>
@@ -11452,10 +9525,6 @@
 			</dict>
 			<key>2017-01-01-pptp vpn Ubuntu.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.36894399</real>
 				<key>lastModification</key>
 				<real>505635399.36894399</real>
 				<key>version</key>
@@ -11466,10 +9535,6 @@
 			</dict>
 			<key>2017-01-01-vmfs.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.71086699</real>
 				<key>lastModification</key>
 				<real>505635400.71086699</real>
 				<key>version</key>
@@ -11480,10 +9545,6 @@
 			</dict>
 			<key>2017-01-01-✔️VPN - 流控.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.49777102</real>
 				<key>lastModification</key>
 				<real>505635399.49777102</real>
 				<key>version</key>
@@ -11494,10 +9555,6 @@
 			</dict>
 			<key>2017-01-01-代理服务器.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.36076099</real>
 				<key>lastModification</key>
 				<real>505635399.36076099</real>
 				<key>version</key>
@@ -11508,10 +9565,6 @@
 			</dict>
 			<key>2017-01-01-光盘刻录.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.31210297</real>
 				<key>lastModification</key>
 				<real>505635400.31210297</real>
 				<key>version</key>
@@ -11522,10 +9575,6 @@
 			</dict>
 			<key>2017-01-01-分区 - 2.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.15472102</real>
 				<key>lastModification</key>
 				<real>505635399.15472102</real>
 				<key>version</key>
@@ -11536,10 +9585,6 @@
 			</dict>
 			<key>2017-01-01-分区.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.82339603</real>
 				<key>lastModification</key>
 				<real>505635399.82339603</real>
 				<key>version</key>
@@ -11550,10 +9595,6 @@
 			</dict>
 			<key>2017-01-01-垃圾邮件.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.10740298</real>
 				<key>lastModification</key>
 				<real>505635399.10740298</real>
 				<key>version</key>
@@ -11564,10 +9605,6 @@
 			</dict>
 			<key>2017-01-01-子路由 设置.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.55894703</real>
 				<key>lastModification</key>
 				<real>505635400.55894703</real>
 				<key>version</key>
@@ -11578,10 +9615,6 @@
 			</dict>
 			<key>2017-01-01-存储简介.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.64389998</real>
 				<key>lastModification</key>
 				<real>505635398.64389998</real>
 				<key>version</key>
@@ -11592,10 +9625,6 @@
 			</dict>
 			<key>2017-01-01-文件压缩刻录.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.76441902</real>
 				<key>lastModification</key>
 				<real>505635398.76441902</real>
 				<key>version</key>
@@ -11606,10 +9635,6 @@
 			</dict>
 			<key>2017-01-01-次路由设置.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.19235402</real>
 				<key>lastModification</key>
 				<real>505635399.19235402</real>
 				<key>version</key>
@@ -11620,10 +9645,6 @@
 			</dict>
 			<key>2017-01-01-流氓软件 卸载.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.84853601</real>
 				<key>lastModification</key>
 				<real>505635399.84853601</real>
 				<key>version</key>
@@ -11634,10 +9655,6 @@
 			</dict>
 			<key>2017-01-01-热拔插.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.30159599</real>
 				<key>lastModification</key>
 				<real>505635398.30159599</real>
 				<key>version</key>
@@ -11648,10 +9665,6 @@
 			</dict>
 			<key>2017-01-01-电脑 禁止U盘.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.32829398</real>
 				<key>lastModification</key>
 				<real>505635400.32829398</real>
 				<key>version</key>
@@ -11662,10 +9675,6 @@
 			</dict>
 			<key>2017-01-01-硬盘分区表.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.99047601</real>
 				<key>lastModification</key>
 				<real>505635399.99047601</real>
 				<key>version</key>
@@ -11676,10 +9685,6 @@
 			</dict>
 			<key>2017-01-01-禁用Root远程登陆.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.43114799</real>
 				<key>lastModification</key>
 				<real>505635399.43114799</real>
 				<key>version</key>
@@ -11690,10 +9695,6 @@
 			</dict>
 			<key>2017-01-01-移动硬盘修复.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.83282501</real>
 				<key>lastModification</key>
 				<real>505635398.83282501</real>
 				<key>version</key>
@@ -11704,10 +9705,6 @@
 			</dict>
 			<key>2017-01-01-端口转发 - 2.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.38844001</real>
 				<key>lastModification</key>
 				<real>505635399.38844001</real>
 				<key>version</key>
@@ -11718,10 +9715,6 @@
 			</dict>
 			<key>2017-01-01-端口转发.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.54360902</real>
 				<key>lastModification</key>
 				<real>505635398.54360902</real>
 				<key>version</key>
@@ -11732,10 +9725,6 @@
 			</dict>
 			<key>2017-01-01-网件 恢复出厂设置.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.34225398</real>
 				<key>lastModification</key>
 				<real>505635400.34225398</real>
 				<key>version</key>
@@ -11746,10 +9735,6 @@
 			</dict>
 			<key>2017-01-01-网盘搜索技巧.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.32106102</real>
 				<key>lastModification</key>
 				<real>505635399.32106102</real>
 				<key>version</key>
@@ -11914,10 +9899,6 @@
 			</dict>
 			<key>2017-01-02-ACS.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.01560098</real>
 				<key>lastModification</key>
 				<real>505635399.01560098</real>
 				<key>version</key>
@@ -11928,10 +9909,6 @@
 			</dict>
 			<key>2017-01-02-ARP.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.136145</real>
 				<key>lastModification</key>
 				<real>505635400.136145</real>
 				<key>version</key>
@@ -11942,10 +9919,6 @@
 			</dict>
 			<key>2017-01-02-Apt-get (Kali).md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.66239703</real>
 				<key>lastModification</key>
 				<real>505635398.66239703</real>
 				<key>version</key>
@@ -11956,10 +9929,6 @@
 			</dict>
 			<key>2017-01-02-Apt-get.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.85666603</real>
 				<key>lastModification</key>
 				<real>505635399.85666603</real>
 				<key>version</key>
@@ -11970,10 +9939,6 @@
 			</dict>
 			<key>2017-01-02-Charles.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.28317797</real>
 				<key>lastModification</key>
 				<real>505635398.28317797</real>
 				<key>version</key>
@@ -11984,10 +9949,6 @@
 			</dict>
 			<key>2017-01-02-Cisco &amp; GNS3.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.71397001</real>
 				<key>lastModification</key>
 				<real>505635400.71397001</real>
 				<key>version</key>
@@ -11998,10 +9959,6 @@
 			</dict>
 			<key>2017-01-02-Cisco Call Manager - CM.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.19408298</real>
 				<key>lastModification</key>
 				<real>505635399.19408298</real>
 				<key>version</key>
@@ -12012,10 +9969,6 @@
 			</dict>
 			<key>2017-01-02-Cisco Command - 2.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.56327403</real>
 				<key>lastModification</key>
 				<real>505635400.56327403</real>
 				<key>version</key>
@@ -12026,10 +9979,6 @@
 			</dict>
 			<key>2017-01-02-Cisco Command.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.63800001</real>
 				<key>lastModification</key>
 				<real>505635400.63800001</real>
 				<key>version</key>
@@ -12040,10 +9989,6 @@
 			</dict>
 			<key>2017-01-02-Cisco Switch.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.39466298</real>
 				<key>lastModification</key>
 				<real>505635399.39466298</real>
 				<key>version</key>
@@ -12054,10 +9999,6 @@
 			</dict>
 			<key>2017-01-02-Cisco.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.12295097</real>
 				<key>lastModification</key>
 				<real>505635400.12295097</real>
 				<key>version</key>
@@ -12068,10 +10009,6 @@
 			</dict>
 			<key>2017-01-02-DDNS.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635397.03462797</real>
 				<key>lastModification</key>
 				<real>505635397.03462797</real>
 				<key>version</key>
@@ -12082,10 +10019,6 @@
 			</dict>
 			<key>2017-01-02-Filter Table.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.865426</real>
 				<key>lastModification</key>
 				<real>505635399.865426</real>
 				<key>version</key>
@@ -12096,10 +10029,6 @@
 			</dict>
 			<key>2017-01-02-FireWall.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.62347299</real>
 				<key>lastModification</key>
 				<real>505635400.62347299</real>
 				<key>version</key>
@@ -12110,10 +10039,6 @@
 			</dict>
 			<key>2017-01-02-GNS3.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.119874</real>
 				<key>lastModification</key>
 				<real>505635398.119874</real>
 				<key>version</key>
@@ -12124,10 +10049,6 @@
 			</dict>
 			<key>2017-01-02-IPC$ 探测.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.27409601</real>
 				<key>lastModification</key>
 				<real>505635400.27409601</real>
 				<key>version</key>
@@ -12138,10 +10059,6 @@
 			</dict>
 			<key>2017-01-02-IpTables - Mac OS.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.64195299</real>
 				<key>lastModification</key>
 				<real>505635400.64195299</real>
 				<key>version</key>
@@ -12152,10 +10069,6 @@
 			</dict>
 			<key>2017-01-02-Iptables.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.26217198</real>
 				<key>lastModification</key>
 				<real>505635399.26217198</real>
 				<key>version</key>
@@ -12166,10 +10079,6 @@
 			</dict>
 			<key>2017-01-02-MTR.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.47603101</real>
 				<key>lastModification</key>
 				<real>505635400.47603101</real>
 				<key>version</key>
@@ -12180,10 +10089,6 @@
 			</dict>
 			<key>2017-01-02-Mangle Table.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.96550697</real>
 				<key>lastModification</key>
 				<real>505635398.96550697</real>
 				<key>version</key>
@@ -12194,10 +10099,6 @@
 			</dict>
 			<key>2017-01-02-NAT Table.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.79434597</real>
 				<key>lastModification</key>
 				<real>505635399.79434597</real>
 				<key>version</key>
@@ -12208,10 +10109,6 @@
 			</dict>
 			<key>2017-01-02-Nessus.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.92975003</real>
 				<key>lastModification</key>
 				<real>505635399.92975003</real>
 				<key>version</key>
@@ -12222,10 +10119,6 @@
 			</dict>
 			<key>2017-01-02-Net 回流.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.65117103</real>
 				<key>lastModification</key>
 				<real>505635399.65117103</real>
 				<key>version</key>
@@ -12236,10 +10129,6 @@
 			</dict>
 			<key>2017-01-02-RAID.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.31012601</real>
 				<key>lastModification</key>
 				<real>505635398.31012601</real>
 				<key>version</key>
@@ -12250,10 +10139,6 @@
 			</dict>
 			<key>2017-01-02-Raw Table.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.68417799</real>
 				<key>lastModification</key>
 				<real>505635399.68417799</real>
 				<key>version</key>
@@ -12264,10 +10149,6 @@
 			</dict>
 			<key>2017-01-02-RiverStone 3000.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.60566002</real>
 				<key>lastModification</key>
 				<real>505635400.60566002</real>
 				<key>version</key>
@@ -12278,10 +10159,6 @@
 			</dict>
 			<key>2017-01-02-Route Table.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.259444</real>
 				<key>lastModification</key>
 				<real>505635400.259444</real>
 				<key>version</key>
@@ -12292,10 +10169,6 @@
 			</dict>
 			<key>2017-01-02-Rules.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.60531098</real>
 				<key>lastModification</key>
 				<real>505635399.60531098</real>
 				<key>version</key>
@@ -12306,10 +10179,6 @@
 			</dict>
 			<key>2017-01-02-S.M.A.R.T.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.120197</real>
 				<key>lastModification</key>
 				<real>505635399.120197</real>
 				<key>version</key>
@@ -12320,10 +10189,6 @@
 			</dict>
 			<key>2017-01-02-Session 会话.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.16264802</real>
 				<key>lastModification</key>
 				<real>505635400.16264802</real>
 				<key>version</key>
@@ -12334,10 +10199,6 @@
 			</dict>
 			<key>2017-01-02-TOR.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.32486397</real>
 				<key>lastModification</key>
 				<real>505635399.32486397</real>
 				<key>version</key>
@@ -12348,10 +10209,6 @@
 			</dict>
 			<key>2017-01-02-TracerRoute.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.81112403</real>
 				<key>lastModification</key>
 				<real>505635399.81112403</real>
 				<key>version</key>
@@ -12362,10 +10219,6 @@
 			</dict>
 			<key>2017-01-02-Traceroute.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.02342403</real>
 				<key>lastModification</key>
 				<real>505635400.02342403</real>
 				<key>version</key>
@@ -12376,10 +10229,6 @@
 			</dict>
 			<key>2017-01-02-Tracert Win.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.34798598</real>
 				<key>lastModification</key>
 				<real>505635400.34798598</real>
 				<key>version</key>
@@ -12390,10 +10239,6 @@
 			</dict>
 			<key>2017-01-02-Ubuntu - IP .Conf.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.98341399</real>
 				<key>lastModification</key>
 				<real>505635399.98341399</real>
 				<key>version</key>
@@ -12404,10 +10249,6 @@
 			</dict>
 			<key>2017-01-02-ddwrt 路由器设置.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.41965902</real>
 				<key>lastModification</key>
 				<real>505635400.41965902</real>
 				<key>version</key>
@@ -12418,10 +10259,6 @@
 			</dict>
 			<key>2017-01-02-ip-ipconfig-ifconfig.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.70981997</real>
 				<key>lastModification</key>
 				<real>505635399.70981997</real>
 				<key>version</key>
@@ -12432,10 +10269,6 @@
 			</dict>
 			<key>2017-01-02-网络唤醒.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635398.82780802</real>
 				<key>lastModification</key>
 				<real>505635398.82780802</real>
 				<key>version</key>
@@ -12474,10 +10307,6 @@
 			</dict>
 			<key>2017-01-03-ARP - Mac - IPtable 三大表.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.50438201</real>
 				<key>lastModification</key>
 				<real>505635399.50438201</real>
 				<key>version</key>
@@ -12488,10 +10317,6 @@
 			</dict>
 			<key>2017-01-03-Gateway.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.24500602</real>
 				<key>lastModification</key>
 				<real>505635399.24500602</real>
 				<key>version</key>
@@ -12502,10 +10327,6 @@
 			</dict>
 			<key>2017-01-03-OSI 7.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.36390197</real>
 				<key>lastModification</key>
 				<real>505635400.36390197</real>
 				<key>version</key>
@@ -12514,26 +10335,18 @@
 					<integer>11557</integer>
 				</dict>
 			</dict>
-			<key>2017-01-03-TCP &amp; UDP.md</key>
+			<key>2017-01-03-TCP-UDP.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.59855199</real>
 				<key>lastModification</key>
-				<real>505635399.59855199</real>
+				<real>505649525.21607202</real>
 				<key>version</key>
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>11387</integer>
+					<integer>11698</integer>
 				</dict>
 			</dict>
 			<key>2017-01-03-Three-way handshake.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635396.97998202</real>
 				<key>lastModification</key>
 				<real>505635396.97998202</real>
 				<key>version</key>
@@ -12554,10 +10367,6 @@
 			</dict>
 			<key>Untitled - 2.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.72607398</real>
 				<key>lastModification</key>
 				<real>505635400.72607398</real>
 				<key>version</key>
@@ -12568,10 +10377,6 @@
 			</dict>
 			<key>Untitled - 3.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.17147398</real>
 				<key>lastModification</key>
 				<real>505635400.17147398</real>
 				<key>version</key>
@@ -12582,10 +10387,6 @@
 			</dict>
 			<key>Untitled - 5.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635399.14675099</real>
 				<key>lastModification</key>
 				<real>505635399.14675099</real>
 				<key>version</key>
@@ -12638,10 +10439,6 @@
 			</dict>
 			<key>Untitled.md</key>
 			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635400.02683997</real>
 				<key>lastModification</key>
 				<real>505635400.02683997</real>
 				<key>version</key>
@@ -12681,6 +10478,15 @@
 		</array>
 		<array>
 			<string>Untitled - 9.md</string>
+		</array>
+		<array>
+			<string>1992-01-01-判断显隐.md</string>
+		</array>
+		<array>
+			<string>1992-01-01-屏幕宽度.md</string>
+		</array>
+		<array>
+			<string>1994-01-Media Queries.md</string>
 		</array>
 		<array>
 			<string>1989-09-Liquid-Tag汇总.md</string>
@@ -13805,7 +11611,7 @@
 			<string>2017-01-03-ARP - Mac - IPtable 三大表.md</string>
 		</array>
 		<array>
-			<string>2017-01-03-TCP &amp; UDP.md</string>
+			<string>2017-01-03-TCP-UDP.md</string>
 		</array>
 		<array>
 			<string>2017-01-02-Cisco Command - 2.md</string>
@@ -15373,12 +13179,12 @@
 		<key>childOrder</key>
 		<dict>
 			<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-			<integer>345</integer>
+			<integer>348</integer>
 		</dict>
 		<key>sheetClusters</key>
 		<dict>
 			<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-			<integer>11685</integer>
+			<integer>11703</integer>
 		</dict>
 		<key>sheetOrder</key>
 		<dict>

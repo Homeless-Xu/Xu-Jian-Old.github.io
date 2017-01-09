@@ -1,17 +1,19 @@
+
+
+
+
+
+
+
+
+
+
+
 *   { padding: 0; margin: 0; }
 li  { list-style: none;      }  
 a   { text-decoration: none; color:black;       } 
-
-
-
-
-
-
-
 sup                  { color: red; float:right; font-size:0.7em; }
 
-
-.sortDeafuleBtn { border: solid 1px black ; }
 .active {background-color: yellow}
   html { overflow: hidden; }  
 /* 强制隐藏滚动条. 不知为什么会有滚动条... */
@@ -19,25 +21,16 @@ sup                  { color: red; float:right; font-size:0.7em; }
 #bigDiv     { height: 100%; }
 /* 这里必须用 100%  而不能用100vh. 不然会在safari 网页放大缩小的时候有问题. */
 
-
-
 /* 下面是设置滚动条的: 既可以滚动 .又不显示滚动条.   */
 #catenameUL::-webkit-scrollbar {display:none}
  #tagnameUL::-webkit-scrollbar {display:none}
 #filenameUL::-webkit-scrollbar {display:none}
  
-
-/* padding margin 设置 还有点击链接的有效区域设置... */
-
-
 /* 设置filenameDiv 排序按钮的间距+位置.   这里还要实现居中.. todo */
 #filenameDiv-Btnes   { position: relative;                  }
 #filenameDiSearch    { position: absolute; left:0;   top:0; }
 #allCateTagPostBtn   { position: absolute; left:30%; top:0; }
-
 #filenameDivDate     { position: absolute; right:0;  top:0; }
-
-
 
 /* 拖动条 css */
 .lineFlex        { display: flex  ; height: 100%; width: 10px;}
@@ -51,16 +44,10 @@ sup                  { color: red; float:right; font-size:0.7em; }
 /* 拖动条 css */
 
 
-
-
-
-
 #topbarDiv { height: 30px; display: flex; background-color: rgba(210, 52, 219, 0.18); }
 #topbarDiv i { padding-top: 3px; padding-bottom: 3px;}
 #Div       { display: flex; position: absolute; top:30px;bottom: 0px; left: 0px; right: 0px; }
 /* 这个是上下布局的重点. top/bottom 同时用 还要用 absolute;  还必须用 left+right  */
-
-
 
 
 #cateDiv {
@@ -70,21 +57,17 @@ sup                  { color: red; float:right; font-size:0.7em; }
 
 
 #tagDiv {
-	flex-basis:120px; flex-grow: 0; flex-shrink: 0;  max-width: 300px; min-width: 100px;
+	flex-basis:120px; flex-grow: 0; flex-shrink: 0;  max-width: 300px; min-width: 28px;
 	position: relative ; background-color:rgba(212, 117, 204, 0.53) ;         	
     padding: 0px 0px 4px 4px; display:relative;                                   
 	}
 
 #filenameDiv {
-	flex-basis: 200px; flex-grow: 0; flex-shrink: 0;  max-width: 1450px; min-width: 100px;background-color:pink;
+	flex-basis: 200px; flex-grow: 0; flex-shrink: 0;  max-width: 1450px; min-width: 28px;background-color:pink;
 	position: relative;     padding: 4px 0px 4px 0px;  display:relative;                                  
-}
+	}
 
 
-
-
-
-#fileSort {width: 100%; height: 30px; display: flex; }
 .sortBtn {width: 30px; height: 30px; flex-grow: 1; flex-shrink: 0;}
 
 #contentDiv { flex-grow: 1; flex-shrink: 1; padding: 5px; background-color:rgba(161, 203, 55, 0.3); 
@@ -93,21 +76,10 @@ sup                  { color: red; float:right; font-size:0.7em; }
 #contentDiv-Buttons	 { display: flex }
 .contentButton { flex-shrink: 0; flex-grow: 1; flex-basis: 190px; }
 
-
-#contentDiv2 { flex-grow: 1; flex-shrink: 1; height: 100%; padding: 5px; background-color:rgba(161, 203, 55, 0.9); width: 50px;}
-
-
-
-#testDiv { flex-basis: 40px; flex-grow: 0; flex-shrink: 1; overflow: scroll;}
-
 #sidebarDiv { flex-grow: 0; flex-shrink: 0; height: 100%; padding: 5px;  width: 100px; overflow: scroll;
 	background-color:rgba(127, 127, 127, 0.13);  }
 		
-
-
 #arrowNav {	width:50px; height:20px; position: absolute; bottom: 0px; right: 0px; }
-
-	
 	
 .hidden {
   display: none!important;
@@ -118,75 +90,23 @@ sup                  { color: red; float:right; font-size:0.7em; }
 
 
 
+@media screen and (max-width: 414px ) {   /* 当屏幕宽度最大是414 也就是小于414px的都使用下面的布局(iphone 6+) */
 
+* { padding: 0; margin:0 ;}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 下面是网页宽度小于414px的布局(iphone 6+) */
-@media all and (max-width: 219px ) {
-
-   * {padding: 0; margin:0 ;}
-#Div { flex-direction: column; }
-
-
-     #tagDiv {display: flex; max-width: 100vw; flex-basis: 20px;}
-    #cateDiv {display: flex; max-width: 100vw; flex-basis: 20px;}
-#filenameDiv {display: flex; max-width: 100vw; flex-basis: 50px;}
-/*  由于水平的时候设置了最大宽度,这里需要重新赋值来覆盖. */
-
-
-
-
-
-     #tagDiv li {display: inline-flex;}
-    #cateDiv li {display: inline-flex;}
-#filenameDiv li {display: inline-flex;}
-#testDiv button {display: inline-flex;}
-/* 元素水平排列 */
-
-#contentDiv-Buttons { height: 20px; width: 100vw;}
-
-#filenameDiv { flex-grow:0 ; flex-shrink: 1;}
-#contentDiv  { flex-grow:6 ; flex-shrink: 1;}
-#contentDiv  { width: 100vw; max-width: 100vw; flex-basis: 400px;
-overflow-x: hidden; } 
-
-
-#lineLeft,#lineRight {display: none;}  /* 隐藏两根拖动条: 不用 visibility:hidden.(会占位) */
-
-
-#Div>cateDiv, #Div>tagDiv, {	order: 0;  }
-
-
+#cateDiv     { flex-basis: 20px; }
+.cateSup     { display: none     }
+#tagDiv      { display: none     }
+#lineLeft    { display: none     }
+#filenameDiv { display: none     }
+#lineRight   { display: none     }
 
 
 
 
 }
+
+
+
+
+
