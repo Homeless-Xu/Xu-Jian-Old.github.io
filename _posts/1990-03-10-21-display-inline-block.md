@@ -1,26 +1,10 @@
 ---
 layout: post
-title:  display
+title: display:inline-block
 tags: display
 categories: HTML
 --- 
 
-
-Block 元素:
-- 新行开始.
-- 高度 / 行高 . 上下边距都可控.
-- 宽度默认100% .
-
-
-**display:block **
-把元素显示成 块级元素.
-
-
-
-**display:inline**
-- 把元素显示成 行内元素.
-- 和别的元素 都在一行.
-- 高. 行高 上下边距 都不可变化.. 宽度也不可变.
 
 **display:inline-block**  [示范例子][1]
 把对象呈递为内联对象，但是对象的内容作为块对象呈递。
@@ -28,55 +12,6 @@ Block 元素:
 也就是 行内的块元素. 
 就像 button. 是块元素. 
 但是 高度是可调的.而且也是水平排列的 这些都是 inline元素的特征
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

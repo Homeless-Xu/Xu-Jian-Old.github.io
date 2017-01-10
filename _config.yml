@@ -1,53 +1,22 @@
 title: Xu.Jian
 email: xx2610@gmail.com
 
-
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 github_username:  jekyll
 
-
 # Build settings
 markdown: kramdown
+
+highlighter: rouge
+
 theme: minima
 gems:
   - jekyll-feed
 exclude:
   - Gemfile
   - Gemfile.lock
-
-
-
-
-
-# ymlCateSort: > 
-#  🛠^1,🌐^2,👓^3,^11,-Tips^12,-App^13,-CMD^14,-Dev^15,💻^19,HTML^21,CSS^22,jQuery^23,RegExp^24,Plugins^25,Bootstrap^26,jekyll^27,Themes^28,FE-Misc^29,Misc^99
-
-
-
-# ★★★★★ 改大类的自定义显示顺序!    大类名 + '^' + '排序' + ',' 
-# ★★★★★ ymlCateSort 这个变量名 千万别改了...  
-# ★★★★★ 每个大类用 逗号分开!!!!!!!!!   
-# ★★★★★ 大类名称后加后缀^1 / ^2 /^3 . 数字越大越靠后排.
-# ★★★★★ 关于排序数字.默认的order是100. 所以 只要设置了小于100的值. 都会排到最上方. 所以只要挑几个重要的大类 添加排序数字就可以.而不必所有大类都排序.
-# ★★★★★ 这个默认排序 是在 cateDiv 里面.循环过滤出大类名的时候加的.. 如果你要改的话.....  过滤是 onreadycatefilter.js
-
-# ymlCateSortDefault: num
-# 大类开启按照文章数量排序, 去掉注释就可以按照文章数量排序. 不需要进行什么修改!!!!
-# 自定义大类排序的默认值:  
-#   - 默认自定义和时间的混合排序. 设置了自定义顺序的会优先显示在上方.没设置自定义的 按照默认的时间顺序.
-#   - 文章数量排序(num)
-
-
-
-# ymlTagSortDefault: abc
-# ymlTagSortDefault: abc
-# 这两个是tag的排序. 默认按照时间顺序.  也支持 按照 字母顺序/文章数量顺序.
-
-
-
-
 
 
 ###########################################   顶部链接 设置
