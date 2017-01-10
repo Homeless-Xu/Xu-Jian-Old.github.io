@@ -7,9 +7,13 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  jekyll
 
 # Build settings
-markdown: kramdown
-
 highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+
 
 theme: minima
 gems:
@@ -17,6 +21,7 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+
 
 
 ###########################################   顶部链接 设置
