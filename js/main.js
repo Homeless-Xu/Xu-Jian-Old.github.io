@@ -30,10 +30,8 @@ $(".cateNames").click(   function() {
               // 先隐藏所有文件. 显示某类文件
               $(".postNames").hide()
               $("[data-cate="+ clickedCateName +"]").show()             
-           }
-       
+           }       
        }
-
       // 手机端的 高亮设置
       var activeStatus = $(this).hasClass('active');
       console.log( activeStatus );
@@ -47,8 +45,6 @@ $(".cateNames").click(   function() {
         $(this).addClass('active');
         console.log("执行2");
       }
-
-
   } else {
     // 执行pc端的js 点击大类: 1. 去除所有大类+标签+文件高亮; 2. 高亮被点击大类 
     $("#cateDiv li").each(     function() {  $(this).removeClass('active'); });    
@@ -201,7 +197,7 @@ $(".postNames").click(   function() {
   $(function button(){
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     // 判断 所有的都不在.就显示. 不然就隐藏;   隐藏(none) → 就显示左边 3个+两拖动条;  显示(block):→隐藏左边三个+两拖动条 
-    $("#sidebarToggle").click(   function(){ 
+    $("#topbarToggle").click(   function(){ 
       if ( $("#filenameDiv").css("display") == "none" && $("#tagDiv").css("display") == "none" && $("#cateDiv").css("display") == "none" ) {
           $("#filenameDiv").show(100);
           $("#tagDiv").show(100);
@@ -319,6 +315,29 @@ function showAllTagsandPosts () {
     $("#filenameDiv li").each( function() {  $(this).removeClass('active'); });    
 
 }
+
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// vue.js
+
+
+
+var topbarToggle = new Vue ({
+  el: '#topbarToggle',
+  data: {
+    messgae: '这个是显示隐藏分类栏的'
+  }
+})
+
+
+
+
+
 
 
 
