@@ -38,19 +38,19 @@ sup                  { color: red; float:right; font-size:0.7em; }
 #Div       { display: flex; position: absolute; top:30px;bottom: 0px; left: 0px; right: 0px; }
 /* 这个是上下布局的重点. top/bottom 同时用 还要用 absolute;  还必须用 left+right  */
 
+.cateNames, .tagNames, .postNames { padding: 2px 0;}
+
 
 #cateDiv {
 	flex-basis:88px; flex-grow: 0; flex-shrink: 0;  max-width: 300px; min-width: 14px;
 	position: relative; background-color:rgba(92, 47, 125, 0.34); 
     padding: 0px 4px 4px 4px;  display:relative;  }
 
-
 #tagDiv {
-	flex-basis:120px; flex-grow: 0; flex-shrink: 0;  max-width: 300px; min-width: 28px;
+	flex-basis:133px; flex-grow: 0; flex-shrink: 0;  max-width: 300px; min-width: 28px;
 	position: relative ; background-color:rgba(212, 117, 204, 0.53) ;         	
     padding: 0px 0px 4px 4px; display:relative;                                   
 	}
-
 #filenameDiv {
 	flex-basis: 200px; flex-grow: 0; flex-shrink: 0;  max-width: 1450px; min-width: 28px;background-color:pink;
 	position: relative;     padding: 4px 0px 4px 0px;  display:relative;                                  

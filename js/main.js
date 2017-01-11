@@ -323,17 +323,6 @@ function showAllTagsandPosts () {
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// vue.js
-
-
-
-var topbarToggle = new Vue ({
-  el: '#topbarToggle',
-  data: {
-    messgae: '这个是显示隐藏分类栏的'
-  }
-})
-
 
 
 
