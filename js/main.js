@@ -237,18 +237,36 @@ $(".postNames").click(   function() {
       }); 
   });
 
+
+
+
+
+
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// 下面是 pjax 
+// 下面是 pjax  + 多说评论的Pjax重载
+function pajx_loadDuodsuo(){ 
+  var dus=$(".ds-thread"); if($(dus).length==1){
+  var el = document.createElement('div');
+   el.setAttribute('data-thread-key',$(dus).attr("data-thread-key"));//必选参数
+   el.setAttribute('data-url',$(dus).attr("data-url"));
+   DUOSHUO.EmbedThread(el);
+   $(dus).html(el);
+}};
+// 多说重载函数. 每次点击pjax都要执行 .不然要刷新网页才能出现多说....
 $(document).pjax("a", '#contentDiv', { fragment: '#contentDiv', timeout:8000}	);	
 $(document).on('pjax:start', function() { NProgress.start(); });
-$(document).on('pjax:end',   function() { NProgress.done();  });
+$(document).on('pjax:end',   function() { NProgress.done(); pajx_loadDuodsuo(); });
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // 这个是 回到顶部的函数....
 function toTop() {  $("#contentDiv").scrollTop(0); }
+
+
+
 
 
 

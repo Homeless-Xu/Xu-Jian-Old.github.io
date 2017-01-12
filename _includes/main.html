@@ -94,40 +94,34 @@
 
     <div id="xx"></div>
 			
-	<!-- 这里判断一下 有没有设置meta 有就显示 没有就不显示 -->
 	{% if page.meta != ‘’ %}
 		meta: {{page.meta}} <hr>
 	{% endif %}
+	<!-- 这里判断一下 有没有设置meta 有就显示 没有就不显示 -->
 			
 	{{ page.content }}
 	<!-- 带page前缀 就不会显示文件的标题.  没有page前缀就会显示文件标题 -->
 
+	<!-- 这里 用pjax的时候 有点问题. 首次是有评论的,但是一旦点击某个文章.用了 pjax 就没有多说了... -->
+	<!-- 多说评论框 start -->
+		<div class="ds-thread" data-thread-key="{{page.id}}" data-title="{{page.title}}" data-url="{{page.url}}"></div>
+	<!-- 多说评论框 end -->
 
 
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+		<script type="text/javascript">
+		var duoshuoQuery = {short_name:"0214"};
+		(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+		})();
+		</script>
+	<!-- 多说公共JS代码 end -->
 
-<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="{{page.id}}" data-title="{{page.title}}" data-url="{{page.url}}"></div>
-<!-- 多说评论框 end -->
-
-<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-	<script type="text/javascript">
-	var duoshuoQuery = {short_name:"0214"};
-	(function() {
-	var ds = document.createElement('script');
-	ds.type = 'text/javascript';ds.async = true;
-	ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-	ds.charset = 'UTF-8';
-	(document.getElementsByTagName('head')[0] 
-	 || document.getElementsByTagName('body')[0]).appendChild(ds);
-	})();
-	</script>
-<!-- 多说公共JS代码 end -->
-
-
-
-
-
-    		
 </div>
 
 <!-- ----------------------------------------------------------------------------------------------- -->
