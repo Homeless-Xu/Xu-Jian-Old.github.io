@@ -2,7 +2,7 @@
 layout: post
 title: categories
 tags: Jekyll-categories
-categories: MyTheme
+categories: Jekyll
 ---
 
 

@@ -2,7 +2,7 @@
 layout: post
 title:  collections
 tags: Liquid-语法
-categories: MyTheme
+categories: Jekyll
 ---
 
 实验性功能。稳定前 API 可能会改变。

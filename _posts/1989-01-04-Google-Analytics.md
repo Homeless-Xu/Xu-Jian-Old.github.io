@@ -2,7 +2,7 @@
 layout: post
 title:  Google-Analytics
 tags: 主题功能
-categories: MyTheme
+categories: Jekyll
 ---
 
 谷歌网站统计分析工具

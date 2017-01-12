@@ -4,7 +4,7 @@
 <dict>
 	<key>childOrder</key>
 	<array>
-		<string>.89 - MyTheme.Ulysses_Public_Filter</string>
+		<string>.89 - Jekyll.Ulysses_Public_Filter</string>
 		<string>.90 - HTML.Ulysses_Public_Filter</string>
 		<string>.91 - CSS.Ulysses_Public_Filter</string>
 		<string>.92 - jQuery.Ulysses_Public_Filter</string>
@@ -45,14 +45,14 @@
 	<dict>
 		<key>childOrder</key>
 		<dict>
-			<key>.89 - MyTheme.Ulysses_Public_Filter</key>
+			<key>.89 - Jekyll.Ulysses_Public_Filter</key>
 			<dict>
 				<key>lastModification</key>
-				<real>505460688.37050903</real>
+				<real>505910673.00353301</real>
 				<key>version</key>
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>331</integer>
+					<integer>359</integer>
 				</dict>
 			</dict>
 			<key>.90 - HTML.Ulysses_Public_Filter</key>
@@ -620,6 +620,26 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>11742</integer>
+				</dict>
+			</dict>
+			<key>1989-01-01-批量修改文件名.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>505910712.74051601</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>12051</integer>
+				</dict>
+			</dict>
+			<key>1989-01-01-批量内容修改.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>505910762.36682999</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>12055</integer>
 				</dict>
 			</dict>
 			<key>1989-01-01-排序功能.md</key>
@@ -8925,6 +8945,12 @@
 	<key>sheetClusters</key>
 	<array>
 		<array>
+			<string>1989-01-01-批量内容修改.md</string>
+		</array>
+		<array>
+			<string>1989-01-01-批量修改文件名.md</string>
+		</array>
+		<array>
 			<string>1989-01-01-Pjax多说✔︎.md</string>
 		</array>
 		<array>
@@ -11354,12 +11380,12 @@
 		<key>childOrder</key>
 		<dict>
 			<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-			<integer>358</integer>
+			<integer>359</integer>
 		</dict>
 		<key>sheetClusters</key>
 		<dict>
 			<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-			<integer>12048</integer>
+			<integer>12056</integer>
 		</dict>
 		<key>sheetOrder</key>
 		<dict>

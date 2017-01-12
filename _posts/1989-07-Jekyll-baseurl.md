@@ -2,7 +2,7 @@
 layout: post
 title:  baseurl
 tags: Jekyll-baseurl
-categories: MyTheme
+categories: Jekyll
 ---
 
 
