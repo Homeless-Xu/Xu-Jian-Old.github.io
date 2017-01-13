@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  改class
-tags: jQuery1
+title:  jQuery增删Class属性
+tags: 增删Class属性
 categories: jQuery
+meta: 修改Class属性
 ---
 
 ## 增加一个class：

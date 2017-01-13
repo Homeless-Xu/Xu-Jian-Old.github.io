@@ -13,6 +13,7 @@
 		<string>.95 - UI.Ulysses_Public_Filter</string>
 		<string>.95 - Vue.Ulysses_Public_Filter</string>
 		<string>.96 - Git.Ulysses_Public_Filter</string>
+		<string>.97 - A(P)jax.Ulysses_Public_Filter</string>
 		<string>.IT 2017-01-01.Ulysses_Public_Filter</string>
 		<string>.Net-2017-01-02.Ulysses_Public_Filter</string>
 		<string>.OSI-2017-01-03.Ulysses_Public_Filter</string>
@@ -137,6 +138,16 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>358</integer>
+				</dict>
+			</dict>
+			<key>.97 - A(P)jax.Ulysses_Public_Filter</key>
+			<dict>
+				<key>lastModification</key>
+				<real>505914208.46058702</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>363</integer>
 				</dict>
 			</dict>
 			<key>.Apache-13-12-11.Ulysses_Public_Filter</key>
@@ -3006,34 +3017,42 @@
 					<integer>11345</integer>
 				</dict>
 			</dict>
-			<key>1992-01-01-01设置高亮.md</key>
+			<key>1992-01-01-01-设置删除获取高亮状态.md</key>
 			<dict>
 				<key>lastModification</key>
-				<real>505741802.16681403</real>
+				<real>505913533.58553398</real>
 				<key>version</key>
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>11838</integer>
+					<integer>12057</integer>
 				</dict>
 			</dict>
 			<key>1992-01-01-02-删除高亮.md</key>
 			<dict>
+				<key>explicitUnassignment</key>
+				<true/>
+				<key>firstUnassignment</key>
+				<real>505913558.315018</real>
 				<key>lastModification</key>
-				<real>505741932.11756098</real>
+				<real>505913558.315018</real>
 				<key>version</key>
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>11850</integer>
+					<integer>12060</integer>
 				</dict>
 			</dict>
 			<key>1992-01-01-03-获取高亮状态.md</key>
 			<dict>
+				<key>explicitUnassignment</key>
+				<true/>
+				<key>firstUnassignment</key>
+				<real>505913554.39037001</real>
 				<key>lastModification</key>
-				<real>505741938.598122</real>
+				<real>505913554.39037001</real>
 				<key>version</key>
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>11852</integer>
+					<integer>12059</integer>
 				</dict>
 			</dict>
 			<key>1992-01-01-This子元素.md</key>
@@ -3066,54 +3085,14 @@
 					<integer>11696</integer>
 				</dict>
 			</dict>
-			<key>1992-12-12 01-改class.md</key>
+			<key>1992-12-12 01-jQuery增删Class属性✔︎.md</key>
 			<dict>
 				<key>lastModification</key>
-				<real>505635400.43013901</real>
+				<real>505913806.847314</real>
 				<key>version</key>
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>11572</integer>
-				</dict>
-			</dict>
-			<key>1992-12-12-01-.attr.md</key>
-			<dict>
-				<key>lastModification</key>
-				<real>505635400.64753801</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>11639</integer>
-				</dict>
-			</dict>
-			<key>1992-12-12-01-.data()&amp;data-.md</key>
-			<dict>
-				<key>lastModification</key>
-				<real>505635400.31368399</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>11546</integer>
-				</dict>
-			</dict>
-			<key>1992-12-12-01-.index.md</key>
-			<dict>
-				<key>lastModification</key>
-				<real>505635400.58215302</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>11614</integer>
-				</dict>
-			</dict>
-			<key>1992-12-12-01-AJAX.md</key>
-			<dict>
-				<key>lastModification</key>
-				<real>505635396.92610002</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>11116</integer>
+					<integer>12063</integer>
 				</dict>
 			</dict>
 			<key>1992-12-12-01-DOM.md</key>
@@ -3134,6 +3113,16 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>11280</integer>
+				</dict>
+			</dict>
+			<key>1992-12-12-01-Html5-Data.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>505913969.20114398</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>12069</integer>
 				</dict>
 			</dict>
 			<key>1992-12-12-01-JavaScriptAPI.md</key>
@@ -3176,6 +3165,16 @@
 					<integer>11153</integer>
 				</dict>
 			</dict>
+			<key>1992-12-12-01-index位置.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>505914014.82698298</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>12071</integer>
+				</dict>
+			</dict>
 			<key>1992-12-12-01-jQueryUI.md</key>
 			<dict>
 				<key>lastModification</key>
@@ -3184,6 +3183,26 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>11431</integer>
+				</dict>
+			</dict>
+			<key>1992-12-12-01-jQuery删除DOM.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>505914558.18684602</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>12091</integer>
+				</dict>
+			</dict>
+			<key>1992-12-12-01-jQuery添加DOM.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>505914501.53327799</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>12087</integer>
 				</dict>
 			</dict>
 			<key>1992-12-12-01-jquery正则式匹配.md</key>
@@ -3266,6 +3285,16 @@
 					<integer>11406</integer>
 				</dict>
 			</dict>
+			<key>1992-12-12-01-显示和隐藏DOM.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>505914373.37743902</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>12079</integer>
+				</dict>
+			</dict>
 			<key>1992-12-12-01-查找过滤.md</key>
 			<dict>
 				<key>lastModification</key>
@@ -3274,6 +3303,26 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>11265</integer>
+				</dict>
+			</dict>
+			<key>1992-12-12-01-获取DOM信息.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>505914437.73328102</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>12083</integer>
+				</dict>
+			</dict>
+			<key>1992-12-12-01-读写元素属性attr✔︎.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>505913913.251037</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>12067</integer>
 				</dict>
 			</dict>
 			<key>1992-12-12-01-选择器.md</key>
@@ -3724,6 +3773,16 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>11720</integer>
+				</dict>
+			</dict>
+			<key>1997-12-12-01-AJAX.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>505914177.83442301</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>12073</integer>
 				</dict>
 			</dict>
 			<key>2012-12-12 01-改class.md</key>
@@ -8945,6 +9004,18 @@
 	<key>sheetClusters</key>
 	<array>
 		<array>
+			<string>1992-12-12-01-jQuery删除DOM.md</string>
+		</array>
+		<array>
+			<string>1992-12-12-01-jQuery添加DOM.md</string>
+		</array>
+		<array>
+			<string>1992-12-12-01-获取DOM信息.md</string>
+		</array>
+		<array>
+			<string>1992-12-12-01-显示和隐藏DOM.md</string>
+		</array>
+		<array>
 			<string>1989-01-01-批量内容修改.md</string>
 		</array>
 		<array>
@@ -9050,7 +9121,7 @@
 			<string>1992-01-01-02-删除高亮.md</string>
 		</array>
 		<array>
-			<string>1992-01-01-01设置高亮.md</string>
+			<string>1992-01-01-01-设置删除获取高亮状态.md</string>
 		</array>
 		<array>
 			<string>1991-11-11-21-Active - 2.md</string>
@@ -11297,13 +11368,13 @@
 			<string>1992-12-12-02-Canvas.md</string>
 		</array>
 		<array>
-			<string>1992-12-12-01-.data()&amp;data-.md</string>
+			<string>1992-12-12-01-Html5-Data.md</string>
 		</array>
 		<array>
 			<string>1992-12-12-选择器.md</string>
 		</array>
 		<array>
-			<string>1992-12-12-01-.index.md</string>
+			<string>1992-12-12-01-index位置.md</string>
 		</array>
 		<array>
 			<string>1992-12-12-01-动画.md</string>
@@ -11312,7 +11383,7 @@
 			<string>1992-12-12-02-jQuery回到顶部.md</string>
 		</array>
 		<array>
-			<string>1992-12-12 01-改class.md</string>
+			<string>1992-12-12 01-jQuery增删Class属性✔︎.md</string>
 		</array>
 		<array>
 			<string>1992-12-12-01-DOM.md</string>
@@ -11351,7 +11422,7 @@
 			<string>1992-12-12-02-JavaScriptAPI.md</string>
 		</array>
 		<array>
-			<string>1992-12-12-01-.attr.md</string>
+			<string>1992-12-12-01-读写元素属性attr✔︎.md</string>
 		</array>
 		<array>
 			<string>1992-12-12-01-filter().md</string>
@@ -11363,7 +11434,7 @@
 			<string>1992-12-12-ready()&amp;Onload().md</string>
 		</array>
 		<array>
-			<string>1992-12-12-01-AJAX.md</string>
+			<string>1997-12-12-01-AJAX.md</string>
 		</array>
 		<array>
 			<string>1992-12-12-02-鼠标拖动改变Div大小.md</string>
@@ -11380,12 +11451,12 @@
 		<key>childOrder</key>
 		<dict>
 			<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-			<integer>359</integer>
+			<integer>363</integer>
 		</dict>
 		<key>sheetClusters</key>
 		<dict>
 			<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-			<integer>12056</integer>
+			<integer>12092</integer>
 		</dict>
 		<key>sheetOrder</key>
 		<dict>
