@@ -65,7 +65,7 @@ sup                  { color: red; float:right; font-size:0.7em; }
 #contentDiv-Buttons	 { display: flex }
 .contentButton { flex-shrink: 0; flex-grow: 1; flex-basis: 190px; }
 
-#sidebarDiv { flex-grow: 0; flex-shrink: 0; height: 100%; padding: 5px;  width: 100px; overflow: scroll;
+#rightNavbar { flex-grow: 0; flex-shrink: 0; height: 100%; padding: 5px;  width: 100px; overflow: scroll;
 	background-color:rgba(127, 127, 127, 0.13);  }
 		
 #arrowNav {	width:50px; height:20px; position: absolute; bottom: 0px; right: 0px; }
