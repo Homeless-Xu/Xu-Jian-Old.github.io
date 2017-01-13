@@ -17,9 +17,9 @@ sup                  { color: red; float:right; font-size:0.7em; }
  
 /* 设置filenameDiv 排序按钮的间距+位置.   这里还要实现居中.. todo */
 #filenameDiv-Btnes   { position: relative;                  }
-#filenameDiSearch    { position: absolute; left:0;   top:0; }
+#filenameDiSearch    { position: absolute; left:5%;   top:0; }
 #allCateTagPostBtn   { position: absolute; left:30%; top:0; }
-#filenameDivDate     { position: absolute; right:0;  top:0; }
+#filenameDivDate     { position: absolute; left:80%;  top:0; }
 
 /* 拖动条 css */
 .lineFlex        { display: flex  ; height: 100%; width: 10px;}
@@ -83,9 +83,9 @@ sup                  { color: red; float:right; font-size:0.7em; }
 
 * { padding: 0; margin:0 ;}
 
-#cateDiv     { flex-basis: 44px; font-size: 2.5em }
+#cateDiv     { display: none; flex-basis: 50px; }
 .cateSup     { display: none     }
-#tagDiv      { display: none     }
+#tagDiv      { display: none; flex-basis: 100px;}
 #lineLeft    { display: none     }
 #filenameDiv { display: none     }
 #lineRight   { display: none     }

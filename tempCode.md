@@ -893,6 +893,114 @@ cateJson 结构:
 
 
 
+ 下面是i....  手机端的   左边侧栏 高亮代码.
+
+
+$(".cateNames").click(   function() {
+  // alert($(window).width());          // 浏览器当前窗口可视区域宽度
+  var clickedCateName = $( this ).children('span').text()
+  // console.log( clickedCateName );    // 可以获取 jQuery. 
+
+  if ( $(window).width() <= 414 ) {   
+      // 进行屏幕宽度的判断. 如果屏幕宽度<= 414 那就支持手机端的js: 比pc多两步 要先显示tag&filename栏.
+      // 这里还要进行判断.如果 已经显示了tag filename 那么就隐藏他们!!
+      if( $("#tagDiv").css("display") == "none" ) {
+          //显示 tag 和filename
+               $("#tagDiv").show()
+          $("#filenameDiv").show()
+          // 过滤出当前类下的标签和文章
+          $(".tagNames").hide()
+          $("[data-tagcate="+ clickedCateName +"]").show()
+          // 先隐藏所有文件. 显示某类文件
+          $(".postNames").hide()
+          $("[data-cate="+ clickedCateName +"]").show()
+       }else {  
+       // 这里 如果是高亮的那就隐藏(按的同一个大类), 如果不是高亮那就过滤出对应的tag
+           if ( $(this).hasClass('active') ){
+              $("#tagDiv").hide();  
+              $("#filenameDiv").hide();    // 隐藏 tag 和 filename 
+           } else {
+              $(".tagNames").hide()
+              $("[data-tagcate="+ clickedCateName +"]").show()
+              // 先隐藏所有文件. 显示某类文件
+              $(".postNames").hide()
+              $("[data-cate="+ clickedCateName +"]").show()             
+           }       
+       }
+      // 手机端的 高亮设置
+      var activeStatus = $(this).hasClass('active');
+      console.log( activeStatus );
+      if (activeStatus) {
+        $(this).removeClass('active'); 
+        console.log("执行1");   
+      } else {
+        $("#cateDiv li").each(     function() {  $(this).removeClass('active'); });    
+        $("#tagDiv li").each(      function() {  $(this).removeClass('active'); });    
+        $("#filenameDiv li").each( function() {  $(this).removeClass('active'); });      
+        $(this).addClass('active');
+        console.log("执行2");
+      }
+  } else {
+    // 执行pc端的js 点击大类: 1. 去除所有大类+标签+文件高亮; 2. 高亮被点击大类 
+    $("#cateDiv li").each(     function() {  $(this).removeClass('active'); });    
+    $("#tagDiv li").each(      function() {  $(this).removeClass('active'); });    
+    $("#filenameDiv li").each( function() {  $(this).removeClass('active'); });      
+    $(this).addClass('active');   
+
+
+    // 隐藏所有tag 显示某类tag
+    $(".tagNames").hide()
+    $("[data-tagcate="+ clickedCateName +"]").show()
+    // 先隐藏所有文件. 显示某类文件
+    $(".postNames").hide()
+    $("[data-cate="+ clickedCateName +"]").show()
+  }
+});
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// ↓ 点击标签 过滤出对应的文章. 并进行 当前标签的高亮+当前标签所属大类的高亮.
+  $(".tagNames").click(   function() {
+      $("#cateDiv li").each(     function() {  $(this).removeClass('active'); });    
+      $("#tagDiv li").each(      function() {  $(this).removeClass('active'); });    
+      $("#filenameDiv li").each( function() {  $(this).removeClass('active'); });      
+      $(this).addClass('active'); 
+      var tagCateName = $(this).data('tagcate');
+      // console.log( tagCateName );
+      $("#"+ tagCateName).addClass('active'); 
+
+      var clickedTagName = $( this ).children('span').text()
+      // 先隐藏所有文件. 显示某类文件
+      $(".postNames").hide()
+      $("[data-tag="+ clickedTagName +"]").show()
+
+  });
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// ↓ 文件高亮.+对应tag+对应cate 同步高亮.   这里还要显示出 该大类下的标签.而不是显示所有标签
+// 这里也要考虑到手机.. 手机上点了文件名 就要隐藏 tag 和 filename 只留 cate
+$(".postNames").click(   function() {
+  var  postTagName = $(this).data('tag' );
+  var postCateName = $(this).data('cate');
+  if ( $(window).width() <= 414 ) {   
+      // 进行屏幕宽度的判断. 如果屏幕宽度<= 414 那就支持手机端的js: 隐藏tag&filename栏.
+      // 既然隐藏了 就不用设置高亮了..?  下次点击的时候 想要之前的高亮怎么办..
+               $("#tagDiv").hide()
+          $("#filenameDiv").hide()
+  
+   } else {
+      $("#cateDiv li").each(     function() {  $(this).removeClass('active'); });    
+      $("#tagDiv li").each(      function() {  $(this).removeClass('active'); });    
+      $("#filenameDiv li").each( function() {  $(this).removeClass('active'); });      
+      $(this).addClass('active'); 
+
+      $(".tagNames").hide()
+      $("[data-tagcate="+ postCateName +"]").show()      
+      $("#"+ postTagName ).addClass('active'); 	
+      $("#"+ postCateName).addClass('active'); 	 
+   }    
+});
+
+
+
+
 
 
 

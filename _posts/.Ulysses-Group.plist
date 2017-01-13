@@ -2800,6 +2800,16 @@
 					<integer>11383</integer>
 				</dict>
 			</dict>
+			<key>1991-11-11-21-判断移动设备类型.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>505990306.22636402</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>12132</integer>
+				</dict>
+			</dict>
 			<key>1991-11-11-21-动画.md</key>
 			<dict>
 				<key>lastModification</key>
@@ -3742,6 +3752,16 @@
 					<integer>11967</integer>
 				</dict>
 			</dict>
+			<key>1994-01-Html5移动端触摸事件.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>505988678.936782</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>12124</integer>
+				</dict>
+			</dict>
 			<key>1994-01-Media Queries.md</key>
 			<dict>
 				<key>lastModification</key>
@@ -3750,6 +3770,16 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>11690</integer>
+				</dict>
+			</dict>
+			<key>1994-01-左右滑动事件.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>505987426.78206301</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>12120</integer>
 				</dict>
 			</dict>
 			<key>1995-01-Media Queries - 2.md</key>
@@ -9031,6 +9061,15 @@
 	<key>sheetClusters</key>
 	<array>
 		<array>
+			<string>1991-11-11-21-判断移动设备类型.md</string>
+		</array>
+		<array>
+			<string>1994-01-Html5移动端触摸事件.md</string>
+		</array>
+		<array>
+			<string>1994-01-左右滑动事件.md</string>
+		</array>
+		<array>
 			<string>Untitled - 4.md</string>
 		</array>
 		<array>
@@ -11489,7 +11528,7 @@
 		<key>sheetClusters</key>
 		<dict>
 			<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-			<integer>12117</integer>
+			<integer>12133</integer>
 		</dict>
 		<key>sheetOrder</key>
 		<dict>

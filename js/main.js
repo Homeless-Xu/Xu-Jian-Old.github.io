@@ -1,51 +1,13 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // 点击大类过滤出对应的标签+文章:  同步进行高亮.
-//  
+// 手机端 重新来. 点击 左上角. 显示/隐藏类别过滤.
+// 手机端特别一点. 点击文件名的时候 隐藏掉. 来个圆球 加号吧. 绝对位置
+// 或者用 左右滑动来实现....
 $(".cateNames").click(   function() {
-  // alert($(window).width());          // 浏览器当前窗口可视区域宽度
-  var clickedCateName = $( this ).children('span').text()
-  // console.log( clickedCateName );    // 可以获取 jQuery. 
-
-  if ( $(window).width() <= 414 ) {   
-      // 进行屏幕宽度的判断. 如果屏幕宽度<= 414 那就支持手机端的js: 比pc多两步 要先显示tag&filename栏.
-      // 这里还要进行判断.如果 已经显示了tag filename 那么就隐藏他们!!
-      if( $("#tagDiv").css("display") == "none" ) {
-          //显示 tag 和filename
-               $("#tagDiv").show()
-          $("#filenameDiv").show()
-          // 过滤出当前类下的标签和文章
-          $(".tagNames").hide()
-          $("[data-tagcate="+ clickedCateName +"]").show()
-          // 先隐藏所有文件. 显示某类文件
-          $(".postNames").hide()
-          $("[data-cate="+ clickedCateName +"]").show()
-       }else {  
-       // 这里 如果是高亮的那就隐藏(按的同一个大类), 如果不是高亮那就过滤出对应的tag
-           if ( $(this).hasClass('active') ){
-              $("#tagDiv").hide();  
-              $("#filenameDiv").hide();    // 隐藏 tag 和 filename 
-           } else {
-              $(".tagNames").hide()
-              $("[data-tagcate="+ clickedCateName +"]").show()
-              // 先隐藏所有文件. 显示某类文件
-              $(".postNames").hide()
-              $("[data-cate="+ clickedCateName +"]").show()             
-           }       
-       }
-      // 手机端的 高亮设置
-      var activeStatus = $(this).hasClass('active');
-      console.log( activeStatus );
-      if (activeStatus) {
-        $(this).removeClass('active'); 
-        console.log("执行1");   
-      } else {
-        $("#cateDiv li").each(     function() {  $(this).removeClass('active'); });    
-        $("#tagDiv li").each(      function() {  $(this).removeClass('active'); });    
-        $("#filenameDiv li").each( function() {  $(this).removeClass('active'); });      
-        $(this).addClass('active');
-        console.log("执行2");
-      }
-  } else {
+    // alert($(window).width());          // 浏览器当前窗口可视区域宽度
+    var clickedCateName = $( this ).children('span').text()
+    // console.log( clickedCateName );    // 可以获取 jQuery. 
+ 
     // 执行pc端的js 点击大类: 1. 去除所有大类+标签+文件高亮; 2. 高亮被点击大类 
     $("#cateDiv li").each(     function() {  $(this).removeClass('active'); });    
     $("#tagDiv li").each(      function() {  $(this).removeClass('active'); });    
@@ -59,7 +21,7 @@ $(".cateNames").click(   function() {
     // 先隐藏所有文件. 显示某类文件
     $(".postNames").hide()
     $("[data-cate="+ clickedCateName +"]").show()
-  }
+  
 });
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // ↓ 点击标签 过滤出对应的文章. 并进行 当前标签的高亮+当前标签所属大类的高亮.
@@ -85,11 +47,15 @@ $(".postNames").click(   function() {
   var  postTagName = $(this).data('tag' );
   var postCateName = $(this).data('cate');
   if ( $(window).width() <= 414 ) {   
-      // 进行屏幕宽度的判断. 如果屏幕宽度<= 414 那就支持手机端的js: 隐藏tag&filename栏.
+      // 进行屏幕宽度的判断. 如果屏幕宽度<= 414 那就支持手机端的js: 隐藏cate&tag&filename栏.
       // 既然隐藏了 就不用设置高亮了..?  下次点击的时候 想要之前的高亮怎么办..
+              $("#cateDiv").hide()
                $("#tagDiv").hide()
           $("#filenameDiv").hide()
-  
+             $("#lineLeft").hide()
+            $("#lineRight").hide()
+
+
    } else {
       $("#cateDiv li").each(     function() {  $(this).removeClass('active'); });    
       $("#tagDiv li").each(      function() {  $(this).removeClass('active'); });    
@@ -192,25 +158,46 @@ $(".postNames").click(   function() {
 // 上面是  拖动条的 js
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// 下面是 方向箭的js
-
+// 下面是 方向箭的js + 过滤栏显隐按钮
+// 过滤栏目 也分手机和px 手机的话 要隐藏掉 拖动条.
   $(function button(){
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     // 判断 所有的都不在.就显示. 不然就隐藏;   隐藏(none) → 就显示左边 3个+两拖动条;  显示(block):→隐藏左边三个+两拖动条 
     $("#topbarToggle").click(   function(){ 
-      if ( $("#filenameDiv").css("display") == "none" && $("#tagDiv").css("display") == "none" && $("#cateDiv").css("display") == "none" ) {
-          $("#filenameDiv").show(100);
-          $("#tagDiv").show(100);
-          $("#cateDiv").show(100);
-          $("#lineLeft").show(100);
-          $("#lineRight").show(100);
-         } else {
-          $("#filenameDiv").hide(100);
-          $("#tagDiv").hide(100);
-          $("#cateDiv").hide(100);
-          $("#lineLeft").hide(100);
-          $("#lineRight").hide(100);
-         }
+
+        if ( $(window).width() <= 414 ) {  
+
+              if (     $("#filenameDiv").css("display") == "none" 
+                        && $("#tagDiv").css("display") == "none" 
+                        && $("#cateDiv").css("display") == "none" ) {
+                      $("#filenameDiv").show(100);
+                      $("#tagDiv").show(100);
+                      $("#cateDiv").show(100);
+                 } else {
+                      $("#filenameDiv").hide(100);
+                      $("#tagDiv").hide(100);
+                      $("#cateDiv").hide(100);
+                      $("#lineLeft").hide(100);
+                      $("#lineRight").hide(100);
+                 }
+        } else {
+          
+               if (     $("#filenameDiv").css("display") == "none" 
+                        && $("#tagDiv").css("display") == "none" 
+                        && $("#cateDiv").css("display") == "none" ) {
+                      $("#filenameDiv").show(100);
+                      $("#tagDiv").show(100);
+                      $("#cateDiv").show(100);
+                      $("#lineLeft").show(100);
+                      $("#lineRight").show(100);
+                 } else {
+                      $("#filenameDiv").hide(100);
+                      $("#tagDiv").hide(100);
+                      $("#cateDiv").hide(100);
+                      $("#lineLeft").hide(100);
+                      $("#lineRight").hide(100);
+                 }
+        }
     });
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     // 下面进行 左按钮设计.隐藏顺序 cate>tag>filename.   $('#userNav').hide('slide',{direction:'left'},1000);
@@ -345,11 +332,28 @@ function showAllTagsandPosts () {
 
 
 $(function (){
+// 先判断屏幕宽度 如果<= 414 那就假设设备是手机 那么!!!  文件栏目的宽度 就是 手机宽度 - cata宽度 - tag宽度.
+
+if ( $(window).width() <= "414") {
+  var screenWidth   = parseFloat($(window).width() );                           
+  var CateWidth     = parseFloat($("#cateDiv").css("flex-basis"));
+  var TagWidth      = parseFloat($("#tagDiv").css("flex-basis"));
+  var FilenameWidth = parseFloat($("#filenameDiv").css("flex-basis"));
+  // 原来是200px   加了 parseFloat  就是 200
+  var filenameMobileWith = screenWidth - CateWidth - TagWidth
+  // alert("手机宽度="+ screenWidth +"大类宽度="+ CateWidth +"标签宽度="+ TagWidth +"原文件宽度="+ FilenameWidth +"后文件宽度="+ filenameMobileWith  );
+  // 结果是 414 - 44 - 133 = 237 
+
+  $("#filenameDiv").css("flex-basis", filenameMobileWith+"px" );  
+  // alert(  $("#filenameDiv").css("flex-basis")  );
+  // 再测试一下看看到底有没有改变
+
+}
 
 
 
 
-console.log( );
+
 
 });
 
