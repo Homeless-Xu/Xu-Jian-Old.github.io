@@ -255,7 +255,7 @@ function pajx_loadDuodsuo(){
    $(dus).html(el);
 }};
 // 多说重载函数. 每次点击pjax都要执行 .不然要刷新网页才能出现多说....
-$(document).pjax("a", '#contentDiv', { fragment: '#contentDiv', timeout:8000}	);	
+$(document).pjax("a", '#contentDiv', { fragment: '#contentDiv', timeout:18000}	);	
 $(document).on('pjax:start', function() { NProgress.start(); });
 $(document).on('pjax:end',   function() { NProgress.done(); pajx_loadDuodsuo(); });
 
@@ -344,7 +344,14 @@ function showAllTagsandPosts () {
 
 
 
+$(function (){
 
+
+
+
+console.log( );
+
+});
 
 
 

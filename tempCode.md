@@ -832,5 +832,76 @@ todo :
 
 
 
+
+
+[
+  {% for item in site.posts %}
+    {
+      "title": "{{ item.title | xml_escape }}",
+      "description": "{{ item.description | xml_escape }}",
+      "type": "{{ item.type | xml_escape }}"
+    }
+    {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]
+
+
+
+
+
+
+
+
+
+
+这里 只能用 liquid 定义一个变量. 让后.用for 把值存进这个变量中...  然后想办法取出json 里面的值....
+
+postJson 结构:
+	title: 
+	url:
+	tag:
+	cate:
+	date:
+	class:
+
+	遍历一遍: 把这些都弄到变量中...
+
+
+
+
+tagJson 结构:
+
+	tag:
+	文章数量:
+	所属大类:
+	包含文章:
+	遍历一遍: 把这些都弄到变量中...
+
+
+
+cateJson 结构:
+
+	cate:
+	对应tag
+	对应文章
+	文章数量.
+	遍历一遍: 把这些都弄到变量中...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {% endraw %}
 
