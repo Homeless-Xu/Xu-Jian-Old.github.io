@@ -18,8 +18,8 @@ sup                  { color: red; float:right; font-size:0.7em; }
 /* 设置filenameDiv 排序按钮的间距+位置.   这里还要实现居中.. todo */
 #filenameDiv-Btnes   { position: relative;                  }
 #filenameDiSearch    { position: absolute; left:5%;   top:0; }
-#allCateTagPostBtn   { position: absolute; left:30%; top:0; }
-#filenameDivDate     { position: absolute; left:80%;  top:0; }
+#allCateTagPostBtn   { position: absolute; left:30%;  top:0; }
+#filenameDivDate     { position: absolute; right:5%;  top:0; }
 
 /* 拖动条 css */
 .lineFlex        { display: flex  ; height: 100%; width: 10px;}
@@ -79,6 +79,15 @@ sup                  { color: red; float:right; font-size:0.7em; }
 
 
 
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 414px ) {   /* 当屏幕宽度最大是414 也就是小于414px的都使用下面的布局(iphone 6+) */
 
 * { padding: 0; margin:0 ;}
@@ -96,5 +105,18 @@ sup                  { color: red; float:right; font-size:0.7em; }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+/* markdown 显示设置 */
 
 
