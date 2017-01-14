@@ -15,7 +15,7 @@ kramdown:
 
 
 
-theme: jekyll-theme-merlot
+theme: minima
 gems:
   - jekyll-feed
 exclude:
