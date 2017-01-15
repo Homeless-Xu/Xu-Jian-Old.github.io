@@ -18,7 +18,7 @@ sup                  { color: red; float:right; font-size:0.7em; }
 /* 设置filenameDiv 排序按钮的间距+位置.   这里还要实现居中.. todo */
 #filenameDiv-Btnes   { position: relative;                  }
 #filenameDiSearch    { position: absolute; left:5%;   top:0; }
-#allCateTagPostBtn   { position: absolute; left:30%;  top:0; }
+#allCateTagPostBtn   { position: absolute; left:27%;  top:0; }
 #filenameDivDate     { position: absolute; right:5%;  top:0; }
 
 /* 拖动条 css */
