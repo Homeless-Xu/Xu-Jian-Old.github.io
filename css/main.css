@@ -70,6 +70,7 @@ sup                  { color: red; float:right; font-size:0.7em; }
 	overflow-x: hidden; 
 	overflow-y: scroll;
 white-space: nowrap;
+display: none;
 
 	}
 

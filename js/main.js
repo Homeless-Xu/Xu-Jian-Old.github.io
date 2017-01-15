@@ -256,6 +256,7 @@ function showSideStructure(){
       else if ( htmlTagName == "H5" ) { $("#MDh1").append("<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+ MDTagContent +"</li>"); }
       else    { $("#MDh1").append("<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+ MDTagContent +"</li>");             }
     });
+    $("#rightNavbar").show();
   }
 
 
@@ -376,6 +377,10 @@ if ( $(window).width() <= "414") {
 });
 
 
+
+
+
+// 然后就是  .. 拖动文章. 高亮侧边栏目上的 相应标题...
 
 
 
