@@ -1,4 +1,4 @@
-*   { padding: 0; margin: 0; }
+*   { padding: 0; margin: 0; font-family: "Ubuntu Mono",Verdana,Arial,Helvetica,sans-serif; }
 li  { list-style: none;      }  
 a   { text-decoration: none; color:black;       } 
 sup                  { color: red; float:right; font-size:0.7em; }
@@ -65,8 +65,19 @@ sup                  { color: red; float:right; font-size:0.7em; }
 #contentDiv-Buttons	 { display: flex }
 .contentButton { flex-shrink: 0; flex-grow: 1; flex-basis: 190px; }
 
-#rightNavbar { flex-grow: 0; flex-shrink: 0; height: 100%; padding: 5px;  width: 100px; overflow: scroll;
-	background-color:rgba(127, 127, 127, 0.13);  }
+#rightNavbar { flex-grow: 0; flex-shrink: 0; height: 100%;  flex-basis: 200px; 
+	font-size: 0.8em; padding: 5px;  background-color:rgba(127, 127, 127, 0.13);  
+	overflow-x: hidden; 
+	overflow-y: scroll;
+white-space: nowrap;
+
+	}
+
+
+
+
+
+
 		
 #arrowNav {	width:50px; height:20px; position: absolute; bottom: 0px; right: 0px; }
 	

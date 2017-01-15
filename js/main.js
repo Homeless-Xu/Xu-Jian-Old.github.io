@@ -26,21 +26,21 @@ $(".cateNames").click(   function() {
 });
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // ↓ 点击标签 过滤出对应的文章. 并进行 当前标签的高亮+当前标签所属大类的高亮.
-  $(".tagNames").click(   function() {
-      $("#cateDiv li").each(     function() {  $(this).removeClass('active'); });    
-      $("#tagDiv li").each(      function() {  $(this).removeClass('active'); });    
-      $("#filenameDiv li").each( function() {  $(this).removeClass('active'); });      
-      $(this).addClass('active'); 
-      var tagCateName = $(this).data('tagcate');
-      // console.log( tagCateName );
-      $("#"+ tagCateName).addClass('active'); 
+$(".tagNames").click(   function() {
+    $("#cateDiv li").each(     function() {  $(this).removeClass('active'); });    
+    $("#tagDiv li").each(      function() {  $(this).removeClass('active'); });    
+    $("#filenameDiv li").each( function() {  $(this).removeClass('active'); });      
+    $(this).addClass('active'); 
+    var tagCateName = $(this).data('tagcate');
+    // console.log( tagCateName );
+    $("#"+ tagCateName).addClass('active'); 
 
-      var clickedTagName = $( this ).children('span').text()
-      // 先隐藏所有文件. 显示某类文件
-      $(".postNames").hide()
-      $("[data-tag="+ clickedTagName +"]").show()
+    var clickedTagName = $( this ).children('span').text()
+    // 先隐藏所有文件. 显示某类文件
+    $(".postNames").hide()
+    $("[data-tag="+ clickedTagName +"]").show()
 
-  });
+});
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // ↓ 文件高亮.+对应tag+对应cate 同步高亮.   这里还要显示出 该大类下的标签.而不是显示所有标签
 // 这里也要考虑到手机.. 手机上点了文件名 就要隐藏 tag 和 filename 只留 cate
@@ -55,8 +55,6 @@ $(".postNames").click(   function() {
           $("#filenameDiv").hide()
              $("#lineLeft").hide()
             $("#lineRight").hide()
-
-
    } else {
       $("#cateDiv li").each(     function() {  $(this).removeClass('active'); });    
       $("#tagDiv li").each(      function() {  $(this).removeClass('active'); });    
@@ -68,11 +66,14 @@ $(".postNames").click(   function() {
       $("#"+ postTagName ).addClass('active'); 	
       $("#"+ postCateName).addClass('active'); 	 
    }    
+
+
+
+
+
+
 });
-
-
 // 上面是 大类 标签过滤+高亮
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // 下面是 各种额外功能:   拖动条js  + 方向箭js + pjax  + 回到顶部 + 滚动条高度.
@@ -81,7 +82,7 @@ $(".postNames").click(   function() {
 // 拖动条. 获取元素左边位置的函数. 要自己写. 不像鼠标位置 直接可以通过clientx 什么的 获取.
 // offsetLeft = 当前元素的外边框 . 到父元素的 里边框的距离.
 // offsetParent = 当前元素 上一级的定位元素....  很麻烦.. 诶 看着办...
-  function getElementLeft(element){
+function getElementLeft(element){
     var actualLeft = element.offsetLeft;
     var current = element.offsetParent;
     while (current !== null){
@@ -156,7 +157,6 @@ $(".postNames").click(   function() {
 
 // 上面是  拖动条的 js
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // 下面是 方向箭的js + 过滤栏显隐按钮
 // 过滤栏目 也分手机和px 手机的话 要隐藏掉 拖动条.
   $(function button(){
@@ -222,29 +222,48 @@ $(".postNames").click(   function() {
        else if (event.keyCode == 38){   toTop();    } 
       }); 
   });
-
-
-
-
-
-
-
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// 下面是 pjax  + 多说评论的Pjax重载
-function pajx_loadDuodsuo(){ 
-  var dus=$(".ds-thread"); if($(dus).length==1){
-  var el = document.createElement('div');
-   el.setAttribute('data-thread-key',$(dus).attr("data-thread-key"));//必选参数
-   el.setAttribute('data-url',$(dus).attr("data-url"));
-   DUOSHUO.EmbedThread(el);
-   $(dus).html(el);
-}};
+// 下面是 pjax  + 多说评论的Pjax重载 + pjax 点击完毕 显示加载后文件的 结构列表
 // 多说重载函数. 每次点击pjax都要执行 .不然要刷新网页才能出现多说....
-$(document).pjax("a", '#contentDiv', { fragment: '#contentDiv', timeout:18000}	);	
-$(document).on('pjax:start', function() { NProgress.start(); });
-$(document).on('pjax:end',   function() { NProgress.done(); pajx_loadDuodsuo(); });
+function pajx_loadDuodsuo(){ 
+    var dus=$(".ds-thread"); if($(dus).length==1){
+    var el = document.createElement('div');
+    el.setAttribute('data-thread-key',$(dus).attr("data-thread-key"));//必选参数
+    el.setAttribute('data-url',$(dus).attr("data-url"));
+    DUOSHUO.EmbedThread(el);
+    $(dus).html(el);
+  }};
 
+function showSideStructure(){
+    // 下面是 获取 当前文章内的 h1234 .然后显示到 边栏上
+    var MDh1 = $("#pageContent h1").text();
+    //console.log("MDh1= " +MDh1);
+    var MDh2 = $("#pageContent h2").text();
+    //console.log("MDh2= " +MDh2);
+    var MDh3 = $("#pageContent h3").text();
+    //console.log("MDh3= " +MDh3);
+    var MDh4 = $("#pageContent h4").text();
+    //console.log("MDh4= " +MDh4);
+    $("#MDh1 li").each( function(){    $(this).remove();         });
+    // 首先 点击文件名 删除所有现有的 li
+    $("#pageContent h2,h3,h4,h5,h6 ").each( function(){
+      var MDTagContent = $(this).text(); 
+      var htmlTagName = $(this).get(0).tagName ;
+           if ( htmlTagName == "H2" ) { $("#MDh1").append("<li>"+ MDTagContent +"</li>");                                     } 
+      else if ( htmlTagName == "H3" ) { $("#MDh1").append("<li>&nbsp;&nbsp;"+ MDTagContent +"</li>");                         } 
+      else if ( htmlTagName == "H4" ) { $("#MDh1").append("<li>&nbsp;&nbsp;&nbsp;&nbsp;"+ MDTagContent +"</li>");             }
+      else if ( htmlTagName == "H5" ) { $("#MDh1").append("<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+ MDTagContent +"</li>"); }
+      else    { $("#MDh1").append("<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+ MDTagContent +"</li>");             }
+    });
+  }
+
+
+
+  $(document).pjax("a", '#contentDiv', { fragment: '#contentDiv', timeout:18000}	);	
+  $(document).on('pjax:start', function() { NProgress.start(); });
+  $(document).on('pjax:end',   function() { NProgress.done(); showSideStructure(); });
+// $(document).on('pjax:end',   function() { NProgress.done(); pajx_loadDuodsuo(); });
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
