@@ -150,7 +150,12 @@ $(".postNames").click(   function() {
                 var middlePaddingNum = parseFloat(middlePaddingPX);
                 console.log("filenameDiv padding 无px= " +middlePaddingNum);  
                 var realMiddle = realMouse - middleWidth - gap;
-                $("#filenameDiv").css("flex-basis",realMiddle); 
+
+                if ( realMiddle <= "219") { alert("达到默认最小宽度: 219; \n修改: main.css → #filenameDiv → min-width:219 ");
+                    document.onmousemove = null;  document.onmouseup = null;    }
+              else {  $("#filenameDiv").css("flex-basis",realMiddle);  }
+
+
             document.onmouseup = function() { document.onmousemove = null;  document.onmouseup = null;   };  }
     };
   

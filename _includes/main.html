@@ -43,11 +43,11 @@
 			<a href onclick="showAllTagsandPosts(); return false;"   id="allCateTagPostBtn"> 
 			  <!-- 这个函数 在 catefilter.js 里面 -->
 			  <i class="fa fa-folder-open " aria-hidden="true" ></i>
-			  <sup style="font-size:0.7em; float:none; ">{{site.categories | size }}</sup>    	
-			  <i class="fa  fa-tags " aria-hidden="true" ></i>
-			  <sup style="font-size:0.7em; float:none; ">{{site.tags | size }}</sup>
-			  <i class="fa fa-files-o " aria-hidden="true" ></i>
-			  <sup style="font-size:0.7em; float:none;">{{site.posts | size }}</sup>
+			  <sup style="font-size:0.7em; float:none; position:relative; left: -7px;">{{site.categories | size }}</sup>    	
+			  <i class="fa fa-tags " aria-hidden="true" style="position:relative; left: 0px;" ></i>
+			  <sup style="font-size:0.7em; float:none; position:relative; left: -7px;">{{site.tags | size }}</sup>
+			  <i class="fa fa-files-o " aria-hidden="true" style="position:relative; left: 0px;" ></i>
+			  <sup style="font-size:0.7em; float:none; position:relative; left: -7px;">{{site.posts | size }}</sup>
 			</a>  
 			<i class="fa fa-eye-slash fa-fw" aria-hidden="true"           id="filenameDivDate"; onclick="fileNameDate();  return false;" ></i>
 			<!-- 这个显隐函数 在  filename.js 里 -->

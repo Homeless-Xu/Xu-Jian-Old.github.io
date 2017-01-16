@@ -15,11 +15,14 @@ code { width: 30px !important; }
 #catenameUL::-webkit-scrollbar {display:none}
  #tagnameUL::-webkit-scrollbar {display:none}
 #filenameUL::-webkit-scrollbar {display:none}
+#rightNavbar::-webkit-scrollbar {display:none}
+
  
-/* 设置filenameDiv 排序按钮的间距+位置.   这里还要实现居中.. todo */
+/* 设置filenameDiv 排序按钮的间距+位置.   这里还要实现居中.. 居中就靠 transform 来实现了 .相对自身大小 来偏移... */
+
 #filenameDiv-Btnes   { position: relative;                  }
 #filenameDiSearch    { position: absolute; left:5%;   top:0; }
-#allCateTagPostBtn   { position: absolute; left:27%;  top:0; }
+#allCateTagPostBtn   { position: absolute; left:50%;  top:0;  transform: translate(-50%,0); }
 #filenameDivDate     { position: absolute; right:5%;  top:0; }
 
 /* 拖动条 css */
@@ -56,9 +59,11 @@ code { width: 30px !important; }
     padding: 0px 0px 4px 4px; display:relative;                                   
 	}
 #filenameDiv {
-	flex-basis: 200px; flex-grow: 0; flex-shrink: 0;  max-width: 1450px; min-width: 28px;background-color:pink;
+	flex-basis: 219px; flex-grow: 0; flex-shrink: 0;  max-width: 1450px; min-width: 219px;background-color:pink;
 	position: relative;     padding: 4px 0px 4px 0px;  display:relative;                                  
 	}
+
+#allCateTagPostBtn {padding: 0px; margin:0px }
 
 
 .sortBtn {width: 30px; height: 30px; flex-grow: 1; flex-shrink: 0;}
