@@ -3,7 +3,12 @@ li  { list-style: none;      }
 a   { text-decoration: none; color:black;       } 
 sup                  { color: red; float:right; font-size:0.7em; }
 
-code { width: 30px !important; }
+
+
+
+
+/* code { width: 30px !important; } */
+
 .active {background-color: yellow}
   html { overflow: hidden; }  
 /* 强制隐藏滚动条. 不知为什么会有滚动条... */
@@ -54,7 +59,7 @@ code { width: 30px !important; }
     padding: 0px 4px 4px 4px;  display:relative;  }
 
 #tagDiv {
-	flex-basis:133px; flex-grow: 0; flex-shrink: 0;  max-width: 300px; min-width: 28px;
+	flex-basis:155px; flex-grow: 0; flex-shrink: 0;  max-width: 300px; min-width: 88px;
 	position: relative ; background-color:rgba(212, 117, 204, 0.53) ;         	
     padding: 0px 0px 4px 4px; display:relative;                                   
 	}
@@ -90,7 +95,7 @@ word-break: normal;  }
 
 
 		
-#arrowNav {	width:50px; height:20px; position: absolute; bottom: 0px; right: 0px; }
+#arrowNav {	width:70px; height:20px; position: absolute; bottom: 0px; right: 0px; }
 	
 .hidden {
   display: none!important;
@@ -128,17 +133,72 @@ word-break: normal;  }
 
 
 
+/*  其他 次要的 设置......   */
+
+
+#heart {
+    position: relative;
+    width: 50px;
+    height: 45px;
+}
+#heart:before,
+#heart:after {
+    position: absolute;
+    content: "";
+    left: 25px;
+    top: 0;
+    width: 25px;
+    height: 40px;
+    background: red;
+    -moz-border-radius: 25px 25px 0 0;
+    border-radius: 25px 25px 0 0;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+       -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+         -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+#heart:after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+       -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin :100% 100%;
+}
 
 
 
 
 
-
-
-
-
-
-
-/* markdown 显示设置 */
-
+#talkbubble {
+   width: 120px; 
+   height: 80px; 
+   background: red;
+   position: relative;
+   -moz-border-radius:    10px; 
+   -webkit-border-radius: 10px; 
+   border-radius:         10px;
+}
+#talkbubble:before {
+   content:"";
+   position: absolute;
+   right: 100%;
+   top: 26px;
+   width: 0;
+   height: 0;
+   border-top: 13px solid transparent;
+   border-right: 26px solid red;
+   border-bottom: 13px solid transparent;
+}
 

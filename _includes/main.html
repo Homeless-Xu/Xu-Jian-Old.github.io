@@ -40,7 +40,7 @@
 		<!--  顶部按钮 栏 -->
 		<li id="filenameDiv-Btnes">
 			<i class="fa fa-search fa-fw" aria-hidden="true"        id="filenameDiSearch"; onclick="   return false;" ></i>
-			<a href onclick="showAllTagsandPosts(); return false;"   id="allCateTagPostBtn"> 
+			<a href onclick="showAllTagsandPosts(); return false;"   id="allCateTagPostBtn" style="width:150px; text-align: center"> 
 			  <!-- 这个函数 在 catefilter.js 里面 -->
 			  <i class="fa fa-folder-open " aria-hidden="true" ></i>
 			  <sup style="font-size:0.7em; float:none; position:relative; left: -7px;">{{site.categories | size }}</sup>    	
@@ -90,10 +90,7 @@
             </a>
         {% endif %}	
     </div><br>
-
-    <div id="xx"></div>
-
-
+    
 			
 	{% if page.meta != ‘’ %}
 		meta: {{page.meta}} <hr>
@@ -121,7 +118,9 @@
   </div>
 </div>
 <div id="rightNavbar" >
-	<ul id="MDh1" class="CSMDh1"></ul>
+	<ul id="MDh1" class="CSMDh1">
+		<p style='text-align: center'> {{page.title}} </p>
+	</ul>
 </div>
 <!-- ----------------------------------------------------------------------------------------------- -->
 <!-- ----------------------------------------------------------------------------------------------- -->

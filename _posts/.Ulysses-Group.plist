@@ -11,7 +11,6 @@
 		<string>.92 - jQuery.Ulysses_Public_Filter</string>
 		<string>.93 - Web.Ulysses_Public_Filter</string>
 		<string>.94 - MWeb.Ulysses_Public_Filter</string>
-		<string>.95 - UI.Ulysses_Public_Filter</string>
 		<string>.95 - Vue.Ulysses_Public_Filter</string>
 		<string>.96 - Git.Ulysses_Public_Filter</string>
 		<string>.97 - A(P)jax.Ulysses_Public_Filter</string>
@@ -117,20 +116,6 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>348</integer>
-				</dict>
-			</dict>
-			<key>.95 - UI.Ulysses_Public_Filter</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505651981.07974702</real>
-				<key>lastModification</key>
-				<real>505651981.07974702</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>352</integer>
 				</dict>
 			</dict>
 			<key>.95 - Vue.Ulysses_Public_Filter</key>
@@ -614,6 +599,16 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>11761</integer>
+				</dict>
+			</dict>
+			<key>1989-01-01-jelyll-侧边结构栏.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>506252677.69761097</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>12297</integer>
 				</dict>
 			</dict>
 			<key>1989-01-01-kramdown.md</key>
@@ -1536,34 +1531,6 @@
 					<integer>11048</integer>
 				</dict>
 			</dict>
-			<key>1989-12-09-02-函数&amp;技巧.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505634293.28383899</real>
-				<key>lastModification</key>
-				<real>505634293.28383899</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>10994</integer>
-				</dict>
-			</dict>
-			<key>1989-12-09-02-静态搜索功能.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505634373.31895298</real>
-				<key>lastModification</key>
-				<real>505634373.31895298</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>10999</integer>
-				</dict>
-			</dict>
 			<key>1989-12-09-theme详解.md</key>
 			<dict>
 				<key>lastModification</key>
@@ -1572,104 +1539,6 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>11684</integer>
-				</dict>
-			</dict>
-			<key>1989-12-10-00-00-简介.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505634523.87482703</real>
-				<key>lastModification</key>
-				<real>505634523.87482703</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>11004</integer>
-				</dict>
-			</dict>
-			<key>1989-12-10-01-01-Objects.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505634655.21261901</real>
-				<key>lastModification</key>
-				<real>505634655.21261901</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>11006</integer>
-				</dict>
-			</dict>
-			<key>1989-12-10-01-01-capture.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505634599.58217901</real>
-				<key>lastModification</key>
-				<real>505634599.58217901</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>11005</integer>
-				</dict>
-			</dict>
-			<key>1989-12-10-01-02-Filters.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505634737.14501798</real>
-				<key>lastModification</key>
-				<real>505634737.14501798</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>11007</integer>
-				</dict>
-			</dict>
-			<key>1989-12-10-04-00-include.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505634902.72650599</real>
-				<key>lastModification</key>
-				<real>505634902.72650599</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>11008</integer>
-				</dict>
-			</dict>
-			<key>1989-12-10-05-00-Tag汇总.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505634976.65783602</real>
-				<key>lastModification</key>
-				<real>505634976.65783602</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>11013</integer>
-				</dict>
-			</dict>
-			<key>1989-12-10-06-00-字符转义.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505635302.381064</real>
-				<key>lastModification</key>
-				<real>505635302.381064</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>11026</integer>
 				</dict>
 			</dict>
 			<key>1990-01-01-404页面.md</key>
@@ -1948,6 +1817,76 @@
 					<integer>11891</integer>
 				</dict>
 			</dict>
+			<key>1991-11-11-21-CSS形状-my✔︎.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>506249156.48873299</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>12287</integer>
+				</dict>
+			</dict>
+			<key>1991-11-11-21-CSS形状-三角形✔︎.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>506248605.822721</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>12269</integer>
+				</dict>
+			</dict>
+			<key>1991-11-11-21-CSS形状-其他.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>506249084.27244699</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>12281</integer>
+				</dict>
+			</dict>
+			<key>1991-11-11-21-CSS形状-参考资源✔︎.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>506249110.06502903</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>12283</integer>
+				</dict>
+			</dict>
+			<key>1991-11-11-21-CSS形状-四边形✔︎.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>506248678.59545201</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>12273</integer>
+				</dict>
+			</dict>
+			<key>1991-11-11-21-CSS形状-多边形✔︎.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>506248762.30976498</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>12277</integer>
+				</dict>
+			</dict>
+			<key>1991-11-11-21-CSS形状原理✔︎.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>506249284.21236801</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>12291</integer>
+				</dict>
+			</dict>
 			<key>1991-11-11-21-CSS最高优先级.md</key>
 			<dict>
 				<key>lastModification</key>
@@ -1956,6 +1895,16 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>12245</integer>
+				</dict>
+			</dict>
+			<key>1991-11-11-21-CSS绘制各种形状-简介.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>506248418.30750102</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>12263</integer>
 				</dict>
 			</dict>
 			<key>1991-11-11-21-CSS边框.md</key>
@@ -2490,6 +2439,26 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>12231</integer>
+				</dict>
+			</dict>
+			<key>1992-01-01-01-jQuery-for循环.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>506255293.012128</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>12303</integer>
+				</dict>
+			</dict>
+			<key>1992-01-01-01-jQuery-锚点跳转.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>506257889.682863</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>12307</integer>
 				</dict>
 			</dict>
 			<key>1992-01-01-01-设置删除获取高亮状态.md</key>
@@ -8044,7 +8013,7 @@
 			</dict>
 		</dict>
 		<key>sheetOrder</key>
-		<real>505366784.76325899</real>
+		<real>506249256.32414001</real>
 		<key>userIconName</key>
 		<real>503750092.912471</real>
 	</dict>
@@ -8055,6 +8024,39 @@
 		</array>
 		<array>
 			<string>2000-01-01-快速选色.md</string>
+		</array>
+		<array>
+			<string>1992-01-01-01-jQuery-锚点跳转.md</string>
+		</array>
+		<array>
+			<string>1992-01-01-01-jQuery-for循环.md</string>
+		</array>
+		<array>
+			<string>1989-01-01-jelyll-侧边结构栏.md</string>
+		</array>
+		<array>
+			<string>1991-11-11-21-CSS形状原理✔︎.md</string>
+		</array>
+		<array>
+			<string>1991-11-11-21-CSS形状-my✔︎.md</string>
+		</array>
+		<array>
+			<string>1991-11-11-21-CSS形状-参考资源✔︎.md</string>
+		</array>
+		<array>
+			<string>1991-11-11-21-CSS形状-多边形✔︎.md</string>
+		</array>
+		<array>
+			<string>1991-11-11-21-CSS形状-四边形✔︎.md</string>
+		</array>
+		<array>
+			<string>1991-11-11-21-CSS形状-三角形✔︎.md</string>
+		</array>
+		<array>
+			<string>1991-11-11-21-CSS绘制各种形状-简介.md</string>
+		</array>
+		<array>
+			<string>1991-11-11-21-CSS形状-其他.md</string>
 		</array>
 		<array>
 			<string>1991-11-11-21-CSS位置偏移.md</string>
@@ -8516,9 +8518,6 @@
 			<string>1989-04-03-03-所有标签+文章数.md</string>
 		</array>
 		<array>
-			<string>1989-12-10-01-01-capture.md</string>
-		</array>
-		<array>
 			<string>1989-09-01-join.md</string>
 		</array>
 		<array>
@@ -8531,25 +8530,10 @@
 			<string>1989-09-10-contains.md</string>
 		</array>
 		<array>
-			<string>1989-12-10-01-01-Objects.md</string>
-		</array>
-		<array>
-			<string>1989-12-10-01-02-Filters.md</string>
-		</array>
-		<array>
-			<string>1989-12-10-04-00-include.md</string>
-		</array>
-		<array>
-			<string>1989-12-10-05-00-Tag汇总.md</string>
-		</array>
-		<array>
 			<string>1989-09-10-case.md</string>
 		</array>
 		<array>
 			<string>1989-09-10-ifElse.md</string>
-		</array>
-		<array>
-			<string>1989-12-10-06-00-字符转义.md</string>
 		</array>
 		<array>
 			<string>1989-09-时间格式化.md</string>
@@ -8558,19 +8542,10 @@
 			<string>1989-09-10-For Loops.md</string>
 		</array>
 		<array>
-			<string>1989-12-10-00-00-简介.md</string>
-		</array>
-		<array>
 			<string>1989-09-01-01-时间格式.md</string>
 		</array>
 		<array>
 			<string>1989-07-01-Page Post 变量.md</string>
-		</array>
-		<array>
-			<string>1989-12-09-02-静态搜索功能.md</string>
-		</array>
-		<array>
-			<string>1989-12-09-02-函数&amp;技巧.md</string>
 		</array>
 		<array>
 			<string>Untitled - 3.md</string>
@@ -10305,7 +10280,7 @@
 		</array>
 	</array>
 	<key>sheetOrder</key>
-	<string>title</string>
+	<string>modificationDate</string>
 	<key>storeFormatVersion</key>
 	<integer>1</integer>
 	<key>userIconName</key>
@@ -10320,12 +10295,12 @@
 		<key>sheetClusters</key>
 		<dict>
 			<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-			<integer>12256</integer>
+			<integer>12308</integer>
 		</dict>
 		<key>sheetOrder</key>
 		<dict>
 			<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-			<integer>12</integer>
+			<integer>13</integer>
 		</dict>
 		<key>userIconName</key>
 		<dict>

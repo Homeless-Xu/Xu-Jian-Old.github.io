@@ -1,9 +1,4 @@
-/// <reference path="../node_modules/@types/jquery/index.d.ts" />
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // 点击大类过滤出对应的标签+文章:  同步进行高亮.
-// 手机端 重新来. 点击 左上角. 显示/隐藏类别过滤.
-// 手机端特别一点. 点击文件名的时候 隐藏掉. 来个圆球 加号吧. 绝对位置
-// 或者用 左右滑动来实现....
 $(".cateNames").click(   function() {
     // alert($(window).width());          // 浏览器当前窗口可视区域宽度
     var clickedCateName = $( this ).children('span').text()
@@ -43,7 +38,6 @@ $(".tagNames").click(   function() {
 });
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // ↓ 文件高亮.+对应tag+对应cate 同步高亮.   这里还要显示出 该大类下的标签.而不是显示所有标签
-// 这里也要考虑到手机.. 手机上点了文件名 就要隐藏 tag 和 filename 只留 cate
 $(".postNames").click(   function() {
   var  postTagName = $(this).data('tag' );
   var postCateName = $(this).data('cate');
@@ -74,24 +68,27 @@ $(".postNames").click(   function() {
 
 });
 // 上面是 大类 标签过滤+高亮
+
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // 下面是 各种额外功能:   拖动条js  + 方向箭js + pjax  + 回到顶部 + 滚动条高度.
 
 
-// 拖动条. 获取元素左边位置的函数. 要自己写. 不像鼠标位置 直接可以通过clientx 什么的 获取.
-// offsetLeft = 当前元素的外边框 . 到父元素的 里边框的距离.
-// offsetParent = 当前元素 上一级的定位元素....  很麻烦.. 诶 看着办...
-  function getElementLeft(element){
-      var actualLeft = element.offsetLeft;
-      var current = element.offsetParent;
-      while (current !== null){
-        actualLeft += current.offsetLeft;
-        current = current.offsetParent;
-      }
-      return actualLeft;
+// 拖动条. 
+function getElementLeft(element){
+    var actualLeft = element.offsetLeft;
+    var current = element.offsetParent;
+    while (current !== null){
+      actualLeft += current.offsetLeft;
+      current = current.offsetParent;
     }
-
+    return actualLeft;
+  }
+  // 这函数别的地方要用  不能放到下面的函数里面去...
+  //获取元素左边位置的函数. 要自己写. 不像鼠标位置 直接可以通过clientx 什么的 获取.
+  // offsetLeft = 当前元素的外边框 . 到父元素的 里边框的距离.
+  // offsetParent = 当前元素 上一级的定位元素....  很麻烦.. 诶 看着办...
   $(function(){
     // $("#filenameDiv").css("flex-basis","600px");  这个是获取 和 修改div宽度的.    下面是 左线拖动代码
     // 其实就是 设置 tagDiv 的宽度.  = 鼠标的实时位置 -  鼠标和拖动条直接的微小差距 - tagDiv左边的宽度 - tagDiv的Padding(这个获得元素边距的函数 有个小问题.所以需要减去)
@@ -120,15 +117,15 @@ $(".postNames").click(   function() {
                 console.log("tagDiv的左边位置="+ tagDivL );
                 console.log("鼠标到linediv 的差距= "+ gapL );
               var zz = realMouse - tagDivL - leftPaddingNum - gapL    ;               // 鼠标实时坐标 - 一定的差距 =  实时的左边div 的宽度
-                console.log("tagDiv实际实时宽度= "+ zz);                                     // 也不带px
-                $("#tagDiv").css("flex-basis",zz);    // 这里就能实时拖动了.
-
+                console.log("tagDiv实际实时宽度= "+ zz);                                     // 也不带px              
+               if ( zz <= "88" || zz >= "300") {  document.onmousemove = null;  document.onmouseup = null;    }
+              else {  $("#tagDiv").css("flex-basis",zz);  }             
               // 下面是 鼠标松开的时候触发的事件....
               document.onmouseup = function() {  
                 document.onmousemove = null;  document.onmouseup = null;   
               };
            }
-    };
+         };
     // 下面是 右线拖动代码: fileDiv宽度= 鼠标实时x位置 - fileDiv左边距x - 鼠标到fileDiv右边的微小差距 
     // 有时候要减去 padding .有时候不用... 看情况..
     lineRight.onmousedown = function(e) {
@@ -151,58 +148,38 @@ $(".postNames").click(   function() {
                 console.log("filenameDiv padding 无px= " +middlePaddingNum);  
                 var realMiddle = realMouse - middleWidth - gap;
 
-                if ( realMiddle <= "219") { alert("达到默认最小宽度: 219; \n修改: main.css → #filenameDiv → min-width:219 ");
-                    document.onmousemove = null;  document.onmouseup = null;    }
+                if ( realMiddle <= "219" || realMiddle >= "500") {  document.onmousemove = null;  document.onmouseup = null;    }
               else {  $("#filenameDiv").css("flex-basis",realMiddle);  }
 
 
             document.onmouseup = function() { document.onmousemove = null;  document.onmouseup = null;   };  }
-    };
-  
+       };
 
-
-// 下面是侧边栏的 拖动条. 右边栏目实际宽度= 网页宽度 - 鼠标距离浏览器左边框的的宽度 - 
-// 实际宽度 =  网页宽度 - 鼠标实时值 - 鼠标到拖动条右边的距离.
-// 这个距离怎么算呢...=  按理说...  拖动条宽度也就10..  怎么会有个16的呢... 可能是什么padding 导致的吧..
-lineSide.onmousedown = function(e) {
-        var screenWidth   = parseFloat($(window).width() );                           
-        console.log("网页宽度=" + screenWidth);
-
-        var MouseClick = (e || event).clientX;			
-        console.log("鼠标初始点击值= "+ MouseClick );
-  
-            document.onmousemove = function(e) {
-                var realMouse = (e || event).clientX;	
-                var realRightNavbarWith = screenWidth - realMouse - 5;
-                // 这里要考虑. rightNavbar 的padding ... 自己调吧... 
-                console.log("网页宽度-实时鼠标值: "+realRightNavbarWith );
-
-                $("#rightNavbar").css("flex-basis",realRightNavbarWith); 
-            document.onmouseup = function() { document.onmousemove = null;  document.onmouseup = null;   };  }
-    };
-
-
-
-
-
-
-
-
-
-
+    // 下面是侧边栏的 拖动条. 右边栏目实际宽度= 网页宽度 - 鼠标距离浏览器左边框的的宽度 - 
+    // 实际宽度 =  网页宽度 - 鼠标实时值 - 鼠标到拖动条右边的距离.
+    // 这个距离怎么算呢...=  按理说...  拖动条宽度也就10..  怎么会有个16的呢... 可能是什么padding 导致的吧..
+    lineSide.onmousedown = function(e) {
+            var screenWidth   = parseFloat($(window).width() );                           
+            console.log("网页宽度=" + screenWidth);
+            var MouseClick = (e || event).clientX;			
+            console.log("鼠标初始点击值= "+ MouseClick );
+                document.onmousemove = function(e) {
+                    var realMouse = (e || event).clientX;	
+                    var realRightNavbarWith = screenWidth - realMouse - 5;
+                    // 这里要考虑. rightNavbar 的padding ... 自己调吧... 
+                    console.log("网页宽度-实时鼠标值: "+realRightNavbarWith );
+                    $("#rightNavbar").css("flex-basis",realRightNavbarWith); 
+                    document.onmouseup = function() { document.onmousemove = null;  document.onmouseup = null;   };  }
+        };
 
 });
-// 上面是  拖动条的 js
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// 下面是 方向箭的js + 过滤栏显隐按钮
-// 过滤栏目 也分手机和px 手机的话 要隐藏掉 拖动条.
-  $(function button(){
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    // 判断 所有的都不在.就显示. 不然就隐藏;   隐藏(none) → 就显示左边 3个+两拖动条;  显示(block):→隐藏左边三个+两拖动条 
+
+// 方向箭的  + 顶部过滤栏显隐按钮
+$(function button(){
+  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  // 判断 所有的都不在.就显示. 不然就隐藏;   隐藏(none) → 就显示左边 3个+两拖动条;  显示(block):→隐藏左边三个+两拖动条 
     $("#topbarToggle").click(   function(){ 
-
         if ( $(window).width() <= 414 ) {  
-
               if (     $("#filenameDiv").css("display") == "none" 
                         && $("#tagDiv").css("display") == "none" 
                         && $("#cateDiv").css("display") == "none" ) {
@@ -260,9 +237,11 @@ lineSide.onmousedown = function(e) {
       }); 
   });
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// 下面是 pjax  + 多说评论的Pjax重载 + pjax 点击完毕 显示加载后文件的 结构列表
-// 多说重载函数. 每次点击pjax都要执行 .不然要刷新网页才能出现多说....
+
+
+// 文章结构侧边栏
+// pjax 
+// 多说评论的Pjax重载 每次点击pjax都要执行 .不然要刷新网页才能出现多说....
 function pajx_loadDuodsuo(){ 
     var dus=$(".ds-thread"); if($(dus).length==1){
     var el = document.createElement('div');
@@ -272,7 +251,7 @@ function pajx_loadDuodsuo(){
     $(dus).html(el);
   }};
 
-function showSideStructure(){
+  function showSideStructure(){
     // 下面是 获取 当前文章内的 h1234 .然后显示到 边栏上
     var MDh1 = $("#pageContent h1").text();
     //console.log("MDh1= " +MDh1);
@@ -284,19 +263,33 @@ function showSideStructure(){
     //console.log("MDh4= " +MDh4);
     $("#MDh1 li").each( function(){    $(this).remove();         });
     // 首先 点击文件名 删除所有现有的 li
-    $("#pageContent h1,h2,h3,h4,h5,h6 ").each( function(){
+
+    var titleNum = $("#pageContent h2,h3,h4,h5,h6 ").length;
+    console.log(titleNum );
+    // 这里 所有的 title数量就出来了. 下面进行循环. 给每个title 一个 index; 
+
+
+    $("#pageContent h2,h3,h4,h5,h6 ").each( function(){
+
       var MDTagContent = $(this).text(); 
       var htmlTagName = $(this).get(0).tagName ;
 
+var navbarIndex = $(this).index();
+console.log( MDTagContent,navbarIndex);
+// 这里的 index 虽然不知道问什么 不是连续的 .... 没关系. 只要把这个index 的值 给文章的标签对应的id就可以了....
 
-      if ( htmlTagName == "H1" ) { $("#MDh1").append("<li style='text-align: center'>"+ MDTagContent +"</li>");  }
-      else if ( htmlTagName == "H2" ) { $("#MDh1").append("<li>"+ MDTagContent +"</li>");                                     } 
-      else if ( htmlTagName == "H3" ) { $("#MDh1").append("<li>&nbsp;&nbsp;"+ MDTagContent +"</li>");                         } 
-      else if ( htmlTagName == "H4" ) { $("#MDh1").append("<li>&nbsp;&nbsp;&nbsp;&nbsp;"+ MDTagContent +"</li>");             }
-      else if ( htmlTagName == "H5" ) { $("#MDh1").append("<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+ MDTagContent +"</li>"); }
-      else    { $("#MDh1").append("<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+ MDTagContent +"</li>");             }
-    });
-    $("#lineSide").show();
+//$(this).attr("name",navbarIndex);
+$(this).append("<a name='" + navbarIndex +"'>我是锚点啊..</a>");
+//<a href="url">Link text</a>
+
+     // if ( htmlTagName == "H1" ) { $("#MDh1").append("<li style='text-align: center'>"+ MDTagContent +"</li>");  }
+         if ( htmlTagName == "H2" ) { $("#MDh1").append(                                    "<li><a href='#"+navbarIndex+"'>"+ MDTagContent +"</li>"); } 
+    else if ( htmlTagName == "H3" ) { $("#MDh1").append(                        "<li>&nbsp;&nbsp;<a href='#"+navbarIndex+"'>"+ MDTagContent +"</li>"); } 
+    else if ( htmlTagName == "H4" ) { $("#MDh1").append(            "<li>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#"+navbarIndex+"'>"+ MDTagContent +"</li>"); }
+    else if ( htmlTagName == "H5" ) { $("#MDh1").append("<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='#"+navbarIndex+"'>"+ MDTagContent +"</li>"); }
+    else    { $("#MDh1").append(            "<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='#"+navbarIndex+"'>"+ MDTagContent +"</li>"); }
+  });
+  $("#lineSide").show();
   
   }
 
@@ -305,7 +298,7 @@ function showSideStructure(){
   $(document).pjax("a", '#contentDiv', { fragment: '#contentDiv', timeout:18000}	);	
   $(document).on('pjax:start', function() { NProgress.start(); });
   $(document).on('pjax:end',   function() { NProgress.done(); showSideStructure(); });
-// $(document).on('pjax:end',   function() { NProgress.done(); pajx_loadDuodsuo(); });
+  // $(document).on('pjax:end',   function() { NProgress.done(); pajx_loadDuodsuo(); });
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -314,13 +307,10 @@ function toTop() {  $("#contentDiv").scrollTop(0); }
 
 
 
-
-
-
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// 网页加载时候的 滚动条高度的.  有高度 才能有滚动条.
-  function scrollbarHeight(){
+// 滚动条高度.  有高度才能有滚动条.
+function scrollbarHeight(){
       function getElementTop(element){
       var actualTop = element.offsetTop;
       var current = element.offsetParent;
@@ -352,7 +342,7 @@ function toTop() {  $("#contentDiv").scrollTop(0); }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // 眼睛功能: 显隐文件日期
-  function fileNameDate() {
+function fileNameDate() {
     // console.log( $(".fileNameCustonOrder").css("display")   );
     // 判断 某元素显示隐藏状态. 显示:block  隐藏:none
 
@@ -368,7 +358,6 @@ function toTop() {  $("#contentDiv").scrollTop(0); }
          }
   }
 
-
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // 显示所有的标签和文章
 function showAllTagsandPosts () {
@@ -381,47 +370,26 @@ function showAllTagsandPosts () {
 
 }
 
-
-
-
-
-
-
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-
+// 手机端 过滤栏 宽度视频
 $(function (){
-// 先判断屏幕宽度 如果<= 414 那就假设设备是手机 那么!!!  文件栏目的宽度 就是 手机宽度 - cata宽度 - tag宽度.
-
-if ( $(window).width() <= "414") {
-  var screenWidth   = parseFloat($(window).width() );                           
-  var CateWidth     = parseFloat($("#cateDiv").css("flex-basis"));
-  var TagWidth      = parseFloat($("#tagDiv").css("flex-basis"));
-  var FilenameWidth = parseFloat($("#filenameDiv").css("flex-basis"));
-  // 原来是200px   加了 parseFloat  就是 200
-  var filenameMobileWith = screenWidth - CateWidth - TagWidth
-  // alert("手机宽度="+ screenWidth +"大类宽度="+ CateWidth +"标签宽度="+ TagWidth +"原文件宽度="+ FilenameWidth +"后文件宽度="+ filenameMobileWith  );
-  // 结果是 414 - 44 - 133 = 237 
-
-  $("#filenameDiv").css("flex-basis", filenameMobileWith+"px" );  
-  // alert(  $("#filenameDiv").css("flex-basis")  );
-  // 再测试一下看看到底有没有改变
-
-}
-
-
-
-
-
-
+  // 先判断屏幕宽度 如果<= 414 那就假设设备是手机 那么!!!  文件栏目的宽度 就是 手机宽度 - cata宽度 - tag宽度.
+  if ( $(window).width() <= "414") {
+      var screenWidth   = parseFloat($(window).width() );                           
+      var CateWidth     = parseFloat($("#cateDiv").css("flex-basis"));
+      var TagWidth      = parseFloat($("#tagDiv").css("flex-basis"));
+      var FilenameWidth = parseFloat($("#filenameDiv").css("flex-basis"));
+      // 原来是200px   加了 parseFloat  就是 200
+      var filenameMobileWith = screenWidth - CateWidth - TagWidth
+      // alert("手机宽度="+ screenWidth +"大类宽度="+ CateWidth +"标签宽度="+ TagWidth +"原文件宽度="+ FilenameWidth +"后文件宽度="+ filenameMobileWith  );
+      // 结果是 414 - 44 - 133 = 237 
+      $("#filenameDiv").css("flex-basis", filenameMobileWith+"px" );  
+      // alert(  $("#filenameDiv").css("flex-basis")  );
+      // 再测试一下看看到底有没有改变
+    }
 });
-
-
-
-
-
-// 然后就是  .. 拖动文章. 高亮侧边栏目上的 相应标题...
 
 
 
