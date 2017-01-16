@@ -82,15 +82,15 @@ $(".postNames").click(   function() {
 // 拖动条. 获取元素左边位置的函数. 要自己写. 不像鼠标位置 直接可以通过clientx 什么的 获取.
 // offsetLeft = 当前元素的外边框 . 到父元素的 里边框的距离.
 // offsetParent = 当前元素 上一级的定位元素....  很麻烦.. 诶 看着办...
-function getElementLeft(element){
-    var actualLeft = element.offsetLeft;
-    var current = element.offsetParent;
-    while (current !== null){
-      actualLeft += current.offsetLeft;
-      current = current.offsetParent;
+  function getElementLeft(element){
+      var actualLeft = element.offsetLeft;
+      var current = element.offsetParent;
+      while (current !== null){
+        actualLeft += current.offsetLeft;
+        current = current.offsetParent;
+      }
+      return actualLeft;
     }
-    return actualLeft;
-  }
 
   $(function(){
     // $("#filenameDiv").css("flex-basis","600px");  这个是获取 和 修改div宽度的.    下面是 左线拖动代码
@@ -153,8 +153,40 @@ function getElementLeft(element){
                 $("#filenameDiv").css("flex-basis",realMiddle); 
             document.onmouseup = function() { document.onmousemove = null;  document.onmouseup = null;   };  }
     };
-  });
+  
 
+
+// 下面是侧边栏的 拖动条. 右边栏目实际宽度= 网页宽度 - 鼠标距离浏览器左边框的的宽度 - 
+// 实际宽度 =  网页宽度 - 鼠标实时值 - 鼠标到拖动条右边的距离.
+// 这个距离怎么算呢...=  按理说...  拖动条宽度也就10..  怎么会有个16的呢... 可能是什么padding 导致的吧..
+lineSide.onmousedown = function(e) {
+        var screenWidth   = parseFloat($(window).width() );                           
+        console.log("网页宽度=" + screenWidth);
+
+        var MouseClick = (e || event).clientX;			
+        console.log("鼠标初始点击值= "+ MouseClick );
+  
+            document.onmousemove = function(e) {
+                var realMouse = (e || event).clientX;	
+                var realRightNavbarWith = screenWidth - realMouse - 5;
+                // 这里要考虑. rightNavbar 的padding ... 自己调吧... 
+                console.log("网页宽度-实时鼠标值: "+realRightNavbarWith );
+
+                $("#rightNavbar").css("flex-basis",realRightNavbarWith); 
+            document.onmouseup = function() { document.onmousemove = null;  document.onmouseup = null;   };  }
+    };
+
+
+
+
+
+
+
+
+
+
+
+});
 // 上面是  拖动条的 js
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // 下面是 方向箭的js + 过滤栏显隐按钮
@@ -247,16 +279,21 @@ function showSideStructure(){
     //console.log("MDh4= " +MDh4);
     $("#MDh1 li").each( function(){    $(this).remove();         });
     // 首先 点击文件名 删除所有现有的 li
-    $("#pageContent h2,h3,h4,h5,h6 ").each( function(){
+    $("#pageContent h1,h2,h3,h4,h5,h6 ").each( function(){
       var MDTagContent = $(this).text(); 
       var htmlTagName = $(this).get(0).tagName ;
-           if ( htmlTagName == "H2" ) { $("#MDh1").append("<li>"+ MDTagContent +"</li>");                                     } 
+
+
+      if ( htmlTagName == "H1" ) { $("#MDh1").append("<li style='text-align: center'>"+ MDTagContent +"</li>");  }
+      else if ( htmlTagName == "H2" ) { $("#MDh1").append("<li>"+ MDTagContent +"</li>");                                     } 
       else if ( htmlTagName == "H3" ) { $("#MDh1").append("<li>&nbsp;&nbsp;"+ MDTagContent +"</li>");                         } 
       else if ( htmlTagName == "H4" ) { $("#MDh1").append("<li>&nbsp;&nbsp;&nbsp;&nbsp;"+ MDTagContent +"</li>");             }
       else if ( htmlTagName == "H5" ) { $("#MDh1").append("<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+ MDTagContent +"</li>"); }
       else    { $("#MDh1").append("<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+ MDTagContent +"</li>");             }
     });
     $("#rightNavbar").show();
+    $("#lineSide").show();
+  
   }
 
 

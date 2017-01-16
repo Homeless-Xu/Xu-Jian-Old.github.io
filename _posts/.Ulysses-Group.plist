@@ -4,6 +4,7 @@
 <dict>
 	<key>childOrder</key>
 	<array>
+		<string>.OSI-2017-01-03.Ulysses_Public_Filter</string>
 		<string>.89 - Jekyll.Ulysses_Public_Filter</string>
 		<string>.90 - HTML.Ulysses_Public_Filter</string>
 		<string>.91 - CSS.Ulysses_Public_Filter</string>
@@ -19,7 +20,6 @@
 		<string>.00 - Tool.Ulysses_Public_Filter</string>
 		<string>.IT 2017-01-01.Ulysses_Public_Filter</string>
 		<string>.Net-2017-01-02.Ulysses_Public_Filter</string>
-		<string>.OSI-2017-01-03.Ulysses_Public_Filter</string>
 		<string>.GFW-2016-12-31.Ulysses_Public_Filter</string>
 		<string>.Linux -14-11-11.Ulysses_Public_Filter</string>
 		<string>.Kali --- 16-09-09.Ulysses_Public_Filter</string>
@@ -326,11 +326,11 @@
 			<key>.OSI-2017-01-03.Ulysses_Public_Filter</key>
 			<dict>
 				<key>lastModification</key>
-				<real>505103466.844886</real>
+				<real>506229590.12276298</real>
 				<key>version</key>
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>298</integer>
+					<integer>376</integer>
 				</dict>
 			</dict>
 			<key>.PHP-- 13-12-12.Ulysses_Public_Filter</key>
@@ -756,34 +756,6 @@
 					<integer>11822</integer>
 				</dict>
 			</dict>
-			<key>1989-01-02-标签栏.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505621402.53193998</real>
-				<key>lastModification</key>
-				<real>505621402.53193998</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>10477</integer>
-				</dict>
-			</dict>
-			<key>1989-01-03-文件栏.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505621406.04788202</real>
-				<key>lastModification</key>
-				<real>505621406.04788202</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>10478</integer>
-				</dict>
-			</dict>
 			<key>1989-01-03-文件栏功能.md</key>
 			<dict>
 				<key>lastModification</key>
@@ -842,34 +814,6 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>11053</integer>
-				</dict>
-			</dict>
-			<key>1989-01-05-标签栏功能.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505622613.35195398</real>
-				<key>lastModification</key>
-				<real>505622613.35195398</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>10489</integer>
-				</dict>
-			</dict>
-			<key>1989-02-02-03-本主题排序设计.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505622811.46788502</real>
-				<key>lastModification</key>
-				<real>505622811.46788502</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>10496</integer>
 				</dict>
 			</dict>
 			<key>1989-03-03-01-01所有类的各自标签.md</key>
@@ -2950,6 +2894,16 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>11285</integer>
+				</dict>
+			</dict>
+			<key>1991-11-11-21-文本水平居中✔︎.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>506229506.37036097</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>12239</integer>
 				</dict>
 			</dict>
 			<key>1991-11-11-21-显-隐-占位-不占位.md</key>
@@ -8647,6 +8601,9 @@
 			<string>2000-01-01-快速选色.md</string>
 		</array>
 		<array>
+			<string>1991-11-11-21-文本水平居中✔︎.md</string>
+		</array>
+		<array>
 			<string>1991-11-11-21-强制不换行✔︎.md</string>
 		</array>
 		<array>
@@ -10804,9 +10761,6 @@
 			<string>1989-04-03-03-Tag字母排序.md</string>
 		</array>
 		<array>
-			<string>1989-01-05-标签栏功能.md</string>
-		</array>
-		<array>
 			<string>1989-01-03-文件栏功能.md</string>
 		</array>
 		<array>
@@ -10828,9 +10782,6 @@
 			<string>1989-05-02-文件逆序排列.md</string>
 		</array>
 		<array>
-			<string>1989-02-02-03-本主题排序设计.md</string>
-		</array>
-		<array>
 			<string>1992-12-12-页面回顶部.md</string>
 		</array>
 		<array>
@@ -10841,12 +10792,6 @@
 		</array>
 		<array>
 			<string>1989-01-04-Google-Analytics.md</string>
-		</array>
-		<array>
-			<string>1989-01-03-文件栏.md</string>
-		</array>
-		<array>
-			<string>1989-01-02-标签栏.md</string>
 		</array>
 		<array>
 			<string>1989-01-01-Div布局.md</string>
@@ -11028,12 +10973,12 @@
 		<key>childOrder</key>
 		<dict>
 			<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-			<integer>374</integer>
+			<integer>376</integer>
 		</dict>
 		<key>sheetClusters</key>
 		<dict>
 			<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-			<integer>12236</integer>
+			<integer>12240</integer>
 		</dict>
 		<key>sheetOrder</key>
 		<dict>
