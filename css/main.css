@@ -3,6 +3,7 @@ li  { list-style: none;      }
 a   { text-decoration: none; color:black;       } 
 sup                  { color: red; float:right; font-size:0.7em; }
 
+code { width: 30px !important; }
 .active {background-color: yellow}
   html { overflow: hidden; }  
 /* 强制隐藏滚动条. 不知为什么会有滚动条... */
@@ -63,18 +64,19 @@ sup                  { color: red; float:right; font-size:0.7em; }
 .sortBtn {width: 30px; height: 30px; flex-grow: 1; flex-shrink: 0;}
 
 #contentDiv { flex-grow: 1; flex-shrink: 1; padding: 5px; background-color:rgba(161, 203, 55, 0.3); 
-	flex-basis: 150px; overflow: scroll; }
-
+	flex-basis: 150px; overflow: scroll;}
 #contentDiv-Buttons	 { display: flex }
 .contentButton { flex-shrink: 0; flex-grow: 1; flex-basis: 190px; }
+#pageContent { overflow-x: scroll; word-wrap: break-word; 
+word-break: normal;  }
+
+
 
 #rightNavbar { flex-grow: 0; flex-shrink: 0; height: 100%;  flex-basis: 200px; 
 	font-size: 0.8em; padding: 0px;  background-color:rgba(127, 127, 127, 0.13);  
 	overflow-x: hidden; 
 	overflow-y: scroll;
-white-space: nowrap;
-display: none;
-
+	white-space: nowrap;
 	}
 
 

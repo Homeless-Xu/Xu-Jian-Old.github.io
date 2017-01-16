@@ -291,7 +291,6 @@ function showSideStructure(){
       else if ( htmlTagName == "H5" ) { $("#MDh1").append("<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+ MDTagContent +"</li>"); }
       else    { $("#MDh1").append("<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+ MDTagContent +"</li>");             }
     });
-    $("#rightNavbar").show();
     $("#lineSide").show();
   
   }
