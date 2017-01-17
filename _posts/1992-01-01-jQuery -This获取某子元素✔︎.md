@@ -1,16 +1,15 @@
 ---
 layout: post
-title:  This子元素
+title:  jQuery -This获取某子元素✔︎
 tags: This
 categories: jQuery
 ---
 
 
-
 ~~~
 <li>
-	<span></span>
-	<sup></sup>
+    <span></span>
+    <sup></sup>
 </li>
 ~~~
 {: .language-ruby}
