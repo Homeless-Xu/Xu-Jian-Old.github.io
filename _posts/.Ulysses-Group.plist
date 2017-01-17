@@ -3501,14 +3501,54 @@
 					<integer>12222</integer>
 				</dict>
 			</dict>
-			<key>2000-01-01-Firebase新项目搭建.md</key>
+			<key>2000-01-01-Firebase 资源.md</key>
 			<dict>
 				<key>lastModification</key>
-				<real>506330398.448973</real>
+				<real>506331065.185305</real>
 				<key>version</key>
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>12452</integer>
+					<integer>12456</integer>
+				</dict>
+			</dict>
+			<key>2000-01-01-Firebase-Auth设置 ✔︎.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>506332221.64954901</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>12470</integer>
+				</dict>
+			</dict>
+			<key>2000-01-01-Firebase-托管功能✔︎.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>506332655.54961401</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>12474</integer>
+				</dict>
+			</dict>
+			<key>2000-01-01-Firebase实时数据库设置 ✔︎.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>506331230.75029999</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>12466</integer>
+				</dict>
+			</dict>
+			<key>2000-01-01-Firebase新项目搭建✔︎.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>506331176.812051</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>12460</integer>
 				</dict>
 			</dict>
 			<key>2000-01-01-Firebase简介.md</key>
@@ -8148,7 +8188,19 @@
 			<string>2000-01-01-快速选色.md</string>
 		</array>
 		<array>
-			<string>2000-01-01-Firebase新项目搭建.md</string>
+			<string>2000-01-01-Firebase-托管功能✔︎.md</string>
+		</array>
+		<array>
+			<string>2000-01-01-Firebase-Auth设置 ✔︎.md</string>
+		</array>
+		<array>
+			<string>2000-01-01-Firebase实时数据库设置 ✔︎.md</string>
+		</array>
+		<array>
+			<string>2000-01-01-Firebase 资源.md</string>
+		</array>
+		<array>
+			<string>2000-01-01-Firebase新项目搭建✔︎.md</string>
 		</array>
 		<array>
 			<string>2000-01-01-Firebase简介.md</string>
@@ -10448,7 +10500,7 @@
 		<key>sheetClusters</key>
 		<dict>
 			<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-			<integer>12453</integer>
+			<integer>12475</integer>
 		</dict>
 		<key>sheetOrder</key>
 		<dict>
