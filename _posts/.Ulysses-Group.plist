@@ -3084,6 +3084,16 @@
 					<integer>13257</integer>
 				</dict>
 			</dict>
+			<key>1993-01-01-DOM优化✔︎.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>506583982.04711699</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>14032</integer>
+				</dict>
+			</dict>
 			<key>1993-01-01-H1-6标题对SEO的影响.md</key>
 			<dict>
 				<key>lastModification</key>
@@ -3142,20 +3152,6 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>13399</integer>
-				</dict>
-			</dict>
-			<key>1993-01-02-02-Manifest使用.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>505978269.58717799</real>
-				<key>lastModification</key>
-				<real>505978269.58717799</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>12111</integer>
 				</dict>
 			</dict>
 			<key>1993-01-02-03-更新缓存.md</key>
@@ -3620,6 +3616,16 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>13528</integer>
+				</dict>
+			</dict>
+			<key>2000-01-01-创建Demo演示页 ✔︎.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>506583458.20923603</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>14028</integer>
 				</dict>
 			</dict>
 			<key>2000-01-01-垂直对齐线.md</key>
@@ -8175,6 +8181,12 @@
 			<string>2000-01-01-快速选色.md</string>
 		</array>
 		<array>
+			<string>1993-01-01-DOM优化✔︎.md</string>
+		</array>
+		<array>
+			<string>2000-01-01-创建Demo演示页 ✔︎.md</string>
+		</array>
+		<array>
 			<string>1993-01-01-Web框架详解 ✔︎.md</string>
 		</array>
 		<array>
@@ -8432,9 +8444,6 @@
 		</array>
 		<array>
 			<string>1993-01-02-03-更新缓存.md</string>
-		</array>
-		<array>
-			<string>1993-01-02-02-Manifest使用.md</string>
 		</array>
 		<array>
 			<string>1993-01-02-01-Manifest简介.md</string>
@@ -10487,7 +10496,7 @@
 		<key>sheetClusters</key>
 		<dict>
 			<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-			<integer>14025</integer>
+			<integer>14033</integer>
 		</dict>
 		<key>sheetOrder</key>
 		<dict>
