@@ -265,7 +265,7 @@ function pajx_loadDuodsuo(){
     // 首先 点击文件名 删除所有现有的 li
 
     var titleNum = $("#pageContent h2,h3,h4,h5,h6 ").length;
-    console.log(titleNum );
+    //console.log(titleNum );
     // 这里 所有的 title数量就出来了. 下面进行循环. 给每个title 一个 index; 
 
 
@@ -275,11 +275,11 @@ function pajx_loadDuodsuo(){
       var htmlTagName = $(this).get(0).tagName ;
 
 var navbarIndex = $(this).index();
-console.log( MDTagContent,navbarIndex);
+// console.log( MDTagContent,navbarIndex);
 // 这里的 index 虽然不知道问什么 不是连续的 .... 没关系. 只要把这个index 的值 给文章的标签对应的id就可以了....
 
 //$(this).attr("name",navbarIndex);
-$(this).append("<a name='" + navbarIndex +"'>我是锚点啊..</a>");
+$(this).append("<a name='" + navbarIndex +"'></a>");
 //<a href="url">Link text</a>
 
      // if ( htmlTagName == "H1" ) { $("#MDh1").append("<li style='text-align: center'>"+ MDTagContent +"</li>");  }
@@ -324,7 +324,7 @@ function scrollbarHeight(){
       // 设置 fileDiv 高度
       var xyz = document.documentElement.clientHeight;
       var  xy = getElementTop(filenameUL);
-      console.log(xy);
+      // console.log(xy);
       var   x = getElementTop(cateDiv);
       var xxyy = xyz - xy;
       // 这里还是直接减去 顶部栏目的50 +  文件名上固定栏目的.18 得了..
