@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Visual-Studio-Code
-tags: Visual-Studio-Code
+tags: VSC
 categories: Tool
 ---
 
