@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Liquid-Tag汇总
-tags: Liquid-Tag汇总
+tags: Liquid
 categories: Jekyll
 ---
 
@@ -38,13 +38,13 @@ liquid 自带的tags 大多是 控制流和变量相关的.
 
 Jekyll 就有一种扩展是通过扩展 Liquid Tags 来实现。
 
-~~
+\~\~
 {% raw %}
 {% if user %}
   Hello {{ user.name }}!
 {% endif %}
 {% endraw %}
-~~~
+\~\~\~
 {: .language-ruby}
 
 
@@ -66,4 +66,3 @@ Jekyll 就有一种扩展是通过扩展 Liquid Tags 来实现。
 - 流程控制
 - 迭代器
 - 变量赋值
-

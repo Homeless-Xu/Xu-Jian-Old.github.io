@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Liquid-Misc
-tags: Liquid-语法
+title: Liquid-语法-Misc
+tags: Liquid
 categories: Jekyll
 ---
 
@@ -43,7 +43,7 @@ Block tag its the standard case...when block
 传统意义上的*模板变量*. 用双大括号包围.
 **Jekyll 将文件中解析出来的各种内容. 通过模板变量注入给展示层.**
 
-~~
+\~\~
 {% raw %}
 {{ page.title }}      // 这个就表示 页面的标题：
 {% endraw %}
@@ -72,9 +72,9 @@ Jekyll 官方扩展了一批 Liquid Filters 配合 Liquid Objects，便于实现
 过滤器可以改变对象的输出.
 被用在输出中 用| 分割. 类似linux 的管道..
 
-~~
+\~\~
 {% raw %}
-    {{ "/my/fancy/url" | append: ".html" }}
+	{{ "/my/fancy/url" | append: ".html" }}
 {% endraw %}
 ~~~
 {: .language-ruby}
@@ -108,7 +108,7 @@ Jekyll 官方扩展了一批 Liquid Filters 配合 Liquid Objects，便于实现
 对于内容，指定模板了模板后,我们可以称 *内容是模板的儿子*
 
 
-~~
+\~\~
 {% raw %}
 在模板中引入 儿子内容:  {{ content }}
 
@@ -117,9 +117,8 @@ Jekyll 官方扩展了一批 Liquid Filters 配合 Liquid Objects，便于实现
 layout: post
 ---
 {% endraw %}
-~~~
+\~\~\~
 {: .language-ruby}
-
 
 
 

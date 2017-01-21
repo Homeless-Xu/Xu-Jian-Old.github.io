@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  collections
-tags: Liquid-语法
+title:  Liquid-语法-collections
+tags: Liquid
 categories: Jekyll
 ---
 
@@ -36,7 +36,6 @@ defaults:
 
 
 **collection 表示所在集合的变量名**
-
 
 
 

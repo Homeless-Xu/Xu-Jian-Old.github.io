@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  contains
-tags: Liquid-语法
+title:  Liquid-语法-contains
+tags: Liquid
 categories: Jekyll
 ---
 
@@ -10,11 +10,11 @@ categories: Jekyll
 **contains 只能作用于字符串。不可以用于检查其他对象。**
 检查一个字符串是否含有特定的 子串
 
-~~
+\~\~
 {% raw %}
  {% if product.title contains 'Pack' %}
-        This product's title contains the word Pack.
-    {% endif %}
+	    This product's title contains the word Pack.
+	{% endif %}
 {% endraw %}
 ~~~
 {: .language-ruby}
@@ -31,4 +31,3 @@ contains 也可以检查一个字符串数组中是否包含某个字符串。
 {% endraw %}
 ~~~
 {: .language-ruby}
-

@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  For Loops
-tags: Liquid-forloop
+title: Liquid-forloop
+tags: Liquid
 categories: Jekyll
 ---
 

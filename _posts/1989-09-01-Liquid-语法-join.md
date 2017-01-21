@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  join
-tags: Liquid-语法
+title:  Liquid-语法-join
+tags: Liquid
 categories: Jekyll
 ---
 

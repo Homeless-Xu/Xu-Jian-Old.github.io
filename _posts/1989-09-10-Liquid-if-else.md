@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  if/else
-tags: Liquid-ifElse
+title:  Liquid-if/else
+tags: Liquid
 categories: Jekyll
 ---
 
 3. If / Else
 条件语句，可以使用关键字有：if、unless、elsif、else。
-~~
+\~\~
 {% raw %}
 {% if user %}
  2   Hello {{ user.name }}
@@ -28,7 +28,7 @@ categories: Jekyll
 17   Hello tobi or bob
 18 {% endif %}
 19 
-20 {% if user.name == 'bob' and user.age > 45 %}
+20 {% if user.name == 'bob' and user.age \> 45 %}
 21   Hello old bob
 22 {% endif %}
 23 
@@ -46,11 +46,11 @@ categories: Jekyll
 35    you never paid !
 36 {% endif %}
 37 
-38 {% if user.payments.size > 0  %}
+38 {% if user.payments.size \> 0  %}
 39    you paid !
 40 {% endif %}
 41 
-42 {% if user.age > 18 %}
+42 {% if user.age \> 18 %}
 43    Login here
 44 {% else %}
 45    Sorry, you are too young
@@ -66,5 +66,5 @@ categories: Jekyll
 55    string includes 'hello'
 56 {% endif %}
 {% endraw %}
-~~~
+\~\~\~
 {: .language-ruby}
