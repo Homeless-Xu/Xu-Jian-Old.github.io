@@ -15,10 +15,9 @@ categories: -CMD
 1. shutdown
 	至指定时间正常结束所有进程并关闭或重启系统。      
 	`shutdown [选项] <now或关机时间> `   
-	  
-	        - h：关机      
-	        - r：重启      
-	        - c：取消预定义的关机操作。
+		    - h：关机      
+		    - r：重启      
+		    - c：取消预定义的关机操作。
 
 	2. halt
 
@@ -32,4 +31,3 @@ categories: -CMD
 		重启.   
 		`reboot [选项]`      
 		          -f：不调用shutdown结束进程，直接重启当前系统。
-

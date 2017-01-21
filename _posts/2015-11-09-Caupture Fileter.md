@@ -14,24 +14,24 @@ categories: -CMD
 软件界面最上方会显示选择的网卡名字 和 过滤规则名字
 
 
-*protoc 协议:
+\*protoc 协议:
 可能值: ether fddi ip arp rarp decnet lat sca moprc mopdl tcp udp
 默认值:所有协议
 
 
-*direction 方向 
+\*direction 方向 
 可能值: src; dst; src and dst ; scr or dst ;
 默认值: scr or dst 
 
-*host
+\*host
 可能值: net; port; host; portrange ;
 
-*Logical Operations（逻辑运算）:
+\*Logical Operations（逻辑运算）:
 可能的值：not, and, or.
 否("not")具有最高的优先级。
 或("or")和与("and")具有相同的优先级，
 
-**例子：
+\*\*例子：
 1. `tcp dst port 3128`
 	显示目的TCP端口为3128的封包。
 
@@ -106,4 +106,3 @@ tcp.flags.syn == 0x02
 
 如果过滤器的语法是正确的，表达式的背景呈绿色。
 如果呈红色，说明表达式有误。
-
