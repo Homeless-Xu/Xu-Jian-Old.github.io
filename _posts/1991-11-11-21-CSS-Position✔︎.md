@@ -1,9 +1,38 @@
 ---
 layout: post
-title:  Position
+title:  🔖CSS-Position✔︎
 tags: Layout
 categories: CSS
 ---
+
+
+## 总结
+•	Static 普通流布局（Normal flow） ，默认值。没有定位，元素出现在正常的流中（忽略 top, bottom, left, right 或者 z-index 声明）。
+•	Relative 支持偏移量属性的普通流布局 ，生成相对定位的元素，相对于其正常位置进行定位。因此，"left:20" 会向元素的 LEFT 位置添加 20 像素。
+•	Absolute 在容器元素内绝对定位的布局 ，生成绝对定位的元素，相对于 static 定位以外的第一个父元素进行定位。元素的位置通过 "left", "top", "right" 以及 "bottom" 属性进行规定。
+•	Fixed 在显示范围内的绝对定位布局，生成绝对定位的元素，相对于浏览器窗口进行定位。元素的位置通过 "left", "top", "right" 以及 "bottom" 属性进行规定。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## 文档流概念:
 html 布局机制就是 文档流模型:
@@ -106,7 +135,6 @@ top,right,bottom,left 都可用.
 小的长方形的上边框.距离大的长方形的上边框120
 
 **有点难理解.但是 创造优秀布局必须会用**
-
 
 
 

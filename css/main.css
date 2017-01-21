@@ -21,7 +21,8 @@ sup                  { color: red; float:right; font-size:0.7em; }
  #tagnameUL::-webkit-scrollbar {display:none}
 #filenameUL::-webkit-scrollbar {display:none}
 #rightNavbar::-webkit-scrollbar {display:none}
-
+#pageContent::-webkit-scrollbar {display:none}
+#contentDiv::-webkit-scrollbar {display:none}
  
 /* 设置filenameDiv 排序按钮的间距+位置.   这里还要实现居中.. 居中就靠 transform 来实现了 .相对自身大小 来偏移... */
 
