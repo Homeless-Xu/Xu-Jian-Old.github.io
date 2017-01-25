@@ -1,8 +1,22 @@
 <div id="topbarDiv"> 
-  <i class="fa fa-th-list fa-fw" style="font-size: 1.5em" id="topbarToggle" v-bind:title="message"></i>
-  <a href="https://www.freecodecamp.com/xu-jian"  target="_blank" > <i class="fa fa-free-code-camp  fa-fw" style="font-size: 1.5em"></i>
-  <a href="{{site.github_url}}"  target="_blank" > <i class="fa fa-github  fa-fw" style="font-size: 1.5em"></i> </a>
-  <a href="{{site.codePen_url}}" target="_blank" > <i class="fa fa-codepen fa-fw" style="font-size: 1.5em"></i> </a>
+  <svg class="icon" aria-hidden="true" id="topbarToggle" >
+    <use xlink:href="#icon-layouts"></use>
+  </svg>
+
+  <a href="{{site.github_url}}"  target="_blank" >
+    <svg class="icon" aria-hidden="true" id="topbarToggle" >
+      <use xlink:href="#icon-Git"></use>
+    </svg>  
+  </a>
+
+  <a href="{{site.codePen_url}}" target="_blank" >
+    <svg class="icon" aria-hidden="true" id="topbarToggle" >
+      <use xlink:href="#icon-codepen"></use>
+    </svg>
+  </a>
+
+
+
 </div>
 
 

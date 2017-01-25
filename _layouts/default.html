@@ -8,10 +8,12 @@
 
 <!-- 绝对定位 导航条  右下角: 三个箭头而已. -->
 <div id="arrowNav">
-	<i class="fa fa-arrow-left"      aria-hidden="true" id="leftBtn"></i>
-	<i class="fa fa-angle-double-up" aria-hidden="true" onclick="toTop()"></i>
-	<!-- 这个函数 子 mainPjax 下. -->
-	<i class="fa fa-arrow-right"     aria-hidden="true" id="rightBtn"></i>
+	<span style="font-size: 25px; display: inline-block; transform: rotate(180deg);" id="leftBtn">➟</span>
+	<span style="font-size: 25px; display: inline-block; transform: rotate(270deg);" onclick="toTop()">➼</span>
+	<span style="font-size: 25px" id="rightBtn">➟</span>
 </div>
 
 {% include footer.html %}   <!-- 所有文章尾部 -->
+
+
+

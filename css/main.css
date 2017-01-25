@@ -26,7 +26,6 @@ sup                  { color: red; float:right; font-size:0.7em; }
  
 /* 设置filenameDiv 排序按钮的间距+位置.   这里还要实现居中.. 居中就靠 transform 来实现了 .相对自身大小 来偏移... */
 
-#filenameDivBtnes   { position: relative;                  }
 #filenameDiSearch    { position: absolute; left:5%;   top:0; }
 #allCateTagPostBtn   { position: absolute; left:50%;  top:0;  transform: translate(-50%,0); }
 #filenameDivDate     { position: absolute; right:5%;  top:0; }
@@ -96,12 +95,41 @@ word-break: normal;  }
 
 
 		
-#arrowNav {	width:70px; height:20px; position: absolute; bottom: 0px; right: 0px; }
-	
+#arrowNav 
+{	width:90px; height:30px; position: absolute; bottom: 0px; right: 0px; }
+
+
+
 .hidden {
   display: none!important;
   visibility: hidden!important;
 }
+
+
+
+
+
+
+ .icon {
+       width: 1em; height: 1em;
+       vertical-align: -0.15em;
+       fill: currentColor;
+       overflow: hidden;
+       font-size:25px;
+       padding: 2.5px; 
+    }
+
+
+.iconfont{
+     font-family:"iconfont"; font-size:16px; font-style:normal;
+      -webkit-font-smoothing: antialiased; 
+      -webkit-text-stroke-width: 0.2px; 
+      -moz-osx-font-smoothing: grayscale; 
+      padding-left:20px 
+}
+
+
+
 
 
 

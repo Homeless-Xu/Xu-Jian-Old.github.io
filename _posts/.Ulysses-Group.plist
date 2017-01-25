@@ -37,7 +37,6 @@
 		<string>.硬件----16-11-22.Ulysses_Public_Filter</string>
 		<string>.PHP-- 13-12-12.Ulysses_Public_Filter</string>
 		<string>.Apache-13-12-11.Ulysses_Public_Filter</string>
-		<string>.RegExp 16-10-11.Ulysses_Public_Filter</string>
 		<string>.Plugins 12-12-13.Ulysses_Public_Filter</string>
 		<string>.Bootstrap-13-01-01.Ulysses_Public_Filter</string>
 		<string>.jekyll-09-09-09.Ulysses_Public_Filter</string>
@@ -368,20 +367,6 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>185</integer>
-				</dict>
-			</dict>
-			<key>.RegExp 16-10-11.Ulysses_Public_Filter</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>506326166.38361001</real>
-				<key>lastModification</key>
-				<real>506326166.38361001</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>379</integer>
 				</dict>
 			</dict>
 			<key>.Win ----- 16-10-22.Ulysses_Public_Filter</key>
@@ -1755,14 +1740,24 @@
 					<integer>13537</integer>
 				</dict>
 			</dict>
-			<key>1991-01-01-21-设备类型判断.md</key>
+			<key>1991-01-01-21-旋转.md</key>
 			<dict>
 				<key>lastModification</key>
-				<real>506691815.83908701</real>
+				<real>507022031.70384002</real>
 				<key>version</key>
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>14292</integer>
+					<integer>14554</integer>
+				</dict>
+			</dict>
+			<key>1991-01-01-21-设备类型.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>507022004.33806199</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>14552</integer>
 				</dict>
 			</dict>
 			<key>1991-01-01-DIV左右布局.md</key>
@@ -2459,20 +2454,6 @@
 					<integer>13720</integer>
 				</dict>
 			</dict>
-			<key>1992-01-01-01-jQuery-for循环.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>506318449.96270698</real>
-				<key>lastModification</key>
-				<real>506318449.96270698</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>12325</integer>
-				</dict>
-			</dict>
 			<key>1992-01-01-01-jQuery-增删查高亮状态✔︎.md</key>
 			<dict>
 				<key>lastModification</key>
@@ -2739,20 +2720,6 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>13968</integer>
-				</dict>
-			</dict>
-			<key>1992-12-12-01-filter().md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>506322782.450831</real>
-				<key>lastModification</key>
-				<real>506322782.450831</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>12386</integer>
 				</dict>
 			</dict>
 			<key>1992-12-12-01-jQuery-Each✔︎.md</key>
@@ -3489,6 +3456,16 @@
 					<integer>14244</integer>
 				</dict>
 			</dict>
+			<key>1993-01-01-01-Web-图标库✔︎.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>506776124.24211901</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>14546</integer>
+				</dict>
+			</dict>
 			<key>1993-01-01-01-按钮组.md</key>
 			<dict>
 				<key>lastModification</key>
@@ -4089,6 +4066,20 @@
 					<integer>14028</integer>
 				</dict>
 			</dict>
+			<key>2000-01-01-国内github.md</key>
+			<dict>
+				<key>explicitUnassignment</key>
+				<true/>
+				<key>firstUnassignment</key>
+				<real>506773093.306997</real>
+				<key>lastModification</key>
+				<real>506773093.306997</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>14527</integer>
+				</dict>
+			</dict>
 			<key>2000-01-01-垂直对齐线.md</key>
 			<dict>
 				<key>lastModification</key>
@@ -4533,16 +4524,6 @@
 					<integer>14444</integer>
 				</dict>
 			</dict>
-			<key>2000-11-10-★★★★★GDT-Timeline分析✔︎.md</key>
-			<dict>
-				<key>lastModification</key>
-				<real>506754391.57539397</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>14495</integer>
-				</dict>
-			</dict>
 			<key>2000-11-10-推荐软件.md</key>
 			<dict>
 				<key>lastModification</key>
@@ -4571,6 +4552,76 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>14407</integer>
+				</dict>
+			</dict>
+			<key>2003-11-10-★GDT-资源分析✔︎.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>506763535.34413302</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>14519</integer>
+				</dict>
+			</dict>
+			<key>2003-11-10-★★★★★GDT-Audits-优化建议✔︎.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>506775082.85153002</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>14538</integer>
+				</dict>
+			</dict>
+			<key>2003-11-10-★★★★★GDT-Console✔︎.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>506775213.65315801</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>14542</integer>
+				</dict>
+			</dict>
+			<key>2003-11-10-★★★★★GDT-Profile分析✔︎.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>506774778.16251999</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>14532</integer>
+				</dict>
+			</dict>
+			<key>2003-11-10-★★★★★GDT-Timeline分析✔︎.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>506759547.03815001</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>14509</integer>
+				</dict>
+			</dict>
+			<key>2003-11-10-★★★★★GDT-元素分析✔︎.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>506760848.77960801</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>14515</integer>
+				</dict>
+			</dict>
+			<key>2003-11-10-★★★★★GDT-网络分析✔︎.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>506759577.680309</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>14511</integer>
 				</dict>
 			</dict>
 			<key>2013-11-11-Cisco 防火墙 &amp; Switch &amp; VLAN &amp; TFTP.md</key>
@@ -8369,12 +8420,16 @@
 			</dict>
 			<key>2017-01-02-Traceroute - 2.md</key>
 			<dict>
+				<key>explicitUnassignment</key>
+				<true/>
+				<key>firstUnassignment</key>
+				<real>507023916.11270201</real>
 				<key>lastModification</key>
-				<real>506415086.26361197</real>
+				<real>507023916.11270201</real>
 				<key>version</key>
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>13500</integer>
+					<integer>14556</integer>
 				</dict>
 			</dict>
 			<key>2017-01-02-Traceroute.md</key>
@@ -8557,6 +8612,16 @@
 					<integer>14488</integer>
 				</dict>
 			</dict>
+			<key>Untitled - 15.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>507022004.068111</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>14551</integer>
+				</dict>
+			</dict>
 			<key>Untitled - 2.md</key>
 			<dict>
 				<key>lastModification</key>
@@ -8647,20 +8712,6 @@
 					<integer>13905</integer>
 				</dict>
 			</dict>
-			<key>网页顶部.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>506315295.80737501</real>
-				<key>lastModification</key>
-				<real>506315295.80737501</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>12314</integer>
-				</dict>
-			</dict>
 		</dict>
 		<key>sheetOrder</key>
 		<real>506249256.32414001</real>
@@ -8676,13 +8727,40 @@
 			<string>1992-01-02-©️遍历节点.md</string>
 		</array>
 		<array>
+			<string>2000-01-01-国内github.md</string>
+		</array>
+		<array>
+			<string>1991-01-01-21-旋转.md</string>
+		</array>
+		<array>
+			<string>1993-01-01-01-Web-图标库✔︎.md</string>
+		</array>
+		<array>
+			<string>2003-11-10-★★★★★GDT-Console✔︎.md</string>
+		</array>
+		<array>
+			<string>2003-11-10-★★★★★GDT-Audits-优化建议✔︎.md</string>
+		</array>
+		<array>
+			<string>2003-11-10-★★★★★GDT-Profile分析✔︎.md</string>
+		</array>
+		<array>
+			<string>2003-11-10-★GDT-资源分析✔︎.md</string>
+		</array>
+		<array>
+			<string>2003-11-10-★★★★★GDT-元素分析✔︎.md</string>
+		</array>
+		<array>
+			<string>2003-11-10-★★★★★GDT-网络分析✔︎.md</string>
+		</array>
+		<array>
 			<string>1993-01-02-05-CDN失效加载本地文件✔︎.md</string>
 		</array>
 		<array>
 			<string>1993-01-02-05-公共CDN.md</string>
 		</array>
 		<array>
-			<string>2000-11-10-★★★★★GDT-Timeline分析✔︎.md</string>
+			<string>2003-11-10-★★★★★GDT-Timeline分析✔︎.md</string>
 		</array>
 		<array>
 			<string>Untitled - 14.md</string>
@@ -8884,10 +8962,6 @@
 		</array>
 		<array>
 			<string>1992-01-01-01-jQuery-锚点跳转✔︎.md</string>
-			<string>网页顶部.md</string>
-		</array>
-		<array>
-			<string>1992-01-01-01-jQuery-for循环.md</string>
 		</array>
 		<array>
 			<string>1989-01-01-jelyll-侧边结构栏.md</string>
@@ -8992,7 +9066,7 @@
 			<string>Untitled.md</string>
 		</array>
 		<array>
-			<string>1991-01-01-21-设备类型判断.md</string>
+			<string>1991-01-01-21-设备类型.md</string>
 		</array>
 		<array>
 			<string>1994-01-Html5移动端触摸事件.md</string>
@@ -11092,9 +11166,6 @@
 			<string>1992-12-12-01-读写元素属性attr✔︎.md</string>
 		</array>
 		<array>
-			<string>1992-12-12-01-filter().md</string>
-		</array>
-		<array>
 			<string>1992-12-12-01-查找过滤.md</string>
 		</array>
 		<array>
@@ -11111,6 +11182,9 @@
 		</array>
 		<array>
 			<string>2000-01-01-Code Runner.md</string>
+		</array>
+		<array>
+			<string>Untitled - 15.md</string>
 		</array>
 	</array>
 	<key>sheetOrder</key>
@@ -11129,7 +11203,7 @@
 		<key>sheetClusters</key>
 		<dict>
 			<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-			<integer>14506</integer>
+			<integer>14556</integer>
 		</dict>
 		<key>sheetOrder</key>
 		<dict>
