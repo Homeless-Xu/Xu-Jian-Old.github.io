@@ -32,5 +32,8 @@ codePen_url:  http://codepen.io/Xu-Jian/
 # 这个是顶部 codepen 图标的链接.
 
 
-
-
+deploy:
+  type: git
+  repo: 
+    coding: git@git.coding.net:Jamling/Jamling,coding-pages
+    github: git@github.com/Xu-Jian/Xu-Jian.github.io.git,master
