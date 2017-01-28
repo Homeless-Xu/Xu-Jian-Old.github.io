@@ -5,18 +5,14 @@ tags: JSON
 categories: Jekyll
 ---
 
-`_data` 文件夹
+## `_data` 文件夹
 可以储存一些常用数据.免得每篇文章都重复一次.
 比如把 每篇文章的各种信息 都储存到一个json文件中.
 这样只需要生成一次. 而不是每篇文章里面都生成一遍.
 
 
 
-
-
-
 ## 目的:
-
 遍历所有的文章.
 每篇文章的标题,URL,所属标签,所属大类,时间.都储存到json 变量中.  
 
@@ -25,21 +21,20 @@ categories: Jekyll
 
 
 
-
 ## 1. 遍历出全部文章的 所有数据
 
 
-~~
+\~\~
 {% raw %}
 [
   {% for post in site.posts %}
-    {
-      "title"    : "{{ post.title | escape }}",
-      "category" : "{{ post.category }}",
-      "tags"     : "{{ post.tags | join: ', ' }}",
-      "url"      : "{{ site.baseurl }}{{ post.url }}",
-      "date"     : "{{ post.date }}"
-    } {% unless forloop.last %},{% endunless %}
+	{
+	  "title"    : "{{ post.title | escape }}",
+	  "category" : "{{ post.category }}",
+	  "tags"     : "{{ post.tags | join: ', ' }}",
+	  "url"      : "{{ site.baseurl }}{{ post.url }}",
+	  "date"     : "{{ post.date }}"
+	} {% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]
 {% endraw %}
@@ -81,14 +76,14 @@ layout: null
 ---
 [
   {% for post in site.posts %}
-    {
-      "title"    : "{{ post.title | escape }}",
-      "category" : "{{ post.category }}",
-      "tags"     : "{{ post.tags | join: ', ' }}",
-      "url"      : "{{ site.baseurl }}{{ post.url }}",
-      "date"     : "{{ post.date }}",
-      "content"  : "{{ post.content | strip_html | strip_newlines }}"
-    } {% unless forloop.last %},{% endunless %}
+	{
+	  "title"    : "{{ post.title | escape }}",
+	  "category" : "{{ post.category }}",
+	  "tags"     : "{{ post.tags | join: ', ' }}",
+	  "url"      : "{{ site.baseurl }}{{ post.url }}",
+	  "date"     : "{{ post.date }}",
+	  "content"  : "{{ post.content | strip_html | strip_newlines }}"
+	} {% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]
 ~~~
@@ -106,31 +101,12 @@ layout: null
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-JSON 转换
+## JSON 转换
 将 Hash / 数组 格式的字符串转换为 JSON
 
-~~~
 {% raw %}
 {{ site.data.projects | jsonify }
 {% endraw %}
-~~~
-{: .language-ruby}
-
 
 
 

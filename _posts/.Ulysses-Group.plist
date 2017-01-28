@@ -456,54 +456,28 @@
 		</dict>
 		<key>sheetClusters</key>
 		<dict>
-			<key>1989-01-01-404功能开启.md</key>
+			<key>1989-01-01-01-开启本地预览✔︎.md</key>
 			<dict>
 				<key>lastModification</key>
-				<real>506415085.33657902</real>
+				<real>507275852.65408498</real>
 				<key>version</key>
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>13414</integer>
-				</dict>
-			</dict>
-			<key>1989-01-01-404简介.md</key>
-			<dict>
-				<key>lastModification</key>
-				<real>506415085.88750899</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>13457</integer>
-				</dict>
-			</dict>
-			<key>1989-01-01-404页面文件.md</key>
-			<dict>
-				<key>lastModification</key>
-				<real>506415095.175358</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>13707</integer>
-				</dict>
-			</dict>
-			<key>1989-01-01-Coding设置.md</key>
-			<dict>
-				<key>lastModification</key>
-				<real>507122093.85287702</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>14625</integer>
+					<integer>14669</integer>
 				</dict>
 			</dict>
 			<key>1989-01-01-Div布局.md</key>
 			<dict>
+				<key>explicitUnassignment</key>
+				<true/>
+				<key>firstUnassignment</key>
+				<real>507275881.75867701</real>
 				<key>lastModification</key>
-				<real>506415097.96285897</real>
+				<real>507275881.75867701</real>
 				<key>version</key>
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>13817</integer>
+					<integer>14671</integer>
 				</dict>
 			</dict>
 			<key>1989-01-01-Google 跟踪代码管理器.md</key>
@@ -534,6 +508,36 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>13839</integer>
+				</dict>
+			</dict>
+			<key>1989-01-01-Jekyll404功能开启.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>507275200.65661198</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>14653</integer>
+				</dict>
+			</dict>
+			<key>1989-01-01-Jekyll404简介 - 2.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>507275203.30984902</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>14655</integer>
+				</dict>
+			</dict>
+			<key>1989-01-01-Jekyll404页面文件.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>507275208.44998401</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>14657</integer>
 				</dict>
 			</dict>
 			<key>1989-01-01-Jekyll结构.md</key>
@@ -788,6 +792,36 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>13525</integer>
+				</dict>
+			</dict>
+			<key>1989-01-02-01-博客部署简介.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>507275155.85141897</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>14651</integer>
+				</dict>
+			</dict>
+			<key>1989-01-02-02-Coding设置.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>507275293.54711097</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>14661</integer>
+				</dict>
+			</dict>
+			<key>1989-01-02-03-Github&amp;Coding双线部署✔︎.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>507275505.494762</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>14667</integer>
 				</dict>
 			</dict>
 			<key>1989-01-03-文件栏功能.md</key>
@@ -1570,6 +1604,16 @@
 					<integer>14281</integer>
 				</dict>
 			</dict>
+			<key>1989-12-01-分享主题.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>507275112.03135699</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>14649</integer>
+				</dict>
+			</dict>
 			<key>1989-12-09-theme详解.md</key>
 			<dict>
 				<key>lastModification</key>
@@ -1938,20 +1982,6 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>13380</integer>
-				</dict>
-			</dict>
-			<key>1991-11-11-21-CSS绘制各种形状-简介.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>506668007.07920998</real>
-				<key>lastModification</key>
-				<real>506668007.07920998</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>14233</integer>
 				</dict>
 			</dict>
 			<key>1991-11-11-21-CSS边框.md</key>
@@ -2634,20 +2664,6 @@
 					<integer>14127</integer>
 				</dict>
 			</dict>
-			<key>1992-01-02-©️清空节点.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>506603523.44111001</real>
-				<key>lastModification</key>
-				<real>506603523.44111001</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>14077</integer>
-				</dict>
-			</dict>
 			<key>1992-01-02-©️自定义数据Data✔︎.md</key>
 			<dict>
 				<key>lastModification</key>
@@ -2676,20 +2692,6 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>14240</integer>
-				</dict>
-			</dict>
-			<key>1992-01-02-©️遍历节点.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>506603552.75459498</real>
-				<key>lastModification</key>
-				<real>506603552.75459498</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>14078</integer>
 				</dict>
 			</dict>
 			<key>1992-01-02-查找元素.md</key>
@@ -3120,20 +3122,6 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>13727</integer>
-				</dict>
-			</dict>
-			<key>1992-12-12-01-选择器.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>506601884.32682103</real>
-				<key>lastModification</key>
-				<real>506601884.32682103</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>14044</integer>
 				</dict>
 			</dict>
 			<key>1992-12-12-02-Canvas.md</key>
@@ -3966,6 +3954,26 @@
 					<integer>13301</integer>
 				</dict>
 			</dict>
+			<key>2000-01-01-01-Tower.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>507281360.77391201</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>14676</integer>
+				</dict>
+			</dict>
+			<key>2000-01-01-01-版本控制.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>507282056.83165199</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>14684</integer>
+				</dict>
+			</dict>
 			<key>2000-01-01-BetterSnapTool.md</key>
 			<dict>
 				<key>lastModification</key>
@@ -4362,16 +4370,6 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>14417</integer>
-				</dict>
-			</dict>
-			<key>2000-11-10-01-Github.md</key>
-			<dict>
-				<key>lastModification</key>
-				<real>506693545.370085</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>14419</integer>
 				</dict>
 			</dict>
 			<key>2000-11-10-01-Homebrew.md</key>
@@ -8864,23 +8862,32 @@
 			</dict>
 		</dict>
 		<key>sheetOrder</key>
-		<real>506249256.32414001</real>
+		<real>507275124.91605902</real>
 		<key>userIconName</key>
 		<real>503750092.912471</real>
 	</dict>
 	<key>sheetClusters</key>
 	<array>
 		<array>
-			<string>1992-01-02-©️清空节点.md</string>
-		</array>
-		<array>
-			<string>1992-01-02-©️遍历节点.md</string>
-		</array>
-		<array>
 			<string>2000-01-01-国内github.md</string>
 		</array>
 		<array>
-			<string>1989-01-01-Coding设置.md</string>
+			<string>2000-01-01-01-Tower.md</string>
+		</array>
+		<array>
+			<string>1989-01-02-03-Github&amp;Coding双线部署✔︎.md</string>
+		</array>
+		<array>
+			<string>1989-01-02-01-博客部署简介.md</string>
+		</array>
+		<array>
+			<string>1989-01-01-01-开启本地预览✔︎.md</string>
+		</array>
+		<array>
+			<string>1989-12-01-分享主题.md</string>
+		</array>
+		<array>
+			<string>1989-01-02-02-Coding设置.md</string>
 		</array>
 		<array>
 			<string>1998-12-12-01-JSON-简介.md</string>
@@ -9180,9 +9187,6 @@
 			<string>1991-11-11-21-CSS形状-三角形✔︎.md</string>
 		</array>
 		<array>
-			<string>1991-11-11-21-CSS绘制各种形状-简介.md</string>
-		</array>
-		<array>
 			<string>1991-11-11-21-CSS形状-其他.md</string>
 		</array>
 		<array>
@@ -9420,13 +9424,13 @@
 			<string>1989-01-01-jekyll404简介.md</string>
 		</array>
 		<array>
-			<string>1989-01-01-404简介.md</string>
+			<string>1989-01-01-Jekyll404简介 - 2.md</string>
 		</array>
 		<array>
-			<string>1989-01-01-404功能开启.md</string>
+			<string>1989-01-01-Jekyll404功能开启.md</string>
 		</array>
 		<array>
-			<string>1989-01-01-404页面文件.md</string>
+			<string>1989-01-01-Jekyll404页面文件.md</string>
 		</array>
 		<array>
 			<string>1989-01-01-强制使用HTTPS.md</string>
@@ -10257,7 +10261,7 @@
 			<string>2000-11-10-01-Nginx.md</string>
 		</array>
 		<array>
-			<string>2000-11-10-01-Github.md</string>
+			<string>2000-01-01-01-版本控制.md</string>
 		</array>
 		<array>
 			<string>2000-11-10-01-Homebrew.md</string>
@@ -11262,9 +11266,6 @@
 			<string>1992-12-12-01-switch().md</string>
 		</array>
 		<array>
-			<string>1992-12-12-01-选择器.md</string>
-		</array>
-		<array>
 			<string>1992-12-12-02-删除指定内容元素.md</string>
 		</array>
 		<array>
@@ -11398,12 +11399,12 @@
 		<key>sheetClusters</key>
 		<dict>
 			<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-			<integer>14626</integer>
+			<integer>14685</integer>
 		</dict>
 		<key>sheetOrder</key>
 		<dict>
 			<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-			<integer>13</integer>
+			<integer>15</integer>
 		</dict>
 		<key>userIconName</key>
 		<dict>
