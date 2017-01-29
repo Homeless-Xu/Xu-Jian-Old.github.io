@@ -6,19 +6,16 @@ categories: GDT
 ---
 
 
-**alert 数组会有问题**
-**alert 数组会有问题**
-**alert 数组会有问题**
+**alert 数组会有问题,少用alert**
+**alert 数组会有问题,少用alert**
+**alert 数组会有问题,少用alert**
 **一个数组. html里面正常.但是alert只显示 Object**
 
 
 
 
 
-
-
-**可以单独使用.也可以配合其他面板一起使用**
-**ESC键 显隐Console面板**
+**ESC键 其他面板中显隐Console面板 非常实用**
 
 
 

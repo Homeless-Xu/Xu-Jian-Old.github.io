@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  Google-Analytics
-tags: 主题功能
-categories: Jekyll
+tags: 谷歌网站分析
+categories: Web
 ---
 
 谷歌网站统计分析工具
