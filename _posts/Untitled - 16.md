@@ -1,0 +1,193 @@
+json ..
+
+json  把目录放到json中..
+
+
+先获得 所有的 大类
+所有的标签.
+然后把数据放到 json里面…
+
+获得数据 用 liquid. for出来.
+
+
+然后.. for的时候 把数据放到 json里面.
+
+再然后就是读取数据 … 给
+
+
+
+用 data 来获取 所有的的 cate 
+
+
+
+大概就是 每个文件都重 json 中获取数据...
+json 中的数据 肯定是要用  jekyll 来自动生成的.
+
+
+
+
+文件名:
+大类
+标签
+
+都写进一个json 
+
+
+var posts = [
+]()  {% for post in site.posts %}
+{
+  "title": "{{ post.title }}",
+  "category": "{{ post.category }}",
+  "url": "{{ post.url }}"
+}
+{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+];
+
+
+
+[
+]()  {
+"title":"Where Did The Cookie Come From",
+"category":"Information",
+"url":"/information/2016/01/02/where-did-the-cookie-come-from.html"
+  },
+  {
+"title":"What Is Sour Dough",
+"category":"Information",
+"url":"/information/2016/01/01/what-is-sour-dough.html"
+  }
+]
+
+
+
+
+---
+json 
+包含两个方法: 
+一是 解析 json
+二是 将值转换为 json
+
+
+每个网页里面.
+js直接生成 json.
+然后调用这里的信息?
+这不是多此一举么???
+
+也不是...  html 调用的话要用 for…
+用json 可以不用 for??
+
+
+
+
+
+
+
+显示所有的 tag.. 只要
+
+
+
+---
+js 读写 json 文件..
+
+
+http 可以 用 ajax 来读取文件. 但是不能写..
+
+存数据 可以用… 话，可以用localstorge，cookie之类的；
+
+但是换了浏览器就没了；
+
+
+cookie…
+
+localstorge…
+本地储存...
+
+
+cookie  4k
+→ userdata 64k
+ → flash  100k
+→ gears  无限制
+→ html5 5MB… ..
+
+直接调用 json  转换为字符串.
+
+怎么判断  其实 每次运行都
+
+
+
+
+
+
+
+去掉不需要的功能:
+
+
+
+
+
+文件名的 星星 有必要,额
+
+直接加 0rder 就是 flex 就自动排上面了啊...
+或者.... 
+
+
+星表文件. 怎么处理...
+直接文件名上加星星不就好了么......  
+flex 其实也没必要的....   眼睛也去掉把....
+眼睛直接显示 日期得了...
+
+能知道 怎么找这个文件....
+
+
+
+
+
+
+大类:  
+支持数量排序... 
+支持自定义排序+时间
+
+
+
+
+一个大类数量.
+一个标签数量.
+
+
+标签:
+
+ 文件数量
+
+
+
+数量排序 也可以去掉…  
+必须手动排序 每篇文章.
+
+ 
+
+
+
+
+
+
+自定义 也就是 改文件时间么....   这么简单..
+
+如果不想改时间.. 那就 yml里 自己添加. 
+
+
+
+现在的问题 就是 json 问题...
+
+自动输出的 文件 实在太长了   应该是  toc 目录的问题..
+
+那就把 所有 分类 标签. 文件名 文件 url 文件title 都放到.. json里面
+然后从json中提取 而不是.. for 来循环…
+
+
+
+
+
+
+
+
