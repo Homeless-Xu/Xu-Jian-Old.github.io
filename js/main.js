@@ -225,17 +225,45 @@ $(function button(){
                  }
         }
     });
+
+// 顶部 右边的 文章结构栏目显示按钮
+$("#topbarStructureToggle").click(   function(){ 
+ $("#rightNavbar").toggle();
+
+
+
+
+
+
+
+});
+
+
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     // 下面进行 左按钮设计.隐藏顺序 cate>tag>filename.   $('#userNav').hide('slide',{direction:'left'},1000);
 
+
+
+
+
+
     function toLeft() {
-      if      ( $("#cateDiv").css("display") != "none" ) { $("#cateDiv").hide(  100); } 
+      if      ( $("#cateDiv").css("display") != "none" ) { 
+        $("#cateDiv").hide(  100); 
+    
+  } 
       else if ( $("#tagDiv").css("display") != "none"  ) { $("#tagDiv").hide(    100); $("#lineLeft").hide(  100); }
       else                                               { $("#filenameDiv").hide( 100); $("#lineRight").hide( 100); }
     }
 
     function toRight() {
-      if      ( $("#filenameDiv").css("display") == "none" ) { $("#filenameDiv").show(100); $("#lineRight").show(100); } 
+      if      ( $("#filenameDiv").css("display") == "none" ) 
+      { 
+      $("#filenameDiv").show(100); $("#lineRight").show(100); 
+    
+  
+} 
+
       else if ( $("#tagDiv").css("display") == "none"  )     { $("#tagDiv").show( 100);      $("#lineLeft").show( 100);  }
       else                                                   { $("#cateDiv").show(100);  }
     }

@@ -5,6 +5,23 @@ sup                  { color: red; float:right; font-size:0.7em; }
 
 
 
+/*-----------------------------------*\
+  .....
+\*-----------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* code { width: 30px !important; } */
@@ -46,7 +63,11 @@ sup                  { color: red; float:right; font-size:0.7em; }
 
 
 #topbarDiv { height: 30px; display: flex; background-color: rgba(210, 52, 219, 0.18); }
-#topbarDiv i { padding-top: 3px; padding-bottom: 3px;}
+#topbarDiv i { padding-top: 3px; padding-bottom: 3px; }
+#topbarStructureToggle { position: absolute; right: 0px;}
+
+
+
 #Div       { display: flex; position: absolute; top:30px;bottom: 0px; left: 0px; right: 0px; }
 /* 这个是上下布局的重点. top/bottom 同时用 还要用 absolute;  还必须用 left+right  */
 
@@ -54,6 +75,7 @@ sup                  { color: red; float:right; font-size:0.7em; }
 
 
 #cateDiv {
+    
 	flex-basis:88px; flex-grow: 0; flex-shrink: 0;  max-width: 300px; min-width: 14px;
 	position: relative; background-color:rgba(92, 47, 125, 0.34); 
     padding: 0px 4px 4px 4px;  display:relative;  }
@@ -82,7 +104,7 @@ word-break: normal;  }
 
 
 
-#rightNavbar { flex-grow: 0; flex-shrink: 0; height: 100%;  flex-basis: 200px; 
+#rightNavbar { flex-grow: 0; flex-shrink: 0; height: 100%;  flex-basis: 88px; 
 	font-size: 0.8em; padding: 0px;  background-color:rgba(127, 127, 127, 0.13);  
 	overflow-x: hidden; 
 	overflow-y: scroll;
