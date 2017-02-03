@@ -36,7 +36,16 @@ sup                  { color: red; float:right; font-size:0.7em; }
 #pageContent::-webkit-scrollbar {display:none}
  #contentDiv::-webkit-scrollbar {display:none}
  
+#tagnameUL  {overflow-x: hidden}
+#filenameUL {overflow-x: hidden}
 
+
+
+#OuterFilenameUL {
+        position: relative;
+
+    overflow: hidden;
+}
 
 /* 设置filenameDiv 排序按钮的间距+位置.   这里还要实现居中.. 居中就靠 transform 来实现了 .相对自身大小 来偏移... */
 
