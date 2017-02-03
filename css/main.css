@@ -3,6 +3,9 @@ li  { list-style: none;      }
 a   { text-decoration: none; color:black;       } 
 sup                  { color: red; float:right; font-size:0.7em; }
 
+.active {background-color: yellow}
+#bigDiv     { height: 100%; }
+/* 这里必须用 100%  而不能用100vh. 不然会在safari 网页放大缩小的时候有问题. */
 
 
 
@@ -19,41 +22,27 @@ sup                  { color: red; float:right; font-size:0.7em; }
 
 
 
+/*-----------------------------------*\
+  滚动条设置.
+\*-----------------------------------*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* code { width: 30px !important; } */
-
-.active {background-color: yellow}
+  /* 强制隐藏滚动条. 不知为什么会有滚动条... */
   html { overflow: hidden; }  
-/* 强制隐藏滚动条. 不知为什么会有滚动条... */
-
-#bigDiv     { height: 100%; }
-/* 这里必须用 100%  而不能用100vh. 不然会在safari 网页放大缩小的时候有问题. */
-
-/* 下面是设置滚动条的: 既可以滚动 .又不显示滚动条.   */
-#catenameUL::-webkit-scrollbar {display:none}
- #tagnameUL::-webkit-scrollbar {display:none}
-#filenameUL::-webkit-scrollbar {display:none}
+  /* 既可以滚动 .又不显示滚动条.           */
+ #catenameUL::-webkit-scrollbar {display:none}
+  #tagnameUL::-webkit-scrollbar {display:none}
+ #filenameUL::-webkit-scrollbar {display:none}
 #rightNavbar::-webkit-scrollbar {display:none}
 #pageContent::-webkit-scrollbar {display:none}
-#contentDiv::-webkit-scrollbar {display:none}
+ #contentDiv::-webkit-scrollbar {display:none}
  
+
+
 /* 设置filenameDiv 排序按钮的间距+位置.   这里还要实现居中.. 居中就靠 transform 来实现了 .相对自身大小 来偏移... */
 
-#filenameDiSearch    { position: absolute; left:5%;   top:0; }
+#filenameDiSearch    { position: absolute; left:0%;   top:0; }
 #allCateTagPostBtn   { position: absolute; left:50%;  top:0;  transform: translate(-50%,0); }
-#filenameDivDate     { position: absolute; right:5%;  top:0; }
+#filenameDivDate     { position: absolute; right:0%;  top:0; }
 
 /* 拖动条 css */
 .lineFlex        { display: flex  ; height: 100%; width: 10px;}
@@ -84,18 +73,19 @@ sup                  { color: red; float:right; font-size:0.7em; }
 
 #cateDiv {
     
-	flex-basis:88px; flex-grow: 0; flex-shrink: 0;  max-width: 300px; min-width: 14px;
+	flex-basis:70px; flex-grow: 0; flex-shrink: 0;  max-width: 300px; min-width: 14px;
 	position: relative; background-color:rgba(92, 47, 125, 0.34); 
     padding: 0px 4px 4px 4px;  display:relative;  }
 
 #tagDiv {
-	flex-basis:155px; flex-grow: 0; flex-shrink: 0;  max-width: 300px; min-width: 88px;
+	flex-basis:100px; flex-grow: 0; flex-shrink: 0;  max-width: 300px; min-width: 48px;
 	position: relative ; background-color:rgba(212, 117, 204, 0.53) ;         	
     padding: 0px 0px 4px 4px; display:relative;                                   
 	}
 #filenameDiv {
-	flex-basis: 219px; flex-grow: 0; flex-shrink: 0;  max-width: 1450px; min-width: 219px;background-color:pink;
-	position: relative;     padding: 4px 0px 4px 0px;  display:relative;                                  
+	flex-basis: 219px; flex-grow: 0; flex-shrink: 0;  max-width: 1450px; min-width: 188px;background-color:pink;
+	position: relative;     padding: 4px 0px 4px 0px;  display:relative;  
+                                 
 	}
 
 #allCateTagPostBtn {padding: 0px; margin:0px }
@@ -146,8 +136,11 @@ word-break: normal;  }
        fill: currentColor;
        overflow: hidden;
        font-size:25px;
-       padding: 2.5px; 
+       padding: 2.5px;
+
     }
+
+
 
 
 .iconfont{

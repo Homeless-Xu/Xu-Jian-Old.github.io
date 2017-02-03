@@ -148,7 +148,7 @@ function getElementLeft(element){
                 console.log("filenameDiv padding 无px= " +middlePaddingNum);  
                 var realMiddle = realMouse - middleWidth - gap;
 
-                if ( realMiddle <= "219" || realMiddle >= "500") {  document.onmousemove = null;  document.onmouseup = null;    }
+                if ( realMiddle <= "19" || realMiddle >= "500") {  document.onmousemove = null;  document.onmouseup = null;    }
               else {  $("#filenameDiv").css("flex-basis",realMiddle);  }
 
 

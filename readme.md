@@ -1,30 +1,12 @@
 # [CMS-Jekyll](https://0214.help)
-
 > 标签: 不能有下划线; 不能有空格(有空格就是多标签了.本主题不支持)
 
+![](http://oduizitoj.bkt.clouddn.com/2017-02-03-Screen%20Shot%202017-02-03%20at%2014.04.34.png)
 
-# [Bootstrap](https://getbootstrap.com)
-
-[![Slack](https://bootstrap-slack.herokuapp.com/badge.svg)](https://bootstrap-slack.herokuapp.com)
-![Bower version](https://img.shields.io/bower/v/bootstrap.svg)
-[![npm version](https://img.shields.io/npm/v/bootstrap.svg)](https://www.npmjs.com/package/bootstrap)
-[![Gem version](https://img.shields.io/gem/v/bootstrap.svg)](https://rubygems.org/gems/bootstrap)
-[![Build Status](https://img.shields.io/travis/twbs/bootstrap/v4-dev.svg)](https://travis-ci.org/twbs/bootstrap)
-[![devDependency Status](https://img.shields.io/david/dev/twbs/bootstrap.svg)](https://david-dm.org/twbs/bootstrap?type=dev)
-[![Meteor Atmosphere](https://img.shields.io/badge/meteor-twbs%3Abootstrap-blue.svg)](https://atmospherejs.com/twbs/bootstrap)
-[![Packagist Prerelease](https://img.shields.io/packagist/vpre/twbs/bootstrap.svg)](https://packagist.org/packages/twbs/bootstrap)
-[![NuGet](https://img.shields.io/nuget/vpre/bootstrap.svg)](https://www.nuget.org/packages/bootstrap/4.0.0-alpha5)
-
-[![Selenium Test Status](https://saucelabs.com/browser-matrix/bootstrap.svg)](https://saucelabs.com/u/bootstrap)
-
-Bootstrap is a sleek, intuitive, and powerful front-end framework for faster and easier web development, created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thornton](https://twitter.com/fat), and maintained by the [core team](https://github.com/orgs/twbs/people) with the massive support and involvement of the community.
-
-To get started, check out <https://getbootstrap.com>!
-
-
-
-
-
+## 兼容性
+- Google / Safari   100%
+- Firefox
+- IE         not tested
 
 
 ## 主题重点
@@ -40,15 +22,58 @@ To get started, check out <https://getbootstrap.com>!
 * 四级目录: Categories → Tags → fileName → fileStructure
 * 点击文件自动高亮对应 Tags & Categories.
 * 右下角按钮: 回到网页顶部; 左右方向键 显隐分类.
+* 代码里有详细中文说明.非常适合前端入门
 
 
 ## ToDo	:
+- [] firefox/safari 兼容
+- [] 搜索功能
+- [] SEO优化
+- [] 左右抽屉显隐效果 留白问题...
+- [] 在线编辑功能??
+- [] 开放UGC???
+- [] 最爱文章?
+- [] 文章预览?
+- [] 移动端适配
 
-- [x] 搜索功能
-- [x] SEO优化
-- [X] 左右抽屉显隐效果 留白问题...
-- [X] 在线编辑功能??
-- [X] 首页动态加载所有文件名..
-- [X] 开放UGC???
-- [X] 最爱文章?
-- [X] 文章预览?
+## issues
+- 左右拖动 会选中文字.....
+- firefox 左右会滚动. 上下会出现滚动条...
+safari/chrome 文件名栏目会左右滑动..
+
+
+## 主题使用(Mac)
+两种情况: 
+已安装jekyll 也就是换主题
+未安装jekyll 也就是全新安装
+
+### 换主题:
+1. Clone 本主题 下载到本地电脑.
+2. 终端 cd 到下载解压后的文件夹.
+3. 终端运行 `jekyll new . --force`
+>这里的. 是当前文件夹的意思
+4. 终端运行 `bundle exec jekyll serve`
+> 这里是开启本地预览.
+
+
+
+
+## jekyll Tips
+
+- 渲染指定数量文件
+`bundle exec jekyll serve --limit_posts 15`
+> 创建主题时.如果文件多 会很耗时.
+
+- 指定端口预览
+`bundle exec jekyll serve --port 3999`
+> 开启多个本地预览时候用
+
+
+
+## 版权 GPL
+[各版权区别](http://www.ruanyifeng.com/blog/2011/05/how_to_choose_free_software_licenses.html)
+
+使用本主题请先Star.
+
+
+

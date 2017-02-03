@@ -182,18 +182,18 @@ var Tag = [
       </svg>  
 		  <a href onclick="showAllTagsandPosts(); return false;"   id="allCateTagPostBtn" style="width:150px; text-align: center"> 
 			  <!-- 这个函数 在 catefilter.js 里面 -->
-        <svg class="icon" aria-hidden="true" style="font-size:16px;">
+        <svg class="icon" aria-hidden="true" style="font-size:16px; padding-left: 0; padding-right: 0;">
             <use xlink:href="#icon-iconfontcolor52"></use>
         </svg>
             <sup style="font-size:0.7em; float:none; position:relative; left: -7px;">{{site.categories | size }}</sup> 
-        <svg class="icon" aria-hidden="true" style="font-size:16px; position:relative; left: 0px;" >
+        <svg class="icon" aria-hidden="true" style="font-size:16px; padding-left: 0; padding-right: 0;" >
           <use xlink:href="#icon-biaoqian"></use>
         </svg>
             <sup style="font-size:0.7em; float:none; position:relative; left: -7px;">{{site.tags | size }}</sup>
-        <svg class="icon" aria-hidden="true" style="font-size:16px; position:relative; left: 0px;">
+        <svg class="icon" aria-hidden="true" style="font-size:16px; padding-left: 0; padding-right: 0;">
           <use xlink:href="#icon-wenjianleixing"></use>
         </svg>
-           <sup style="font-size:0.7em; float:none; position:relative; left: -7px;">{{site.posts | size }}</sup>
+            <sup style="font-size:0.7em; float:none; position:relative; left: -7px;">{{site.posts | size }}</sup>
 			</a>  
       <svg class="icon" aria-hidden="true" id="filenameDivDate"; onclick="fileNameDate();  return false;" style="font-size:16px;">
         <use xlink:href="#icon-eyeblocked"></use>
