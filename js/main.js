@@ -1,14 +1,6 @@
 // 点击大类过滤出对应的标签+文章:  同步进行高亮.
 $(".cateNames").click(   function() {
 
-
-
-
-
-
-
-
-
 console.log( Cate );
 
 
@@ -70,14 +62,9 @@ $(".postNames").click(   function() {
 
       $(".tagNames").hide()
       $("[data-tagcate="+ postCateName +"]").show()      
-      $("#"+ postTagName ).addClass('active'); 	
+      $("#Tag"+ postTagName ).addClass('active'); 	
       $("#"+ postCateName).addClass('active'); 	 
    }    
-
-
-
-
-
 
 });
 // 上面是 大类 标签过滤+高亮
@@ -227,16 +214,11 @@ $(function button(){
     });
 
 // 顶部 右边的 文章结构栏目显示按钮
-$("#topbarStructureToggle").click(   function(){ 
- $("#rightNavbar").toggle();
+$("#topbarStructureToggle").click( function(){ $("#rightNavbar").toggle();  });
 
 
 
 
-
-
-
-});
 
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
