@@ -532,16 +532,17 @@ Authorization是一种Isaac控制资源使用的方式.  就像 银行 ATM 机�
 vim /etc/raddb/sql/mysql/counter.conf
 添加一个以月为单位的流量计算器，这里除以1048576是将流量以Mb计算：
 
-sqlcounter monthlytrafficcounter {
-  counter-name = Monthly-Traffic
-  check-name = Max-Monthly-Traffic
-  reply-name = Monthly-Traffic-Limit
-  sqlmod-inst = sql
-  key = User-Name
-  reset = monthly
-  query = "SELECT cast(SUM(cast(acctinputoctets as decimal)/1048576 +cast(acctoutputoctets as decimal)/1048576)as signed) FROM radacct WHERE UserName='%{%k}' AND UNIX\_TIMESTAMP(AcctStartTime) \> '%b'"
-}
-
+{%raw%}
+	sqlcounter monthlytrafficcounter {
+	  counter-name = Monthly-Traffic
+	  check-name = Max-Monthly-Traffic
+	  reply-name = Monthly-Traffic-Limit
+	  sqlmod-inst = sql
+	  key = User-Name
+	  reset = monthly
+	  query = "SELECT cast(SUM(cast(acctinputoctets as decimal)/1048576 +cast(acctoutputoctets as decimal)/1048576)as signed) FROM radacct WHERE UserName='%{%k}' AND UNIX_TIMESTAMP(AcctStartTime) > '%b'"
+	}
+{%endraw%}
 添加字典
 
 vim /etc/raddb/dictionary
@@ -1333,7 +1334,6 @@ grant select,insert,update,delete on mydb.\* to [email=test2@localhost]test2@loc
 			15行 PASSWORD('radpass') 改成 PASSWORD('xujian');
 	 - 同步修改 sql.conf 的管理员密码.  
 		    vi /etc/freeradius/sql.conf
-		  
 			39行 改成 password = "xujian"
 
 
@@ -1929,8 +1929,10 @@ PS：添加流量控制：
 
 1   # vim /etc/raddb/sql/mysql/dialup.conf
 
-2   sql\_user\_name = "%{%{Stripped-User-Name}:-%{%{User-Name}:-none}}"
-
+2   
+	{%raw%}
+	sql_user_name = "%{%{Stripped-User-Name}:-%{%{User-Name}:-none}}"
+	{%endraw%}
 3   # 取消前面的注释并注释下一行
 
 4   # 同时如果需要打开simultanoues-use（控制同时在线用户数）的话需要把simul\_query\_check取消注释。
