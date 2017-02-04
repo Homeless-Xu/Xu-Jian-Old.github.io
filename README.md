@@ -27,13 +27,13 @@
 * [x] 提取+自动高亮对应文件结构+文件结构锚点跳转
 * [x] 拖动条+滚动条+加载进度条
 * [x] 谷歌网站统计分析 + SSL + 部分CDN
+* [x] 发布主题到 rubygems
 * [x] 404页面.
 * [x] 部分SEO
 * [x] pjax
 
 
-## ToDo	:
-
+## ToDo
 * [] JS 上下键 控制高亮光标.
 * [] SASS
 * [] 缓存
@@ -139,7 +139,7 @@
 
 
 
-## 版权 GPL
+## 版权 MIT
 [各版权区别](http://www.ruanyifeng.com/blog/2011/05/how_to_choose_free_software_licenses.html)
 
 使用本主题请先Star.
