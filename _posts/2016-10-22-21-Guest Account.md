@@ -2,7 +2,7 @@
 layout: post
 title: Guest Account  
 tags: Misc
-categories: 💻
+categories: 💻WIN
 ---
 
 ## Guest Account

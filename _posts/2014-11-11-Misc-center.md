@@ -2,7 +2,7 @@
 layout: post
 title: Misc-center
 tags: Misc
-categories: 👓
+categories: 👓Linux
 ---
 
 ## Misc-center

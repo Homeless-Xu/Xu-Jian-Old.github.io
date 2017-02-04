@@ -2,7 +2,7 @@
 layout: post
 title: User / Passwd Linux.
 tags: Misc
-categories: 👓
+categories: 👓Linux
 ---
 
 

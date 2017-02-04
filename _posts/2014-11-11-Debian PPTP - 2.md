@@ -2,7 +2,7 @@
 layout: post
 title: Debian PPTP
 tags: Misc
-categories: 👓
+categories: 👓Linux
 ---
 
 ## Debian PPTP

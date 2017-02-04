@@ -3,12 +3,6 @@
 
 ![](http://oduizitoj.bkt.clouddn.com/2017-02-03-Screen%20Shot%202017-02-03%20at%2014.04.34.png)
 
-## 兼容性
-- Google / Safari   100%
-- Firefox
-- IE         not tested
-
-
 ## 主题重点
 * 所有排序都是按照 文件名上的时间排序. 时间越旧拍越上面.
 

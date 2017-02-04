@@ -2,7 +2,7 @@
 layout: post
 title: Windows Server  
 tags: Misc
-categories: 💻
+categories: 💻WIN
 ---
 
 ## Windows Server

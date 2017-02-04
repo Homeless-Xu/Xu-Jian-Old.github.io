@@ -2,7 +2,7 @@
 layout: post
 title:  Linux Permission
 tags: Misc
-categories: 👓
+categories: 👓Linux
 ---
 
 ## Linux Permission

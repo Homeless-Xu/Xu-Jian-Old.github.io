@@ -2,7 +2,7 @@
 layout: post
 title:  Forget Root Passwd
 tags: Misc
-categories: 👓
+categories: 👓Linux
 ---
 
   

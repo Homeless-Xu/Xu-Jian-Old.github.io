@@ -2,7 +2,7 @@
 layout: post
 title: SSH Autorun
 tags: Misc
-categories: 👓
+categories: 👓Linux
 ---
 
 > Debian

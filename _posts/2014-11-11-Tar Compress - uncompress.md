@@ -2,7 +2,7 @@
 layout: post
 title: Tar Compress / uncompress
 tags: Misc
-categories: 👓
+categories: 👓Linux
 ---
 
 ### Tar Compress / uncompress

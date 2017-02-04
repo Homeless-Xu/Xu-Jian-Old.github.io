@@ -2,7 +2,7 @@
 layout: post
 title: IOS(ShadowRocket)
 tags: 翻墙
-categories: IT.Admin
+categories: IT-Admin
 ---
 
 
@@ -23,5 +23,4 @@ categories: IT.Admin
 
 
 然后点击 连接那个按钮就可以了.
-
 

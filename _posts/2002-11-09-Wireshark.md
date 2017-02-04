@@ -2,7 +2,7 @@
 layout: post
 title: Wireshark  
 tags: Wireshark
-categories: IT.Admin
+categories: IT-Admin
 ---
 
 ## Wireshark

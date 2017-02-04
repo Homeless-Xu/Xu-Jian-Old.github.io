@@ -2,7 +2,7 @@
 layout: post
 title: Linux Structure
 tags: Misc
-categories: 👓
+categories: 👓Linux
 ---
 
 ##  Linux Structure

@@ -2,7 +2,7 @@
 layout: post
 title: Duplicate name exists on the network
 tags: Misc
-categories: IT.Admin
+categories: IT-Admin
 ---
 
 

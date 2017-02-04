@@ -2,7 +2,7 @@
 layout: post
 title: User Group Command
 tags: Misc
-categories: 👓
+categories: 👓Linux
 ---
 
 ## User Group Command

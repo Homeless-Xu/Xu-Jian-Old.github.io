@@ -82,7 +82,7 @@ sup                  { color: red; float:right; font-size:0.7em; }
 
 #cateDiv {
     
-	flex-basis:70px; flex-grow: 0; flex-shrink: 0;  max-width: 300px; min-width: 14px;
+	flex-basis:77px; flex-grow: 0; flex-shrink: 0;  max-width: 300px; min-width: 14px;
 	position: relative; background-color:rgba(92, 47, 125, 0.34); 
     padding: 0px 4px 4px 4px;  display:relative;  }
 

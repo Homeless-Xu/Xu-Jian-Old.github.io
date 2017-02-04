@@ -2,7 +2,7 @@
 layout: post
 title: File-Search
 tags: Misc
-categories: 👓
+categories: 👓Linux
 ---
 
 

@@ -2,7 +2,7 @@
 layout: post
 title: Update / Upgrade
 tags: Misc
-categories: 👓
+categories: 👓Linux
 ---
 
 ## Update / Upgrade

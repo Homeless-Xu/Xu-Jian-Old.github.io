@@ -2,7 +2,7 @@
 layout: post
 title: find－xargs
 tags: Misc
-categories: 👓
+categories: 👓Linux
 ---
 
 ## find－xargs

@@ -2,7 +2,7 @@
 layout: post
 title: PRI / NI (Nice)
 tags: Misc
-categories: 👓
+categories: 👓Linux
 ---
 
 

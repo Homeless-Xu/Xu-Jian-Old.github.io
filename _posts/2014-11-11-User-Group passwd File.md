@@ -2,7 +2,7 @@
 layout: post
 title: User/Group passwd File
 tags: Misc
-categories: 👓
+categories: 👓Linux
 ---
 
 ## User/Group passwd File :  

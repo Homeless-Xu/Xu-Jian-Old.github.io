@@ -2,7 +2,7 @@
 layout: post
 title: Docker - Sim
 tags: Misc
-categories: 👓
+categories: 👓Linux
 ---
 
 新建容器  run
