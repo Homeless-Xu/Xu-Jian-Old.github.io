@@ -1,8 +1,8 @@
 ---
 layout: post
 title: ★★★★★GDT-Profile分析✔︎
-tags: Profile
-categories: GDT
+tags: GDT
+categories: Chrome
 ---
 
 监控 网页中各种方法 执行时间和内存的变化.

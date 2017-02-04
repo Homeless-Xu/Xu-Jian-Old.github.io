@@ -1,8 +1,8 @@
 ---
 layout: post
 title: ★★GDT-Console✔︎
-tags: Console
-categories: GDT
+tags: GDT
+categories: Chrome
 ---
 
 

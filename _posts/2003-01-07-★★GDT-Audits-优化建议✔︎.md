@@ -1,8 +1,8 @@
 ---
 layout: post
 title: ★★GDT-Audits:优化建议✔︎
-tags: Audits
-categories: GDT
+tags: GDT
+categories: Chrome
 ---
 
 运行这个会提出 若干条网页优化建议.
