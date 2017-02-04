@@ -2,7 +2,7 @@
 layout: post
 title: VMware tool 增强工具
 tags: 
-categories: 🛠OPS
+categories: IT-Admin
 ---
 
 ## VMware tool 增强工具

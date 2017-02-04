@@ -2,7 +2,7 @@
 layout: post
 title:  preventDefault()
 tags: Misc
-categories: jQuery
+categories: JS
 order: 34
 ---
 

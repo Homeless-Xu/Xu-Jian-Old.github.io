@@ -2,7 +2,7 @@
 layout: post
 title: TFTP (MAC & Win)
 tags: 
-categories: 🛠OPS
+categories: IT-Admin
 ---
 
 ## TFTP (MAC & Win)

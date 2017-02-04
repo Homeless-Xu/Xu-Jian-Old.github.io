@@ -2,7 +2,7 @@
 layout: post
 title: Socks & Http
 tags: 
-categories: 🛠OPS
+categories: IT-Admin
 ---
 
 ## Proxy : Socks & Http  …

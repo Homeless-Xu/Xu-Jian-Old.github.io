@@ -2,7 +2,7 @@
 layout: post
 title: Cisco Command
 tags: Cisco
-categories: 🌐NET
+categories: 🌐-NET
 ---
 
 

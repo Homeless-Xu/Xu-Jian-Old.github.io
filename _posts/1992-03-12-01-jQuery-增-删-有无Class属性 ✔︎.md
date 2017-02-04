@@ -2,7 +2,7 @@
 layout: post
 title:  jQuery-增/删/有无Class属性✔︎
 tags: Class
-categories: jQuery
+categories: JS
 ---
 
 

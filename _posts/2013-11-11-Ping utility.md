@@ -2,7 +2,7 @@
 layout: post
 title: Ping utility 
 tags: Misc
-categories: 🌐NET
+categories: 🌐-NET
 ---
 
 

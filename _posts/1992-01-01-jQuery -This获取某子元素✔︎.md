@@ -2,7 +2,7 @@
 layout: post
 title:  jQuery -This获取某子元素✔︎
 tags: This
-categories: jQuery
+categories: JS
 ---
 
 

@@ -2,7 +2,7 @@
 layout: post
 title:  jQuery增删Class属性
 tags: 增删Class属性
-categories: jQuery
+categories: JS
 meta: 修改Class属性
 ---
 

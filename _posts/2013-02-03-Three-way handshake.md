@@ -2,7 +2,7 @@
 layout: post
 title: Three-way handshake
 tags: 
-categories: 🌐NET
+categories: 🌐-NET
 ---
 
 ## Three-way handshake

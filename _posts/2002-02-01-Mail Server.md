@@ -2,7 +2,7 @@
 layout: post
 title: Mail Server
 tags: 
-categories: 🛠OPS
+categories: IT-Admin
 ---
 
 ## Mail Server

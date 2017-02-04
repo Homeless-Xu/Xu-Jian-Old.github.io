@@ -2,7 +2,7 @@
 layout: post
 title: SSH & Telnet & RDP & VNC
 tags: 
-categories: 🛠OPS
+categories: IT-Admin
 ---
 
 ## SSH & Telnet & RDP & VNC

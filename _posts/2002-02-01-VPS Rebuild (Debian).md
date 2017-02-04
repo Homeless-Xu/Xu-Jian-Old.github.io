@@ -2,7 +2,7 @@
 layout: post
 title: VPS Rebuild (Debian)
 tags: 
-categories: 🛠OPS
+categories: IT-Admin
 ---
 
 ## VPS Rebuild (Debian)

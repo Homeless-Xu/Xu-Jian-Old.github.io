@@ -2,7 +2,7 @@
 layout: post
 title: ip/ipconfig/ifconfig
 tags: IP
-categories: 🌐NET
+categories: 🌐-NET
 ---
 ## IP   ip/ipconfig/ifconfig
 

@@ -2,7 +2,7 @@
 layout: post
 title: IpTables - Mac OS
 tags: FireWall
-categories: 🌐NET
+categories: 🌐-NET
 ---
 man pfctl
 

@@ -2,7 +2,7 @@
 layout: post
 title: Traceroute
 tags: 🌐
-categories: 🌐NET
+categories: 🌐-NET
 ---
 
 ## Traceroute Mac:

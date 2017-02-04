@@ -44,14 +44,14 @@
 		<key>sheetOrder</key>
 		<real>505040018.59289199</real>
 		<key>userIconName</key>
-		<real>505040670.280563</real>
+		<real>507890821.38077301</real>
 	</dict>
 	<key>sheetOrder</key>
 	<string>creationDate</string>
 	<key>storeFormatVersion</key>
 	<integer>1</integer>
 	<key>userIconName</key>
-	<string>Gear</string>
+	<string>Box</string>
 	<key>versioning</key>
 	<dict>
 		<key>query</key>
@@ -67,7 +67,7 @@
 		<key>userIconName</key>
 		<dict>
 			<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-			<integer>8</integer>
+			<integer>23</integer>
 		</dict>
 	</dict>
 </dict>

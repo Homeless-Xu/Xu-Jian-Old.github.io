@@ -2,7 +2,7 @@
 layout: post
 title:  ready()&Onload()
 tags: jQuery1
-categories: jQuery
+categories: JS
 ---
 
 

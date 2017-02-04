@@ -2,7 +2,7 @@
 layout: post
 title: Apple USB Make
 tags: 
-categories: 🛠OPS
+categories: IT-Admin
 ---
 
 

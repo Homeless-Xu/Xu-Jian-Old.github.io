@@ -2,7 +2,7 @@
 layout: post
 title: Kali USB Make
 tags: 
-categories: 🛠OPS
+categories: IT-Admin
 ---
 
 

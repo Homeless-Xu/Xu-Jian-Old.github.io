@@ -2,7 +2,7 @@
 layout: post
 title:  Outlook Problems
 tags: Outlook
-categories: 💻WIN
+categories: 💻-Win
 ---
 
 ## Outlook Problems

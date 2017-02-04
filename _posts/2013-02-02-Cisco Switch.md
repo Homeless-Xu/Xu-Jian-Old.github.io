@@ -2,7 +2,7 @@
 layout: post
 title: Cisco Switch
 tags: Cisco
-categories: 🌐NET
+categories: 🌐-NET
 ---
 
 ## Cisco Switch

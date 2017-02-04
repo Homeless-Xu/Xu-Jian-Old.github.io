@@ -2,7 +2,7 @@
 layout: post
 title: USB Console 配置线
 tags: 
-categories: 🛠OPS
+categories: IT-Admin
 ---
 
 ## USB Console 配置线

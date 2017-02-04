@@ -2,7 +2,7 @@
 layout: post
 title: Route Table
 tags: 
-categories: 🌐NET
+categories: 🌐-NET
 ---
 
 

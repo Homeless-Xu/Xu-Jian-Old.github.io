@@ -2,7 +2,7 @@
 layout: post
 title: clientX,offsetX,screenX,pageX区别
 tags: JavaScript
-categories: jQuery
+categories: JS
 ---
 
 ![][image-1]

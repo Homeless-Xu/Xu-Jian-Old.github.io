@@ -2,7 +2,7 @@
 layout: post
 title: Cisco Call Manager / CM
 tags: Cisco
-categories: 🌐NET
+categories: 🌐-NET
 ---
 
 

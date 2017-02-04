@@ -2,7 +2,7 @@
 layout: post
 title: FTP / VSFTPD
 tags: 
-categories: 🛠OPS
+categories: IT-Admin
 ---
 
 

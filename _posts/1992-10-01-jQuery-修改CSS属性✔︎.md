@@ -2,7 +2,7 @@
 layout: post
 title:  jQuery-修改CSS属性✔︎
 tags: CSS
-categories: jQuery
+categories: JS
 ---
 
 语法: `css('name', 'value')`

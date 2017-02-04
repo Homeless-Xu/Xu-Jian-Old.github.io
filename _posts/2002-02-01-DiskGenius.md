@@ -2,7 +2,7 @@
 layout: post
 title: DiskGenius
 tags: 硬盘工具
-categories: 🛠OPS
+categories: IT-Admin
 ---
 
 硬盘分区 属于 高级格式化.

@@ -2,7 +2,7 @@
 layout: post
 title:  书:JavaScript DOM
 tags: JS
-categories: jQuery
+categories: JS
 ---
 
 

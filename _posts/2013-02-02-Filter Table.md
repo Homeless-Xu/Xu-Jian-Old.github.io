@@ -2,7 +2,7 @@
 layout: post
 title: Filter Table
 tags: FireWall
-categories: 🌐NET
+categories: 🌐-NET
 ---
 
 

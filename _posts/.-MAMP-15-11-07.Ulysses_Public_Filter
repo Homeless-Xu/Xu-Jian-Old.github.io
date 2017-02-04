@@ -43,11 +43,15 @@
 		<real>505114382.40433401</real>
 		<key>sheetOrder</key>
 		<real>505040025.864326</real>
+		<key>userIconName</key>
+		<real>507890843.38210303</real>
 	</dict>
 	<key>sheetOrder</key>
 	<string>creationDate</string>
 	<key>storeFormatVersion</key>
 	<integer>1</integer>
+	<key>userIconName</key>
+	<string>Box</string>
 	<key>versioning</key>
 	<dict>
 		<key>query</key>
@@ -59,6 +63,11 @@
 		<dict>
 			<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 			<integer>6</integer>
+		</dict>
+		<key>userIconName</key>
+		<dict>
+			<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+			<integer>15</integer>
 		</dict>
 	</dict>
 </dict>

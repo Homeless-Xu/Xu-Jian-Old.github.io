@@ -2,7 +2,7 @@
 layout: post
 title: FTP Server
 tags: 
-categories: 🛠OPS
+categories: IT-Admin
 ---
 
 ## FTP Server

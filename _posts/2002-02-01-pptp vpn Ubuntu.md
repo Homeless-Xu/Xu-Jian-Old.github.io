@@ -2,7 +2,7 @@
 layout: post
 title: pptp vpn Ubuntu
 tags: 
-categories: 🛠OPS
+categories: IT-Admin
 ---
 
 

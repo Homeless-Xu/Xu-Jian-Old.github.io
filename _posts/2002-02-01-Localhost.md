@@ -2,7 +2,7 @@
 layout: post
 title: Localhost
 tags: 
-categories: 🛠OPS
+categories: IT-Admin
 ---
 
 ## Localhost

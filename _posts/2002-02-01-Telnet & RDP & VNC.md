@@ -2,7 +2,7 @@
 layout: post
 title: Telnet & RDP & VNC
 tags: Remote
-categories: 🛠OPS
+categories: IT-Admin
 ---
 
 

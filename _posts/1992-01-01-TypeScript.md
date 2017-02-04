@@ -2,7 +2,7 @@
 layout: post
 title: TypeScript
 tags: TypeScript
-categories: jQuery
+categories: JS
 ---
 
 

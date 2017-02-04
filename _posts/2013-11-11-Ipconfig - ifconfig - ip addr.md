@@ -2,7 +2,7 @@
 layout: post
 title: Ipconfig / ifconfig / ip addr
 tags: Misc
-categories: 🌐NET
+categories: 🌐-NET
 ---
 
 

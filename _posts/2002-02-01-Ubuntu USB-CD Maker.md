@@ -2,7 +2,7 @@
 layout: post
 title: Ubuntu USB/CD Maker
 tags: 
-categories: 🛠OPS
+categories: IT-Admin
 ---
 
 

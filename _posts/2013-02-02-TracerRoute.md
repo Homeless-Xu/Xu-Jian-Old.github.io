@@ -2,7 +2,7 @@
 layout: post
 title: TracerRoute
 tags: Router
-categories: 🌐NET
+categories: 🌐-NET
 ---
 ## Tracert  TracerRoute
 

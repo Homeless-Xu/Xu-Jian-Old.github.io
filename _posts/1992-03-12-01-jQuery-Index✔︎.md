@@ -2,7 +2,7 @@
 layout: post
 title: jQuery-Index✔︎
 tags: Index
-categories: jQuery
+categories: JS
 ---
 
 

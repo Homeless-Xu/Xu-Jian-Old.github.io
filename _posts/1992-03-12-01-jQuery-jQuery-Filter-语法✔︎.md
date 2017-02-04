@@ -2,7 +2,7 @@
 layout: post
 title: jQuery-Filter-语法✔︎
 tags: 筛选(Filter)
-categories: jQuery
+categories: JS
 ---
 
 **筛选出 某元素集合中 符合 表达式/函数 的元素集合**

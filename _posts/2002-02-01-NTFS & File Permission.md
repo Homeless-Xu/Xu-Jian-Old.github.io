@@ -2,7 +2,7 @@
 layout: post
 title: NTFS & File Permission
 tags: 文件权限
-categories: 🛠OPS
+categories: IT-Admin
 ---
 
 ## NTFS & File Permission

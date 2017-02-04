@@ -2,7 +2,7 @@
 layout: post
 title: Tracert Win
 tags: 
-categories: 🌐NET
+categories: 🌐-NET
 ---
 
 ## Tracert Win

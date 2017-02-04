@@ -2,7 +2,7 @@
 layout: post
 title: Mangle Table
 tags: FireWall
-categories: 🌐NET
+categories: 🌐-NET
 ---
 
 > 查看 Mangle 表:  `iptables -t mangle --list`

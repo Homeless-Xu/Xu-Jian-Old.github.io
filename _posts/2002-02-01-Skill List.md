@@ -2,7 +2,7 @@
 layout: post
 title: Skill List
 tags: 
-categories: 🛠OPS
+categories: IT-Admin
 ---
 
 ## Skill List

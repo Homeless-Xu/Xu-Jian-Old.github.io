@@ -2,7 +2,7 @@
 layout: post
 title:  jQuery-JSON
 tags: jQuery1
-categories: jQuery
+categories: JS
 ---
 
 API——应用程序接口(Application Programming Interface)是计算机之间相互交流沟通的工具。

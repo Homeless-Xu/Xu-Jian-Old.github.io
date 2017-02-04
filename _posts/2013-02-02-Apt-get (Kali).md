@@ -2,7 +2,7 @@
 layout: post
 title: Apt-get (Kali)
 tags: 
-categories: 🌐NET
+categories: 🌐-NET
 ---
 
 

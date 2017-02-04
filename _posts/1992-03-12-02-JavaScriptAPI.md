@@ -2,7 +2,7 @@
 layout: post
 title: JavaScriptAPI
 tags: JavaScript
-categories: jQuery
+categories: JS
 ---
 
 **通过这个API 可以直接操作本地文件.**

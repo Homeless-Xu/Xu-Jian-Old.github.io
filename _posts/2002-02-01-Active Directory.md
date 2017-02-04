@@ -2,7 +2,7 @@
 layout: post
 title: Active Directory
 tags: 
-categories: 🛠OPS
+categories: IT-Admin
 ---
 
 ## AD: Active Directory

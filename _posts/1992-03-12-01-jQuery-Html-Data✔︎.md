@@ -2,7 +2,7 @@
 layout: post
 title:  jQuery-Html-Data✔︎
 tags: HTML-Data
-categories: jQuery
+categories: JS
 ---
 
 **作用: 给html元素设置额外属性. js/css 里可以获取该额外属性的值.**

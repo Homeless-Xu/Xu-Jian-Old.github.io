@@ -2,7 +2,7 @@
 layout: post
 title: ARP / Mac / IPtable 三大表
 tags: 
-categories: 🌐NET
+categories: 🌐-NET
 ---
 
 ARP 表: IP+MAC+ 接口信息备注

@@ -2,7 +2,7 @@
 layout: post
 title: "SpechtLite"
 tags: 翻墙
-categories: APP
+categories: -APP
 ---
 
 mac 上最好用、免费的科学上网软件。

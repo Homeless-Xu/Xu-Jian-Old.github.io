@@ -42,12 +42,12 @@
 		<key>query</key>
 		<real>505041139.05892003</real>
 		<key>userIconName</key>
-		<real>505041400.630337</real>
+		<real>507890795.60303098</real>
 	</dict>
 	<key>storeFormatVersion</key>
 	<integer>1</integer>
 	<key>userIconName</key>
-	<string>Computer</string>
+	<string>Box</string>
 	<key>versioning</key>
 	<dict>
 		<key>query</key>
@@ -58,7 +58,7 @@
 		<key>userIconName</key>
 		<dict>
 			<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-			<integer>15</integer>
+			<integer>30</integer>
 		</dict>
 	</dict>
 </dict>
