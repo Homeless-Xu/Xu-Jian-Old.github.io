@@ -2,7 +2,7 @@
 layout: post
 title: jekyll-Misc
 tags: Misc
-categories: Jekyll
+categories: Blog
 ---
 
 

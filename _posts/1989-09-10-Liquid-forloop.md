@@ -2,7 +2,7 @@
 layout: post
 title: Liquid-forloop
 tags: Liquid
-categories: Jekyll
+categories: Blog
 ---
 
 **数组遍历**

@@ -2,7 +2,7 @@
 layout: post
 title: Github&Coding双线部署✔︎
 tags: 博客部署
-categories: Jekyll
+categories: Blog
 ---
 
 

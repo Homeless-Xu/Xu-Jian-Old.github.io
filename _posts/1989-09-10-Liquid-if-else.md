@@ -2,7 +2,7 @@
 layout: post
 title:  Liquid-if/else
 tags: Liquid
-categories: Jekyll
+categories: Blog
 ---
 
 3. If / Else

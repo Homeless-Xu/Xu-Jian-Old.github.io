@@ -2,7 +2,7 @@
 layout: post
 title: Liquid-Tag汇总
 tags: Liquid
-categories: Jekyll
+categories: Blog
 ---
 
 

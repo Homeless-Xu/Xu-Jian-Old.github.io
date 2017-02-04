@@ -2,7 +2,7 @@
 layout: post
 title: Jekyll+Github-Pages
 tags: JSON
-categories: Jekyll
+categories: Blog
 ---
 
 

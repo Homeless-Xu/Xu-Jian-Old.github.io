@@ -2,7 +2,7 @@
 layout: post
 title: Liquid-语法-Misc
 tags: Liquid
-categories: Jekyll
+categories: Blog
 ---
 
 

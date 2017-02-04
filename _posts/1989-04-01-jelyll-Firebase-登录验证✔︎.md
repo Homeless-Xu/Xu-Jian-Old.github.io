@@ -2,7 +2,7 @@
 layout: post
 title: jelyll-Firebase-登录验证✔︎
 tags: Firebase-登录验证
-categories: Jekyll
+categories: Blog
 ---
 
 
