@@ -2,7 +2,7 @@
 layout: post
 title: User/Group
 tags: Misc
-categories: 👓Linux
+categories: 👓-Linux
 ---
 
 ## User/Group

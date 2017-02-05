@@ -2,7 +2,7 @@
 layout: post
 title: Find - Kali/Debian
 tags: Misc
-categories: 👓Linux
+categories: 👓-Linux
 ---
 
 

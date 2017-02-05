@@ -2,7 +2,7 @@
 layout: post
 title: shadowsocks
 tags: Misc
-categories: 👓Linux
+categories: 👓-Linux
 order: 4
 ---
 

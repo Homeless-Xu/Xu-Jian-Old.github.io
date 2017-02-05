@@ -2,7 +2,7 @@
 layout: post
 title: Web building
 tags: Misc
-categories: 👓Linux
+categories: 👓-Linux
 ---
 
 ## Kali / Debian - Web building

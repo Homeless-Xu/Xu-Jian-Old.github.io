@@ -2,7 +2,7 @@
 layout: post
 title: rpm,apt,yum,brew
 tags: Misc
-categories: 👓Linux
+categories: 👓-Linux
 ---
 
 

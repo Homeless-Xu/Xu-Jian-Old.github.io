@@ -2,7 +2,7 @@
 layout: post
 title: proxy chains
 tags: Misc
-categories: 👓Linux
+categories: 👓-Linux
 ---
 
 ## proxy chains

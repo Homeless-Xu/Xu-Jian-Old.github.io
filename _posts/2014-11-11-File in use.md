@@ -2,7 +2,7 @@
 layout: post
 title: File in use
 tags: Misc
-categories: 👓Linux
+categories: 👓-Linux
 ---
 
 如: 一个 硬盘卸载不了

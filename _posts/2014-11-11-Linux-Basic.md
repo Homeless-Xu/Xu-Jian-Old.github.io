@@ -2,7 +2,7 @@
 layout: post
 title: Linux-Basic
 tags: Misc
-categories: 👓Linux
+categories: 👓-Linux
 ---
 
 ## Linux 

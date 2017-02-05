@@ -2,7 +2,7 @@
 layout: post
 title: Bash & ZSH & Plugins
 tags: Misc
-categories: 👓Linux
+categories: 👓-Linux
 ---
 
 ## 

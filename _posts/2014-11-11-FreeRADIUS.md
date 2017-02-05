@@ -2,7 +2,7 @@
 layout: post
 title: FreeRADIUS
 tags: Misc
-categories: 👓Linux
+categories: 👓-Linux
 ---
 
 
