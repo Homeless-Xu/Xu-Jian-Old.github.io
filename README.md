@@ -3,13 +3,14 @@
 > 大类: 不能有英文的.; (可以有:-)不然不能过滤出对应标签&文章.  
 > 标签: 不能有下划线; 不能有空格(有空格就是多标签了.本主题不支持)
 
-![][image-1]
+
+![](http://oduizitoj.bkt.clouddn.com/2017-02-05-Screen%20Shot%202017-02-05%20at%2019.29.58.png)
 ![][image-2]
 
 ## 排序实例:(主题重点)  
-\* 所有排序都是按照 文件名上的时间排序. 时间越旧拍越上面.
-> 大类下的 所有文件名都是一个年份的才有效.
-> 如果一个大类 有些文件名的年份不一样.那大类会自动选择最早年份的那个文章来排序大类.
+   所有排序都是按照 文件名上的时间排序. 时间越旧拍越上面.
+	> 大类下的 所有文件名都是一个年份的才有效.  
+	> 如果一个大类 有些文件名的年份不一样.那大类会自动选择最早年份的那个文章来排序大类.
 有三个大类: cate1, cate2, cate3
 
 
@@ -123,7 +124,6 @@
 * [ ] 文章预览?
 * [ ] 移动端左右滑动
 * [ ] URL 自动链接
-* [ ]
 
 
 
@@ -140,31 +140,31 @@
 
 2. 下载该项目到本地电脑(一般放桌面).
 
-3. 电脑安装jekyll 环境(全局模式/不需要cd到特定文件夹);
-		> 安装好全局环境: 系统可以认识jekyll命令. 但是文件夹还是不能进行jekyll命令操作,必须进行下一步.
-		一个电脑只需安装一次.(已经安装过就跳过这步).
-		- `sudo gem install jekyll bundler`
+3. 电脑安装jekyll 环境(全局模式/不需要cd到特定文件夹);  
+		> 安装好全局环境: 系统可以认识jekyll命令. 但是文件夹还是不能进行jekyll命令操作,必须进行下一步.  
+		一个电脑只需安装一次.(已经安装过就跳过这步).  
+		- `sudo gem install jekyll bundler`  
 		    这里其实安装了两个: jekyll & Bundler 
 
-4. 终端cd到 下载的文件夹里面:
-		- `jekyll new . --force`
-		  这个是不覆盖原来内容的命令.如果是空的文件夹 可以使用:`jekyll new .`
-		    这里的 . 是当前文件夹的意思
-		- `bundle install`
-		    这步会帮你安装各种依赖文件
-		- `bundle exec jekyll serve`
-		    这步开启本地预览: 打开浏览器 http://localhost:4000  有内容就对了.
-5. 将文档保存（修改）为「日期 + 标题」的模式，如：「2015-04-27-Like-Kissing.md」。
-6. 将 md 文档放到 \_posts 文件夹里. 再去刷新浏览器的本地预览 就能看到变化了.
-7. GitHub for Mac 客户端 commit 和 sync，稍等片刻新添加的博文就会自动发布到博客里啦。
-8. 浏览器输入 Xu-Jian.github.io  (把xu-jian 改成你自己的github账户名) 能看博客效果.
+4. 终端cd到 下载的文件夹里面:  
+		- `jekyll new . --force`  
+		  这个是不覆盖原来内容的命令.如果是空的文件夹 可以使用:`jekyll new .`  
+		    这里的 . 是当前文件夹的意思  
+		- `bundle install`  
+		    这步会帮你安装各种依赖文件  
+		- `bundle exec jekyll serve`  
+		    这步开启本地预览: 打开浏览器 http://localhost:4000  有内容就对了.  
+5. 将文档保存（修改）为「日期 + 标题」的模式，如：「2015-04-27-Like-Kissing.md」. 
+6. 将 md 文档放到 `_posts` 文件夹里. 再去刷新浏览器的本地预览 就能看到变化了.  
+7. GitHub for Mac 客户端 commit 和 sync，稍等片刻新添加的博文就会自动发布到博客里啦.  
+8. 浏览器输入 Xu-Jian.github.io  (把xu-jian 改成你自己的github账户名) 能看博客效果.  
 
 
 
 
 
 
-## ★★★★★ jekyll Tips
+## jekyll Tips ★★★★★
 - 渲染所有文件
 `bundle exec jekyll serve`
 - 忽略文件更新
@@ -185,26 +185,26 @@
   coda2软件 →  查找功能 → 打开post文件夹  →查找 categories: Blog 替换成 categories: Blogs
 
 - jekyll博客文件结构
-	只要看 \_layouts 文件夹里面的 default.html.
-	再结合 \_includes 文件夹里面的内容就可以知道了.
-	> default.html 会用 inclide 语法包含一些 \_includes文件夹里面的文件.
+	只要看 `_layouts` 文件夹里面的 default.html.
+	再结合 `_includes` 文件夹里面的内容就可以知道了.
+	> default.html 会用 inclide 语法包含一些 `_includes`文件夹里面的文件.
 
 
 
 
 ## 主题个性化定制
 
-### \_config.yml 主要配置文件:
+### _config.yml 主要配置文件:
 - 修改书签栏上显示的标题: title
 - 修改博客顶栏的邮箱: email
 - 修改博客顶栏 github 主页链接: githubHomeURL
 - 修改博客顶栏 github readme链接: githubReadmeURL
-- 修改博客顶栏 codePen 链接: codePen\_url
+- 修改博客顶栏 codePen 链接: `codePen_url`
 
 
 ### 增删博客顶部的图标(链接):
 - 增加: 自己搜阿里的 iconfont
-- 删除: \_includes → topbar.html → 看注释就会了
+- 删除: `_includes` → topbar.html → 看注释就会了
 - 链接: topbar.html 里直把href 改成你自己的也可以.
 
 ### 大类/标签/文件 默认宽度
@@ -227,7 +227,8 @@ default.html → arrowNav div下 → 绝对定位
 
 
 ### favicon 书签图标
-\'' <link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32">
+
+'' <link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32">
 自己放一个 png到博客根目录就可以了.
 
 ### 自定义域名
