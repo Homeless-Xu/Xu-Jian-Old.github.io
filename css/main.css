@@ -68,10 +68,8 @@ sup                  { color: red; float:right; font-size:0.7em; }
 /* 拖动条 css */
 
 
-#topbarDiv { height: 30px; display: flex; background-color: rgba(210, 52, 219, 0.18); }
+#topbarDiv { height: 30px; display: flex; justify-content:space-between; background-color: rgba(210, 52, 219, 0.18); }
 #topbarDiv i { padding-top: 3px; padding-bottom: 3px; }
-#topbarStructureToggle { position: absolute; right: 0px;}
-
 
 
 #Div       { display: flex; position: absolute; top:30px;bottom: 0px; left: 0px; right: 0px; }
@@ -141,7 +139,7 @@ word-break: normal;  }
 
  .icon {
        width: 1em; height: 1em;
-       vertical-align: -0.15em;
+       /*vertical-align: -0.15em; 会影响文字的垂直居中.*/
        fill: currentColor;
        overflow: hidden;
        font-size:25px;
@@ -176,90 +174,23 @@ word-break: normal;  }
 
 
 
-@media screen and (max-width: 414px ) {   /* 当屏幕宽度最大是414 也就是小于414px的都使用下面的布局(iphone 6+) */
+@media screen and (max-width: 414px ) {  /* 当屏幕宽度小于414px的都使用下面的布局(iphone 6+) */
 
-* { padding: 0; margin:0 ;}
+    * { padding: 0; margin:0 ;}
 
-#cateDiv     { display: none; flex-basis: 50px; }
-.cateSup     { display: none     }
-#tagDiv      { display: none; flex-basis: 100px;}
-#lineLeft    { display: none     }
-#filenameDiv { display: none     }
-#lineRight   { display: none     }
-#arrowNav    { display: none     }
-
+    #cateDiv     { display: none; flex-basis: 50px; }
+    .cateSup     { display: none     }
+    #tagDiv      { display: none; flex-basis: 100px;}
+    #lineLeft    { display: none     }
+    #filenameDiv { display: none     }
+    #lineRight   { display: none     }
+    #arrowNav    { display: none     }
+    #rightNavbar { display: none     }
 
 }
 
 
 
 
-/*  其他 次要的 设置......   */
 
-
-#heart {
-    position: relative;
-    width: 50px;
-    height: 45px;
-}
-#heart:before,
-#heart:after {
-    position: absolute;
-    content: "";
-    left: 25px;
-    top: 0;
-    width: 25px;
-    height: 40px;
-    background: red;
-    -moz-border-radius: 25px 25px 0 0;
-    border-radius: 25px 25px 0 0;
-    -webkit-transform: rotate(-45deg);
-       -moz-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
-         -o-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-    -webkit-transform-origin: 0 100%;
-       -moz-transform-origin: 0 100%;
-        -ms-transform-origin: 0 100%;
-         -o-transform-origin: 0 100%;
-            transform-origin: 0 100%;
-}
-#heart:after {
-    left: 0;
-    -webkit-transform: rotate(45deg);
-       -moz-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-         -o-transform: rotate(45deg);
-            transform: rotate(45deg);
-    -webkit-transform-origin: 100% 100%;
-       -moz-transform-origin: 100% 100%;
-        -ms-transform-origin: 100% 100%;
-         -o-transform-origin: 100% 100%;
-            transform-origin :100% 100%;
-}
-
-
-
-
-
-#talkbubble {
-   width: 120px; 
-   height: 80px; 
-   background: red;
-   position: relative;
-   -moz-border-radius:    10px; 
-   -webkit-border-radius: 10px; 
-   border-radius:         10px;
-}
-#talkbubble:before {
-   content:"";
-   position: absolute;
-   right: 100%;
-   top: 26px;
-   width: 0;
-   height: 0;
-   border-top: 13px solid transparent;
-   border-right: 26px solid red;
-   border-bottom: 13px solid transparent;
-}
 

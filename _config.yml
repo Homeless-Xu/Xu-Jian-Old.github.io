@@ -25,8 +25,9 @@ exclude:
 
 
 ###########################################   顶部链接 设置
-github_url:  https://github.com/Xu-Jian
-# 这个是顶部 github 图标的链接. 
+githubHomeURL:  https://github.com/Xu-Jian
+# 这个是顶部 github Home 图标的链接. 
+githubReadmeURL:  https://github.com/Xu-Jian/Xu-Jian.github.io
 
 codePen_url:  http://codepen.io/Xu-Jian/
 # 这个是顶部 codepen 图标的链接.

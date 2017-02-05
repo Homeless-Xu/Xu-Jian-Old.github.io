@@ -1,38 +1,76 @@
 <div id="topbarDiv"> 
-  <svg class="icon" aria-hidden="true" id="topbarToggle" >
-    <use xlink:href="#icon-layouts"></use>
-  </svg>
+  <div style="display: inline">
+    <!-- 显隐分类栏 -->
+    <span title="显隐分类栏">
+      <svg class="icon" aria-hidden="true" id="topbarToggle"  >
+        <use xlink:href="#icon-layouts"></use>
+      </svg>
+    </span>
+    <!-- Github Home 图标 -->
+    <a href="{{site.githubHomeURL}}"  target="_blank" title="Github Home" >
+      <svg class="icon" aria-hidden="true"  >
+        <use xlink:href="#icon-Git"></use>
+      </svg> 
+    </a>
+  </div>
 
-  <a href="{{site.github_url}}"  target="_blank" >
-    <svg class="icon" aria-hidden="true" id="topbarToggle" >
-      <use xlink:href="#icon-Git"></use>
-    </svg>  
+
+
+<div style="display: inline">
+  <!-- 手机图标 -->
+  <span href="{{site.codePen_url}}" target="_blank" title="Call Me: 186 219 23213" >    
+    <svg class="icon" aria-hidden="true"  >
+      <use xlink:href="#icon-shouji"></use>
+    </svg>
+  </span>
+  <!-- DOC简历图标  -->
+  <a href="{{site.codePen_url}}" target="_blank" title="Doc 简历下载" >
+    <svg class="icon" aria-hidden="true"  >
+      <use xlink:href="#icon-jianli"></use>
+    </svg>     
   </a>
 
-  <a href="{{site.codePen_url}}" target="_blank" >
-    <svg class="icon" aria-hidden="true" id="topbarToggle" >
+    <span style="display: inline; line-height: 30px;">
+      <span style="display: table-cell; vertical-align: middle;" >(Resume)</span>
+    </span>
+
+   <!-- 在线简历图标  -->
+  <a href="{{site.codePen_url}}" target="_blank" title="在线简历" >  
+    <svg class="icon" aria-hidden="true"  >
+      <use xlink:href="#icon-jianli"></use>
+    </svg>
+  </a>
+  <!-- 邮件图标 -->
+  <a href="mailto:{{site.email}}" target="_blank" title="E-mail Me" >    
+    <svg class="icon" aria-hidden="true"  >
+      <use xlink:href="#icon-emailround"></use>
+    </svg>
+  </a>
+</div>
+
+  <!--
+     Codepen 图标
+  <a href="{{site.codePen_url}}" target="_blank" title="Codepen Home" >
+    <svg class="icon" aria-hidden="true"  >
       <use xlink:href="#icon-codepen"></use>
     </svg>
   </a>
-
-<div id="test">
-</div>
-
-
-<button id="readmeBTN">
-<a href="https://github.com/Xu-Jian/Xu-Jian.github.io" target="'_blank";>Read Me (Mamual)</a>
-</button>
+ -->
 
 
 
-
-  <svg class="icon" aria-hidden="true" id="topbarStructureToggle">
-    <use xlink:href="#icon-layouts"></use>
-  </svg>
-
-
-
-
+ <div style="display: inline">
+    <!-- Github Readme 图标 -->  
+    <a href="{{site.githubReadmeURL}}"  target="_blank">
+      <svg class="icon" aria-hidden="true"  >
+        <use xlink:href="#icon-Git"></use>
+      </svg>
+    </a>
+    <!-- 显隐文件结构栏-->  
+    <svg class="icon" aria-hidden="true" id="topbarStructureToggle">
+      <use xlink:href="#icon-layouts"></use>
+    </svg>
+  </div>
 </div>
 
 
