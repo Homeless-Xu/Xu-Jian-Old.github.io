@@ -1,78 +1,79 @@
-# [CMS-Jekyll](https://0214.help)
+# [CMS-Jekyll][1]
 
-> 大类: 不能有英文的.; (可以有:-)不然不能过滤出对应标签&文章.
+> 大类: 不能有英文的.; (可以有:-)不然不能过滤出对应标签&文章.  
 > 标签: 不能有下划线; 不能有空格(有空格就是多标签了.本主题不支持)
 
-![](http://oduizitoj.bkt.clouddn.com/2017-02-03-Screen%20Shot%202017-02-03%20at%2014.04.34.png)
-![](http://oduizitoj.bkt.clouddn.com/2017-02-05-Screen%20Shot%202017-02-05%20at%2017.06.06.png)
+![][image-1]
+![][image-2]
+
 ## 排序实例:(主题重点)  
-* 所有排序都是按照 文件名上的时间排序. 时间越旧拍越上面.
->大类下的 所有文件名都是一个年份的才有效.
->如果一个大类 有些文件名的年份不一样.那大类会自动选择最早年份的那个文章来排序大类.
+\* 所有排序都是按照 文件名上的时间排序. 时间越旧拍越上面.
+> 大类下的 所有文件名都是一个年份的才有效.
+> 如果一个大类 有些文件名的年份不一样.那大类会自动选择最早年份的那个文章来排序大类.
 有三个大类: cate1, cate2, cate3
 
 
-|-- Cate1  
-|   |--  Tag11
-|          |-- post111 → 2000-01-01-post111.md
-|          |-- post112 → 2000-01-02-post112.md 
-|          |-- post113 → 2000-01-03-post113.md
-|   |--  Tag12
-|          |-- post121 → 2000-02-01-post121.md
-|          |-- post122 → 2000-02-02-post122.md
-|          |-- post123 → 2000-02-03-post123.md
-|   |--  Tag13
-|          |-- post131 → 2000-03-01-post131.md
-|          |-- post132 → 2000-03-02-post132.md
-|          |-- post133 → 2000-03-03-post133.md
-|
-|-- Cate2  
-|   |--  Tag21
-|          |-- post211 → 2010-01-01-post211.md
-|          |-- post212 → 2010-01-02-post212.md
-|          |-- post213 → 2010-01-03-post213.md
-|   |--  Tag22
-|          |-- post221 → 2010-02-01-post221.md
-|          |-- post222 → 2010-02-02-post222.md
-|          |-- post223 → 2010-02-03-post223.md
-|   |--  Tag23
-|          |-- post231 → 2010-03-01-post231.md
-|          |-- post232 → 2010-03-02-post232.md
-|          |-- post233 → 2010-03-03-post233.md
-|-- Cate3 
-|   |--  Tag31
-|          |-- post311 → 2016-01-01-post311.md
-|          |-- post312 → 2016-01-02-post312.md
-|          |-- post313 → 2016-01-03-post313.md
-|   |--  Tag32
-|          |-- post321 → 2016-02-01-post321.md
-|          |-- post322 → 2016-02-02-post322.md
-|          |-- post323 → 2016-02-03-post323.md
-|   |--  Tag33
-|          |-- post331 → 2016-03-01-post331.md
-|          |-- post332 → 2016-03-02-post332.md
-|          |-- post333 → 2016-03-03-post333.md
+	|-- Cate1
+	|   |--  Tag11
+	|          |-- post111 → 2000-01-01-post111.md
+	|          |-- post112 → 2000-01-02-post112.md 
+	|          |-- post113 → 2000-01-03-post113.md
+	|   |--  Tag12
+	|          |-- post121 → 2000-02-01-post121.md
+	|          |-- post122 → 2000-02-02-post122.md
+	|          |-- post123 → 2000-02-03-post123.md
+	|   |--  Tag13
+	|          |-- post131 → 2000-03-01-post131.md
+	|          |-- post132 → 2000-03-02-post132.md
+	|          |-- post133 → 2000-03-03-post133.md
+	|
+	|-- Cate2
+	|   |--  Tag21
+	|          |-- post211 → 2010-01-01-post211.md
+	|          |-- post212 → 2010-01-02-post212.md
+	|          |-- post213 → 2010-01-03-post213.md
+	|   |--  Tag22
+	|          |-- post221 → 2010-02-01-post221.md
+	|          |-- post222 → 2010-02-02-post222.md
+	|          |-- post223 → 2010-02-03-post223.md
+	|   |--  Tag23
+	|          |-- post231 → 2010-03-01-post231.md
+	|          |-- post232 → 2010-03-02-post232.md
+	|          |-- post233 → 2010-03-03-post233.md
+	|-- Cate3 
+	|   |--  Tag31
+	|          |-- post311 → 2016-01-01-post311.md
+	|          |-- post312 → 2016-01-02-post312.md
+	|          |-- post313 → 2016-01-03-post313.md
+	|   |--  Tag32
+	|          |-- post321 → 2016-02-01-post321.md
+	|          |-- post322 → 2016-02-02-post322.md
+	|          |-- post323 → 2016-02-03-post323.md
+	|   |--  Tag33
+	|          |-- post331 → 2016-03-01-post331.md
+	|          |-- post332 → 2016-03-02-post332.md
+	|          |-- post333 → 2016-03-03-post333.md
 
 ## 排序结果:
 
-Cate1 Tag11 post111
-Cate2 Tag12 post112
-Cate3 Tag13 post113
-      Tag21 post121
-			Tag22 post122
-			Tag23 post123
-			Tag31 post131
-			Tag32 post132
-			Tag33 post113
-            post211
-            post212
-            post213
-            post221
-            post222
-            post223
-            post231
-            ......
-						
+	Cate1 Tag11 post111
+	Cate2 Tag12 post112
+	Cate3 Tag13 post113
+	      Tag21 post121
+	      Tag22 post122
+	      Tag23 post123
+	      Tag31 post131
+	      Tag32 post132
+	      Tag33 post113
+	            post211
+	            post212
+	            post213
+	            post221
+	            post222
+	            post223
+	            post231
+	            ......
+					 
 
 
 ## 建议排序方法:
@@ -143,18 +144,18 @@ Cate3 Tag13 post113
 		> 安装好全局环境: 系统可以认识jekyll命令. 但是文件夹还是不能进行jekyll命令操作,必须进行下一步.
 		一个电脑只需安装一次.(已经安装过就跳过这步).
 		- `sudo gem install jekyll bundler`
-			这里其实安装了两个: jekyll & Bundler 
+		    这里其实安装了两个: jekyll & Bundler 
 
 4. 终端cd到 下载的文件夹里面:
 		- `jekyll new . --force`
 		  这个是不覆盖原来内容的命令.如果是空的文件夹 可以使用:`jekyll new .`
-			这里的 . 是当前文件夹的意思
+		    这里的 . 是当前文件夹的意思
 		- `bundle install`
-			这步会帮你安装各种依赖文件
+		    这步会帮你安装各种依赖文件
 		- `bundle exec jekyll serve`
-			这步开启本地预览: 打开浏览器 http://localhost:4000  有内容就对了.
+		    这步开启本地预览: 打开浏览器 http://localhost:4000  有内容就对了.
 5. 将文档保存（修改）为「日期 + 标题」的模式，如：「2015-04-27-Like-Kissing.md」。
-6. 将 md 文档放到 _posts 文件夹里. 再去刷新浏览器的本地预览 就能看到变化了.
+6. 将 md 文档放到 \_posts 文件夹里. 再去刷新浏览器的本地预览 就能看到变化了.
 7. GitHub for Mac 客户端 commit 和 sync，稍等片刻新添加的博文就会自动发布到博客里啦。
 8. 浏览器输入 Xu-Jian.github.io  (把xu-jian 改成你自己的github账户名) 能看博客效果.
 
@@ -163,7 +164,7 @@ Cate3 Tag13 post113
 
 
 
-## ★★★★★ jekyll Tips 
+## ★★★★★ jekyll Tips
 - 渲染所有文件
 `bundle exec jekyll serve`
 - 忽略文件更新
@@ -184,26 +185,26 @@ Cate3 Tag13 post113
   coda2软件 →  查找功能 → 打开post文件夹  →查找 categories: Blog 替换成 categories: Blogs
 
 - jekyll博客文件结构
-	只要看 _layouts 文件夹里面的 default.html.
-	再结合 _includes 文件夹里面的内容就可以知道了.
-	> default.html 会用 inclide 语法包含一些 _includes文件夹里面的文件.
+	只要看 \_layouts 文件夹里面的 default.html.
+	再结合 \_includes 文件夹里面的内容就可以知道了.
+	> default.html 会用 inclide 语法包含一些 \_includes文件夹里面的文件.
 
 
 
 
 ## 主题个性化定制
 
-### _config.yml 主要配置文件:
+### \_config.yml 主要配置文件:
 - 修改书签栏上显示的标题: title
 - 修改博客顶栏的邮箱: email
 - 修改博客顶栏 github 主页链接: githubHomeURL
 - 修改博客顶栏 github readme链接: githubReadmeURL
-- 修改博客顶栏 codePen 链接: codePen_url
+- 修改博客顶栏 codePen 链接: codePen\_url
 
 
 ### 增删博客顶部的图标(链接):
 - 增加: 自己搜阿里的 iconfont
-- 删除: _includes → topbar.html → 看注释就会了
+- 删除: \_includes → topbar.html → 看注释就会了
 - 链接: topbar.html 里直把href 改成你自己的也可以.
 
 ### 大类/标签/文件 默认宽度
@@ -225,8 +226,8 @@ main.cs
 default.html → arrowNav div下 → 绝对定位
 
 
-###  favicon 书签图标
-'' <link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32">
+### favicon 书签图标
+\'' <link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32">
 自己放一个 png到博客根目录就可以了.
 
 ### 自定义域名
@@ -243,10 +244,15 @@ CNAME 文件，
 
 
 ## 版权 MIT
-[各版权区别](http://www.ruanyifeng.com/blog/2011/05/how_to_choose_free_software_licenses.html)
+[各版权区别][2]
 
 使用本主题请先Star.
 
 
 
 
+[1]:	https://0214.help
+[2]:	http://www.ruanyifeng.com/blog/2011/05/how_to_choose_free_software_licenses.html
+
+[image-1]:	http://oduizitoj.bkt.clouddn.com/2017-02-03-Screen%20Shot%202017-02-03%20at%2014.04.34.png
+[image-2]:	http://oduizitoj.bkt.clouddn.com/2017-02-05-Screen%20Shot%202017-02-05%20at%2017.06.06.png

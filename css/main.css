@@ -80,7 +80,7 @@ sup                  { color: red; float:right; font-size:0.7em; }
 
 #cateDiv {
     
-	flex-basis:77px; flex-grow: 0; flex-shrink: 0;  max-width: 300px; min-width: 14px;
+	flex-basis:80px; flex-grow: 0; flex-shrink: 0;  max-width: 300px; min-width: 14px;
 	position: relative; background-color:rgba(92, 47, 125, 0.34); 
     padding: 0px 4px 4px 4px;  display:relative;  }
 
@@ -109,7 +109,7 @@ word-break: normal;  }
 
 
 
-#rightNavbar { flex-grow: 0; flex-shrink: 0; height: 100%;  flex-basis: 88px; 
+#rightNavbar { flex-grow: 0; flex-shrink: 0; height: 100%;  flex-basis: 90px; 
 	font-size: 0.8em; padding: 0px;  background-color:rgba(127, 127, 127, 0.13);  
 	overflow-x: hidden; 
 	overflow-y: scroll;

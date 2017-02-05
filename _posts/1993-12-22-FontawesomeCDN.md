@@ -2,8 +2,7 @@
 layout: post
 title:  免费CDN
 tags: CDN
-categories: FE-Misc
-order: 21
+categories: Web
 ---
 
 

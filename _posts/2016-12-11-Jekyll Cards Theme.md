@@ -2,8 +2,7 @@
 layout: post
 title:  Jekyll Cards Theme
 tags: Jekyll
-categories: Themes
-order: 5
+categories: Blog
 ---
 
 ### Jekyll Carsd Theme Template - [Demo][1] (示范模板)

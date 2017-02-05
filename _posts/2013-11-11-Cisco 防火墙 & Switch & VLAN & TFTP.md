@@ -2,7 +2,7 @@
 layout: post
 title: Cisco 防火墙 & Switch & VLAN & TFTP
 tags: Misc
-categories: Net
+categories: 🌐-Net
 ---
 
 ## Cisco 防火墙 & Switch & VLAN & TFTP
@@ -33,7 +33,7 @@ categories: Net
 *“enable”(可简写为“en”)*
 可以查看并修改路由器或交换机的配置。
 
-**特权模式常用命令：
+\*\*特权模式常用命令：
 - show version ：查看系统IOS版本
 	* - show running-config ：查看当前的配置信息*
 	- copy running-config startup-config ：保存当前的配置 或者使用 write
@@ -49,7 +49,7 @@ categories: Net
 				- exec-timeout 0 0 ：不超时连接
 			- logging synchronous ：不启用时间同步，信息不打断输入命令
 
-#### *全局模式*    
+#### *全局模式*  
 route(config)\#
 *“config terminal”(可简写为conf t)*
 
@@ -92,19 +92,19 @@ switch(config-if)#no shutdown
 ### 路由器、交换机密码的管理
 
 1. 配置的console口密码
-	`route(config)#line console 0
-	``route(config-line)#password 密码
-	``route(config-line)#login
-	`
+	\`route(config)#line console 0
+	\`\`route(config-line)#password 密码
+	\`\`route(config-line)#login
+	\`
 2. 配置特权模式密码
-	`route(config)#enable password 密码
-	`
+	\`route(config)#enable password 密码
+	\`
 3. 配置密文密码
 	上述配置的密码都是以明文显示，查看当前配置即可以查看到密码，这样很不安全，所以我们来使用以下方法来配置密码。
-	`route(config)#enable secret 密码  
-	`上述是配置加密的特权密码，在同时使password和secret设置特权密码时，后者生效。
-	`route(config)#service password-encryption
-	`上述方法可以将明文设置的密码进行加密。
+	\`route(config)#enable secret 密码  
+	\`上述是配置加密的特权密码，在同时使password和secret设置特权密码时，后者生效。
+	\`route(config)#service password-encryption
+	\`上述方法可以将明文设置的密码进行加密。
 
 4. 恢复路由器密码
 	*路由器的密码存在startup-config中*，所以我们启动路由器时，必须绕过startup-config配置，然后重新设置密码。
@@ -128,7 +128,7 @@ switch(config-if)#no shutdown
 	路由器我们知道是修改寄存器的值，那么交换机呢？我们改怎么做呢？
 	原理很简单，将config.text文件改个名字，让系统在加载配置文件时找不到它，这样交换机在启动后就回到了出厂设置，登录交换机也就不需要密码了。
 	但是需要注意的是，进入IOS后，要不原来的配置恢复回来，在把密码改成自己的。
-**交换机密码恢复步骤如下：
+\*\*交换机密码恢复步骤如下：
 1. 拔掉交换机的电源线，因为交换机没有开关机的按键，所以需要把电源重启交换机.
 	在重新接上交换机后，立刻按住交换机上的“mode”键，当看到配置界面显示“swith:”命令提示，便可松开“mode”键。
 	表示已近进入到一个专门用来中故障恢复的简单IOS。
@@ -144,7 +144,6 @@ switch(config-if)#no shutdown
 		`switch# show running-config`
 		5. 最后保存配置即可。
 			`switch#copy running-config flash:config.text`
-			  
 
 ### 远程管理路由器，交换机
 1. 配置管理IP
@@ -164,25 +163,24 @@ switch(config-if)#no shutdown
 
 4. 如果远程的交换机与管理员的主机不在同一个网段，就必须给交换机指定默认网关，否则无法实现远程登录。
 	`switch(config)#ip default-gateway 192.168.10.254`
-	  
 
-**路由器，交换机的IOS备份与恢复
+\*\*路由器，交换机的IOS备份与恢复
 *路由器，交换机的IOS备份与恢复工作，主要是使用TFTP.*但是现在新型的路由器，交换机已近支持TCP协议传输了。
 
 在此我就以TFTP描述备份和还原IOS的过程。
 IOS备份工作如下：
 1、下载Cisco TFTP Server工具，并创建TFTP服务器根目录。
 2、在路由器上使用一下命令备份IOS。
-`Route# copy flash tftp
-``Address or name of remote host ? 192.168.10.2  #tftp服务器的地址
-``Source filename ? c2800nm-ipbase-mz.123-6e.bin  #系统ios的名称，可以使用dir命令查看
-``Destinaon filename c2800nm-ipbase-mz.123-6e.bin ?   #这里回车确认。
-`
+\`Route# copy flash tftp
+\`\`Address or name of remote host ? 192.168.10.2  #tftp服务器的地址
+\`\`Source filename ? c2800nm-ipbase-mz.123-6e.bin  #系统ios的名称，可以使用dir命令查看
+\`\`Destinaon filename c2800nm-ipbase-mz.123-6e.bin ?   #这里回车确认。
+\`
 这时可以查看tftp的根目录，就会发现已近有一个备份好的iso了。
 如果要实现恢复工作则将Route# copy tftp flash 即可
 
 
-###  导出配置文件 （交换机&防火墙&路由器 通用）
+### 导出配置文件 （交换机&防火墙&路由器 通用）
 1. 先在Win下面用 tftpd32 搭建好FTP 服务器.
 	2. Telnet 进设备，en 进入高级模式
 	`#copy startup-config tftp`
@@ -247,9 +245,8 @@ IOS备份工作如下：
 		由于VLAN可以根据不同的环境进行划分，
 		可以将不同地理位置的主机划分到同一个VLAN中，而不需要移动物理设备，
 		所以利用VLAN技术可以大大的减少管理员的工作量。
-		  
 
-### **VLAN的种类
+### \*\*VLAN的种类
 
 1. *静态VLAN* （端口VLAN）
 	*最常见的VLAN实现方式。*
@@ -276,7 +273,6 @@ IOS备份工作如下：
 		Switch(config-if-range)exit
 		3、查看交换机VLAN的配置信息。
 		SWitch#show vlan brief
-		  
 
 		配置VLAN Trunk
 		接入链路：通常属于一个VLAN，主机与交换机之间连接的链路就是接入链路。
@@ -308,7 +304,7 @@ IOS备份工作如下：
 
 ## command
 
-- 版本信息:  `show version`  
+- 版本信息:  `show version`
 
 switch(config)#hostname 
 - 更改交换机名字.
@@ -401,7 +397,7 @@ ip route 192.168.2.0 255.255.255.0 10.1.12.2
 
 动态路由: 
 路由器之间需要频繁的交换各自的路由表,
-通过分析这些路由表 可以分析 出网络的 拓扑结构+网络地址等信息. 因此有安全隐患.	
+通过分析这些路由表 可以分析 出网络的 拓扑结构+网络地址等信息. 因此有安全隐患.    
 
 
 大型网络  不宜选用静态路由 
@@ -532,7 +528,7 @@ Vlan  3456 都不要选择预设 选择未配置 .
 
 
 
-## GNS3 
+## GNS3
 
 互联网操作系统（**Internetwork Operating System，简称IOS**）
 思科公司为其网络设备开发的操作维护系统。
@@ -540,15 +536,15 @@ Vlan  3456 都不要选择预设 选择未配置 .
 官网下载 1.4.5 免费. 跨平台网络虚拟软件( 路由系统 )
 
 GNS3整合了如下的软件：
-•	Dynamips：电脑运行Cisco系统(IOS)的模拟器
-•	Dynagen：是Dynamips的文字显示前端
-•	Pemu：PIX防火墙设备模拟器。
-•	Winpcap：为win32应用程序提供访问网络底层的能力。
+• Dynamips：电脑运行Cisco系统(IOS)的模拟器
+• Dynagen：是Dynamips的文字显示前端
+• Pemu：PIX防火墙设备模拟器。
+• Winpcap：为win32应用程序提供访问网络底层的能力。
  
 功能简介：
-•	设计优秀的网络拓扑结构
-•	模拟Cisco路由设备和PIX防火墙
-•	仿真简单的Ethernet, ATM和帧中继交换机
+• 设计优秀的网络拓扑结构
+• 模拟Cisco路由设备和PIX防火墙
+• 仿真简单的Ethernet, ATM和帧中继交换机
 
 
 

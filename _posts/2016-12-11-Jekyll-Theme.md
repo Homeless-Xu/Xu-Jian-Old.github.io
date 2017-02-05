@@ -2,8 +2,7 @@
 layout: post
 title:  Jekyll-Theme
 tags: Jekyll
-categories: Themes
-order: 5
+categories: Blog
 --- 
 
 ### A beautiful Theme
