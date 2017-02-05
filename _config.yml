@@ -1,6 +1,14 @@
 title: Xu.Jian
 email: xx2610@gmail.com
 
+name: Xu.Jian
+Phone: 186 219 23213
+# 这两个是顶栏点击手机图标弹出的信息.
+
+
+
+
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -31,4 +39,5 @@ githubReadmeURL:  https://github.com/Xu-Jian/Xu-Jian.github.io
 
 codePen_url:  http://codepen.io/Xu-Jian/
 # 这个是顶部 codepen 图标的链接.
+
 
