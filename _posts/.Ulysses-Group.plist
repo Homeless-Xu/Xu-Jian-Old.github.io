@@ -29,6 +29,7 @@
 		<string>.---11-ES6.Ulysses_Public_Filter</string>
 		<string>.---12-Misc - 2.Ulysses_Public_Filter</string>
 		<string>.93-Web.Ulysses_Public_Filter</string>
+		<string>.---03-缓存.Ulysses_Public_Filter</string>
 		<string>.---04-SEO.Ulysses_Public_Filter</string>
 		<string>.---05-JSON.Ulysses_Public_Filter</string>
 		<string>.---06-Ajax.Ulysses_Public_Filter</string>
@@ -161,6 +162,16 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>578</integer>
+				</dict>
+			</dict>
+			<key>.---03-缓存.Ulysses_Public_Filter</key>
+			<dict>
+				<key>lastModification</key>
+				<real>508074525.206011</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>605</integer>
 				</dict>
 			</dict>
 			<key>.---04-Flex.Ulysses_Public_Filter</key>
@@ -4682,6 +4693,26 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>18482</integer>
+				</dict>
+			</dict>
+			<key>1993-03-22-02-Cookie.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>508074560.66767198</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>19308</integer>
+				</dict>
+			</dict>
+			<key>1993-03-22-02-Web缓存.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>508074534.81906402</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>19304</integer>
 				</dict>
 			</dict>
 			<key>1993-04-01-SEO 社交媒体.md</key>
@@ -10824,6 +10855,12 @@
 			<string>1993-12-01-01-REST-API.md</string>
 		</array>
 		<array>
+			<string>1993-03-22-02-Cookie.md</string>
+		</array>
+		<array>
+			<string>1993-03-22-02-Web缓存.md</string>
+		</array>
+		<array>
 			<string>1989-01-01-01-Jekyll性能优化.md</string>
 		</array>
 		<array>
@@ -13697,12 +13734,12 @@
 		<key>childOrder</key>
 		<dict>
 			<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-			<integer>600</integer>
+			<integer>605</integer>
 		</dict>
 		<key>sheetClusters</key>
 		<dict>
 			<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-			<integer>19297</integer>
+			<integer>19309</integer>
 		</dict>
 		<key>sheetOrder</key>
 		<dict>

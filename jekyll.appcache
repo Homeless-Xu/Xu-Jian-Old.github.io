@@ -1,7 +1,7 @@
 CACHE MANIFEST
 # v1 2017-02-08
 # cname 下都是要缓存的文件.  有无网络都使用本地缓存
-favicon-32x32.png
+/favicon-32x32.png
 /css/main.css
 /js/main.js
 /RougeThemes/monokaiSublime.css
@@ -15,7 +15,8 @@ favicon-32x32.png
 # Use from network if available
 # network: 都是绝对不缓存的文件. 有无网络都从服务器下载
 NETWORK:
-
+https://www.0214.live/
+http://127.0.0.1:4000/ 
 
 
 
