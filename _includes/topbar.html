@@ -7,7 +7,7 @@
       </svg>
     </span>
     <!-- Github Home 图标 -->
-    <a href="{{site.githubHomeURL}}"  target="_blank" title="Github Home" >
+    <a href="{{site.githubHomeURL}}"  target="_blank" title="Github Home" id="githubHome" >
       <svg class="icon" aria-hidden="true"  >
         <use xlink:href="#icon-Git"></use>
       </svg> 
@@ -18,11 +18,6 @@
 
 
 <!-- 
-
-    <button style="display: inline; line-height: 30px;">
-      <span style="display: table-cell; vertical-align: middle;" >(Resume)</span>
-    </button>
-
 
   <a href="{{site.codePen_url}}" target="_blank" title="Doc 简历下载" >
     <svg class="icon" aria-hidden="true"  >
@@ -40,19 +35,16 @@
 
  -->
 
-
-
 <div class="navbox">
     <ul class="clearfix">
       <!-- 上一篇图标 -->
-      <li>
+      <li style="padding-right: 15px;">
         <a title="上一篇: (快捷键 左方向键)" id="topbarPre" >
         <svg class="icon" aria-hidden="true"  >
           <use xlink:href="#icon-jiantou121"></use>
         </svg>  
       </a>
       </li>
-
       <!-- 手机图标 -->
       <li>
         <a href="#">
@@ -67,6 +59,7 @@
       <!-- resume -->
       <li><a href="#">(Resume)</a>
           <ul class="subnav">
+              <li><a href="#">功能完善中!</a></li>
               <li><a href="#">简历预览</a></li>
               <li><a href="#">简历下载</a>
                   <ul class="threenav">
@@ -87,7 +80,7 @@
       </li>
 
       <!-- 下一篇图标 -->
-      <li>
+      <li style="padding-left: 15px;">
         <a title="下一篇: (快捷键 右方向键)" id="topbarNext">
           <svg class="icon" aria-hidden="true"  >
             <use xlink:href="#icon-jiantou122"></use>
@@ -98,16 +91,6 @@
 </div>
 
 
-
-
-
-
-
-
-
-
-
-
   <!--
      Codepen 图标
   <a href="{{site.codePen_url}}" target="_blank" title="Codepen Home" >
@@ -116,30 +99,19 @@
     </svg>
   </a>
 
-
-  <div class="navbox">
-    <ul class="clearfix">
-        <li><a href="#">在线简历</a></li>
-        <li><a href="#">下载简历</a></li>
-    </ul>
-</div>
-
-
-
-
  -->
 
 
 
  <div style="display: inline">
     <!-- 捐赠图标 -->
-    <span style="display: inline; line-height: 30px;">
+    <a style="line-height: 30px;" id="donate">
       <span style="display: table-cell; vertical-align: middle; font-size: 23px; transform: translate(0,8%);" 
-        id="Donate" title="Donate-支付宝: 186 219 23213"; onclick="alert('Donate-支付宝: 186 219 23213')">💝
+        title="Donate-支付宝: 186 219 23213"; onclick="alert('Donate-支付宝: 186 219 23213')">💝
       </span>
-    </span>
+    </a>
     <!-- Github Readme 图标 -->  
-    <a href="{{site.githubReadmeURL}}"  target="_blank">
+    <a href="{{site.githubReadmeURL}}"  target="_blank" id="githubReadme">
       <svg class="icon" aria-hidden="true"  >
         <use xlink:href="#icon-Git"></use>
       </svg>

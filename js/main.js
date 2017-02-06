@@ -49,11 +49,14 @@ $(".postNames").click(   function() {
   if ( $(window).width() <= 414 ) {   
       // 进行屏幕宽度的判断. 如果屏幕宽度<= 414 那就支持手机端的js: 隐藏cate&tag&filename栏.
       // 既然隐藏了 就不用设置高亮了..?  下次点击的时候 想要之前的高亮怎么办..
-              $("#cateDiv").hide()
-               $("#tagDiv").hide()
-          $("#filenameDiv").hide()
-             $("#lineLeft").hide()
-            $("#lineRight").hide()
+              $("#cateDiv").hide();
+               $("#tagDiv").hide();
+          $("#filenameDiv").hide();
+          $("#rightNavbar").hide();
+             $("#lineLeft").hide();
+            $("#lineRight").hide();
+             $("#lineSide").hide();
+
    } else {
       $("#cateDiv li").each(     function() {  $(this).removeClass('active'); });    
       $("#tagDiv li").each(      function() {  $(this).removeClass('active'); });    
@@ -192,6 +195,7 @@ $(function button(){
                       $("#cateDiv").hide(100);
                       $("#lineLeft").hide(100);
                       $("#lineRight").hide(100);
+                      $("#lineSide").hide(100);
                  }
         } else {
           
@@ -201,20 +205,34 @@ $(function button(){
                       $("#filenameDiv").show(100);
                       $("#tagDiv").show(100);
                       $("#cateDiv").show(100);
+                      $("#rightNavbar").show(100);
                       $("#lineLeft").show(100);
                       $("#lineRight").show(100);
+                      $("#lineSide").show(100);
                  } else {
                       $("#filenameDiv").hide(100);
                       $("#tagDiv").hide(100);
                       $("#cateDiv").hide(100);
+                      $("#rightNavbar").hide(100);
                       $("#lineLeft").hide(100);
                       $("#lineRight").hide(100);
+                      $("#lineSide").hide(100);
+
                  }
         }
     });
 
 // 顶部 右边的 文章结构栏目显示按钮
-$("#topbarStructureToggle").click( function(){ $("#rightNavbar").toggle();  });
+$("#topbarStructureToggle").click( function(){ 
+  if ($("#rightNavbar").css("display") == "none" ) {
+          $("#rightNavbar").show(100);
+          $("#lineSide").show(100);
+     } else {
+          $("#rightNavbar").hide(100);
+          $("#lineSide").hide(100);
+     }
+
+});
 
 
 
@@ -432,18 +450,27 @@ function showAllTagsandPosts () {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-// 手机端 过滤栏 宽度视频
+
+
+
+
+
+
+
+// 手机端 过滤栏 宽度设置:  cate + tag 固定宽度. filename 剩下宽度.
 $(function (){
-  // 先判断屏幕宽度 如果<= 414 那就假设设备是手机 那么!!!  文件栏目的宽度 就是 手机宽度 - cata宽度 - tag宽度.
+  // 先判断屏幕宽度 如果<= 414 那就假设设备是手机 那么!!!  文件栏目的宽度 就是 手机宽度 - cata宽度 - tag宽度 - 三个padding宽度.
   if ( $(window).width() <= "414") {
       var screenWidth   = parseFloat($(window).width() );                           
       var CateWidth     = parseFloat($("#cateDiv").css("flex-basis"));
       var TagWidth      = parseFloat($("#tagDiv").css("flex-basis"));
       var FilenameWidth = parseFloat($("#filenameDiv").css("flex-basis"));
       // 原来是200px   加了 parseFloat  就是 200
-      var filenameMobileWith = screenWidth - CateWidth - TagWidth
+      var tagMobileWith = screenWidth/2 - CateWidth -12 ;     
+      var filenameMobileWith = screenWidth/2 ;
       // alert("手机宽度="+ screenWidth +"大类宽度="+ CateWidth +"标签宽度="+ TagWidth +"原文件宽度="+ FilenameWidth +"后文件宽度="+ filenameMobileWith  );
       // 结果是 414 - 44 - 133 = 237 
+      $("#tagDiv").css("flex-basis", tagMobileWith+"px" );        
       $("#filenameDiv").css("flex-basis", filenameMobileWith+"px" );  
       // alert(  $("#filenameDiv").css("flex-basis")  );
       // 再测试一下看看到底有没有改变
@@ -452,6 +479,9 @@ $(function (){
 
 
 
+
+// 手机端 滚动条高度设置
+// cate&tag 屏幕高度-30. fileneme:屏幕高度-30-顶部栏高度.
 
 
 

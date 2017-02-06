@@ -159,7 +159,7 @@ var Tag = [
         {% for tag in site.tags %}
             {% assign t = tag | first %}
             {% assign files = tag | last %}
-              <li class="tagNames" id="Tag{{ t }}" data-tagcate="{{ files[0].categories }}"><span>{{ t }}</span><sup>{{files | size}}</sup></li>
+              <li class="tagNames" id="Tag{{ t }}" data-tagcate="{{ files[0].categories }}"><span>{{ t }}</span><sup class="tagSup">{{files | size}}</sup></li>
         {% endfor %}
     </ul>
 </div>
@@ -235,14 +235,6 @@ var Tag = [
     </div>
 
 	<div style="text-align: center;">{{ page.title }}</div>	
-
-
-
-
-
-
-
-
 
 
 	{% if page.meta != ‘’ %}

@@ -7,121 +7,6 @@ sup                  { color: red; float:right; font-size:0.7em; }
 #bigDiv     { height: 100%; }
 /* 这里必须用 100%  而不能用100vh. 不然会在safari 网页放大缩小的时候有问题. */
 
-
-
-
-/*-----------------------------------*\
-  顶部 横栏 Readme 链接
-\*-----------------------------------*/
-#readmeBTN {
-    background-color:pink;   
-}
-
-
-
-
-
-
-/*-----------------------------------*\
-  滚动条设置.
-\*-----------------------------------*/
-
-  /* 强制隐藏滚动条. 不知为什么会有滚动条... */
-  html { overflow: hidden; }  
-  /* 既可以滚动 .又不显示滚动条.           */
- #catenameUL::-webkit-scrollbar {display:none}
-  #tagnameUL::-webkit-scrollbar {display:none}
- #filenameUL::-webkit-scrollbar {display:none}
-#rightNavbar::-webkit-scrollbar {display:none}
-#pageContent::-webkit-scrollbar {display:none}
- #contentDiv::-webkit-scrollbar {display:none}
- 
-#tagnameUL  {overflow-x: hidden}
-#filenameUL {overflow-x: hidden}
-
-
-
-#OuterFilenameUL {
-        position: relative;
-
-    overflow: hidden;
-}
-
-/* 设置filenameDiv 排序按钮的间距+位置.   这里还要实现居中.. 居中就靠 transform 来实现了 .相对自身大小 来偏移... */
-
-#filenameDiSearch    { position: absolute; left:0%;   top:0; }
-#allCateTagPostBtn   { position: absolute; left:50%;  top:0;  transform: translate(-50%,0); }
-#filenameDivDate     { position: absolute; right:0%;  top:0; }
-
-/* 拖动条 css */
-.lineFlex        { display: flex  ; height: 100%; width: 10px;}
-.lineInDiv       { flex-basis:2px ; height: 100%; background-color: gray; margin-left: auto;margin-right: auto;}
-#lineLeft        { width: 10px    ; height: 100%; cursor: col-resize }
-#lineLeft-left   { flex-basis:50% ; height: 100%; background-color: rgba(212, 117, 204, 0.53); }
-#lineLeft-right  { flex-basis:50% ; height: 100%; background-color: pink; }
-#lineRight       { width: 10px    ; height: 100%; cursor: col-resize }
-#lineRight-left  { flex-basis:50% ; height: 100%; background-color: pink; }
-#lineRight-right { flex-basis:50% ; height: 100%; background-color: #e3f0c3; }
-#lineSide        { width: 10px    ; height: 100%; cursor: col-resize ; display: none;}
-#lineSide-left   { flex-basis:50% ; height: 100%; background-color: #e3f0c3; }
-#lineSide-right  { flex-basis:50% ; height: 100%; background-color: rgba(127, 127, 127, 0.13); }
-/* 拖动条 css */
-
-
-#topbarDiv { height: 30px; display: flex; justify-content:space-between; background-color: rgba(210, 52, 219, 0.18); }
-#topbarDiv i { padding-top: 3px; padding-bottom: 3px; }
-
-
-#Div       { display: flex; position: absolute; top:30px;bottom: 0px; left: 0px; right: 0px; }
-/* 这个是上下布局的重点. top/bottom 同时用 还要用 absolute;  还必须用 left+right  */
-
-.cateNames, .tagNames, .postNames { padding: 2px 0;}
-
-
-#cateDiv {
-    
-	flex-basis:83px; flex-grow: 0; flex-shrink: 0;  max-width: 300px; min-width: 14px;
-	position: relative; background-color:rgba(92, 47, 125, 0.34); 
-    padding: 0px 4px 4px 4px;  display:relative;  }
-
-#tagDiv {
-	flex-basis:100px; flex-grow: 0; flex-shrink: 0;  max-width: 300px; min-width: 48px;
-	position: relative ; background-color:rgba(212, 117, 204, 0.53) ;         	
-    padding: 0px 0px 4px 4px; display:relative;                                   
-	}
-#filenameDiv {
-	flex-basis: 219px; flex-grow: 0; flex-shrink: 0;  max-width: 1450px; min-width: 188px;background-color:pink;
-	position: relative;     padding: 4px 0px 4px 0px;  display:relative;  
-                                 
-	}
-
-#allCateTagPostBtn {padding: 0px; margin:0px }
-
-
-.sortBtn {width: 30px; height: 30px; flex-grow: 1; flex-shrink: 0;}
-
-#contentDiv { flex-grow: 1; flex-shrink: 1; padding: 5px; background-color:rgba(161, 203, 55, 0.3); 
-	flex-basis: 150px; overflow: scroll;}
-#contentDiv-Buttons	 { display: flex }
-.contentButton { flex-shrink: 0; flex-grow: 1; flex-basis: 190px; }
-#pageContent { overflow-x: scroll; word-wrap: break-word; 
-word-break: normal;  }
-
-
-
-#rightNavbar { flex-grow: 0; flex-shrink: 0; height: 100%;  flex-basis: 90px; 
-	font-size: 0.8em; padding: 0px;  background-color:rgba(127, 127, 127, 0.13);  
-	overflow-x: hidden; 
-	overflow-y: scroll;
-	white-space: nowrap;
-	}
-
-
-
-
-
-
-		
 #arrowNav 
 {	width:90px; height:30px; position: absolute; bottom: 0px; right: 0px; }
 
@@ -133,25 +18,9 @@ word-break: normal;  }
 }
 
 
+#allCateTagPostBtn {padding: 0px; margin:0px }
 
-
-
-
- .icon {
-       width: 1em; height: 1em;
-       /*vertical-align: -0.15em; 会影响文字的垂直居中.*/
-       fill: currentColor;
-       overflow: hidden;
-       font-size:25px;
-       padding: 2.5px;
-    }
-.iconfont{
-     font-family:"iconfont"; font-size:16px; font-style:normal;
-      -webkit-font-smoothing: antialiased; 
-      -webkit-text-stroke-width: 0.2px; 
-      -moz-osx-font-smoothing: grayscale; 
-      padding-left:20px 
-}
+.sortBtn {width: 30px; height: 30px; flex-grow: 1; flex-shrink: 0;}
 
 
 
@@ -160,31 +29,9 @@ word-break: normal;  }
 
 
 
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 414px ) {  /* 当屏幕宽度小于414px的都使用下面的布局(iphone 6+) */
-
-    * { padding: 0; margin:0 ;}
-
-    #cateDiv     { display: none; flex-basis: 50px; }
-    .cateSup     { display: none     }
-    #tagDiv      { display: none; flex-basis: 100px;}
-    #lineLeft    { display: none     }
-    #filenameDiv { display: none     }
-    #lineRight   { display: none     }
-    #arrowNav    { display: none     }
-    #rightNavbar { display: none     }
-
-}
-
-
+/*-----------------------------------*\
+  顶部中间 三级导航条
+\*-----------------------------------*/
 
 /*三级导航栏简介: 
  一级: 网页显示             → 手机 resume 邮件
@@ -212,13 +59,12 @@ word-break: normal;  }
  </div>
 */
 
-
 /*一级导航栏 外观设置*/
 .navbox{ height: 30px; display: inline-block; }
 /*一级导航栏 内容外观设置: 默认列表是垂直显示的.这里用 float:left 把它弄成水平显示*/
 .navbox >ul>li{ float: left; height: 30px; line-height: 30px; text-align: center; font-size: 16px; }
 /*一级导航栏 内容默认样式+鼠标悬浮样式.*/
-.navbox ul li a{ display: block; cursor: pointer; }
+.navbox ul li a{ display: block; cursor: pointer; height:30px;}
 .navbox ul li a:hover{ text-decoration: none; background: #00bfff; }
 
 /*默认隐藏二级菜单: 也就是隐藏鼠标悬浮到一级导航栏上会显示出来的内容*/
@@ -232,4 +78,192 @@ subnav>li{ position: relative; }
 .threenav{ position: relative; left: 100%; top: -30px; }
 .subnav, .threenav{ display: none; }
 .subnav li:hover .threenav{ display: block; }
+
+
+
+
+
+
+
+
+/*-----------------------------------*\
+  滚动条设置.
+\*-----------------------------------*/
+
+  /* 强制隐藏滚动条. 不知为什么会有滚动条... */
+  html { overflow: hidden; }  
+  /* 既可以滚动 .又不显示滚动条.           */
+ #catenameUL::-webkit-scrollbar {display:none}
+  #tagnameUL::-webkit-scrollbar {display:none}
+ #filenameUL::-webkit-scrollbar {display:none}
+#rightNavbar::-webkit-scrollbar {display:none}
+#pageContent::-webkit-scrollbar {display:none}
+ #contentDiv::-webkit-scrollbar {display:none}
+ 
+#tagnameUL  {overflow-x: hidden}
+#filenameUL {overflow-x: hidden}
+
+#OuterFilenameUL {
+    position: relative;
+    overflow: hidden;
+}
+
+/* 设置filenameDiv 排序按钮的间距+位置.   这里还要实现居中.. 居中就靠 transform 来实现了 .相对自身大小 来偏移... */
+
+#filenameDiSearch    { position: absolute; left:0%;   top:0; }
+#allCateTagPostBtn   { position: absolute; left:50%;  top:0;  transform: translate(-50%,0); }
+#filenameDivDate     { position: absolute; right:0%;  top:0; }
+
+
+
+
+
+
+
+/*-----------------------------------*\
+  拖动条设置.
+\*-----------------------------------*/
+.lineFlex        { display: flex  ; height: 100%; width: 10px;}
+.lineInDiv       { flex-basis:2px ; height: 100%; background-color: gray; margin-left: auto;margin-right: auto;}
+#lineLeft        { width: 10px    ; height: 100%; cursor: col-resize }
+#lineLeft-left   { flex-basis:50% ; height: 100%; background-color: rgba(212, 117, 204, 0.53); }
+#lineLeft-right  { flex-basis:50% ; height: 100%; background-color: pink; }
+#lineRight       { width: 10px    ; height: 100%; cursor: col-resize }
+#lineRight-left  { flex-basis:50% ; height: 100%; background-color: pink; }
+#lineRight-right { flex-basis:50% ; height: 100%; background-color: #e3f0c3; }
+#lineSide        { width: 10px    ; height: 100%; cursor: col-resize ;}
+#lineSide-left   { flex-basis:50% ; height: 100%; background-color: #e3f0c3; }
+#lineSide-right  { flex-basis:50% ; height: 100%; background-color: rgba(127, 127, 127, 0.13); }
+
+
+
+
+
+
+
+
+
+
+
+
+#topbarDiv { height: 30px; display: flex; justify-content:space-between; background-color: rgba(210, 52, 219, 0.18); }
+#topbarDiv i { padding-top: 3px; padding-bottom: 3px; }
+#Div       { display: flex; position: absolute; top:30px;bottom: 0px; left: 0px; right: 0px; }
+/* 这个是上下布局的重点. top/bottom 同时用 还要用 absolute;  还必须用 left+right  */
+.cateNames, .tagNames, .postNames { padding: 2px 0;}
+
+
+
+
+
+
+
+/*-----------------------------------*\
+  博 客 主 体
+\*-----------------------------------*/
+#cateDiv {
+	flex-basis:83px; flex-grow: 0; flex-shrink: 0;  max-width: 300px; min-width: 14px;
+	position: relative; background-color:rgba(92, 47, 125, 0.34); 
+    padding: 0px 4px 4px 4px;  display:relative;  }
+
+#tagDiv {
+	flex-basis:100px; flex-grow: 0; flex-shrink: 0;  max-width: 300px; min-width: 48px;
+	position: relative ; background-color:rgba(212, 117, 204, 0.53) ;         	
+    padding: 0px 0px 4px 4px; display:relative;                                   
+	}
+#filenameDiv {
+	flex-basis: 219px; flex-grow: 0; flex-shrink: 0;  max-width: 1450px; min-width: 188px;background-color:pink;
+	position: relative;     padding: 4px 0px 4px 0px;  display:relative;                               
+	}
+
+#contentDiv { 
+	flex-grow: 1; flex-shrink: 1; padding: 5px; background-color:rgba(161, 203, 55, 0.3); 
+	flex-basis: 150px; overflow: scroll; }
+#pageContent { overflow-x: scroll; word-wrap: break-word; word-break: normal;  }
+
+
+#rightNavbar { flex-grow: 0; flex-shrink: 0; height: 100%;  flex-basis: 90px; 
+	font-size: 0.8em; padding: 0px;  background-color:rgba(127, 127, 127, 0.13);  
+	overflow-x: hidden; overflow-y: scroll; white-space: nowrap;
+	}
+
+
+
+
+
+
+		
+
+
+
+
+/*-----------------------------------*\
+  iconfont 图标
+\*-----------------------------------*/
+.icon { width: 1em; height: 1em;fill: currentColor;overflow: hidden;font-size:25px;padding: 2.5px; }
+.iconfont{
+     font-family:"iconfont"; font-size:16px; font-style:normal;
+      -webkit-font-smoothing: antialiased; 
+      -webkit-text-stroke-width: 0.2px; 
+      -moz-osx-font-smoothing: grayscale; 
+      padding-left:20px 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------*\
+  移 动 端:  iphone6P 屏幕宽度 <= 414px*736 : 只显示内容栏. 三大标签等等都不显示.
+  cate大类宽度:88. tag标签宽度:一般屏幕-cate宽度. 文件名宽度:一般屏幕
+\*-----------------------------------*/
+@media screen and (max-width: 414px ) {
+
+    #cateDiv, #tagDiv     { display: none; flex-basis: 88px; }
+    .cateSup, .tagSup     { display: none                    }
+    #lineLeft, #lineRight, #lineSide     { display: none!important;     }
+    /*-- 未知原因. lineSide 一定要强制隐藏... 不然有个 display:block .....--*/
+
+    #filenameDiv, #rightNavbar,#arrowNav { display: none     }
+    #donate, #githubReadme, #githubHome  { display: none     }
+
+	#filenameDivDate {  position: absolute; right: 6%; top: 0; }
+	/*-- 未知原因. 眼睛会只有半只...--*/
+
+}
+
+
+
+/*-----------------------------------*\
+  移 动 端:   ipad 屏幕宽度 <= 768x*1024. 
+\*-----------------------------------*/
+@media screen and (min-width: 414px, max-width: 1024px ) {
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
 
