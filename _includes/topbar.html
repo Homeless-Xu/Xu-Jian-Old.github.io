@@ -16,49 +16,93 @@
 
 
 
-<div style="display: inline">
-  <!-- 上一篇图标 -->
-    <a title="上一篇: (快捷键 左方向键)" id="topbarPre" >
-      <svg class="icon" aria-hidden="true"  >
-        <use xlink:href="#icon-jiantou121"></use>
-      </svg>  
-    </a>
-  <!-- 手机图标 -->
-  <span onclick="alert('{{site.name}}: {{site.Phone}}')" title="{{site.name}}: {{site.Phone}}" > 
-    <svg class="icon" aria-hidden="true"  >
-      <use xlink:href="#icon-shouji"></use>
-    </svg>
-  </span>
-  <!-- DOC简历图标  -->
+
+<!-- 
+
+    <button style="display: inline; line-height: 30px;">
+      <span style="display: table-cell; vertical-align: middle;" >(Resume)</span>
+    </button>
+
+
   <a href="{{site.codePen_url}}" target="_blank" title="Doc 简历下载" >
     <svg class="icon" aria-hidden="true"  >
       <use xlink:href="#icon-jianli"></use>
     </svg>     
   </a>
 
-    <span style="display: inline; line-height: 30px;">
-      <span style="display: table-cell; vertical-align: middle;" >(Resume)</span>
-    </span>
 
-   <!-- 在线简历图标  -->
   <a href="{{site.codePen_url}}" target="_blank" title="在线简历" >  
     <svg class="icon" aria-hidden="true"  >
       <use xlink:href="#icon-jianli"></use>
     </svg>
   </a>
-  <!-- 邮件图标 -->
-  <a href="mailto:{{site.email}}" target="_blank" title="E-mail Me" >    
-    <svg class="icon" aria-hidden="true"  >
-      <use xlink:href="#icon-emailround"></use>
-    </svg>
-  </a>
-  <!-- 下一篇图标 -->
-  <a title="下一篇: (快捷键 右方向键)" id="topbarNext">
-    <svg class="icon" aria-hidden="true"  >
-      <use xlink:href="#icon-jiantou122"></use>
-    </svg>  
-  </a>
+
+
+ -->
+
+
+
+<div class="navbox">
+    <ul class="clearfix">
+      <!-- 上一篇图标 -->
+      <li>
+        <a title="上一篇: (快捷键 左方向键)" id="topbarPre" >
+        <svg class="icon" aria-hidden="true"  >
+          <use xlink:href="#icon-jiantou121"></use>
+        </svg>  
+      </a>
+      </li>
+
+      <!-- 手机图标 -->
+      <li>
+        <a href="#">
+          <span onclick="alert('{{site.name}}: {{site.Phone}}')" title="{{site.name}}: {{site.Phone}}" > 
+            <svg class="icon" aria-hidden="true"  >
+              <use xlink:href="#icon-shouji"></use>
+            </svg>
+          </span>
+        </a>
+      </li>
+
+      <!-- resume -->
+      <li><a href="#">(Resume)</a>
+          <ul class="subnav">
+              <li><a href="#">简历预览</a></li>
+              <li><a href="#">简历下载</a>
+                  <ul class="threenav">
+                      <li><a href="#">DOC格式下载</a></li>
+                      <li><a href="#">PDF格式下载</a></li>
+                  </ul>
+              </li>
+          </ul>
+        </li>
+
+      <!-- 邮件图标 -->
+      <li>
+        <a href="mailto:{{site.email}}" target="_blank" title="E-mail Me" >    
+          <svg class="icon" aria-hidden="true"  >
+            <use xlink:href="#icon-emailround"></use>
+          </svg>
+        </a>
+      </li>
+
+      <!-- 下一篇图标 -->
+      <li>
+        <a title="下一篇: (快捷键 右方向键)" id="topbarNext">
+          <svg class="icon" aria-hidden="true"  >
+            <use xlink:href="#icon-jiantou122"></use>
+          </svg>  
+        </a>
+      </li>
+  </ul>
 </div>
+
+
+
+
+
+
+
 
 
 
@@ -71,11 +115,29 @@
       <use xlink:href="#icon-codepen"></use>
     </svg>
   </a>
+
+
+  <div class="navbox">
+    <ul class="clearfix">
+        <li><a href="#">在线简历</a></li>
+        <li><a href="#">下载简历</a></li>
+    </ul>
+</div>
+
+
+
+
  -->
 
 
 
  <div style="display: inline">
+    <!-- 捐赠图标 -->
+    <span style="display: inline; line-height: 30px;">
+      <span style="display: table-cell; vertical-align: middle; font-size: 23px; transform: translate(0,8%);" 
+        id="Donate" title="Donate-支付宝: 186 219 23213"; onclick="alert('Donate-支付宝: 186 219 23213')">💝
+      </span>
+    </span>
     <!-- Github Readme 图标 -->  
     <a href="{{site.githubReadmeURL}}"  target="_blank">
       <svg class="icon" aria-hidden="true"  >

@@ -104,6 +104,7 @@
 * [x] Github + Coding 双线部署
 * [x] Flex + absolute 布局
 * [x] 发布主题到 Rubygems
+* [x] 顶栏前后篇pjax按钮( 绑定contentDiv链接实现 )
 * [x] 代码中文详细注释
 * [x] SEO 小优化: 
 * [x] 404页面.
