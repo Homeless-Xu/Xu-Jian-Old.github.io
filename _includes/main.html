@@ -221,23 +221,21 @@ var Tag = [
 <!-- ----------------------------------------------------------------------------------------------- -->
 
 <div id="contentDiv" class="markdown-body">
-    <div id="contentDiv-Buttons" style="display: flex" >
+    <div id="contentDiv-Buttons" style="display: flex; display:none;" >
         {% if page.previous %}
-            <a href="{{ page.previous.url }}"> <button class="contentButton">
+            <a href="{{ page.previous.url }}" id="prePost"> <button class="contentButton">
              <span style="display: inline-block; transform: rotate(180deg);">➤➤</span> {{ page.previous.title }} </button>  
             </a>
         {% endif %}	
-
-        <span style="flex-shrink: 1 ;flex-grow: 1;text-align: center;">{{ page.title }}</span>	
-
         {% if page.next %}
-            <a href="{{ page.next.url }}">	<button class="contentButton">
+            <a href="{{ page.next.url }}" id="nextPost">	<button class="contentButton">
               {{ page.next.title }} ➤➤</button>	
             </a>
         {% endif %}	
-    </div><br>
-    
-			
+    </div>
+
+	<div style="text-align: center;">{{ page.title }}</div>	
+
 	{% if page.meta != ‘’ %}
 		meta: {{page.meta}} <hr>
 	{% endif %}
@@ -266,7 +264,7 @@ var Tag = [
 </div>
 <div id="rightNavbar" >
 	<ul id="MDh1" class="CSMDh1">
-		<p style='text-align: center'> {{page.title}} </p>
+		<!--  <p style='text-align: center'> {{page.title}} </p>  文章标题.这里不是pjax区域.会有问题 -->
 	</ul>
 </div>
 <!-- ----------------------------------------------------------------------------------------------- -->
