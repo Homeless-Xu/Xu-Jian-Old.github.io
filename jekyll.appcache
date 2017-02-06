@@ -1,0 +1,21 @@
+CACHE MANIFEST
+# v1 2017-02-08
+# cname 下都是要缓存的文件.  有无网络都使用本地缓存
+favicon-32x32.png
+/css/main.css
+/js/main.js
+/RougeThemes/monokaiSublime.css
+/highlight.js/highlight.pack.js
+
+
+
+
+
+
+# Use from network if available
+# network: 都是绝对不缓存的文件. 有无网络都从服务器下载
+NETWORK:
+
+
+
+
