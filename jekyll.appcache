@@ -12,10 +12,7 @@ CACHE MANIFEST
 # Use from network if available
 # network: 都是绝对不缓存的文件. 有无网络都从服务器下载
 NETWORK:
-https://www.0214.live/
-http://127.0.0.1:4000/ 
-/jekyll.manifest
-/*
+*
 
 
 
