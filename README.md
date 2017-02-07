@@ -104,6 +104,7 @@
 * [x] 博客分类那里添加meta标签 可以优化SEO
 * [x] 阿里iconfont 代替 fontawesone
 * [x] Github + Coding 双线部署
+* [x] Github Star 集成(可以显示项目star数量)
 * [x] Flex + absolute 布局
 * [x] 发布主题到 Rubygems
 * [x] 顶栏前后篇pjax按钮( 绑定contentDiv链接实现 )
@@ -246,6 +247,11 @@ default.html → arrowNav div下 → 绝对定位
 CNAME 文件，
 如果有独立域名请修改该文件；
 如果没有，则删掉该文件；
+
+
+### Github Star 按钮(左上角)
+topbar.html → 找ID= githubstar → 按照注释改.
+
 
 
 ### service worker 缓存
