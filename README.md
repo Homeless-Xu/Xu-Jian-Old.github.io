@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # [CMS-Jekyll][1]
 
 > 大类: 不能有英文的.; (可以有:-)不然不能过滤出对应标签&文章.  
@@ -277,3 +278,6 @@ topbar.html → 找ID= githubstar → 按照注释改.
 
 [image-1]:	http://oduizitoj.bkt.clouddn.com/2017-02-05-Screen%20Shot%202017-02-05%20at%2019.29.58.png "主题预览高清图"
 [image-2]:	http://oduizitoj.bkt.clouddn.com/2017-02-05-Screen%20Shot%202017-02-05%20at%2017.06.06.png "Mac Ulysses 标签设置参考图"
+=======
+#coding.me
+>>>>>>> Coding/master
