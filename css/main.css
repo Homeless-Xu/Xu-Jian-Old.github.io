@@ -267,3 +267,17 @@ subnav>li{ position: relative; }
 
 
 
+.gh-btn, .gh-count {
+  padding: 4px 4px 2px 4px;
+  height: 16px!important;
+  margin-top: 3px;
+  color: #333;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #fff;
+  white-space: nowrap;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+
+

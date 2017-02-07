@@ -4,9 +4,19 @@ title:  ServiceWorker
 tags: 缓存
 categories: Web
 ---
-[参考资源][1]
-[‼️MDN Service Worker API 详解 CN‼️][2]
-[‼️★★★★★实例参考★★★★★‼️][3]
+
+## 参考资源
+[‼️MDN Service Worker API 详解 CN‼️][1]
+[‼️★★★★★实例参考★★★★★‼️][2]
+[‼️参考实例2 ‼️][3]
+[参考资源1][4]
+[缓存最佳实践 EN][5]
+
+如果更新了缓存文件.要使得缓存变更: 
+必须先改变 sw.js里的内容. 
+然后关闭本地所有这个网页的页面. 重新载入才能看到更新
+
+
 
 ## ServiceWorker 简介
 
@@ -120,33 +130,33 @@ opera   34+
 真正想让浏览器使用缓存文件需要在fetch事件中拦截
 
 1. 下载 polufill.js  
-给不支持serviceworker的浏览器提供支持.
-[polyfill.js 文件下载. 下载好后重命名. 放到网站根目录][4]
+	给不支持serviceworker的浏览器提供支持.
+[polyfill.js 文件下载. 下载好后重命名. 放到网站根目录][6]
 
 2. serviceworker.js
 	importScripts("serviceworker-cache-polyfill.js");
-	var CACHE_NAME="my-site-cache-v1";
+	var CACHE\_NAME="my-site-cache-v1";
 	//我们想要缓存的文件
 	var urlsToCache=[
 	'/',
 	'/styles/main.css',
 	'/script/main.js'
 	];
-	
+	 
 	//为安装设置回调函数
 	self.addEventListener("install",function(event){
 	//执行安装过程
 	event.waitUntil(
-	caches.open(CACHE_NAME).then(function(cache){
+	caches.open(CACHE\_NAME).then(function(cache){
 	console.log("被打开的缓存");
 	return cache.addAll(urlsToCache);
 	})
 	);
 	});
 在我们的回调函数中，我们需要执行以下步骤：
-.	打开一个缓存
-.	缓存我们的文件
-.	确认是否所有的请求是否被缓存
+.   打开一个缓存
+.   缓存我们的文件
+.   确认是否所有的请求是否被缓存
 
 
 
@@ -226,7 +236,7 @@ service worker的更新很简单，只要service-worker.js的文件内容有更�
 
 
 
-4. 问题1. 运行时间  
+4. 问题1. 运行时间
 
 
 
@@ -235,7 +245,7 @@ service worker并不是一直在后台运行的。
 在页面关闭后，浏览器可以继续保持service worker运行，也可以关闭service worker，这取决与浏览器自己的行为。
 所以不要定义一些全局变量，例如下面的代码
 	var hitCounter = 0;
-	 
+  
 	this.addEventListener('fetch', function(event) {
 	  hitCounter++;
 	  event.respondWith(
@@ -279,7 +289,7 @@ fetch api与XMLHttpRequest相比，更加简洁，并且提供的功能更全面
 
 在页面发起http请求时，service worker可以通过fetch事件拦截请求，并且给出自己的响应。  
 w3c提供了一个新的fetch api，用于取代XMLHttpRequest，与XMLHttpRequest最大不同有两点：
-     1. fetch()方法返回的是Promise对象，通过then方法进行连续调用，减少嵌套。ES6的Promise在成为标准之后，会越来越方便开发人员。
+     \1. fetch()方法返回的是Promise对象，通过then方法进行连续调用，减少嵌套。ES6的Promise在成为标准之后，会越来越方便开发人员。
       2. 提供了Request、Response对象，如果做过后端开发，对Request、Response应该比较熟悉。前端要发起请求可以通过url发起，也可以使用Request对象发起，而且Request可以复用。但是Response用在哪里呢？在service worker出现之前，前端确实不会自己给自己发消息，但是有了service worker，就可以在拦截请求之后根据需要发回自己的响应，对页面而言，这个普通的请求结果并没有区别，这是Response的一处应用。
 下面是在http://www.sitepoint.com/introduction-to-the-fetch-api/中，作者利用fetch api通过fliker的公开api获取图片的例子，注释中详细解释了每一步的作用：
 
@@ -288,7 +298,7 @@ w3c提供了一个新的fetch api，用于取代XMLHttpRequest，与XMLHttpReque
 
 	/* 由于是get请求，直接把参数作为query string传递了 */
 	var URL = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=your_api_key&format=json&nojsoncallback=1&tags=penguins';
-	 
+  
 	function fetchDemo() {
 	  // fetch(url, option)支持两个参数，option中可以设置header、body、method信息
 	  fetch(URL).then(function(response) {
@@ -300,7 +310,7 @@ w3c提供了一个新的fetch api，用于取代XMLHttpRequest，与XMLHttpReque
 	    insertPhotos(json);
 	  });
 	}
-	 
+  
 	fetchDemo();
 
 
@@ -355,38 +365,38 @@ w3c提供了一个新的fetch api，用于取代XMLHttpRequest，与XMLHttpReque
 2. 创建一个 service-worker.js
 
 	importScripts('js/cache-polyfill.js'); // cache 扩展
-	
-	var CACHE_VERSION = 'app-v1'; // 缓存文件的版本
-	var CACHE_FILES = [ // 需要缓存的页面文件
+	 
+	var CACHE\_VERSION = 'app-v1'; // 缓存文件的版本
+	var CACHE\_FILES = [ // 需要缓存的页面文件
 	'/',
 	'images/background.jpeg',
 	'js/app.js',
 	'css/styles.css'
 	];
-	
-	
+	 
+	 
 	self.addEventListener('install', function (event) { // 监听worker的install事件
 	event.waitUntil( // 延迟install事件直到缓存初始化完成
-	caches.open(CACHE_VERSION)
+	caches.open(CACHE\_VERSION)
 	.then(function (cache) {
 	console.log('Opened cache');
-	return cache.addAll(CACHE_FILES);
+	return cache.addAll(CACHE\_FILES);
 	})
 	);
 	});
-	
+	 
 	self.addEventListener('activate', function (event) { // 监听worker的activate事件
 	event.waitUntil( // 延迟activate事件直到
 	caches.keys().then(function(keys){
 	return Promise.all(keys.map(function(key, i){ // 清除旧版本缓存
-	if(key !== CACHE_VERSION){
+	if(key !== CACHE\_VERSION){
 	return caches.delete(keys[i]);
 	}
 	}))
 	})
 	)
 	});
-	
+	 
 	self.addEventListener('fetch', function (event) { // 截取页面的资源请求
 	event.respondWith( // 返回页面的资源请求
 	caches.match(event.request).then(function(res){ // 判断缓存是否命中
@@ -397,7 +407,7 @@ w3c提供了一个新的fetch api，用于取代XMLHttpRequest，与XMLHttpReque
 	})
 	)
 	});
-	
+	 
 	function requestBackend(event){  // 请求备份操作
 	var url = event.request.clone();
 	return fetch(url).then(function(res){ // 请求线上资源
@@ -405,13 +415,13 @@ w3c提供了一个新的fetch api，用于取代XMLHttpRequest，与XMLHttpReque
 	if(!res || res.status !== 200 || res.type !== 'basic'){
 	return res;
 	}
-	
+	 
 	var response = res.clone();
-	
-	caches.open(CACHE_VERSION).then(function(cache){ // 缓存从线上获取的资源
+	 
+	caches.open(CACHE\_VERSION).then(function(cache){ // 缓存从线上获取的资源
 	cache.put(event.request, response);
 	});
-	
+	 
 	return res;
 	})
 	}
@@ -431,7 +441,7 @@ http://7tszky.com1.z0.glb.clouddn.com/FnDKaEExj8-US06Q9FqlBBLqx0jz
 
 1. 安装 install
 2. 激活 activate 后进入正常工作状态.
-3. 当它负责的页面在浏览器被打开. 就会对页面的请求进行处理.   
+3. 当它负责的页面在浏览器被打开. 就会对页面的请求进行处理.  
 	其他情况下.处于暂停状态 不占用内存和cpu
 
 
@@ -450,9 +460,9 @@ http://7tszky.com1.z0.glb.clouddn.com/FnDKaEExj8-US06Q9FqlBBLqx0jz
 
 
 3. 隐藏的Resources查看选项,开启步骤如下
-- 进入 chrome://flags 开启 ‘Enable DevTools Experiments’.
-- 打开DevTools， 进入 Setting \> Experiments , 连续按shift键6下
-- 在DevTools的Resources页面里就能看到刚被开启的隐藏功能：
+2. 进入 chrome://flags 开启 ‘Enable DevTools Experiments’.
+3. 打开DevTools， 进入 Setting \> Experiments , 连续按shift键6下
+4. 在DevTools的Resources页面里就能看到刚被开启的隐藏功能：
 
 
 
@@ -469,7 +479,9 @@ Service Worker可以捕获它所负责的页面的请求，并返回相应资源
 
 
 
-[1]:	http://imweb.io/topic/56592b8a823633e31839fc01
-[2]:	https://developer.mozilla.org/zh-CN/docs/Web/API/Service_Worker_API
-[3]:	https://gold.xitu.io/entry/58908cb51b69e600596dff4d
-[4]:	https://github.com/dominiccooney/cache-polyfill/blob/master/index.js
+[1]:	https://developer.mozilla.org/zh-CN/docs/Web/API/Service_Worker_API
+[2]:	https://gold.xitu.io/entry/58908cb51b69e600596dff4d
+[3]:	https://75team.com/post/lifecycle.html#toc-681
+[4]:	http://imweb.io/topic/56592b8a823633e31839fc01
+[5]:	https://jakearchibald.com/2016/caching-best-practices/
+[6]:	https://github.com/dominiccooney/cache-polyfill/blob/master/index.js

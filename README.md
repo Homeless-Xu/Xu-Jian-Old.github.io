@@ -94,8 +94,7 @@
 * [x] 文件结构栏: 支持过滤出 h2-h5 (h1是文章标题.这里不显示)
 * [x] 文件结构栏: 锚点跳转.点击标题 跳转到文章对应位置
 * [x] 文件名栏: 显隐文件时间.方便排序
-* [x] manifest缓存功能
-> 详情谷歌浏览器地址栏输入: chrome://appcache-internals/\#
+* [x] Service Worker 缓存启用 (废弃 manifest缓存 )
 
 
 
@@ -240,7 +239,7 @@ default.html → arrowNav div下 → 绝对定位
 
 ### favicon 书签图标
 
-	<link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
 自己放一个 png到博客根目录就可以了.
 
 ### 自定义域名
@@ -249,7 +248,11 @@ CNAME 文件，
 如果没有，则删掉该文件；
 
 
-
+### service worker 缓存
+默认开启所有除了 CDN 的文件. 包括 main.css man.js
+如果你修改了 css 文件. 
+必须改 sw.js 文件 (比如加减个空格,只要sw.js文件有变化 就会重新载入缓存.你的css文件的变化也能生效了.)
+更新缓存 要关闭本地浏览器中 所有和这个页面有关的页面..  再重新加载.
 
 
 
