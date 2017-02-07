@@ -4,8 +4,8 @@
 > 标签: 不能有下划线; 不能有空格(有空格就是多标签了.本主题不支持)
 
 
-![](http://oduizitoj.bkt.clouddn.com/2017-02-05-Screen%20Shot%202017-02-05%20at%2019.29.58.png)
-![][image-2]
+![主题预览高清图][image-1]
+![Mac Ulysses 标签设置参考图][image-2]
 
 ## 排序实例:(主题重点)  
    所有排序都是按照 文件名上的时间排序. 时间越旧拍越上面.
@@ -74,7 +74,7 @@
 	            post223
 	            post231
 	            ......
-					 
+				  
 
 
 ## 建议排序方法:
@@ -95,7 +95,7 @@
 * [x] 文件结构栏: 锚点跳转.点击标题 跳转到文章对应位置
 * [x] 文件名栏: 显隐文件时间.方便排序
 * [x] manifest缓存功能
-> 详情谷歌浏览器地址栏输入: chrome://appcache-internals/#
+> 详情谷歌浏览器地址栏输入: chrome://appcache-internals/\#
 
 
 
@@ -119,9 +119,11 @@
 
 
 ## ToDo
+* [ ] service worker 缓存.
 * [ ] 移动端 滚动条溢出.
 * [ ] firebase 对话功能.
 * [ ] JS 上下键 控制高亮光标.
+* [ ] 多主题切换/多布局切换
 * [ ] SASS
 * [ ] 搜索功能
 * [ ] 代码高亮
@@ -151,19 +153,19 @@
 2. 下载该项目到本地电脑(一般放桌面).
 
 3. 电脑安装jekyll 环境(全局模式/不需要cd到特定文件夹);  
-		> 安装好全局环境: 系统可以认识jekyll命令. 但是文件夹还是不能进行jekyll命令操作,必须进行下一步.  
-		一个电脑只需安装一次.(已经安装过就跳过这步).  
-		- `sudo gem install jekyll bundler`  
-		    这里其实安装了两个: jekyll & Bundler 
+	    \> 安装好全局环境: 系统可以认识jekyll命令. 但是文件夹还是不能进行jekyll命令操作,必须进行下一步.  
+	    一个电脑只需安装一次.(已经安装过就跳过这步).  
+	    - `sudo gem install jekyll bundler`  
+	        这里其实安装了两个: jekyll & Bundler
 
 4. 终端cd到 下载的文件夹里面:  
-		- `jekyll new . --force`  
-		  这个是不覆盖原来内容的命令.如果是空的文件夹 可以使用:`jekyll new .`  
-		    这里的 . 是当前文件夹的意思  
-		- `bundle install`  
-		    这步会帮你安装各种依赖文件  
-		- `bundle exec jekyll serve`  
-		    这步开启本地预览: 打开浏览器 http://localhost:4000  有内容就对了.  
+	    - `jekyll new . --force`  
+	      这个是不覆盖原来内容的命令.如果是空的文件夹 可以使用:`jekyll new .`  
+	        这里的 . 是当前文件夹的意思  
+	    - `bundle install`  
+	        这步会帮你安装各种依赖文件  
+	    - `bundle exec jekyll serve`  
+	        这步开启本地预览: 打开浏览器 http://localhost:4000  有内容就对了.  
 5. 将文档保存（修改）为「日期 + 标题」的模式，如：「2015-04-27-Like-Kissing.md」. 
 6. 将 md 文档放到 `_posts` 文件夹里. 再去刷新浏览器的本地预览 就能看到变化了.  
 7. GitHub for Mac 客户端 commit 和 sync，稍等片刻新添加的博文就会自动发布到博客里啦.  
@@ -204,7 +206,7 @@
 
 ## 主题个性化定制
 
-### _config.yml 主要配置文件:
+### `_config.yml` 主要配置文件:
 - 修改书签栏上显示的标题: title
 - 修改博客顶栏的邮箱: email
 - 修改博客顶栏 github 主页链接: githubHomeURL
@@ -238,7 +240,7 @@ default.html → arrowNav div下 → 绝对定位
 
 ### favicon 书签图标
 
-'' <link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32">
 自己放一个 png到博客根目录就可以了.
 
 ### 自定义域名
@@ -265,5 +267,5 @@ CNAME 文件，
 [1]:	https://0214.help
 [2]:	http://www.ruanyifeng.com/blog/2011/05/how_to_choose_free_software_licenses.html
 
-[image-1]:	http://oduizitoj.bkt.clouddn.com/2017-02-03-Screen%20Shot%202017-02-03%20at%2014.04.34.png
-[image-2]:	http://oduizitoj.bkt.clouddn.com/2017-02-05-Screen%20Shot%202017-02-05%20at%2017.06.06.png
+[image-1]:	http://oduizitoj.bkt.clouddn.com/2017-02-05-Screen%20Shot%202017-02-05%20at%2019.29.58.png "主题预览高清图"
+[image-2]:	http://oduizitoj.bkt.clouddn.com/2017-02-05-Screen%20Shot%202017-02-05%20at%2017.06.06.png "Mac Ulysses 标签设置参考图"

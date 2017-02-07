@@ -4705,14 +4705,24 @@
 					<integer>19308</integer>
 				</dict>
 			</dict>
-			<key>1993-03-22-02-Web缓存.md</key>
+			<key>1993-03-22-02-ServiceWorker.md</key>
 			<dict>
 				<key>lastModification</key>
-				<real>508074534.81906402</real>
+				<real>508127420.90243399</real>
 				<key>version</key>
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>19304</integer>
+					<integer>19316</integer>
+				</dict>
+			</dict>
+			<key>1993-03-22-02-Web缓存简介.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>508126885.32423502</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>19310</integer>
 				</dict>
 			</dict>
 			<key>1993-04-01-SEO 社交媒体.md</key>
@@ -10855,10 +10865,13 @@
 			<string>1993-12-01-01-REST-API.md</string>
 		</array>
 		<array>
+			<string>1993-03-22-02-ServiceWorker.md</string>
+		</array>
+		<array>
 			<string>1993-03-22-02-Cookie.md</string>
 		</array>
 		<array>
-			<string>1993-03-22-02-Web缓存.md</string>
+			<string>1993-03-22-02-Web缓存简介.md</string>
 		</array>
 		<array>
 			<string>1989-01-01-01-Jekyll性能优化.md</string>
@@ -13739,7 +13752,7 @@
 		<key>sheetClusters</key>
 		<dict>
 			<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-			<integer>19309</integer>
+			<integer>19317</integer>
 		</dict>
 		<key>sheetOrder</key>
 		<dict>
