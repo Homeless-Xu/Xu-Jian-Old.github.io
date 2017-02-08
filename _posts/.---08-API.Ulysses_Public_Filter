@@ -19,11 +19,11 @@
 						<key>options</key>
 						<integer>129</integer>
 						<key>searchString</key>
-						<string>1993-08</string>
+						<string>1987-08</string>
 					</dict>
 				</array>
 				<key>queryString</key>
-				<string>1993-08</string>
+				<string>1987-08</string>
 				<key>scopeMask</key>
 				<string></string>
 				<key>searchOptions</key>
@@ -40,7 +40,7 @@
 	<key>resolutionData</key>
 	<dict>
 		<key>query</key>
-		<real>507874559.733742</real>
+		<real>508217103.90407002</real>
 		<key>sheetOrder</key>
 		<real>507812470.21962899</real>
 		<key>userIconName</key>
@@ -57,7 +57,7 @@
 		<key>query</key>
 		<dict>
 			<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-			<integer>8</integer>
+			<integer>12</integer>
 		</dict>
 		<key>sheetOrder</key>
 		<dict>
