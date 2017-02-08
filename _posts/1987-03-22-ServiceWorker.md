@@ -12,6 +12,15 @@ categories: Web
 [参考资源1][4]
 [缓存最佳实践 EN][5]
 
+
+## 更新SW.js
+
+先修改sw.js 文件.
+然后关闭所有有关页面(127.0.0.1)
+重新打来 127.0.0.1
+去 开发工具 application → 看 received time
+
+
 如果更新了缓存文件.要使得缓存变更: 
 必须先改变 sw.js里的内容. 
 然后关闭本地所有这个网页的页面. 重新载入才能看到更新
@@ -142,7 +151,7 @@ opera   34+
 	'/styles/main.css',
 	'/script/main.js'
 	];
-	 
+	  
 	//为安装设置回调函数
 	self.addEventListener("install",function(event){
 	//执行安装过程
@@ -365,7 +374,7 @@ w3c提供了一个新的fetch api，用于取代XMLHttpRequest，与XMLHttpReque
 2. 创建一个 service-worker.js
 
 	importScripts('js/cache-polyfill.js'); // cache 扩展
-	 
+	  
 	var CACHE\_VERSION = 'app-v1'; // 缓存文件的版本
 	var CACHE\_FILES = [ // 需要缓存的页面文件
 	'/',
@@ -373,8 +382,8 @@ w3c提供了一个新的fetch api，用于取代XMLHttpRequest，与XMLHttpReque
 	'js/app.js',
 	'css/styles.css'
 	];
-	 
-	 
+	  
+	  
 	self.addEventListener('install', function (event) { // 监听worker的install事件
 	event.waitUntil( // 延迟install事件直到缓存初始化完成
 	caches.open(CACHE\_VERSION)
@@ -384,7 +393,7 @@ w3c提供了一个新的fetch api，用于取代XMLHttpRequest，与XMLHttpReque
 	})
 	);
 	});
-	 
+	  
 	self.addEventListener('activate', function (event) { // 监听worker的activate事件
 	event.waitUntil( // 延迟activate事件直到
 	caches.keys().then(function(keys){
@@ -396,7 +405,7 @@ w3c提供了一个新的fetch api，用于取代XMLHttpRequest，与XMLHttpReque
 	})
 	)
 	});
-	 
+	  
 	self.addEventListener('fetch', function (event) { // 截取页面的资源请求
 	event.respondWith( // 返回页面的资源请求
 	caches.match(event.request).then(function(res){ // 判断缓存是否命中
@@ -407,7 +416,7 @@ w3c提供了一个新的fetch api，用于取代XMLHttpRequest，与XMLHttpReque
 	})
 	)
 	});
-	 
+	  
 	function requestBackend(event){  // 请求备份操作
 	var url = event.request.clone();
 	return fetch(url).then(function(res){ // 请求线上资源
@@ -415,13 +424,13 @@ w3c提供了一个新的fetch api，用于取代XMLHttpRequest，与XMLHttpReque
 	if(!res || res.status !== 200 || res.type !== 'basic'){
 	return res;
 	}
-	 
+	  
 	var response = res.clone();
-	 
+	  
 	caches.open(CACHE\_VERSION).then(function(cache){ // 缓存从线上获取的资源
 	cache.put(event.request, response);
 	});
-	 
+	  
 	return res;
 	})
 	}

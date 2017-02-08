@@ -12,7 +12,32 @@ $(function(){
 
 
 
-  
+// lazyload 慢加载. 
+// 和网上说的不一样!!!!   至少博客是这样的.
+// 必须在 onready function内. 而且必须有个滚动事件触发
+// 有可能是我 pjax的 原因.......
+// threshold : 200,  距离图片提前200px加载. 
+// event : "click"  点击图片加载.
+// $("img.lazy").lazyload({ event : "click", });
+// onready 内 单行可用!!!!   操 最后少一个逗号都不行!!!!!
+
+$(function(){
+  $("#contentDiv").scroll(function() {
+    $("img.lazy").lazyload({
+      threshold : 200
+    });
+  });
+})
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -24,10 +49,7 @@ $(function(){
 
 // 点击大类过滤出对应的标签+文章:  同步进行高亮.
 $(".cateNames").click(   function() {
-
-console.log( Cate );
-
-
+  console.log( Cate );
 
     // alert($(window).width());          // 浏览器当前窗口可视区域宽度
     var clickedCateName = $( this ).children('span').text()

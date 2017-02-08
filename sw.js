@@ -4,16 +4,22 @@ const version = 'v20170210-11';
 const __DEVELOPMENT__ = false;
 const __DEBUG__ = false;
 const offlineResources = [
-  '/',
+// '/',
   '/offline.html',
   '/offline.svg'
 ];
 
 // 下面是不缓存域名列表 CDN文件就不要缓存了..
+// 去掉前面两斜杆就不缓存了. 有斜杆是缓存的
 const ignoreFetch = [
-  /https?:\/\/cdn.bootcss.com\//,
-  /https?:\/\/at.alicdn.com\//,
-  /https?:\/\/www.google-analytics.com\//,
+    /https?:\/\/oduizitoj.bkt.clouddn.com\//,
+    'js/main.js',
+    'css/main.css'
+    // 上面是七牛图片CDN
+//  /https?:\/\/cdn.bootcss.com\//,
+//  /https?:\/\/cdn.bootcss.com\//,
+//  /https?:\/\/at.alicdn.com\//,
+//  /https?:\/\/www.google-analytics.com\//,
 ];
 
 
