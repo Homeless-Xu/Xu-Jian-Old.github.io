@@ -1,0 +1,83 @@
+
+//  顶部 Flex 设置
+
+#topbarLeft, #topbarRight
+  flex-basis: 150px
+
+//  顶部中间 三级导航条
+
+/*三级导航栏简介: 
+ * 一级: 网页显示             → 手机 resume 邮件
+ * 二级: 一级栏上鼠标悬浮显示   → 鼠标悬浮resume上: 简历预览, 简历下载
+ * 三级: 二级栏上鼠标悬浮显示   → 鼠标悬浮简历下载上: DOC格式下载,PDF格式下载
+ *
+ * <div class="navbox">
+ *    <ul class="clearfix">
+ *        <li><a href="#">左箭头图标</a></li>    
+ *        <li><a href="#">手机图标</a></li>
+ *        <li><a href="#">(Resume)</a>
+ *            <ul class="subnav">
+ *                <li><a href="#">简历预览</a></li>
+ *                <li><a href="#">简历下载</a>
+ *                    <ul class="threenav">
+ *                        <li><a href="#">DOC格式下载</a></li>
+ *                        <li><a href="#">PDF格式下载</a></li>
+ *                    </ul>
+ *                </li>
+ *            </ul>
+ *        </li>
+ *        <li><a href="#">邮件图标</a></li>
+ *        <li><a href="#">右箭头图标</a></li>        
+ *    </ul>
+ * </div>
+
+/*一级导航栏 外观设置
+
+.navbox
+  height: 30px
+  display: inline-block
+  > ul > li
+    float: left
+    height: 30px
+    line-height: 30px
+    text-align: center
+    font-size: 16px
+  ul li a
+    display: block
+    cursor: pointer
+    height: 30px
+    &:hover
+      text-decoration: none
+      background: #00bfff
+
+/*一级导航栏 内容外观设置: 默认列表是垂直显示的.这里用 float:left 把它弄成水平显示
+
+/*一级导航栏 内容默认样式+鼠标悬浮样式.
+
+/*默认隐藏二级菜单: 也就是隐藏鼠标悬浮到一级导航栏上会显示出来的内容
+
+.subnav
+  display: none
+
+/*鼠标悬浮到一级导航栏上会显示二级菜单的内容, 这个关系有点复杂..大概就是如果鼠标悬浮在一级导航某项上 那么 二级菜单subnav 就显示出来
+
+.navbox ul li:hover .subnav
+  display: block
+
+/* 二级菜单显示的位置. 相对于一级菜单显示
+
+subnav > li
+  position: relative
+
+/* 三级菜单显示的位置. 相对于二级菜单显示
+
+.threenav
+  position: relative
+  left: 100%
+  top: -30px
+
+.subnav, .threenav
+  display: none
+
+.subnav li:hover .threenav
+  display: block

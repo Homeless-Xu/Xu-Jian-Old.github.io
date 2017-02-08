@@ -1,13 +1,13 @@
 <div id="topbarDiv"> 
-  <div style="display: inline">
+  <div style="display: inline" id="topbarLeft">
     <!-- 显隐分类栏 -->
-    <span title="显隐分类栏">
+    <span title="显隐分类栏" style=" padding-left: 7px;">
       <svg class="icon" aria-hidden="true" id="topbarToggle"  >
         <use xlink:href="#icon-layouts"></use>
       </svg>
     </span>
     <span id="GithubStar">  
-      <iframe src="//ghbtns.com/github-btn.html?user=Xu-Jian&repo=Xu-Jian.github.io&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="25"></iframe>
+      <iframe src="//ghbtns.com/github-btn.html?user=Xu-Jian&repo=Xu-Jian.github.io&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="80" height="25"></iframe>
       <!-- 这里只要 user 和 repo改成你自己的就可以. -->
     </span>
   
@@ -116,17 +116,17 @@
 
 
 
- <div style="display: inline">
-    <!-- 捐赠图标 -->
-    <a style="line-height: 30px;" id="donate">
+ <div style="display: inline; " id="topbarRight" >
+    <!-- 显隐文件结构栏-->  
+    <svg class="icon" aria-hidden="true" id="topbarStructureToggle" style="float: right; padding-left: 7px; padding-right: 7px;">
+      <use xlink:href="#icon-layouts"></use>
+    </svg>
+        <!-- 捐赠图标 -->
+    <a style="line-height: 30px; float: right" id="donate">
       <span style="display: table-cell; vertical-align: middle; font-size: 23px; transform: translate(0,8%);" 
         title="Donate-支付宝: 186 219 23213"; onclick="alert('Donate-支付宝: 186 219 23213')">💝
       </span>
     </a>
-    <!-- 显隐文件结构栏-->  
-    <svg class="icon" aria-hidden="true" id="topbarStructureToggle">
-      <use xlink:href="#icon-layouts"></use>
-    </svg>
   </div>
 </div>
 

@@ -1,0 +1,185 @@
+---
+---
+
+*
+  padding: 0
+  margin: 0
+  font-family: "Ubuntu Mono",Verdana,Arial,Helvetica,sans-serif
+
+li
+  list-style: none
+
+a
+  text-decoration: none
+  color: black
+
+sup
+  color: red
+  float: right
+  font-size: 0.7em
+
+.active
+  background-color: yellow
+
+#bigDiv
+  height: 100%
+
+/* 这里必须用 100%  而不能用100vh. 不然会在safari 网页放大缩小的时候有问题.
+
+#arrowNav
+  width: 90px
+  height: 30px
+  position: absolute
+  bottom: 0px
+  right: 0px
+
+.hidden
+  display: none !important
+  visibility: hidden !important
+
+#allCateTagPostBtn
+  padding: 0px
+  margin: 0px
+
+.sortBtn
+  width: 30px
+  height: 30px
+  flex-grow: 1
+  flex-shrink: 0
+
+
+
+
+
+/*-----------------------------------*\
+ *  滚动条设置.
+ *\*-----------------------------------
+
+/* 强制隐藏滚动条. 不知为什么会有滚动条...
+
+html
+  overflow: hidden
+
+/* 既可以滚动 .又不显示滚动条.
+
+#catenameUL::-webkit-scrollbar, #tagnameUL::-webkit-scrollbar, #filenameUL::-webkit-scrollbar, #rightNavbar::-webkit-scrollbar, #pageContent::-webkit-scrollbar, #contentDiv::-webkit-scrollbar
+  display: none
+
+#tagnameUL, #filenameUL
+  overflow-x: hidden
+
+#OuterFilenameUL
+  position: relative
+  overflow: hidden
+
+/* 设置filenameDiv 排序按钮的间距+位置.   这里还要实现居中.. 居中就靠 transform 来实现了 .相对自身大小 来偏移...
+
+#filenameDiSearch
+  position: absolute
+  left: 0%
+  top: 0
+
+#allCateTagPostBtn
+  position: absolute
+  left: 50%
+  top: 0
+  transform: translate(-50%, 0)
+
+#filenameDivDate
+  position: absolute
+  right: 0%
+  top: 0
+
+
+#topbarDiv
+  height: 30px
+  display: flex
+  justify-content: space-between
+  background-color: rgba(210, 52, 219, 0.18)
+  i
+    padding-top: 3px
+    padding-bottom: 3px
+
+#Div
+  display: flex
+  position: absolute
+  top: 30px
+  bottom: 0px
+  left: 0px
+  right: 0px
+
+/* 这个是上下布局的重点. top/bottom 同时用 还要用 absolute;  还必须用 left+right
+
+.cateNames, .tagNames, .postNames
+  padding: 2px 0
+
+/*-----------------------------------*\
+ *  博 客 主 体
+ *\*-----------------------------------
+
+#cateDiv
+  flex-basis: 83px
+  flex-grow: 0
+  flex-shrink: 0
+  max-width: 300px
+  min-width: 14px
+  position: relative
+  background-color: rgba(92, 47, 125, 0.34)
+  padding: 0px 4px 4px 4px
+  display: relative
+
+#tagDiv
+  flex-basis: 100px
+  flex-grow: 0
+  flex-shrink: 0
+  max-width: 300px
+  min-width: 48px
+  position: relative
+  background-color: rgba(212, 117, 204, 0.53)
+  padding: 0px 0px 4px 4px
+  display: relative
+
+#filenameDiv
+  flex-basis: 219px
+  flex-grow: 0
+  flex-shrink: 0
+  max-width: 1450px
+  min-width: 188px
+  background-color: pink
+  position: relative
+  padding: 4px 0px 4px 0px
+  display: relative
+
+#contentDiv
+  flex-grow: 1
+  flex-shrink: 1
+  padding: 5px
+  background-color: rgba(161, 203, 55, 0.3)
+  flex-basis: 150px
+  overflow: scroll
+
+#pageContent
+  overflow-x: scroll
+  word-wrap: break-word
+  word-break: normal
+
+#rightNavbar
+  flex-grow: 0
+  flex-shrink: 0
+  height: 100%
+  flex-basis: 90px
+  font-size: 0.8em
+  padding: 0px
+  background-color: rgba(127, 127, 127, 0.13)
+  overflow-x: hidden
+  overflow-y: scroll
+  white-space: nowrap
+
+
+
+
+// 文件导入..
+@import '0-Mobile'
+@import '1-Dragbar'
+@import '2-Topbar'
+@import '6-icon'
