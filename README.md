@@ -2,11 +2,16 @@
 > 大类: 不能有英文的.; (可以有:-)不然不能过滤出对应标签&文章.  
 > 标签: 不能有下划线; 不能有空格(有空格就是多标签了.本主题不支持)
 
-## Blog Demo: <url src="http://www.0214.live">0214.live</url>
+## CMS-Jkeyll-Theme Demo: <url src="http://www.0214.live">0214.live</url>
 
-## Blog Preview
+## CMS-Jkeyll-Theme Preview:
 <img src="http://oduizitoj.bkt.clouddn.com/2017-02-09-Untitled.jpeg">
 
+## CMS-Jkeyll-Theme Repo HomePage:
+<url src="https://coding.net/u/xx0219/p/xx0219.coding.me/git">0214.live</url>
+
+## CMS-Jkeyll-Theme Download:
+<url src="https://coding.net/u/xx0219/p/xx0219.coding.me/git/archive/master">0214.live</url>
 
 ## 排序实例:(主题重点)  
    - 所有排序都是按照 文件名上的时间排序. 时间越旧拍越上面.  
@@ -95,7 +100,7 @@
 * [x] 文件名栏: 显隐文件时间.配合本地Ulysses 方便本地排序.
 * [x] 启用 Service Worker 缓存 (废弃 manifest缓存 )
 * [x] 启用 Sass 
-* [x] 启用 Lazyload
+* [x] 启用 Lazyload (待进一步优化)
 
 
 
@@ -120,6 +125,8 @@
 
 
 ## ToDo
+
+ES6
 * [ ] webpack
 * [ ] http2.0
 * [ ] gzip压缩
@@ -146,12 +153,20 @@
 * [ ] firebase 评论系统/聊天系统..
 * [ ] 文章分享功能
 * [ ] 白噪声功能.
-* [ ] 
+* [ ] require.js 按需加载..
 * [ ] 
 * [ ] 
 * [ ] 
 * [ ] 
 
+
+## 待定功能
+侧边栏: 首次点击文章显示.  然后隐藏掉... 手动开启
+文章浏览时间.
+文章浏览量
+文章分享到 qq/weibo/wechat ....
+文章字数统计
+文章作者 + 文章日期 显示在内容头部
 
 
 
