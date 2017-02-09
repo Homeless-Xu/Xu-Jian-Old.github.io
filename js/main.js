@@ -49,7 +49,7 @@ $(function(){
 
 // 点击大类过滤出对应的标签+文章:  同步进行高亮.
 $(".cateNames").click(   function() {
-  console.log( Cate );
+ // console.log( Cate );
 
     // alert($(window).width());          // 浏览器当前窗口可视区域宽度
     var clickedCateName = $( this ).children('span').text()

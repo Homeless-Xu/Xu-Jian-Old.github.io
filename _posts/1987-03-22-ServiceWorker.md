@@ -15,6 +15,17 @@ categories: Web
 
 ## 更新SW.js
 
+
+开发者工具: → application → service workers → update on reload 打勾就可以了!!!!!!!!!
+
+
+
+
+
+
+
+否则 土办法:
+
 先修改sw.js 文件.
 然后关闭所有有关页面(127.0.0.1)
 重新打来 127.0.0.1
