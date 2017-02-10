@@ -31,6 +31,12 @@ exclude:
   - Gemfile.lock
 
 
+exclude: ['node_modules']
+
+
+
+
+
 
 ###########################################   顶部链接 设置
 githubHomeURL:  https://github.com/Xu-Jian

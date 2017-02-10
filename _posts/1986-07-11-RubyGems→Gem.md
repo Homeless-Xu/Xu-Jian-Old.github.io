@@ -1,11 +1,16 @@
 ---
 layout: post
-title: RubyGems→Gem  
-tags: 工具
-categories: Web
+title: Gem  
+tags: Gem
+categories: Tooles
 ---
 
 国内，由于防火长城对Amazon S3的封锁，可能需要更换软件源才能正常使用Gem进行安装。
+
+**Gem**  
+Ruby 下的包管理器.  
+类似于 apk-get 或者 mac 下的 homebrew.
+Gem 可以生成 Gemfile 文件
 
 
 
@@ -41,13 +46,12 @@ jekyll 是ruby写的,安装发布jekyll主题可以用这个管理器.(非必要
 
 ### 卸载 gem
 	gem uninstall mygem
-	
+ 
 ### 下载但不安装 gem
 	gem fetch mygem
 
 ### 列出已安装 gem
 	gem list --local
-
 
 
 

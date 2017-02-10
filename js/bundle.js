@@ -1,128 +1,76 @@
-// Service-Worker 文件缓存. 注册成功. 也是激活的 但是不知道怎么用.........
-$(function(){
-  if (navigator.serviceWorker) {
-      navigator.serviceWorker.register('/sw.js').then(function(registration) {
-          console.log('service worker 注册成功');
-      }).catch(function (err) {
-          console.log('servcie worker 注册失败')
-      });
-  }
-});
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId])
+/******/ 			return installedModules[moduleId].exports;
+
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
 
 
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
 
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
 
-// lazyload 慢加载. 
-// 和网上说的不一样!!!!   至少博客是这样的.
-// 必须在 onready function内. 而且必须有个滚动事件触发
-// 有可能是我 pjax的 原因.......
-// threshold : 200,  距离图片提前200px加载. 
-// event : "click"  点击图片加载.
-// $("img.lazy").lazyload({ event : "click", });
-// onready 内 单行可用!!!!   操 最后少一个逗号都不行!!!!!
+/******/ 	// identity function for calling harmony imports with the correct context
+/******/ 	__webpack_require__.i = function(value) { return value; };
 
-$(function(){
-  $("#contentDiv").scroll(function() {
-    $("img.lazy").lazyload({
-      threshold : 200
-    });
-  });
-})
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, {
+/******/ 				configurable: false,
+/******/ 				enumerable: true,
+/******/ 				get: getter
+/******/ 			});
+/******/ 		}
+/******/ 	};
 
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
 
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
 
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 8);
+/******/ })
+/************************************************************************/
+/******/ ([
+/* 0 */
+/***/ (function(module, exports) {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// 点击大类过滤出对应的标签+文章:  同步进行高亮.
-$(".cateNames").click(   function() {
- // console.log( Cate );
-
-    // alert($(window).width());          // 浏览器当前窗口可视区域宽度
-    var clickedCateName = $( this ).children('span').text()
-    // console.log( clickedCateName );    // 可以获取 jQuery. 
- 
-    // 执行pc端的js 点击大类: 1. 去除所有大类+标签+文件高亮; 2. 高亮被点击大类 
-    $("#cateDiv li").each(     function() {  $(this).removeClass('active'); });    
-    $("#tagDiv li").each(      function() {  $(this).removeClass('active'); });    
-    $("#filenameDiv li").each( function() {  $(this).removeClass('active'); });      
-    $(this).addClass('active');   
-
-
-    // 隐藏所有tag 显示某类tag
-    $(".tagNames").hide()
-    $("[data-tagcate="+ clickedCateName +"]").show()
-    // 先隐藏所有文件. 显示某类文件
-    $(".postNames").hide()
-    $("[data-cate="+ clickedCateName +"]").show()
-  
-});
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// ↓ 点击标签 过滤出对应的文章. 并进行 当前标签的高亮+当前标签所属大类的高亮.
-$(".tagNames").click(   function() {
-    $("#cateDiv li").each(     function() {  $(this).removeClass('active'); });    
-    $("#tagDiv li").each(      function() {  $(this).removeClass('active'); });    
-    $("#filenameDiv li").each( function() {  $(this).removeClass('active'); });      
-    $(this).addClass('active'); 
-    var tagCateName = $(this).data('tagcate');
-    // console.log( tagCateName );
-    $("#"+ tagCateName).addClass('active'); 
-
-    var clickedTagName = $( this ).children('span').text()
-    // 先隐藏所有文件. 显示某类文件
-    $(".postNames").hide()
-    $("[data-tag="+ clickedTagName +"]").show()
-
-});
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// ↓ 文件高亮.+对应tag+对应cate 同步高亮.   这里还要显示出 该大类下的标签.而不是显示所有标签
-$(".postNames").click(   function() {
-  var  postTagName = $(this).data('tag' );
-  var postCateName = $(this).data('cate');
-  if ( $(window).width() <= 414 ) {   
-      // 进行屏幕宽度的判断. 如果屏幕宽度<= 414 那就支持手机端的js: 隐藏cate&tag&filename栏.
-      // 既然隐藏了 就不用设置高亮了..?  下次点击的时候 想要之前的高亮怎么办..
-              $("#cateDiv").hide();
-               $("#tagDiv").hide();
-          $("#filenameDiv").hide();
-          $("#rightNavbar").hide();
-             $("#lineLeft").hide();
-            $("#lineRight").hide();
-             $("#lineSide").hide();
-
-   } else {
-      $("#cateDiv li").each(     function() {  $(this).removeClass('active'); });    
-      $("#tagDiv li").each(      function() {  $(this).removeClass('active'); });    
-      $("#filenameDiv li").each( function() {  $(this).removeClass('active'); });      
-      $(this).addClass('active'); 
-
-      $(".tagNames").hide()
-      $("[data-tagcate="+ postCateName +"]").show()      
-      $("#Tag"+ postTagName ).addClass('active'); 	
-      $("#"+ postCateName).addClass('active'); 	 
-   }    
-
-});
-// 上面是 大类 标签过滤+高亮
-
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // 下面是 各种额外功能:   拖动条js  + 方向箭js + pjax  + 回到顶部 + 滚动条高度.
-
 
 // 拖动条. 
 function getElementLeft(element){
@@ -222,6 +170,109 @@ function getElementLeft(element){
         };
 
 });
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports) {
+
+// 点击大类过滤出对应的标签+文章:  同步进行高亮.
+$(".cateNames").click(   function() {
+ // console.log( Cate );
+
+    // alert($(window).width());          // 浏览器当前窗口可视区域宽度
+    var clickedCateName = $( this ).children('span').text()
+    // console.log( clickedCateName );    // 可以获取 jQuery. 
+ 
+    // 执行pc端的js 点击大类: 1. 去除所有大类+标签+文件高亮; 2. 高亮被点击大类 
+    $("#cateDiv li").each(     function() {  $(this).removeClass('active'); });    
+    $("#tagDiv li").each(      function() {  $(this).removeClass('active'); });    
+    $("#filenameDiv li").each( function() {  $(this).removeClass('active'); });      
+    $(this).addClass('active');   
+
+
+    // 隐藏所有tag 显示某类tag
+    $(".tagNames").hide()
+    $("[data-tagcate="+ clickedCateName +"]").show()
+    // 先隐藏所有文件. 显示某类文件
+    $(".postNames").hide()
+    $("[data-cate="+ clickedCateName +"]").show()
+  
+});
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// ↓ 点击标签 过滤出对应的文章. 并进行 当前标签的高亮+当前标签所属大类的高亮.
+$(".tagNames").click(   function() {
+    $("#cateDiv li").each(     function() {  $(this).removeClass('active'); });    
+    $("#tagDiv li").each(      function() {  $(this).removeClass('active'); });    
+    $("#filenameDiv li").each( function() {  $(this).removeClass('active'); });      
+    $(this).addClass('active'); 
+    var tagCateName = $(this).data('tagcate');
+    // console.log( tagCateName );
+    $("#"+ tagCateName).addClass('active'); 
+
+    var clickedTagName = $( this ).children('span').text()
+    // 先隐藏所有文件. 显示某类文件
+    $(".postNames").hide()
+    $("[data-tag="+ clickedTagName +"]").show()
+
+});
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// ↓ 文件高亮.+对应tag+对应cate 同步高亮.   这里还要显示出 该大类下的标签.而不是显示所有标签
+$(".postNames").click(   function() {
+  var  postTagName = $(this).data('tag' );
+  var postCateName = $(this).data('cate');
+  if ( $(window).width() <= 414 ) {   
+      // 进行屏幕宽度的判断. 如果屏幕宽度<= 414 那就支持手机端的js: 隐藏cate&tag&filename栏.
+      // 既然隐藏了 就不用设置高亮了..?  下次点击的时候 想要之前的高亮怎么办..
+              $("#cateDiv").hide();
+               $("#tagDiv").hide();
+          $("#filenameDiv").hide();
+          $("#rightNavbar").hide();
+             $("#lineLeft").hide();
+            $("#lineRight").hide();
+             $("#lineSide").hide();
+
+   } else {
+      $("#cateDiv li").each(     function() {  $(this).removeClass('active'); });    
+      $("#tagDiv li").each(      function() {  $(this).removeClass('active'); });    
+      $("#filenameDiv li").each( function() {  $(this).removeClass('active'); });      
+      $(this).addClass('active'); 
+
+      $(".tagNames").hide()
+      $("[data-tagcate="+ postCateName +"]").show()      
+      $("#Tag"+ postTagName ).addClass('active'); 	
+      $("#"+ postCateName).addClass('active'); 	 
+   }    
+
+});
+// 上面是 大类 标签过滤+高亮
+
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports) {
+
+
+// lazyload 慢加载. 
+// 和网上说的不一样!!!!   至少博客是这样的.
+// 必须在 onready function内. 而且必须有个滚动事件触发
+// 有可能是我 pjax的 原因.......
+// threshold : 200,  距离图片提前200px加载. 
+// event : "click"  点击图片加载.
+// $("img.lazy").lazyload({ event : "click", });
+// onready 内 单行可用!!!!   操 最后少一个逗号都不行!!!!!
+
+$(function(){
+  $("#contentDiv").scroll(function() {
+    $("img.lazy").lazyload({
+      threshold : 200
+    });
+  });
+})
+
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports) {
 
 // 方向箭的  + 顶部过滤栏显隐按钮
 $(function button(){
@@ -326,67 +377,6 @@ $("#topbarStructureToggle").click( function(){
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-// 显示文章结构侧边栏
-function showSideStructure(){
-  var MDh1 = $("#pageContent h1").text();
-    // 获取 当前文章内的 h1
-    //console.log("MDh1= " +MDh1);
-  $("#MDh1 li").each( function(){    $(this).remove();         });
-    // 首先点击文件名 删除清空所有现有的 li
-  var titleNum = $("#pageContent h2,h3,h4,h5,h6 ").length;
-    // console.log(titleNum );
-    // 这里 所有的 title数量就出来了. 下面进行循环. 给每个title 一个 index; 
-  $("#pageContent h2,h3,h4,h5,h6 ").each( function(){
-    var MDTagContent = $(this).text(); 
-    var htmlTagName = $(this).get(0).tagName ;
-    var navbarIndex = $(this).index();
-      // console.log( MDTagContent,navbarIndex);
-      // 这里的 index 虽然不知道问什么 不是连续的 .... 没关系. 只要把这个index 的值 给文章的标签对应的id就可以了....
-      //$(this).attr("name",navbarIndex);
-    $(this).append("<a name='" + navbarIndex +"'></a>");
-      //<a href="url">Link text</a>
-      // if ( htmlTagName == "H1" ) { $("#MDh1").append("<li style='text-align: center'>"+ MDTagContent +"</li>");  }
-         if ( htmlTagName == "H2" ) { $("#MDh1").append(                                    "<li><a href='#"+navbarIndex+"'>"+ MDTagContent +"</li>"); } 
-    else if ( htmlTagName == "H3" ) { $("#MDh1").append(                        "<li>&nbsp;&nbsp;<a href='#"+navbarIndex+"'>"+ MDTagContent +"</li>"); } 
-    else if ( htmlTagName == "H4" ) { $("#MDh1").append(            "<li>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#"+navbarIndex+"'>"+ MDTagContent +"</li>"); }
-    else if ( htmlTagName == "H5" ) { $("#MDh1").append("<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='#"+navbarIndex+"'>"+ MDTagContent +"</li>"); }
-    else    { $("#MDh1").append(            "<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='#"+navbarIndex+"'>"+ MDTagContent +"</li>"); }
-  });
-  $("#lineSide").show();
-}
-
-
-// 文章滚动 高亮对应的标题
-$("#contentDiv").scroll(   function() { 
-  var PositiveDisc = [];
-  $("#pageContent h2,h3,h4,h5,h6 ").each( function(){
-      var MDTagContent = $(this).text(); 
-      var MDTagIndex = $(this).index(); 
-      var titleToTopDisc = $(this).offset().top;
-      // console.log( titleToTopDisc, MDTagContent);
-      // 这些值 有正负. 取第所有的输出 
-        if ( titleToTopDisc >= 0 ) {
-          // console.log( titleToTopDisc, MDTagContent,MDTagIndex);
-          // 如果 offset是大于零的.  也就是在屏幕中间以及下面的..  取出来放到数组中. 
-          // 然后取整个数组第一个值.这个title肯定是在屏幕中的... 把这个标题设置成高亮就可以了.
-          PositiveDisc.push(MDTagIndex);
-        }
-  });
-  // console.log( PositiveDisc );
-  // console.log( PositiveDisc[0] );
-  // 高亮这个标签. 
-  var firstPositive = PositiveDisc[0];
-  $(".CSMDh1 li").removeClass('active'); 
-  $("[href='#"+firstPositive+"']").parent().addClass('active'); 
-});
-
-// 网页刷新的时候 也要重新显示目录结构
-// 如果是主页就不显示. 如果是其他页就显示目录结构
-$(function (){ 
-  var WebURL = window.location.pathname;
-  if ( WebURL == "/") {}
-  else { showSideStructure();  }
-});
 
 
 
@@ -401,25 +391,6 @@ $(function (){
 
 
 
-// PJAX
-// a 是点击元素.  + 内容放到哪里: contnetdiv + 放什么内容进去.
-// 顶部左右按钮 模拟contentDiv 上方被隐藏掉的左右按钮.
-// 为什么必须模拟contentDiv: 上下篇是pre.ur next.url 这个url是会变的. 
-// 使用了 pjax. 只有contentDiv里面的内容是变的.topbarDiv的内容是不变的.
-// 所以 topbardiv 里面的 上下篇的url链接也是不变的(也就是只能点击一次下一篇.)
-$(function(){
-  $("#topbarPre" ).click(function(){  $("#prePost" )[0].click();  });
-  $("#topbarNext").click(function(){  $("#nextPost")[0].click();  });
-});
-
-//  $(document).pjax("#prePost", '#contentDiv', { fragment: '#contentDiv', timeout:18000}	);
-// 这个的话 只有 prepost 这个id 会使用pjax
-
-  $(document).pjax("a", '#contentDiv', { fragment: '#contentDiv', timeout:18000}	);
-  $(document).on('pjax:start', function() { NProgress.start(); });
-  $(document).on('pjax:end',   function() { NProgress.done(); showSideStructure(); });
-  // $(document).on('pjax:end',   function() { NProgress.done(); pajx_loadDuodsuo(); });
-  // 多说评论的Pjax重载 每次点击pjax都要执行 .不然要刷新网页才能出现多说....
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -427,42 +398,6 @@ $(function(){
 function toTop() {  $("#contentDiv").scrollTop(0); }
 
 
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// 滚动条高度.  有高度才能有滚动条.
-function scrollbarHeight(){
-      function getElementTop(element){
-      var actualTop = element.offsetTop;
-      var current = element.offsetParent;
-      while (current !== null){
-        actualTop += current.offsetTop;
-        current = current.offsetParent;
-          }
-      return actualTop;
-     }
-      // xyz是 浏览器的高度; xy是 filenameDiv 距离浏览器上边距的距离;  x 是 CateDiv 和 tagDiv 的距离.(这两个 水平的)
-      // 设置 fileDiv 高度
-      var xyz = document.documentElement.clientHeight;
-      var  xy = getElementTop(filenameUL);
-      // console.log(xy);
-      var   x = getElementTop(cateDiv);
-      var xxyy = xyz - xy;
-      // 这里还是直接减去 顶部栏目的50 +  文件名上固定栏目的.18 得了..
-          $("#filenameUL").css("height",xxyy)
-      // 下面是cate 和 tag 的高度设置..
-      var xxyy2 = xyz - x;
-          $("#catenameUL").css("height",xxyy2)
-          $("#tagnameUL").css("height",xxyy2) 
-                //alert("xxyy="+xxyy);
-                //alert("xxyy2="+xxyy2);
-
-  }
-
-  // 网页加载后 浏览器窗口大小改变时候的 滚动条 高度设置 
-  $(function (){  scrollbarHeight()  });
-  // 浏览器窗口大小改变时候 再次改变滚动条高度
-  window.onresize= function(){ scrollbarHeight()  };
 
 
 
@@ -503,6 +438,18 @@ function showAllTagsandPosts () {
 
 
 
+
+
+
+
+
+
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports) {
+
+
 // 手机端 过滤栏 宽度设置:  cate + tag 固定宽度. filename 剩下宽度.
 $(function (){
   // 先判断屏幕宽度 如果<= 414 那就假设设备是手机 那么!!!  文件栏目的宽度 就是 手机宽度 - cata宽度 - tag宽度 - 三个padding宽度.
@@ -532,7 +479,110 @@ $(function (){
 
 
 
+/***/ }),
+/* 5 */
+/***/ (function(module, exports) {
+
+
+
+// PJAX
+// a 是点击元素.  + 内容放到哪里: contnetdiv + 放什么内容进去.
+// 顶部左右按钮 模拟contentDiv 上方被隐藏掉的左右按钮.
+// 为什么必须模拟contentDiv: 上下篇是pre.ur next.url 这个url是会变的. 
+// 使用了 pjax. 只有contentDiv里面的内容是变的.topbarDiv的内容是不变的.
+// 所以 topbardiv 里面的 上下篇的url链接也是不变的(也就是只能点击一次下一篇.)
+$(function(){
+  $("#topbarPre" ).click(function(){  $("#prePost" )[0].click();  });
+  $("#topbarNext").click(function(){  $("#nextPost")[0].click();  });
+});
+
+//  $(document).pjax("#prePost", '#contentDiv', { fragment: '#contentDiv', timeout:18000}	);
+// 这个的话 只有 prepost 这个id 会使用pjax
+
+  $(document).pjax("a", '#contentDiv', { fragment: '#contentDiv', timeout:18000}	);
+  $(document).on('pjax:start', function() { NProgress.start(); });
+  $(document).on('pjax:end',   function() { NProgress.done(); showSideStructure(); });
+  // $(document).on('pjax:end',   function() { NProgress.done(); pajx_loadDuodsuo(); });
+  // 多说评论的Pjax重载 每次点击pjax都要执行 .不然要刷新网页才能出现多说....
+
+
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports) {
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// 滚动条高度.  有高度才能有滚动条.
+function scrollbarHeight(){
+      function getElementTop(element){
+      var actualTop = element.offsetTop;
+      var current = element.offsetParent;
+      while (current !== null){
+        actualTop += current.offsetTop;
+        current = current.offsetParent;
+          }
+      return actualTop;
+     }
+      // xyz是 浏览器的高度; xy是 filenameDiv 距离浏览器上边距的距离;  x 是 CateDiv 和 tagDiv 的距离.(这两个 水平的)
+      // 设置 fileDiv 高度
+      var xyz = document.documentElement.clientHeight;
+      var  xy = getElementTop(filenameUL);
+      // console.log(xy);
+      var   x = getElementTop(cateDiv);
+      var xxyy = xyz - xy;
+      // 这里还是直接减去 顶部栏目的50 +  文件名上固定栏目的.18 得了..
+          $("#filenameUL").css("height",xxyy)
+      // 下面是cate 和 tag 的高度设置..
+      var xxyy2 = xyz - x;
+          $("#catenameUL").css("height",xxyy2)
+          $("#tagnameUL").css("height",xxyy2) 
+                //alert("xxyy="+xxyy);
+                //alert("xxyy2="+xxyy2);
+
+  }
+
+  // 网页加载后 浏览器窗口大小改变时候的 滚动条 高度设置 
+  $(function (){  scrollbarHeight()  });
+  // 浏览器窗口大小改变时候 再次改变滚动条高度
+  window.onresize= function(){ scrollbarHeight()  };
+
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// document.getElementById('app').innerHTML="这是我第一个打包成功的程序";
+
+
+
+__webpack_require__(3);
+__webpack_require__(0);
+__webpack_require__(1);
+__webpack_require__(4);
+__webpack_require__(5);
+__webpack_require__(6);
+//require("./webpack/js/serviceworker.js");
+__webpack_require__(2);
 
 
 
 
+
+
+
+
+__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"!style!css!./test.css\""); e.code = 'MODULE_NOT_FOUND';; throw e; }()));
+
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(7);
+(function webpackMissingModule() { throw new Error("Cannot find module \"bundle.js\""); }());
+
+
+/***/ })
+/******/ ]);

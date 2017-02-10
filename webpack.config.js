@@ -2,17 +2,28 @@
 
 const webpack = require("webpack");
 module.exports = {
-  context: __dirname + "/src",
-  // __dirname指的是根目录
 
-  entry: {
-    app: "./app.js",
+ // context: "./webpack",
+  
+
+   entry: {
+    app: "./entry.js",
   },
   output: {
-    path: __dirname + "/dist",
-    filename: "[name].bundle.js",
+    path: "./js",
+    filename: "bundle.js",
   },
+
+ //  resolve: { fallback: path.join(__dirname, "node_modules") },
+ // resolveLoader: { fallback: path.join(__dirname, "node_modules") },
+
+
 };
+
+
+
+
+
 
 
 
@@ -26,6 +37,15 @@ module.exports = {
 3. Webpack 将所有东西打包到 output.path 对应的文件夹里，
   使用 output.filename 对应的命名模板来命名（[name] 被 entry 里的对象键值所替代）
 
+
+
 */
+
+
+
+
+
+
+
 
 

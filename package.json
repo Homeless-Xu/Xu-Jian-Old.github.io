@@ -1,0 +1,20 @@
+{
+  "name": "cms",
+  "version": "1.0.0",
+  "description": "> 大类: 不能有英文的.; (可以有:-)不然不能过滤出对应标签&文章.   > 标签: 不能有下划线; 不能有空格(有空格就是多标签了.本主题不支持)",
+  "main": "./entry.js",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "minimatch": "^3.0.3"
+  },
+  "devDependencies": {
+    "css-loader": "^0.26.1",
+    "style-loader": "^0.13.1",
+    "webpack": "^2.2.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
