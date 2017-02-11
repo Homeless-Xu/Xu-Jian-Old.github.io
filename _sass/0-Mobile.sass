@@ -1,7 +1,7 @@
-/*-----------------------------------*\
- *  移 动 端:  iphone6P 屏幕宽度 <= 414px*736 : 只显示内容栏. 三大标签等等都不显示.
- *  cate大类宽度:88. tag标签宽度:一般屏幕-cate宽度. 文件名宽度:一般屏幕
- *\*-----------------------------------
+//  移 动 端:  iphone6P 屏幕宽度 <= 414px*736 : 只显示内容栏. 三大标签等等都不显示.
+//  cate大类宽度:88. tag标签宽度:一般屏幕-cate宽度. 文件名宽度:一般屏幕
+
+
 @media screen and (max-width: 414px)
   #cateDiv, #tagDiv
     display: none
@@ -17,8 +17,29 @@
     position: absolute
     right: 6%
     top: 0
-  /*-- 未知原因. 眼睛会只有半只...--
 
-/*-----------------------------------*\
- *  移 动 端:   ipad 屏幕宽度 <= 768x*1024. 
- *\*-----------------------------------
+
+//  未知原因. 眼睛会只有半只.
+// *  移 动 端:   ipad 屏幕宽度 <= 768x*1024. 
+
+
+
+
+
+@media screen and (max-width: 700px)
+  #cateDiv, #tagDiv
+    display: none
+    flex-basis: 88px
+  .cateSup, .tagSup
+    display: none
+  #lineLeft, #lineRight, #lineSide
+    display: none !important
+  /*-- 未知原因. lineSide 一定要强制隐藏... 不然有个 display:block .....--
+  #filenameDiv, #rightNavbar, #arrowNav, #donate, #githubReadme, #githubHome ,#GithubStar
+    display: none
+  #filenameDivDate
+    position: absolute
+    right: 6%
+    top: 0
+
+

@@ -18,4 +18,4 @@ require("./webpack/js/lazyload.js");
 
 
 
-require("!style!css!./test.css");
+// require("!style!css!./test.css");

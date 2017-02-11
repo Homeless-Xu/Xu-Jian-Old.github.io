@@ -16,7 +16,9 @@ $(function(){
 
   $(document).pjax("a", '#contentDiv', { fragment: '#contentDiv', timeout:18000}	);
   $(document).on('pjax:start', function() { NProgress.start(); });
-  $(document).on('pjax:end',   function() { NProgress.done(); showSideStructure(); });
+  $(document).on('pjax:end',   function() { NProgress.done(); showSideStructure(); hljs.initHighlightingOnLoad();  });
   // $(document).on('pjax:end',   function() { NProgress.done(); pajx_loadDuodsuo(); });
   // 多说评论的Pjax重载 每次点击pjax都要执行 .不然要刷新网页才能出现多说....
+
+
 

@@ -15,11 +15,11 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  jekyll
 
 # Build settings
-highlighter: rouge
+# highlighter: rouge
 markdown: kramdown
 kramdown:
   input: GFM
-  syntax_highlighter: rouge
+#   syntax_highlighter: rouge
 
 
 
