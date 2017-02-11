@@ -97,8 +97,8 @@
 * [x] 文件结构栏: 文章滚动高亮标题 ( h2-h5 )
 * [x] 文件结构栏: 标题锚点跳转.
 * [x] 文件名栏: 显隐文件时间.配合本地Ulysses 方便本地排序.
-* [x] 启用 Service Worker 缓存 (废弃 manifest缓存 )
-* [x] 启用 Sass
+* [x] Service Worker 缓存 (废弃 manifest缓存 )
+* [x] Webpack (SASS & ES6 & CSS内联)
 * [x] 启用 Lazyload (待进一步优化)
 
 
@@ -120,16 +120,12 @@
 
 ## ToDo
 
-ES6
-* [ ] webpack
 * [ ] http2.0
 * [ ] gzip压缩
-* [ ] css 用工具弄到内联.
 * [ ] 移动端 滚动条溢出.
 * [ ] firebase 对话功能.
 * [ ] JS 上下键 控制高亮光标.
 * [ ] 多主题切换/多布局切换
-* [ ] SASS
 * [ ] 搜索功能
 * [ ] SEO再次优化
 * [ ] 网页性能优化
@@ -148,7 +144,6 @@ ES6
 * [ ] require.js 按需加载..
 * [ ] 文章阅读 进度条.
 * [ ] 顶部三级导航条
-
 * [ ] 
 * [ ] 
 

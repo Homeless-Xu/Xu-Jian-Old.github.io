@@ -51,8 +51,6 @@
 		<string>.94-PHP.Ulysses_Public_Filter</string>
 		<string>.95-Vue.Ulysses_Public_Filter</string>
 		<string>.96-RegExp.Ulysses_Public_Filter</string>
-		<string>.97-Ajax.Ulysses_Public_Filter</string>
-		<string>.98-JSON.Ulysses_Public_Filter</string>
 		<string>.99-Node.Ulysses_Public_Filter</string>
 		<string>.00-Tool.Ulysses_Public_Filter</string>
 		<string>.03-Git.Ulysses_Public_Filter</string>
@@ -60,25 +58,15 @@
 		<string>.02-IT-Admin.Ulysses_Public_Filter</string>
 		<string>.---02-Kali.Ulysses_Public_Filter</string>
 		<string>.---03-数据库.Ulysses_Public_Filter</string>
-		<string>.04-SEO.Ulysses_Public_Filter</string>
 		<string>.05-SHELL.Ulysses_Public_Filter</string>
 		<string>.06-APP.Ulysses_Public_Filter</string>
-		<string>.07-Kali.Ulysses_Public_Filter</string>
-		<string>.OSI-2017-01-03.Ulysses_Public_Filter</string>
-		<string>.Net-2017-01-02.Ulysses_Public_Filter</string>
 		<string>.13-NET.Ulysses_Public_Filter</string>
 		<string>.Linux -14-11-11.Ulysses_Public_Filter</string>
-		<string>.Kali --- 16-09-09.Ulysses_Public_Filter</string>
 		<string>.-Tips-- 15-11-11.Ulysses_Public_Filter</string>
 		<string>.-CMD-15-11-09.Ulysses_Public_Filter</string>
 		<string>.-Dev-15-11-08.Ulysses_Public_Filter</string>
 		<string>.-MAMP-15-11-07.Ulysses_Public_Filter</string>
 		<string>.Win ----- 16-10-22.Ulysses_Public_Filter</string>
-		<string>.Docker ----- 16-07-07.Ulysses_Public_Filter</string>
-		<string>.Database-16-08-08.Ulysses_Public_Filter</string>
-		<string>.Crack --- 16-10-23.Ulysses_Public_Filter</string>
-		<string>.硬件----16-11-22.Ulysses_Public_Filter</string>
-		<string>.FE-Misc 16-12-22.Ulysses_Public_Filter</string>
 	</array>
 	<key>resolutionData</key>
 	<dict>
@@ -532,20 +520,6 @@
 					<integer>613</integer>
 				</dict>
 			</dict>
-			<key>.04-SEO.Ulysses_Public_Filter</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>507890347.13808799</real>
-				<key>lastModification</key>
-				<real>507890347.13808799</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>537</integer>
-				</dict>
-			</dict>
 			<key>.05-SHELL.Ulysses_Public_Filter</key>
 			<dict>
 				<key>lastModification</key>
@@ -564,20 +538,6 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>520</integer>
-				</dict>
-			</dict>
-			<key>.07-Kali.Ulysses_Public_Filter</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>507890481.46895701</real>
-				<key>lastModification</key>
-				<real>507890481.46895701</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>538</integer>
 				</dict>
 			</dict>
 			<key>.13-NET.Ulysses_Public_Filter</key>
@@ -680,34 +640,6 @@
 					<integer>510</integer>
 				</dict>
 			</dict>
-			<key>.97-Ajax.Ulysses_Public_Filter</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>507889605.33102298</real>
-				<key>lastModification</key>
-				<real>507889605.33102298</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>527</integer>
-				</dict>
-			</dict>
-			<key>.98-JSON.Ulysses_Public_Filter</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>507889833.960675</real>
-				<key>lastModification</key>
-				<real>507889833.960675</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>531</integer>
-				</dict>
-			</dict>
 			<key>.99-Node.Ulysses_Public_Filter</key>
 			<dict>
 				<key>lastModification</key>
@@ -716,76 +648,6 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>513</integer>
-				</dict>
-			</dict>
-			<key>.Crack --- 16-10-23.Ulysses_Public_Filter</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>507888779.03685302</real>
-				<key>lastModification</key>
-				<real>507888779.03685302</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>498</integer>
-				</dict>
-			</dict>
-			<key>.Database-16-08-08.Ulysses_Public_Filter</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>507890800.79360199</real>
-				<key>lastModification</key>
-				<real>507890800.79360199</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>545</integer>
-				</dict>
-			</dict>
-			<key>.Docker ----- 16-07-07.Ulysses_Public_Filter</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>507888844.30207598</real>
-				<key>lastModification</key>
-				<real>507888844.30207598</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>499</integer>
-				</dict>
-			</dict>
-			<key>.FE-Misc 16-12-22.Ulysses_Public_Filter</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>507888670.882581</real>
-				<key>lastModification</key>
-				<real>507888670.882581</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>496</integer>
-				</dict>
-			</dict>
-			<key>.Kali --- 16-09-09.Ulysses_Public_Filter</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>507890738.63298702</real>
-				<key>lastModification</key>
-				<real>507890738.63298702</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>544</integer>
 				</dict>
 			</dict>
 			<key>.Linux -14-11-11.Ulysses_Public_Filter</key>
@@ -798,34 +660,6 @@
 					<integer>300</integer>
 				</dict>
 			</dict>
-			<key>.Net-2017-01-02.Ulysses_Public_Filter</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>507886683.42665899</real>
-				<key>lastModification</key>
-				<real>507886683.42665899</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>490</integer>
-				</dict>
-			</dict>
-			<key>.OSI-2017-01-03.Ulysses_Public_Filter</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>507886680.30269599</real>
-				<key>lastModification</key>
-				<real>507886680.30269599</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>489</integer>
-				</dict>
-			</dict>
 			<key>.Win ----- 16-10-22.Ulysses_Public_Filter</key>
 			<dict>
 				<key>lastModification</key>
@@ -834,20 +668,6 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>289</integer>
-				</dict>
-			</dict>
-			<key>.硬件----16-11-22.Ulysses_Public_Filter</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>507886928.43480599</real>
-				<key>lastModification</key>
-				<real>507886928.43480599</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>495</integer>
 				</dict>
 			</dict>
 			<key>.-CMD-15-11-09.Ulysses_Public_Filter</key>
@@ -1123,6 +943,16 @@
 					<integer>19557</integer>
 				</dict>
 			</dict>
+			<key>1986-08-01-Webpack-CSS&amp;SASS✔︎.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>508499895.75351697</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>19624</integer>
+				</dict>
+			</dict>
 			<key>1986-08-01-Webpack-jekyll.md</key>
 			<dict>
 				<key>lastModification</key>
@@ -1131,6 +961,16 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>19589</integer>
+				</dict>
+			</dict>
+			<key>1986-08-01-Webpack-js.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>508496300.770693</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>19618</integer>
 				</dict>
 			</dict>
 			<key>1986-08-01-Webpack-loader.md</key>
@@ -1165,6 +1005,16 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>19585</integer>
+				</dict>
+			</dict>
+			<key>1986-08-01-package.json✔︎.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>508496356.41818798</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>19620</integer>
 				</dict>
 			</dict>
 			<key>1986-09-01-babel.md</key>
@@ -5725,20 +5575,6 @@
 					<integer>18583</integer>
 				</dict>
 			</dict>
-			<key>1998-12-12-01-JSON-过滤.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>507889722.73117501</real>
-				<key>lastModification</key>
-				<real>507889722.73117501</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>17289</integer>
-				</dict>
-			</dict>
 			<key>1998-12-12-json.md</key>
 			<dict>
 				<key>lastModification</key>
@@ -10169,20 +10005,6 @@
 					<integer>19033</integer>
 				</dict>
 			</dict>
-			<key>2016-10-22-21- - 2.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>507888534.00625002</real>
-				<key>lastModification</key>
-				<real>507888534.00625002</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>17230</integer>
-				</dict>
-			</dict>
 			<key>2016-10-22-21-Commands.md</key>
 			<dict>
 				<key>lastModification</key>
@@ -10733,6 +10555,15 @@
 			<string>1986-08-01-Webpack-loader.md</string>
 		</array>
 		<array>
+			<string>1986-08-01-Webpack-js.md</string>
+		</array>
+		<array>
+			<string>1986-08-01-Webpack-CSS&amp;SASS✔︎.md</string>
+		</array>
+		<array>
+			<string>1986-08-01-package.json✔︎.md</string>
+		</array>
+		<array>
 			<string>1992-11-14-02-ES6-模块.md</string>
 		</array>
 		<array>
@@ -11256,9 +11087,6 @@
 		</array>
 		<array>
 			<string>1987-05-12-01-查改json元素.md</string>
-		</array>
-		<array>
-			<string>1998-12-12-01-JSON-过滤.md</string>
 		</array>
 		<array>
 			<string>1987-06-12-01-GithubPages.md</string>
@@ -12201,9 +12029,6 @@
 		</array>
 		<array>
 			<string>2002-02-01-DD-WRT.md</string>
-		</array>
-		<array>
-			<string>2016-10-22-21- - 2.md</string>
 		</array>
 		<array>
 			<string>2016-10-22-21-Log Event.md</string>
@@ -13611,7 +13436,7 @@
 		<key>sheetClusters</key>
 		<dict>
 			<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-			<integer>19607</integer>
+			<integer>19625</integer>
 		</dict>
 		<key>sheetOrder</key>
 		<dict>

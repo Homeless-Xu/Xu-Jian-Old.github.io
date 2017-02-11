@@ -1,5 +1,9 @@
 'use strict';
 
+var path = require('path');
+
+
+
 const webpack = require("webpack");
 // const 就是 es6 的新功能.
 
@@ -15,21 +19,59 @@ module.exports = {
     filename: "bundle.js",
   },
 
- //  resolve: { fallback: path.join(__dirname, "node_modules") },
- // resolveLoader: { fallback: path.join(__dirname, "node_modules") },
+
+resolve: {
+   alias: {
+       styles: path.join(__dirname, 'sass') 
+   }
+},
+
 
 
 
 module: {
-        loaders: [
-            {
-                test:   /\.js/,
-                loader: 'babel',
-                include: __dirname + '/entry.js',
-                include: __dirname + '/js',
-            }
-        ],
-    }
+  loaders: [
+	  // JS-ES6
+    {
+      test:   /\.js/,
+      loader: 'babel-loader',
+      include: __dirname + '/entry.js',
+      include: __dirname + '/js',
+  	},
+  	
+  	// CSS
+		{
+		  test: /\.css$/,
+		  loader: 'style-loader!css-loader'
+		}, 
+		
+  	
+		// LESS
+		{
+		  test: /\.less$/,
+		  loader: 'style-loader!css-loader!less-loader'
+		},
+		
+		// SASS
+		{
+		  test: /\.scss$/,
+		  loader: 'style-loader!css-loader!sass-loader',                
+		} 
+  ],
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

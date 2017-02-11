@@ -9,14 +9,12 @@ require("./webpack/js/ES6-scroll.js");
 //require("./webpack/js/serviceworker.js");
 require("./webpack/js/lazyload.js");
 
+// css 成功引入
+//require("!style-loader!css-loader!./css/main.css");
 
 
-
-
-
-
-
-// require("!style!css!./test.css");
+// 下面只能成功引入 main.sass  文件里@import 没办法引入!!!!!
+require("!style-loader!css-loader!sass-loader!./css/main.sass");
 
 
 
