@@ -12,6 +12,8 @@
 		<string>.--- 05-Apache.Ulysses_Public_Filter</string>
 		<string>.--- 06-Gulp.Ulysses_Public_Filter</string>
 		<string>.--- 07-Gem.Ulysses_Public_Filter</string>
+		<string>.--- 08-Webpack.Ulysses_Public_Filter</string>
+		<string>.--- 09-Babel.Ulysses_Public_Filter</string>
 		<string>.87-Web.Ulysses_Public_Filter</string>
 		<string>.---03-缓存.Ulysses_Public_Filter</string>
 		<string>.---04-SEO.Ulysses_Public_Filter</string>
@@ -46,7 +48,6 @@
 		<string>.---10-CSS.Ulysses_Public_Filter</string>
 		<string>.---11-ES6.Ulysses_Public_Filter</string>
 		<string>.---12-Misc - 2.Ulysses_Public_Filter</string>
-		<string>.94 - MWeb.Ulysses_Public_Filter</string>
 		<string>.94-PHP.Ulysses_Public_Filter</string>
 		<string>.95-Vue.Ulysses_Public_Filter</string>
 		<string>.96-RegExp.Ulysses_Public_Filter</string>
@@ -64,9 +65,7 @@
 		<string>.06-APP.Ulysses_Public_Filter</string>
 		<string>.07-Kali.Ulysses_Public_Filter</string>
 		<string>.OSI-2017-01-03.Ulysses_Public_Filter</string>
-		<string>.IT 2017-01-01.Ulysses_Public_Filter</string>
 		<string>.Net-2017-01-02.Ulysses_Public_Filter</string>
-		<string>.GFW-2016-12-31.Ulysses_Public_Filter</string>
 		<string>.13-NET.Ulysses_Public_Filter</string>
 		<string>.Linux -14-11-11.Ulysses_Public_Filter</string>
 		<string>.Kali --- 16-09-09.Ulysses_Public_Filter</string>
@@ -79,14 +78,7 @@
 		<string>.Database-16-08-08.Ulysses_Public_Filter</string>
 		<string>.Crack --- 16-10-23.Ulysses_Public_Filter</string>
 		<string>.硬件----16-11-22.Ulysses_Public_Filter</string>
-		<string>.PHP-- 13-12-12.Ulysses_Public_Filter</string>
-		<string>.Apache-13-12-11.Ulysses_Public_Filter</string>
-		<string>.Plugins 12-12-13.Ulysses_Public_Filter</string>
-		<string>.Bootstrap-13-01-01.Ulysses_Public_Filter</string>
-		<string>.jekyll-09-09-09.Ulysses_Public_Filter</string>
 		<string>.FE-Misc 16-12-22.Ulysses_Public_Filter</string>
-		<string>.Node-16-12-02.Ulysses_Public_Filter</string>
-		<string>.Misc 16-11-11.Ulysses_Public_Filter</string>
 	</array>
 	<key>resolutionData</key>
 	<dict>
@@ -160,6 +152,26 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>652</integer>
+				</dict>
+			</dict>
+			<key>.--- 08-Webpack.Ulysses_Public_Filter</key>
+			<dict>
+				<key>lastModification</key>
+				<real>508474585.373878</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>656</integer>
+				</dict>
+			</dict>
+			<key>.--- 09-Babel.Ulysses_Public_Filter</key>
+			<dict>
+				<key>lastModification</key>
+				<real>508487542.42672598</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>659</integer>
 				</dict>
 			</dict>
 			<key>.---01-Jekyll.Ulysses_Public_Filter</key>
@@ -638,20 +650,6 @@
 					<integer>523</integer>
 				</dict>
 			</dict>
-			<key>.94 - MWeb.Ulysses_Public_Filter</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>507872879.81137699</real>
-				<key>lastModification</key>
-				<real>507872879.81137699</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>434</integer>
-				</dict>
-			</dict>
 			<key>.94-PHP.Ulysses_Public_Filter</key>
 			<dict>
 				<key>lastModification</key>
@@ -720,34 +718,6 @@
 					<integer>513</integer>
 				</dict>
 			</dict>
-			<key>.Apache-13-12-11.Ulysses_Public_Filter</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>507878839.74782002</real>
-				<key>lastModification</key>
-				<real>507878839.74782002</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>483</integer>
-				</dict>
-			</dict>
-			<key>.Bootstrap-13-01-01.Ulysses_Public_Filter</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>507885048.99346602</real>
-				<key>lastModification</key>
-				<real>507885048.99346602</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>485</integer>
-				</dict>
-			</dict>
 			<key>.Crack --- 16-10-23.Ulysses_Public_Filter</key>
 			<dict>
 				<key>explicitUnassignment</key>
@@ -804,34 +774,6 @@
 					<integer>496</integer>
 				</dict>
 			</dict>
-			<key>.GFW-2016-12-31.Ulysses_Public_Filter</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>507885645.05936599</real>
-				<key>lastModification</key>
-				<real>507885645.05936599</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>486</integer>
-				</dict>
-			</dict>
-			<key>.IT 2017-01-01.Ulysses_Public_Filter</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>507886018.60400897</real>
-				<key>lastModification</key>
-				<real>507886018.60400897</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>487</integer>
-				</dict>
-			</dict>
 			<key>.Kali --- 16-09-09.Ulysses_Public_Filter</key>
 			<dict>
 				<key>explicitUnassignment</key>
@@ -856,20 +798,6 @@
 					<integer>300</integer>
 				</dict>
 			</dict>
-			<key>.Misc 16-11-11.Ulysses_Public_Filter</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>507811103.38924301</real>
-				<key>lastModification</key>
-				<real>507811103.38924301</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>400</integer>
-				</dict>
-			</dict>
 			<key>.Net-2017-01-02.Ulysses_Public_Filter</key>
 			<dict>
 				<key>explicitUnassignment</key>
@@ -882,20 +810,6 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>490</integer>
-				</dict>
-			</dict>
-			<key>.Node-16-12-02.Ulysses_Public_Filter</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>507884866.34728301</real>
-				<key>lastModification</key>
-				<real>507884866.34728301</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>484</integer>
 				</dict>
 			</dict>
 			<key>.OSI-2017-01-03.Ulysses_Public_Filter</key>
@@ -912,34 +826,6 @@
 					<integer>489</integer>
 				</dict>
 			</dict>
-			<key>.PHP-- 13-12-12.Ulysses_Public_Filter</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>507876923.82919198</real>
-				<key>lastModification</key>
-				<real>507876923.82919198</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>475</integer>
-				</dict>
-			</dict>
-			<key>.Plugins 12-12-13.Ulysses_Public_Filter</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>507878834.59946799</real>
-				<key>lastModification</key>
-				<real>507878834.59946799</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>482</integer>
-				</dict>
-			</dict>
 			<key>.Win ----- 16-10-22.Ulysses_Public_Filter</key>
 			<dict>
 				<key>lastModification</key>
@@ -948,20 +834,6 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>289</integer>
-				</dict>
-			</dict>
-			<key>.jekyll-09-09-09.Ulysses_Public_Filter</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>507878825.66506201</real>
-				<key>lastModification</key>
-				<real>507878825.66506201</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>481</integer>
 				</dict>
 			</dict>
 			<key>.硬件----16-11-22.Ulysses_Public_Filter</key>
@@ -1181,16 +1053,6 @@
 					<integer>19570</integer>
 				</dict>
 			</dict>
-			<key>1986-02-01-Webpack入门.md</key>
-			<dict>
-				<key>lastModification</key>
-				<real>508312709.46381903</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>19536</integer>
-				</dict>
-			</dict>
 			<key>1986-03-01-Node-NPM.md</key>
 			<dict>
 				<key>lastModification</key>
@@ -1259,6 +1121,60 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>19557</integer>
+				</dict>
+			</dict>
+			<key>1986-08-01-Webpack-jekyll.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>508474811.81585401</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>19589</integer>
+				</dict>
+			</dict>
+			<key>1986-08-01-Webpack-loader.md</key>
+			<dict>
+				<key>explicitUnassignment</key>
+				<true/>
+				<key>firstUnassignment</key>
+				<real>508478397.63119799</real>
+				<key>lastModification</key>
+				<real>508478397.63119799</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>19595</integer>
+				</dict>
+			</dict>
+			<key>1986-08-01-Webpack入门.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>508474649.37887502</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>19579</integer>
+				</dict>
+			</dict>
+			<key>1986-08-01-Webpack简介.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>508474694.85772699</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>19585</integer>
+				</dict>
+			</dict>
+			<key>1986-09-01-babel.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>508487578.57265103</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>19598</integer>
 				</dict>
 			</dict>
 			<key>1987-01-01-01--编码乱码.md</key>
@@ -2275,34 +2191,6 @@
 					<integer>18161</integer>
 				</dict>
 			</dict>
-			<key>1989-01-01-Jekyll-生成文章列表数据的json模板.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>507809063.787606</real>
-				<key>lastModification</key>
-				<real>507809063.787606</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>14835</integer>
-				</dict>
-			</dict>
-			<key>1989-01-01-Jekyll结构.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>507809402.15904701</real>
-				<key>lastModification</key>
-				<real>507809402.15904701</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>14847</integer>
-				</dict>
-			</dict>
 			<key>1989-01-01-参考资料.md</key>
 			<dict>
 				<key>lastModification</key>
@@ -2427,20 +2315,6 @@
 					<integer>19162</integer>
 				</dict>
 			</dict>
-			<key>1989-03-03-03-某类所有文章.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>507809607.25387698</real>
-				<key>lastModification</key>
-				<real>507809607.25387698</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>14848</integer>
-				</dict>
-			</dict>
 			<key>1989-04-01-ReadMe.md</key>
 			<dict>
 				<key>explicitUnassignment</key>
@@ -2475,20 +2349,6 @@
 					<integer>19200</integer>
 				</dict>
 			</dict>
-			<key>1989-04-03-03-所有标签&amp;文章.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>507808203.90561903</real>
-				<key>lastModification</key>
-				<real>507808203.90561903</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>14824</integer>
-				</dict>
-			</dict>
 			<key>1989-05--01-简介.md</key>
 			<dict>
 				<key>lastModification</key>
@@ -2497,118 +2357,6 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>19215</integer>
-				</dict>
-			</dict>
-			<key>1989-05-01-01-文章排序.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>507809837.71333998</real>
-				<key>lastModification</key>
-				<real>507809837.71333998</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>14850</integer>
-				</dict>
-			</dict>
-			<key>1989-05-01-01-相关文章.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>507808261.84726697</real>
-				<key>lastModification</key>
-				<real>507808261.84726697</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>14825</integer>
-				</dict>
-			</dict>
-			<key>1989-05-01-01-输出3篇文章.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>507809235.25251502</real>
-				<key>lastModification</key>
-				<real>507809235.25251502</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>14840</integer>
-				</dict>
-			</dict>
-			<key>1989-05-01-02-按年列文章.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>507808856.34516197</real>
-				<key>lastModification</key>
-				<real>507808856.34516197</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>14832</integer>
-				</dict>
-			</dict>
-			<key>1989-05-01-03-所有文章及链接.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>507809745.57606602</real>
-				<key>lastModification</key>
-				<real>507809745.57606602</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>14849</integer>
-				</dict>
-			</dict>
-			<key>1989-05-01-03-文件摘录.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>507808598.42316997</real>
-				<key>lastModification</key>
-				<real>507808598.42316997</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>14826</integer>
-				</dict>
-			</dict>
-			<key>1989-05-01-03-文件时间.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>507808645.74203199</real>
-				<key>lastModification</key>
-				<real>507808645.74203199</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>14827</integer>
-				</dict>
-			</dict>
-			<key>1989-05-01-03-文件阅读时间.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>507808688.57789302</real>
-				<key>lastModification</key>
-				<real>507808688.57789302</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>14828</integer>
 				</dict>
 			</dict>
 			<key>1989-05-02-前后篇.md</key>
@@ -2623,20 +2371,6 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>19217</integer>
-				</dict>
-			</dict>
-			<key>1989-05-03-03-文件Flex排序.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>507808779.56563097</real>
-				<key>lastModification</key>
-				<real>507808779.56563097</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>14831</integer>
 				</dict>
 			</dict>
 			<key>1989-05-03-文件名排列.md</key>
@@ -2707,20 +2441,6 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>19205</integer>
-				</dict>
-			</dict>
-			<key>1989-06-03-03-分页代码.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>507808908.71637303</real>
-				<key>lastModification</key>
-				<real>507808908.71637303</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>14833</integer>
 				</dict>
 			</dict>
 			<key>1989-06-03-主题创建从零开始(3).md</key>
@@ -2811,20 +2531,6 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>19173</integer>
-				</dict>
-			</dict>
-			<key>1989-07-01-本地自定义端口预览.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>507808950.07531798</real>
-				<key>lastModification</key>
-				<real>507808950.07531798</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>14834</integer>
 				</dict>
 			</dict>
 			<key>1989-08-01-G✔︎.md</key>
@@ -5545,14 +5251,24 @@
 					<integer>18449</integer>
 				</dict>
 			</dict>
-			<key>1992-11-14-02-ES6入门.md</key>
+			<key>1992-11-14-02-ES6-模块.md</key>
 			<dict>
 				<key>lastModification</key>
-				<real>507949681.695885</real>
+				<real>508489928.28860003</real>
 				<key>version</key>
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>18450</integer>
+					<integer>19604</integer>
+				</dict>
+			</dict>
+			<key>1992-11-14-02-ES6入门简介.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>508491398.283867</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>19606</integer>
 				</dict>
 			</dict>
 			<key>1992-11-14-02-generator.md</key>
@@ -5627,20 +5343,6 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>19324</integer>
-				</dict>
-			</dict>
-			<key>1993-12-01-01-REST-API.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>507872666.24723703</real>
-				<key>lastModification</key>
-				<real>507872666.24723703</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>15105</integer>
 				</dict>
 			</dict>
 			<key>1994-01-12- - 2.md</key>
@@ -10761,20 +10463,6 @@
 					<integer>19060</integer>
 				</dict>
 			</dict>
-			<key>@- 2014-11-11-Font - Mac.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>507880848.09921098</real>
-				<key>lastModification</key>
-				<real>507880848.09921098</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>15500</integer>
-				</dict>
-			</dict>
 			<key>Untitled - 10.md</key>
 			<dict>
 				<key>explicitUnassignment</key>
@@ -11036,13 +10724,25 @@
 	<key>sheetClusters</key>
 	<array>
 		<array>
-			<string>1993-12-01-01-REST-API.md</string>
-		</array>
-		<array>
 			<string>1993-03-22-磁盘缓存.md</string>
 		</array>
 		<array>
 			<string>1989-08-01-G✔︎.md</string>
+		</array>
+		<array>
+			<string>1986-08-01-Webpack-loader.md</string>
+		</array>
+		<array>
+			<string>1992-11-14-02-ES6-模块.md</string>
+		</array>
+		<array>
+			<string>1986-09-01-babel.md</string>
+		</array>
+		<array>
+			<string>1986-08-01-Webpack-jekyll.md</string>
+		</array>
+		<array>
+			<string>1986-08-01-Webpack简介.md</string>
 		</array>
 		<array>
 			<string>1989-01-01-01-Jekyll-代码高亮.md</string>
@@ -11060,7 +10760,7 @@
 			<string>1986-03-02-NPM错误.md</string>
 		</array>
 		<array>
-			<string>1986-02-01-Webpack入门.md</string>
+			<string>1986-08-01-Webpack入门.md</string>
 		</array>
 		<array>
 			<string>1987-12-01-01-性能优化misc.md</string>
@@ -11195,7 +10895,7 @@
 			<string>1992-09-12-01-书-JavaScript DOM.md</string>
 		</array>
 		<array>
-			<string>1992-11-14-02-ES6入门.md</string>
+			<string>1992-11-14-02-ES6入门简介.md</string>
 		</array>
 		<array>
 			<string>2006-09-11-Qi.Niu&amp;iPic.md</string>
@@ -11930,9 +11630,6 @@
 			<string>1989-05-06-动态加载文章.md</string>
 		</array>
 		<array>
-			<string>1989-01-01-Jekyll-生成文章列表数据的json模板.md</string>
-		</array>
-		<array>
 			<string>1987-05-01-Jekyll-json储存分类数据.md</string>
 		</array>
 		<array>
@@ -12104,9 +11801,6 @@
 			<string>1989-05--01-简介.md</string>
 		</array>
 		<array>
-			<string>1989-05-01-01-输出3篇文章.md</string>
-		</array>
-		<array>
 			<string>1989-01-01-参考资料.md</string>
 		</array>
 		<array>
@@ -12131,25 +11825,16 @@
 			<string>1989-01-01-01-Jekyll简介.md</string>
 		</array>
 		<array>
-			<string>1989-05-01-01-文章排序.md</string>
-		</array>
-		<array>
 			<string>1989-06-04-主题创建从零开始(一- 亲测).md</string>
 		</array>
 		<array>
 			<string>1989-06-01-主题创建.md</string>
 		</array>
 		<array>
-			<string>1989-01-01-Jekyll结构.md</string>
-		</array>
-		<array>
 			<string>1989-12-07-01-DataFiles.md</string>
 		</array>
 		<array>
 			<string>Untitled - 2.md</string>
-		</array>
-		<array>
-			<string>1989-05-01-03-文件阅读时间.md</string>
 		</array>
 		<array>
 			<string>1989-12-07-categories.md</string>
@@ -12167,31 +11852,13 @@
 			<string>1989-12-07-01-配置URL链接.md</string>
 		</array>
 		<array>
-			<string>1989-05-01-01-相关文章.md</string>
-		</array>
-		<array>
-			<string>1989-03-03-03-某类所有文章.md</string>
-		</array>
-		<array>
 			<string>1989-12-04-03-03-某标签所有文章.md</string>
-		</array>
-		<array>
-			<string>1989-07-01-本地自定义端口预览.md</string>
 		</array>
 		<array>
 			<string>1989-12-03-03-03-所有分类.md</string>
 		</array>
 		<array>
 			<string>1989-12-07-01-文章分类.md</string>
-		</array>
-		<array>
-			<string>1989-05-01-02-按年列文章.md</string>
-		</array>
-		<array>
-			<string>1989-04-03-03-所有标签&amp;文章.md</string>
-		</array>
-		<array>
-			<string>1989-06-03-03-分页代码.md</string>
 		</array>
 		<array>
 			<string>1989-12-06-01-YML文档信息.md</string>
@@ -12213,9 +11880,6 @@
 		</array>
 		<array>
 			<string>1987-05-03-JS读写JSON数据.md</string>
-		</array>
-		<array>
-			<string>1989-05-01-03-所有文章及链接.md</string>
 		</array>
 		<array>
 			<string>1989-12-07-01-Jekyll-数组过滤.md</string>
@@ -13196,9 +12860,6 @@
 			<string>2014-11-11-换行回车区别.md</string>
 		</array>
 		<array>
-			<string>@- 2014-11-11-Font - Mac.md</string>
-		</array>
-		<array>
 			<string>2014-11-11-Docker.md</string>
 		</array>
 		<array>
@@ -13745,19 +13406,10 @@
 			<string>1989-04-01-Tag排序.md</string>
 		</array>
 		<array>
-			<string>1989-05-03-03-文件Flex排序.md</string>
-		</array>
-		<array>
 			<string>1989-03-02-CateFlex排序.md</string>
 		</array>
 		<array>
-			<string>1989-05-01-03-文件时间.md</string>
-		</array>
-		<array>
 			<string>1989-12-05-01-03-文件名信息.md</string>
-		</array>
-		<array>
-			<string>1989-05-01-03-文件摘录.md</string>
 		</array>
 		<array>
 			<string>1989-05-03-文件名排列.md</string>
@@ -13954,12 +13606,12 @@
 		<key>childOrder</key>
 		<dict>
 			<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-			<integer>653</integer>
+			<integer>659</integer>
 		</dict>
 		<key>sheetClusters</key>
 		<dict>
 			<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-			<integer>19578</integer>
+			<integer>19607</integer>
 		</dict>
 		<key>sheetOrder</key>
 		<dict>

@@ -70,6 +70,73 @@
 /* 0 */
 /***/ (function(module, exports) {
 
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// 滚动条高度.  有高度才能有滚动条.
+function scrollbarHeight(){
+      function getElementTop(element){
+      let actualTop = element.offsetTop;
+      let current = element.offsetParent;
+      while (current !== null){
+        actualTop += current.offsetTop;
+        current = current.offsetParent;
+          }
+      return actualTop;
+     }
+      // xyz是 浏览器的高度; xy是 filenameDiv 距离浏览器上边距的距离;  x 是 CateDiv 和 tagDiv 的距离.(这两个 水平的)
+      // 设置 fileDiv 高度
+      let xyz = document.documentElement.clientHeight;
+      let  xy = getElementTop(filenameUL);
+      // console.log(xy);
+      let   x = getElementTop(cateDiv);
+      let xxyy = xyz - xy;
+      // 这里还是直接减去 顶部栏目的50 +  文件名上固定栏目的.18 得了..
+          $("#filenameUL").css("height",xxyy)
+      // 下面是cate 和 tag 的高度设置..
+      let xxyy2 = xyz - x;
+          $("#catenameUL").css("height",xxyy2)
+          $("#tagnameUL").css("height",xxyy2) 
+                //alert("xxyy="+xxyy);
+                //alert("xxyy2="+xxyy2);
+
+  }
+
+  // 网页加载后 浏览器窗口大小改变时候的 滚动条 高度设置 
+  $(function (){  scrollbarHeight()  });
+  // 浏览器窗口大小改变时候 再次改变滚动条高度
+  window.onresize= function(){ scrollbarHeight()  };
+
+
+
+
+
+	
+	var arrow = x => x*x;
+	console.log(arrow);              // 这个 直接显示 函数... 
+	console.log(arrow(2));           // 输出  4
+	console.log(arrow(3));           // 输出  9
+	
+	var test = (x,y) => x*x + y*y;   //如果参数不是一个，就需要用括号()
+	console.log(test(2,3));          // 输出 13
+	console.log(test(1,3));          // 输出 10
+
+	var arrow = x => x*x;
+	console.log(arrow);              // 这个 直接显示 函数... 
+	console.log(arrow(2));           // 输出  4
+	console.log(arrow(3));           // 输出  9
+	
+	var test = (x,y) => x*x + y*y;   //如果参数不是一个，就需要用括号()
+	console.log(test(2,3));          // 输出 13
+	console.log(test(1,3));          // 输出 10
+
+    
+
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports) {
+
 // 下面是 各种额外功能:   拖动条js  + 方向箭js + pjax  + 回到顶部 + 滚动条高度.
 
 // 拖动条. 
@@ -172,7 +239,7 @@ function getElementLeft(element){
 });
 
 /***/ }),
-/* 1 */
+/* 2 */
 /***/ (function(module, exports) {
 
 // 点击大类过滤出对应的标签+文章:  同步进行高亮.
@@ -248,7 +315,7 @@ $(".postNames").click(   function() {
 
 
 /***/ }),
-/* 2 */
+/* 3 */
 /***/ (function(module, exports) {
 
 
@@ -271,7 +338,7 @@ $(function(){
 
 
 /***/ }),
-/* 3 */
+/* 4 */
 /***/ (function(module, exports) {
 
 // 方向箭的  + 顶部过滤栏显隐按钮
@@ -446,7 +513,7 @@ function showAllTagsandPosts () {
 
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports) {
 
 
@@ -480,7 +547,7 @@ $(function (){
 
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports) {
 
 
@@ -501,52 +568,12 @@ $(function(){
 
   $(document).pjax("a", '#contentDiv', { fragment: '#contentDiv', timeout:18000}	);
   $(document).on('pjax:start', function() { NProgress.start(); });
-  $(document).on('pjax:end',   function() { NProgress.done(); showSideStructure(); });
+  $(document).on('pjax:end',   function() { NProgress.done(); showSideStructure(); hljs.initHighlightingOnLoad();  });
   // $(document).on('pjax:end',   function() { NProgress.done(); pajx_loadDuodsuo(); });
   // 多说评论的Pjax重载 每次点击pjax都要执行 .不然要刷新网页才能出现多说....
 
 
 
-/***/ }),
-/* 6 */
-/***/ (function(module, exports) {
-
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// 滚动条高度.  有高度才能有滚动条.
-function scrollbarHeight(){
-      function getElementTop(element){
-      var actualTop = element.offsetTop;
-      var current = element.offsetParent;
-      while (current !== null){
-        actualTop += current.offsetTop;
-        current = current.offsetParent;
-          }
-      return actualTop;
-     }
-      // xyz是 浏览器的高度; xy是 filenameDiv 距离浏览器上边距的距离;  x 是 CateDiv 和 tagDiv 的距离.(这两个 水平的)
-      // 设置 fileDiv 高度
-      var xyz = document.documentElement.clientHeight;
-      var  xy = getElementTop(filenameUL);
-      // console.log(xy);
-      var   x = getElementTop(cateDiv);
-      var xxyy = xyz - xy;
-      // 这里还是直接减去 顶部栏目的50 +  文件名上固定栏目的.18 得了..
-          $("#filenameUL").css("height",xxyy)
-      // 下面是cate 和 tag 的高度设置..
-      var xxyy2 = xyz - x;
-          $("#catenameUL").css("height",xxyy2)
-          $("#tagnameUL").css("height",xxyy2) 
-                //alert("xxyy="+xxyy);
-                //alert("xxyy2="+xxyy2);
-
-  }
-
-  // 网页加载后 浏览器窗口大小改变时候的 滚动条 高度设置 
-  $(function (){  scrollbarHeight()  });
-  // 浏览器窗口大小改变时候 再次改变滚动条高度
-  window.onresize= function(){ scrollbarHeight()  };
 
 
 /***/ }),
@@ -555,16 +582,14 @@ function scrollbarHeight(){
 
 // document.getElementById('app').innerHTML="这是我第一个打包成功的程序";
 
-
-
-__webpack_require__(3);
-__webpack_require__(0);
-__webpack_require__(1);
 __webpack_require__(4);
+__webpack_require__(1);
+__webpack_require__(2);
 __webpack_require__(5);
 __webpack_require__(6);
+__webpack_require__(0);
 //require("./webpack/js/serviceworker.js");
-__webpack_require__(2);
+__webpack_require__(3);
 
 
 
@@ -573,7 +598,22 @@ __webpack_require__(2);
 
 
 
-__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"!style!css!./test.css\""); e.code = 'MODULE_NOT_FOUND';; throw e; }()));
+// require("!style!css!./test.css");
+
+
+
+
+
+
+//var $ = require('jquery');
+//$('body').html('Hello');
+
+
+// import $ from 'jquery';
+//$('body').html('Hello');
+
+
+
 
 
 /***/ }),

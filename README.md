@@ -92,14 +92,13 @@
 
 * [x] 三级标签过滤: Categories → Tags → fileName 
 * [x] 三级标签排序: 时间越旧排越上面.
-* [x] 手写拖动条 + 手写滚动条 + Nprogress加载进度条 + PJAX
-* [x] 自动高亮1: 点击文章自动高亮对应 Tags & Categories.
-* [x] 自动高亮2: 文章滚动 自动高亮右侧文件结构栏对应标题
-* [x] 文件结构栏: 支持过滤出 h2-h5 (h1是文章标题.这里不显示)
-* [x] 文件结构栏: 锚点跳转.点击结构栏标题 跳转到文章对应位置
+* [x] 拖动条 + 滚动条 + Nprogress进度条 + PJAX
+* [x] 自动高亮:  点击文件名自动高亮并过滤出对应 Tags & Categories.
+* [x] 文件结构栏: 文章滚动高亮标题 ( h2-h5 )
+* [x] 文件结构栏: 标题锚点跳转.
 * [x] 文件名栏: 显隐文件时间.配合本地Ulysses 方便本地排序.
 * [x] 启用 Service Worker 缓存 (废弃 manifest缓存 )
-* [x] 启用 Sass 
+* [x] 启用 Sass
 * [x] 启用 Lazyload (待进一步优化)
 
 
@@ -109,16 +108,11 @@
 * [x] 谷歌网站统计分析 + SSL/HTTPS + 图片七牛CDN
 * [x] 博客分类那里添加meta标签 可以优化SEO
 * [x] 阿里iconfont 代替 fontawesone
-* [x] Github + Coding 双线部署
-* [x] Github Star 集成(可以显示项目star数量)
-* [x] Flex + absolute 布局
+* [x] Git: Github + Coding 双线部署; Github Star 集成(可以显示项目star数量)
 * [x] 发布主题到 Rubygems
-* [x] 顶栏前后篇pjax按钮( 绑定contentDiv链接实现 )
-* [x] 代码中文详细注释
-* [x] SEO 小优化.
+* [x] 顶栏前后篇 pjax按钮 ( 绑定contentDiv链接实现 )
+* [x] SEO 小优化.(yml 里可添加 meta 标签)
 * [x] 404页面.
-* [x] 顶部三级导航条
-* [x] 右下角回到顶部按钮
 * [x] 移动端界面适配
 
 
@@ -130,7 +124,6 @@ ES6
 * [ ] webpack
 * [ ] http2.0
 * [ ] gzip压缩
-* [ ] gulp 工具
 * [ ] css 用工具弄到内联.
 * [ ] 移动端 滚动条溢出.
 * [ ] firebase 对话功能.
@@ -138,7 +131,6 @@ ES6
 * [ ] 多主题切换/多布局切换
 * [ ] SASS
 * [ ] 搜索功能
-* [ ] 代码高亮
 * [ ] SEO再次优化
 * [ ] 网页性能优化
 * [ ] 左右抽屉显隐效果 留白问题...
@@ -154,8 +146,9 @@ ES6
 * [ ] 文章分享功能
 * [ ] 白噪声功能.
 * [ ] require.js 按需加载..
-* [ ] 
-* [ ] 
+* [ ] 文章阅读 进度条.
+* [ ] 顶部三级导航条
+
 * [ ] 
 * [ ] 
 

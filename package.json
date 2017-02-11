@@ -5,9 +5,13 @@
   "main": "./entry.js",
   "dependencies": {
     "colors": "^1.1.2",
+    "jquery": "^3.1.1",
     "minimatch": "^3.0.3"
   },
   "devDependencies": {
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.22.0",
     "css-loader": "^0.26.1",
     "style-loader": "^0.13.1",
     "webpack": "^2.2.1"

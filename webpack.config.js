@@ -1,11 +1,12 @@
 'use strict';
 
 const webpack = require("webpack");
+// const 就是 es6 的新功能.
+
+// module.exports 也是es6 的模块导出功能.
+
 module.exports = {
-
  // context: "./webpack",
-  
-
    entry: {
     app: "./entry.js",
   },
@@ -16,6 +17,22 @@ module.exports = {
 
  //  resolve: { fallback: path.join(__dirname, "node_modules") },
  // resolveLoader: { fallback: path.join(__dirname, "node_modules") },
+
+
+
+module: {
+        loaders: [
+            {
+                test:   /\.js/,
+                loader: 'babel',
+                include: __dirname + '/entry.js',
+                include: __dirname + '/js',
+            }
+        ],
+    }
+
+
+
 
 
 };
