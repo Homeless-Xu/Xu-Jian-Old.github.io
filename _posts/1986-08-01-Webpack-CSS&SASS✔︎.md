@@ -48,7 +48,7 @@ npm 不行就 用 cnpm
 
 
 
-## SASS ✗
+## SASS ✔︎
 
 流程简介:
 先用 sass-loader 把main.sass 转成 main.css

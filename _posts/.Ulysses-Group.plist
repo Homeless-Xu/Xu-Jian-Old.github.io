@@ -943,6 +943,16 @@
 					<integer>19557</integer>
 				</dict>
 			</dict>
+			<key>1986-08-01-Webpack-CDN.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>508507926.97308898</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>19638</integer>
+				</dict>
+			</dict>
 			<key>1986-08-01-Webpack-CSS&amp;SASS✔︎.md</key>
 			<dict>
 				<key>lastModification</key>
@@ -985,6 +995,26 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>19595</integer>
+				</dict>
+			</dict>
+			<key>1986-08-01-Webpack-别名alias.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>508507750.63646901</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>19634</integer>
+				</dict>
+			</dict>
+			<key>1986-08-01-Webpack-插件.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>508508024.81681699</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>19642</integer>
 				</dict>
 			</dict>
 			<key>1986-08-01-Webpack入门.md</key>
@@ -2021,6 +2051,16 @@
 					<integer>19577</integer>
 				</dict>
 			</dict>
+			<key>1989-01-01-01-Jekyll-版本升级.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>508505410.63653898</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>19628</integer>
+				</dict>
+			</dict>
 			<key>1989-01-01-01-Jekyll性能优化.md</key>
 			<dict>
 				<key>lastModification</key>
@@ -2163,20 +2203,6 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>19162</integer>
-				</dict>
-			</dict>
-			<key>1989-04-01-ReadMe.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>507898199.07674199</real>
-				<key>lastModification</key>
-				<real>507898199.07674199</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>17393</integer>
 				</dict>
 			</dict>
 			<key>1989-04-01-Tag排序.md</key>
@@ -10555,6 +10581,18 @@
 			<string>1986-08-01-Webpack-loader.md</string>
 		</array>
 		<array>
+			<string>1986-08-01-Webpack-插件.md</string>
+		</array>
+		<array>
+			<string>1986-08-01-Webpack-CDN.md</string>
+		</array>
+		<array>
+			<string>1986-08-01-Webpack-别名alias.md</string>
+		</array>
+		<array>
+			<string>1989-01-01-01-Jekyll-版本升级.md</string>
+		</array>
+		<array>
 			<string>1986-08-01-Webpack-js.md</string>
 		</array>
 		<array>
@@ -10661,9 +10699,6 @@
 		</array>
 		<array>
 			<string>1986-07-11-RubyGems→Gem.md</string>
-		</array>
-		<array>
-			<string>1989-04-01-ReadMe.md</string>
 		</array>
 		<array>
 			<string>2002-11-11-01-HASH&amp;MD5.md</string>
@@ -13436,7 +13471,7 @@
 		<key>sheetClusters</key>
 		<dict>
 			<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-			<integer>19625</integer>
+			<integer>19643</integer>
 		</dict>
 		<key>sheetOrder</key>
 		<dict>

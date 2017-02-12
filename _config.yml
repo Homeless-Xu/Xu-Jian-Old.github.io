@@ -29,7 +29,7 @@ gems:
 
 
 
-exclude: ['node_modules']
+exclude: [node_modules, Gemfile, webpack]
 
 
 
@@ -43,5 +43,18 @@ githubReadmeURL:  https://github.com/Xu-Jian/Xu-Jian.github.io
 
 codePen_url:  http://codepen.io/Xu-Jian/
 # 这个是顶部 codepen 图标的链接.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
