@@ -30,7 +30,7 @@ gems:
 
 
 exclude: 
-  - node_modules
+  - node_modules 
   - sass
   - webpack
   - Gemfile

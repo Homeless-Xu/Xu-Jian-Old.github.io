@@ -1,3 +1,5 @@
+---
+---
 *
   padding: 0
   margin: 0
@@ -175,11 +177,24 @@ html
 
 
 
-// 文件导入..
-@import './sass/0-Mobile.sass';
+//  webpack sass 文件导入方式..   子文件必须不在_sass文件夹下.没有下划线就行
+//@import './sass/0-Mobile.sass';
+//@import './sass/1-Dragbar';
+//@import './sass/2-Topbar';
+//@import './sass/6-icon';
 
-@import './sass/1-Dragbar';
 
-@import './sass/2-Topbar';
 
-@import './sass/6-icon';
+
+// 下面是 jekyll 默认sass 文件导入方式:  子文件必须在 _sass文件夹下.
+@import '0-Mobile'
+@import '1-Dragbar'
+@import '2-Topbar'
+@import '6-icon'
+
+
+
+
+
+
+

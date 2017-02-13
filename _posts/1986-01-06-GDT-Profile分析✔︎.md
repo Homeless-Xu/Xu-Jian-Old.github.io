@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ★★★★★GDT-Profile分析✔︎
-tags: GDT
+title: GDT-Profile分析✔︎
+tags: 💯GDT
 categories: Chrome
 ---
 

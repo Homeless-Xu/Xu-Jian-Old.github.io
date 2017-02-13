@@ -6,10 +6,76 @@ categories: IT-Admin
 ---
 
 
+
+
+
+
+## Surge - Wall
+
+先配置好 IOS的.
+
+
+iOS ’s surge   dowmloadn
+
+2. config  use include??
+
+
+
+
+
+Mac-OS:
+
+1. surge.conf配置文件的命名为 .surge.conf
+> （文件要配置ss信息,ios 配置过这里就不用了） 重命名要 终端去重命名 . `mv xx xxx`
+
+ 
+2. 再把它放到/Users/Mac用户名/.surge.conf
+
+
+
+
+
+
+
+
+## SS & Wall SS-Share
+
+qq 代理   类型 socks5  地址127.0.0.1  端口 1080   用户密码都留空    前提:开启自动翻墙.  实现 qq 全局翻墙 
+
+
+
+
+windows 的 ss → 设置 允许局域网的连接.
+
+可以让 手机等等翻墙.
+
+获取电脑的 ip 地址
+
+去手机的 wifi 选项 → 属性 → http 代理 → 自动代理 → http://192.168.1.228:1080/pac
+ip 改成你自己的
+
+返回.就能上谷歌网页了. 客户端也行?????
+
+
+
+
+
+
+
+qq 代理   类型 socks5  地址127.0.0.1  端口 1080   用户密码都留空    前提:开启自动翻墙.  实现 qq 全局翻墙 
+
+
+
+
+
+
+
+
+
+
+
+
 ## Shadowsocks
-
-
-
 
 
 

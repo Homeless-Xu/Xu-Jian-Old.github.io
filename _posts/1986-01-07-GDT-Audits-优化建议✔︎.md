@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ★★GDT-Audits:优化建议✔︎
-tags: GDT
+title: GDT-Audits:优化建议✔︎
+tags: 💯GDT
 categories: Chrome
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ★★★★★GDT-Timeline分析✔︎
-tags: GDT
+title: GDT-Timeline分析✔︎
+tags: 💯GDT
 categories: Chrome
 ---
 
@@ -255,3 +255,126 @@ IE在每个主机名（像 http://www.microsoft.com/）下最多只创建两个
 
 
 
+
+
+
+[https://segmentfault.com/a/1190000003991459][1]
+
+
+页面性能分析.
+
+
+而Chrome DevTools的Timeline则正是用来记录和分析应用在运行时所有的活动情况，它是用来排查应用性能瓶颈的最佳工具。
+
+
+
+## Timeline工具栏介绍
+Timeline工具会详细检测出在Web应用加载的过程中时间花费情况的概览，
+包括下载资源、
+处理DOM事件、
+页面布局渲染、
+向屏幕绘制元素等。
+你可以通过分析Timeline得到的事件、框架和实时的内存用量，找出应用的性能问题。
+
+
+
+
+## 底部圆球
+不同的颜色表示不同的事件.
+某种颜色的区块越长. 说明该事件耗时越长.
+
+蓝色(Loading)：   网络通信和HTML解析
+黄色(Scripting)： JavaScript执行
+紫色(Rendering)： 样式计算和布局，即重排
+绿色(Painting)：  重绘
+灰色(other)：     其它事件花费的时间
+白色(Idle)：      空闲时间
+
+
+
+## 顶部的 横条. mode view
+可能会有红色区块: 说明在对应事件上执行的时间可能存在性能问题.
+
+
+
+
+
+
+## 事件汇总
+
+
+loading 事件:
+
+~~~
+Parse HTML  浏览器执行HTML解析
+Finish Loading  网络请求完毕事件
+Receive Data    请求的响应数据到达事件，如果响应数据很大（拆包），可能会多次触发该事件
+Receive Response    响应头报文到达时触发
+Send Request    发送网络请求时触发
+~~~
+{: .language-ruby}
+
+
+
+
+Scripting事件
+~~~
+Animation Frame Fired   一个定义好的动画帧发生并开始回调处理时触发
+Cancel Animation Frame  取消一个动画帧时触发
+GC Event    垃圾回收时触发
+DOMContentLoaded    当页面中的DOM内容加载并解析完毕时触发
+Evaluate Script A script was evaluated.
+Event   js事件
+Function Call   只有当浏览器进入到js引擎中时触发
+Install Timer   创建计时器（调用setTimeout()和setInterval()）时触发
+Request Animation Frame A requestAnimationFrame() call scheduled a new frame
+Remove Timer    当清除一个计时器时触发
+Time    调用console.time()触发
+Time End    调用console.timeEnd()触发
+Timer Fired 定时器激活回调后触发
+XHR Ready State Change  当一个异步请求为就绪状态后触发
+XHR Load    当一个异步请求完成加载后触发
+~~~
+{: .language-ruby}
+
+
+Rendering事件
+~~~
+Invalidate layout   当DOM更改导致页面布局失效时触发
+Layout  页面布局计算执行时触发
+Recalculate style   Chrome重新计算元素样式时触发
+Scroll  内嵌的视窗滚动时触发
+~~~
+{: .language-ruby}
+
+
+Painting事件
+~~~
+Composite Layers    Chrome的渲染引擎完成图片层合并时触发
+Image Decode    一个图片资源完成解码后触发
+Image Resize    一个图片被修改尺寸后触发
+Paint   合并后的层被绘制到对应显示区域后触发
+~~~
+{: .language-ruby}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1]:	https://segmentfault.com/a/1190000003991459

@@ -53,7 +53,7 @@
       </a>
       </li>
       <!-- 手机图标 -->
-      <li>
+      <li id="mobile">
         <a href="#">
           <span onclick="alert('{{site.name}}: {{site.Phone}}')" title="{{site.name}}: {{site.Phone}}" > 
             <svg class="icon" aria-hidden="true"  >
@@ -64,7 +64,7 @@
       </li>
 
       <!-- resume -->
-      <li><a href="#">(Resume)</a>
+      <li id="resume"><a href="#">(Resume)</a>
           <ul class="subnav">
               <li><a href="#">完善中!</a></li>
               <li><a href="#">简历预览</a></li>
@@ -78,7 +78,7 @@
         </li>
 
       <!-- 邮件图标 -->
-      <li>
+      <li id="mail">
         <a href="mailto:{{site.email}}" target="_blank" title="E-mail Me" >    
           <svg class="icon" aria-hidden="true"  >
             <use xlink:href="#icon-emailround"></use>

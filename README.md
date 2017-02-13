@@ -2,20 +2,22 @@
 > 大类: 不能有英文的.; (可以有:-)不然不能过滤出对应标签&文章.  
 > 标签: 不能有下划线; 不能有空格(有空格就是多标签了.本主题不支持)
 
-## CMS-Jkeyll-Theme Demo: <url src="http://www.0214.live">0214.live</url>
+## CMS-Jkeyll-Theme Demo:  
+<a href="https://www.0214.live">0214.live</a>
 
 ## CMS-Jkeyll-Theme Preview:
 <img src="http://oduizitoj.bkt.clouddn.com/2017-02-09-Untitled.jpeg">
 
 ## CMS-Jkeyll-Theme Repo HomePage:
-<url src="https://coding.net/u/xx0219/p/xx0219.coding.me/git">0214.live</url>
+<a href="https://coding.net/u/xx0219/p/xx0219.coding.me/git">0214.live</a>
 
 ## CMS-Jkeyll-Theme Download:
-<url src="https://coding.net/u/xx0219/p/xx0219.coding.me/git/archive/master">0214.live</url>
+<a href="https://coding.net/u/xx0219/p/xx0219.coding.me/git/archive/master">0214.live</a>
 
 ## 排序实例:(主题重点)  
-   - 所有排序都是按照 文件名上的时间排序. 时间越旧拍越上面.  
-	 - 一个类下的 这个类下的所有文件名都是一个年份的有效.    
+
+   - 所有排序都是按照_Posts里文件名的时间排序. 时间越旧拍越上面.  
+	 > 一个类下的 这个类下的所有文件名都是一个年份的有效.    
 
 
 	|-- Cate1
@@ -106,12 +108,11 @@
 
 ## Done (次要功能)
 * [x] 谷歌网站统计分析 + SSL/HTTPS + 图片七牛CDN
-* [x] 博客分类那里添加meta标签 可以优化SEO
+* [x] yml可添加meta标签来优化SEO
 * [x] 阿里iconfont 代替 fontawesone
-* [x] Git: Github + Coding 双线部署; Github Star 集成(可以显示项目star数量)
+* [x] Git: Github + Coding 双线部署; Github Star数集成
 * [x] 发布主题到 Rubygems
 * [x] 顶栏前后篇 pjax按钮 ( 绑定contentDiv链接实现 )
-* [x] SEO 小优化.(yml 里可添加 meta 标签)
 * [x] 404页面.
 * [x] 移动端界面适配
 
@@ -127,8 +128,6 @@
 * [ ] JS 上下键 控制高亮光标.
 * [ ] 多主题切换/多布局切换
 * [ ] 搜索功能
-* [ ] SEO再次优化
-* [ ] 网页性能优化
 * [ ] 左右抽屉显隐效果 留白问题...
 * [ ] 在线编辑功能??
 * [ ] 开放UGC???
@@ -137,24 +136,23 @@
 * [ ] 移动端左右滑动
 * [ ] URL 自动链接
 * [ ] 前后篇 高亮设置.
-* [ ] cate 移到顶部????
 * [ ] firebase 评论系统/聊天系统..
 * [ ] 文章分享功能
 * [ ] 白噪声功能.
 * [ ] require.js 按需加载..
 * [ ] 文章阅读 进度条.
-* [ ] 顶部三级导航条
-* [ ] 
-* [ ] 
+* [ ] 三级导航条
+
 
 
 ## 待定功能
-侧边栏: 首次点击文章显示.  然后隐藏掉... 手动开启
-文章浏览时间.
-文章浏览量
-文章分享到 qq/weibo/wechat ....
-文章字数统计
-文章作者 + 文章日期 显示在内容头部
+* [ ] cate 移到顶部????
+* [ ] 侧边栏: 首次点击文章显示.  然后隐藏掉... 手动开启
+* [ ] 文章浏览时间.
+* [ ] 文章浏览量
+* [ ] 文章分享到 qq/weibo/wechat ....
+* [ ] 文章字数统计
+* [ ] 文章作者 + 文章日期 显示在内容头部
 
 
 

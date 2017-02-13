@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ★★GDT-Console✔︎
-tags: GDT
+title: GDT-Console✔︎
+tags: 💯GDT
 categories: Chrome
 ---
 
