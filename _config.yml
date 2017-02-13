@@ -29,7 +29,15 @@ gems:
 
 
 
-exclude: [node_modules, Gemfile, webpack]
+exclude: 
+  - node_modules
+  - sass
+  - webpack
+  - Gemfile
+  - Gemfile.lock    
+  - webpack 
+  - .vscode
+  - jekyll-theme-CMS-2.2.2.gem
 
 
 

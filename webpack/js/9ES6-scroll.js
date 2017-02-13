@@ -36,9 +36,6 @@ function scrollbarHeight(){
   window.onresize= function(){ scrollbarHeight()  };
 
 
-
-
-
 	
 	var arrow = x => x*x;
 	console.log("ES6 箭头函数测试 "+arrow);              // 这个 直接显示 函数... 
