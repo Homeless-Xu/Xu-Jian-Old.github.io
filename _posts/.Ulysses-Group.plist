@@ -3808,6 +3808,16 @@
 					<integer>19270</integer>
 				</dict>
 			</dict>
+			<key>1989-01-12-02-‼️数据存入json.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>508853189.99406499</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>20614</integer>
+				</dict>
+			</dict>
 			<key>1989-01-12-02-发布主题(RubyGems).md</key>
 			<dict>
 				<key>lastModification</key>
@@ -11219,6 +11229,9 @@
 			<string>1986-03-01-CNPM.md</string>
 		</array>
 		<array>
+			<string>1989-01-12-02-‼️数据存入json.md</string>
+		</array>
+		<array>
 			<string>1986-11-08-ZSH.md</string>
 		</array>
 		<array>
@@ -14007,7 +14020,7 @@
 		<key>sheetClusters</key>
 		<dict>
 			<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-			<integer>20609</integer>
+			<integer>20615</integer>
 		</dict>
 		<key>sheetOrder</key>
 		<dict>
