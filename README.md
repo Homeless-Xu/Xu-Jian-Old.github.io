@@ -108,6 +108,7 @@
 
 ## Done (次要功能)
 * [x] 谷歌网站统计分析 + SSL/HTTPS + 图片七牛CDN
+* [x] icon 全套图标适配: 适合所有浏览器,所有平台.  
 * [x] yml可添加meta标签来优化SEO
 * [x] 阿里iconfont 代替 fontawesone
 * [x] Git: Github + Coding 双线部署; Github Star数集成
@@ -123,8 +124,6 @@
 
 * [ ] http2.0
 * [ ] gzip压缩
-* [ ] 移动端 滚动条溢出.
-* [ ] firebase 对话功能.
 * [ ] JS 上下键 控制高亮光标.
 * [ ] 多主题切换/多布局切换
 * [ ] 搜索功能
@@ -290,7 +289,4 @@ topbar.html → 找ID= githubstar → 按照注释改.
 
 ## 版权 MIT
 [各版权区别][2]
-
-使用本主题请先Star.
-
 

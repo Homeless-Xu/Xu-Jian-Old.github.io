@@ -10,37 +10,25 @@ categories: Web
 
 **语法:   `@media 媒体类型 and （媒体特性）{你的样式}`**
 
-
-
-
-
 ## 最大宽度max-width
 
 “max-width”是媒体特性中最常用的一个特性，其意思是指媒体类型小于或等于指定的宽度时，样式生效。
 
-~~~
-@media screen and (max-width:480px){
- .ads {
-   display:none;
-  }
-}
-~~~
-{: .language-ruby}
+	@media screen and (max-width:480px){
+	 .ads {
+	   display:none;
+	  }
+	}
+
 上面表示的是：当屏幕小于或等于480px时,页面中的广告区块（.ads）都将被隐藏。
-
-
-
-
 
 
 ## 最小宽度min-width
 “min-width”与“max-width”相反，指的是媒体类型大于或等于指定宽度时，样式生效。
-~~~
-@media screen and (min-width:900px){
-.wrapper{width: 980px;}
-}
-~~~
-{: .language-ruby}
+	@media screen and (min-width:900px){
+	.wrapper{width: 980px;}
+	}
+
 
 上面表示的是：当屏幕大于或等于900px时，容器“.wrapper”的宽度为980px。
 
@@ -51,22 +39,17 @@ categories: Web
 当屏幕在600px-900px之间时，body的背景色渲染为“#f5f5f5”，如下所示。
 
 
-~~~
-@media screen and (min-width:600px) and (max-width:900px){
-  body {background-color:#f5f5f5;}
-}
-~~~
-{: .language-ruby}
+	@media screen and (min-width:600px) and (max-width:900px){
+	  body {background-color:#f5f5f5;}
+	}
+
 
 
 
 
 ## 设备屏幕的输出宽度Device Width
 
-~~~
-<link rel="stylesheet" media="screen and (max-device-width:480px)" href="iphone.css" />
-~~~
-{: .language-ruby}
+	<link rel="stylesheet" media="screen and (max-device-width:480px)" href="iphone.css" />
 
 上面的代码指的是“iphone.css”样式适用于最大设备宽度为480px，比如说iPhone上的显示，这里的“max-device-width”所指的是设备的实际分辨率，也就是指可视面积分辨率。
 
@@ -184,15 +167,11 @@ pc 上显示固定布局. 手机才显示移动端布局.
 
 
 
-~~~
 /*pc上也会显示给手机做的响应式，不满足要求 （添加设备宽）*/
 @media screen and (max-width: 736px) and (max-device-width: 1920px) { }
-~~~
-{: .language-ruby}
 
 
 
-~~~
  /* pc chrome浏览器拖动宽高为400*800时(max-width: 414px) and (orientation:portrait)有效，不符合要求；
 再拖动宽高为600*500时，screen and (max-width: 736px) and (orientation:landscape)有效，不符合要求。 */
 @media screen and (max-width: 414px) and (orientation:portrait), screen and (max-width: 736px) and (orientation:landscape) { }
@@ -200,14 +179,3 @@ pc 上显示固定布局. 手机才显示移动端布局.
 /* 加上更加严格的横竖屏状态  portrait竖屏 —— landscape横屏 */
 @media screen and (max-width: 414px) and (max-device-width: 1080px) and (orientation:portrait),
        screen and (max-width: 736px) and (max-device-width: 1920px) and (orientation:landscape) { }
-~~~
-{: .language-ruby}
-
-
-
-
-
-
-
-
-media

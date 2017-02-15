@@ -8,12 +8,9 @@ cateories: Web
 [github Twitch-API][1]
 [FreeCodeCamp 的 twitch API文档:][2]
 
-~~~
-$.getJSON('https://api.twitch.tv/kraken/streams/freecodecamp?callback=?', function(data) {
-  console.log(data);
-});
-~~~
-{: .language-ruby}
+	$.getJSON('https://api.twitch.tv/kraken/streams/freecodecamp?callback=?', function(data) {
+	  console.log(data);
+	});
 
 
 别看官网的垃圾文档... 坑....

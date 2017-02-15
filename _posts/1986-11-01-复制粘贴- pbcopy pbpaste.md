@@ -136,13 +136,11 @@ $ sudo launchctl load -w
 
 
 Launchd脚本存储在下面的位置：
-~~~
-~/Library/LaunchAgents  
-/Library/LaunchAgents        
-/Library/LaunchDaemons
-/System/Library/LaunchAgents
-/System/Library/LaunchDaemons
-~~~
+	~/Library/LaunchAgents  
+	/Library/LaunchAgents        
+	/Library/LaunchDaemons
+	/System/Library/LaunchAgents
+	/System/Library/LaunchDaemons
 
 
 
@@ -168,6 +166,52 @@ say命令可以用于代替控制台日志和警告声音。例如，你可以�
 
 brew使你能很容易接触到上千个开源社区免费的实用工具和插件。例如，brew install imagemagick将会帮你配置好ImageMagick，一个非常强大的实用工具，从播放gif动画到几十种不同类型图片之间的转换它都能完成。brew install node将为你安装NodeJS，它是时下非常流行的开发和运行服务器端JavaScript应用的工具。
 你也可以这样使用Homebrew：brew install archey将会为你安装Archey，一个很酷且轻量级的脚本，它可以在一个彩色的苹果logo旁边显示出你Mac的规格。
+
+
+
+
+
+
+
+
+
+
+
+
+
+`echo "hello\nworld"`
+输出两行内容到 终端.  换行符号 n
+
+`➜  Desktop echo "hello\nworld" | sed 's/^/ /; 1{x;p;x;}; $G; 1s/^$/ /; $s/^$/ /'`
+
+hello
+world
+
+`➜  Desktop echo "hello\nworld" | sed 's/^/ /; 1{x;p;x;}; $G' | sed '1s/^$/ /; $s/^$/ /'`
+	hello
+	world
+
+
+`➜  Desktop echo "hello\nworld" | sed 's/^/ /; 1{x;p;x;}; $G' | sed '1s/^$/ /; $s/^$/ /' | sed '$G' | sed '$s/^$/ {: .language-ruby}/'`
+
+{: .language-ruby}
+
+
+
+
+KM 里实际运行的 脚本
+1. 按 ⌘C 进行复制
+2. 运行下面脚本
+`pbpaste | sed 's/^/ /; 1{x;p;x;}; $G' | sed '1s/^$/ /; $s/^$/ /' | sed '$G' | sed '$s/^$/ {: .language-ruby}/' | pbcopy`
+
+
+
+
+## 问题: 中文变成乱码.
+其实是 编码问题...
+解决方法
+
+
 
 
 
