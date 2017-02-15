@@ -43,58 +43,35 @@ Block tag its the standard case...when block
 传统意义上的*模板变量*. 用双大括号包围.
 **Jekyll 将文件中解析出来的各种内容. 通过模板变量注入给展示层.**
 
-\~\~
 {% raw %}
 {{ page.title }}      // 这个就表示 页面的标题：
 {% endraw %}
-~~~
-{: .language-ruby}
-
-
-
-
 
 
 ### Filters
 Filters 写法和效果都可以类比于 Shell 中的 Pipe 模式。
 输出的变量，通过管道符传递进行链式处理。
 Jekyll 官方扩展了一批 Liquid Filters 配合 Liquid Objects，便于实现博客系统。如：博客的排序、日期的格式化等。
-~~
-{% raw %}
-{{ "/my/fancy/url" | append: ".html" }}
-{% endraw %}
-~~~
-{: .language-ruby}
 
+	{% raw %}
+	{{ "/my/fancy/url" | append: ".html" }}
+	{% endraw %}
 
 
 ## 过滤器
 过滤器可以改变对象的输出.
 被用在输出中 用| 分割. 类似linux 的管道..
 
-\~\~
-{% raw %}
+	{% raw %}
 	{{ "/my/fancy/url" | append: ".html" }}
-{% endraw %}
-~~~
-{: .language-ruby}
-
-
-
-
-
-
-
+	{% endraw %}
 
 ## 引入文件: 
 
+	{% raw %}
+	{% include filename %}
+	{% endraw %}
 
-~~
-{% raw %}
-{% include filename %}
-{% endraw %}
-~~~
-{: .language-ruby}
 
 *所有模板都可以使用全局变量 site 和 page.*
 
@@ -108,17 +85,15 @@ Jekyll 官方扩展了一批 Liquid Filters 配合 Liquid Objects，便于实现
 对于内容，指定模板了模板后,我们可以称 *内容是模板的儿子*
 
 
-\~\~
-{% raw %}
-在模板中引入 儿子内容:  {{ content }}
 
- 在儿子中,指定父节点模板:
----
-layout: post
----
-{% endraw %}
-\~\~\~
-{: .language-ruby}
+	{% raw %}
+	在模板中引入 儿子内容:  {{ content }}
+	
+	 在儿子中,指定父节点模板:
+	---
+	layout: post
+	---
+	{% endraw %}
 
 
 

@@ -108,42 +108,24 @@ and 被称为关键字，其他关键字还包括 not(排除某种设备)，on
 
 
 
+	<link rel="stylesheet" type="text/css" href="styleA.css" media="screen and (min-width: 400px)">
 
-
-
-
-~~~
-<link rel="stylesheet" type="text/css" href="styleA.css" media="screen and (min-width: 400px)">
-~~~
-{: .language-ruby}
 当屏幕 最小宽度是 400. 也就是要大于400 的时候 
 用这个css
 
 
-~~~
-<link rel="stylesheet" type="text/css" href="styleB.css"  media="screen and (min-width: 600px) and (max-width: 800px)">
-~~~
-{: .language-ruby}
+	<link rel="stylesheet" type="text/css" href="styleB.css"  media="screen and (min-width: 600px) and (max-width: 800px)">
+
 当屏幕 在 600-8-- 之间用这个css
 
 
 
 
 
-
-
-
-
-
-
-
-~~~
-设备       屏幕实际显示宽高            渲染宽度
-iPhone 5s      640 * 1136               320 * 568
-某手机          1080 * 1920              360 * 640
-iPhone 6 plus  1080 1920 ( 1242 2208)   414 * 736
-~~~
-{: .language-ruby}
+	设备       屏幕实际显示宽高            渲染宽度
+	iPhone 5s      640 * 1136               320 * 568
+	某手机          1080 * 1920              360 * 640
+	iPhone 6 plus  1080 1920 ( 1242 2208)   414 * 736
 
 
 
@@ -153,11 +135,9 @@ iPhone 6 plus  1080 1920 ( 1242 2208)   414 * 736
 
 pc 上显示固定布局. 手机才显示移动端布局.
 
-~~~
-/* 无论pc和手机都会显示响应式，不满足要求 （736px为iPhone6 plus横屏渲染宽度，但在pc上浏览器缩小到736px时也有效）*/
-@media screen and (max-width: 736px) { }
-~~~
-{: .language-ruby}
+	/* 无论pc和手机都会显示响应式，不满足要求 （736px为iPhone6 plus横屏渲染宽度，但在pc上浏览器缩小到736px时也有效）*/
+	@media screen and (max-width: 736px) { }
+
 移动设备  最大宽度是 736时候 移动端的响应布局才有效.
 
 当移动端 宽度大于736 就用pc布局...
@@ -172,10 +152,76 @@ pc 上显示固定布局. 手机才显示移动端布局.
 
 
 
- /* pc chrome浏览器拖动宽高为400*800时(max-width: 414px) and (orientation:portrait)有效，不符合要求；
-再拖动宽高为600*500时，screen and (max-width: 736px) and (orientation:landscape)有效，不符合要求。 */
+ /\* pc chrome浏览器拖动宽高为400\*800时(max-width: 414px) and (orientation:portrait)有效，不符合要求；
+再拖动宽高为600*500时，screen and (max-width: 736px) and (orientation:landscape)有效，不符合要求。 */
 @media screen and (max-width: 414px) and (orientation:portrait), screen and (max-width: 736px) and (orientation:landscape) { }
 
-/* 加上更加严格的横竖屏状态  portrait竖屏 —— landscape横屏 */
+/\* 加上更加严格的横竖屏状态  portrait竖屏 —— landscape横屏 \*/
 @media screen and (max-width: 414px) and (max-device-width: 1080px) and (orientation:portrait),
-       screen and (max-width: 736px) and (max-device-width: 1920px) and (orientation:landscape) { }
+	   screen and (max-width: 736px) and (max-device-width: 1920px) and (orientation:landscape) { }
+
+
+
+
+
+
+
+
+
+## 检测用户设备类型
+
+
+只要用户使用什么设备浏览网站很重要!!!!!
+
+宽屏/普通屏/平板/ 手机 
+
+
+CSS 媒体查询 media queries 非常有效.
+但是js却不能及时指定用户的浏览器设备...
+
+
+js 获取手机 类型  在css里面加个额外参数就好了.
+用js获取这个额外参数很简单.
+一个参数代表一种手机屏幕
+
+
+
+	/* 缺省屏幕 */
+	.state-indicator {
+	    position: absolute;
+	    top: -999em;
+	    left: -999em;
+	
+	    z-index: 1;
+	}
+	
+	/* 小屏幕 */
+	@media all and (max-width: 1200px) {
+	    .state-indicator {
+	        z-index: 2;
+	    }
+	}
+	
+	/* 平板 */
+	@media all and (max-width: 1024px) {
+	    .state-indicator {
+	        z-index: 3;
+	    }
+	}
+	
+	/* 手机 */
+	@media all and (max-width: 768px) {
+	    .state-indicator {
+	        z-index: 4;
+	    }
+	}
+
+
+
+
+
+
+
+
+
+
