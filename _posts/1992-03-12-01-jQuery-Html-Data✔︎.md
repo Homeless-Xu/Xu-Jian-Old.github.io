@@ -21,21 +21,14 @@ element: 要存储数据的DOM对象
 
 
 
-~~~
-<script>
-  $("div").data("test", { first: 16, last: "pizza!" });
-  // 给元素添加额外属性.
-
-  $("span:first").text($("div").data("test").first);
-  $("span:last").text($("div").data("test").last);
-  // 获取额外属性的值
-</script>
-~~~
-{: .language-ruby}
-
-
-
-
+	<script>
+	  $("div").data("test", { first: 16, last: "pizza!" });
+	  // 给元素添加额外属性.
+	
+	  $("span:first").text($("div").data("test").first);
+	  $("span:last").text($("div").data("test").last);
+	  // 获取额外属性的值
+	</script>
 
 
 
@@ -55,53 +48,34 @@ element: 要存储数据的DOM对象
 ## jQuery.data( element, key )
 返回用jQuery.data(element, name, value)储存在元素上的相应名字的数据，或者元素上完整的数据存储
 
-
-
-
-
-
-
-
-## 实例1: 
+## 实例1:
 ### 给元素附加数据. 然后取回数据.
-~~~
-$("#btn1").click(function(){
-  $("div").data("greeting", "Hello World");
-});
+	$("#btn1").click(function(){
+	  $("div").data("greeting", "Hello World");
+	});
+	
+	$("#btn2").click(function(){
+	  alert($("div").data("greeting"));
+	});
 
-$("#btn2").click(function(){
-  alert($("div").data("greeting"));
-});
-~~~
-{: .language-ruby}
 
 
 ## 实例2:
-### 给一个元素设置多个附加值. 并获取数据** 
-~~~
-jQuery.data(document.body, 'foo', 52);
-jQuery.data(document.body, 'bar', 'test');
-
-alert(jQuery.data( document.body, 'foo' ));
-alert(jQuery.data( document.body ));
-~~~
-{: .language-ruby}
-
-
-
-
+### 给一个元素设置多个附加值. 并获取数据\*\* 
+	jQuery.data(document.body, 'foo', 52);
+	jQuery.data(document.body, 'bar', 'test');
+	
+	alert(jQuery.data( document.body, 'foo' ));
+	alert(jQuery.data( document.body ));
 
 
 ## 实例3
-~~~
-$('.tagsLink').on('click', '.tagLink', function(){
-    var tagName = $(this).data('filter');
-    console.log(tagName);
-    // 这里点击哪个标签名 就会输出哪个标签名...如AJAX
-    console.log( $('.tagLink') );
-
-});
-~~~
-{: .language-ruby}
+	$('.tagsLink').on('click', '.tagLink', function(){
+	    var tagName = $(this).data('filter');
+	    console.log(tagName);
+	    // 这里点击哪个标签名 就会输出哪个标签名...如AJAX
+	    console.log( $('.tagLink') );
+	
+	});
 
 

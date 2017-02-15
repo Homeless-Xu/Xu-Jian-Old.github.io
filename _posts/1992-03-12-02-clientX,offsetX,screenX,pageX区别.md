@@ -29,17 +29,15 @@ categories: JS
 
 event.clientX
 
-~~~
-<script type="text/javascript">
-function show_coords(event)
-  {
-  x=event.clientX
-  y=event.clientY
-  alert("X coords: " + x + ", Y coords: " + y)
-  }
-</script>
-~~~
-{: .language-ruby}
+	<script type="text/javascript">
+	function show_coords(event)
+	  {
+	  x=event.clientX
+	  y=event.clientY
+	  alert("X coords: " + x + ", Y coords: " + y)
+	  }
+	</script>
+
 
 
 [image-1]:	http://oduizitoj.bkt.clouddn.com/2016-12-06-081508.jpg

@@ -31,9 +31,9 @@ API——应用程序接口(Application Programming Interface)是计算机之间
 
 让我们从之前的猫图API拿取数据吧。
 
-$.getJSON("/json/cats.json", function(json) {
-  $(".message").html(JSON.stringify(json));
-});
+	$.getJSON("/json/cats.json", function(json) {
+	  $(".message").html(JSON.stringify(json));
+	});
 
 
 

@@ -23,21 +23,18 @@ ready() 函数: 当ready时间发生时 执行里面的代码.
 
 
 例子:
-~~~
-$(document).ready(function(){
-    alert("ready");
-});
-
-$().ready(function(){
-    alert("ready");
-});
-
-$(function(){
-    alert("ready");
-});
-
-~~~
-{: .language-ruby}
+	$(document).ready(function(){
+	    alert("ready");
+	});
+	
+	$().ready(function(){
+	    alert("ready");
+	});
+	
+	$(function(){
+	    alert("ready");
+	});
+	
 
 
 

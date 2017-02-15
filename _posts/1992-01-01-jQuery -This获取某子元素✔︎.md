@@ -6,13 +6,11 @@ categories: JS
 ---
 
 
-~~~
-<li>
-    <span></span>
-    <sup></sup>
-</li>
-~~~
-{: .language-ruby}
+	<li>
+	    <span></span>
+	    <sup></sup>
+	</li>
+
 
 
 
@@ -27,7 +25,6 @@ this是Javascript语言的一个关键字。
 它代表函数运行时，自动生成的一个内部对象，只能在函数内部使用。比如，
 
 *那就是this指的是，调用函数的那个对象。*
-
 
 
 

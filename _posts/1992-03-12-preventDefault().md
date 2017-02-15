@@ -10,12 +10,9 @@ order: 34
 
 
 
-~~~
-$("a").click(function(event){
-  event.preventDefault();
-});
-~~~
-{: .language-ruby}
+	$("a").click(function(event){
+	  event.preventDefault();
+	});
 
 
 
