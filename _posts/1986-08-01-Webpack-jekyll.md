@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Webpack-jekyll
-tags: Webpack
+tags: Webpack/React
 categories: Tooles
 ---
 
@@ -108,12 +108,12 @@ css 只需. css-loader 和 style-loader.
 
 sass 需要: sass-loader 和 css-loader 和 style-loader
 	npm install --save-dev sass-loader css-loader style-loader node-sass
-
-
-
-
-
-
+	
+	
+	
+	
+	
+	
 	module: {
 	        loaders: [
 	            {
@@ -156,4 +156,3 @@ js 文件尽量少. 可以减少请求数.加快网页速度.
 然后只要运行下 webpack 打包命令.
 就可以把你 所有的js 打包成一个 js.
 这样 js代码管理&性能 问题就完美解决了.
-

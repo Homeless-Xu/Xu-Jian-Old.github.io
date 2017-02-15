@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Jekyll-json储存分类数据
-tags: JSON
+tags: JSON/AJAX
 categories: Web
 ---
 
@@ -131,7 +131,6 @@ layout: null
 	  {% if forloop.last == false %},{% endif %}{% endfor %}
 	]
 	{% endraw %}
-
 
 
 

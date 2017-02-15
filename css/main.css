@@ -253,10 +253,13 @@ subnav>li{ position: relative; }
     /*-- 未知原因. lineSide 一定要强制隐藏... 不然有个 display:block .....--*/
 
     #filenameDiv, #rightNavbar,#arrowNav { display: none     }
-    #donate, #githubReadme, #githubHome  { display: none     }
+    #donate, #githubReadme, #githubHome, #resume, #mobile, #mail, #GithubStar  { display: none     }
 
 	#filenameDivDate {  position: absolute; right: 6%; top: 0; }
 	/*-- 未知原因. 眼睛会只有半只...--*/
+
+#topbarLeft ,#topbarRight { flex-basis: 30px; }
+
 
 }
 

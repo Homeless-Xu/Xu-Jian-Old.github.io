@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Webpack-js
-tags: Webpack
+tags: Webpack/React
 categories: Tooles
 ---
-

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Webpack-CSS&SASS✔︎
-tags: Webpack
+tags: Webpack/React
 categories: Tooles
 ---
 
@@ -67,16 +67,16 @@ npm 不行就 用 cnpm
 	{
 	  test:   /\.js/,
 	  loader: 'babel',
-	  include: __dirname + '/entry.js',
-	  include: __dirname + '/js',
+	  include: \_\_dirname + '/entry.js',
+	  include: \_\_dirname + '/js',
 	},
-	
+	 
 	// LESS
 	{
 	  test: /\.less$/,
 	  loader: 'style!css!less'
 	},
-	
+	 
 	// SASS
 	{
 	  test: /\.scss$/,
@@ -95,7 +95,6 @@ jekyll 默认sass 是放在 `_sass` 文件夹下的.
 如果你要用 webpack 来处理 import里的sass文件.
 就必须 不能用带有 下划线的文件夹名. jekyll 会特殊处理的.
 只要随便改个名字就可以.
-
 
 
 

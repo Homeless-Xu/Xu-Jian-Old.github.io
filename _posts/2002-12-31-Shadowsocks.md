@@ -171,4 +171,10 @@ sudo vim rc.local
 
 
 
+qq 代理   类型 socks5  地址127.0.0.1  端口 1080   用户密码都留空    前提:开启自动翻墙.  实现 qq 全局翻墙 
+
+
+
+
+
 [1]:	https://portal.shadowsocks.com/clientarea.php?action=productdetails&id=704307

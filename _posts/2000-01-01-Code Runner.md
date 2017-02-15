@@ -2,7 +2,7 @@
 layout: post
 title: Code Runner
 tags: VSC-Plugin
-categories: Tool
+categories: Tooles
 ---
 运行各种语言 而 不用搭建的插件.....
 
@@ -12,7 +12,7 @@ categories: Tool
 选择环境   或者鼠标选择代码...
 
 
-## 开启: ⌃ alt N 
+## 开启: ⌃ alt N
 
 ## 停止:  ⌃ ⌥ M
 
@@ -26,7 +26,6 @@ categories: Tool
 
 环境变量设置: 
 …
-
 
 
 

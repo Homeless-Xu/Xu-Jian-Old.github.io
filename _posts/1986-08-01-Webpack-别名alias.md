@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Webpack-别名alias
-tags: Webpack
+tags: Webpack/React
 categories: Tooles
 ---
 
@@ -23,7 +23,6 @@ categories: Tooles
 可以为常用模块配置改属性，可以节省编译的搜索时间。
 
 通过别名 可以减少一般的时间.
-
 
 
 

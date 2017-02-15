@@ -2,7 +2,7 @@
 layout: post
 title: GDT-Console✔︎
 tags: 💯GDT
-categories: Chrome
+categories: Tooles
 ---
 
 

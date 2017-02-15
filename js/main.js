@@ -453,6 +453,7 @@ function getElementLeft(element){
 
 
 // 滚动条高度.  有高度才能有滚动条.
+// 这里用函数计算的话. 手机端 会有问题.取值=0.  还是直接减去得了. 一个 -30 . 一个-20
 function scrollbarHeight(){
 	
   function getElementTop(element){
@@ -480,7 +481,8 @@ function scrollbarHeight(){
   $("#filenameUL").css("height",xxyy)
  
   // 下面是cate 和 tag 的高度设置..
-  let xxyy2 = xyz - x;
+  //let xxyy2 = xyz - x;
+  let xxyy2 = xyz - 30;
       $("#catenameUL").css("height",xxyy2)
       $("#tagnameUL").css("height",xxyy2) 
             //alert("xxyy="+xxyy);

@@ -2,7 +2,7 @@
 layout: post
 title: GDT-Timeline分析✔︎
 tags: 💯GDT
-categories: Chrome
+categories: Tooles
 ---
 
 ## 网站性能: 加载&执行 性能

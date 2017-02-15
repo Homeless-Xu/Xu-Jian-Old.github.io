@@ -2,7 +2,7 @@
 layout: post
 title: GDT-Audits:优化建议✔︎
 tags: 💯GDT
-categories: Chrome
+categories: Tooles
 ---
 
 运行这个会提出 若干条网页优化建议.
