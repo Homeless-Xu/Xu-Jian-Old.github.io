@@ -1741,16 +1741,6 @@
 					<integer>19914</integer>
 				</dict>
 			</dict>
-			<key>1987-0-12-01-readyState.md</key>
-			<dict>
-				<key>lastModification</key>
-				<real>508765032.206833</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>19788</integer>
-				</dict>
-			</dict>
 			<key>1987-01-01-01--编码乱码.md</key>
 			<dict>
 				<key>lastModification</key>
@@ -2635,6 +2625,16 @@
 					<integer>19485</integer>
 				</dict>
 			</dict>
+			<key>1987-12-01-readyState.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>508822954.31914902</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>19982</integer>
+				</dict>
+			</dict>
 			<key>1987-12-12-01-Favicon.md</key>
 			<dict>
 				<key>lastModification</key>
@@ -3073,20 +3073,6 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>19186</integer>
-				</dict>
-			</dict>
-			<key>1989-08-01-G✔︎.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>508216743.961487</real>
-				<key>lastModification</key>
-				<real>508216743.961487</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>19354</integer>
 				</dict>
 			</dict>
 			<key>1989-12-01-01-Misc.md</key>
@@ -10202,9 +10188,6 @@
 	<key>sheetClusters</key>
 	<array>
 		<array>
-			<string>1989-08-01-G✔︎.md</string>
-		</array>
-		<array>
 			<string>1986-08-01-Webpack-loader.md</string>
 		</array>
 		<array>
@@ -10784,7 +10767,7 @@
 			<string>1987-05-12-01-PJAX.md</string>
 		</array>
 		<array>
-			<string>1987-0-12-01-readyState.md</string>
+			<string>1987-12-01-readyState.md</string>
 		</array>
 		<array>
 			<string>1987-05-12-01-服务器响应.md</string>
@@ -13002,7 +12985,7 @@
 		<key>sheetClusters</key>
 		<dict>
 			<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-			<integer>19981</integer>
+			<integer>19983</integer>
 		</dict>
 		<key>sheetOrder</key>
 		<dict>
