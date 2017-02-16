@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 14);
+/******/ 	return __webpack_require__(__webpack_require__.s = 12);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -73,17 +73,17 @@
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(12);
+var content = __webpack_require__(10);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(11)(content, {});
+var update = __webpack_require__(9)(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!./../node_modules/.0.26.1@css-loader/index.js!./../node_modules/.5.0.1@sass-loader/lib/loader.js!./main.sass", function() {
-			var newContent = require("!!./../node_modules/.0.26.1@css-loader/index.js!./../node_modules/.5.0.1@sass-loader/lib/loader.js!./main.sass");
+		module.hot.accept("!!./../../node_modules/.0.26.1@css-loader/index.js!./../../node_modules/.5.0.1@sass-loader/lib/loader.js!./main.sass", function() {
+			var newContent = require("!!./../../node_modules/.0.26.1@css-loader/index.js!./../../node_modules/.5.0.1@sass-loader/lib/loader.js!./main.sass");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -168,6 +168,7 @@ $(".postNames").click(   function() {
 // 上面是 大类 标签过滤+高亮
 
 
+
 /***/ }),
 /* 2 */
 /***/ (function(module, exports) {
@@ -202,9 +203,12 @@ $(function (){
 
 
 
+
 /***/ }),
 /* 3 */
 /***/ (function(module, exports) {
+
+
 
 // 显示文章结构侧边栏
 function showSideStructure(){
@@ -313,32 +317,14 @@ $(document).on('pjax:end',   function() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /***/ }),
 /* 4 */
 /***/ (function(module, exports) {
 
 
 
-/***/ }),
-/* 5 */
-/***/ (function(module, exports) {
-
 // 滚动条高度.  有高度才能有滚动条.
+// 这里用函数计算的话. 手机端 会有问题.取值=0.  还是直接减去得了. 一个 -30 . 一个-20
 function scrollbarHeight(){
 	
   function getElementTop(element){
@@ -366,7 +352,8 @@ function scrollbarHeight(){
   $("#filenameUL").css("height",xxyy)
  
   // 下面是cate 和 tag 的高度设置..
-  let xxyy2 = xyz - x;
+  //let xxyy2 = xyz - x;
+  let xxyy2 = xyz - 30;
       $("#catenameUL").css("height",xxyy2)
       $("#tagnameUL").css("height",xxyy2) 
             //alert("xxyy="+xxyy);
@@ -397,8 +384,9 @@ window.onresize= function(){ scrollbarHeight()  };
 
 
 /***/ }),
-/* 6 */
+/* 5 */
 /***/ (function(module, exports) {
+
 
 // 顶部左边 显隐按钮
 $(function button(){
@@ -499,29 +487,11 @@ $(document).keydown(function(event){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /***/ }),
-/* 7 */
+/* 6 */
 /***/ (function(module, exports) {
+
+
 
 // 下面是 各种额外功能:   拖动条js  + 方向箭js + pjax  + 回到顶部 + 滚动条高度.
 
@@ -624,9 +594,12 @@ function getElementLeft(element){
 
 });
 
+
 /***/ }),
-/* 8 */
+/* 7 */
 /***/ (function(module, exports) {
+
+
 
 
 // lazyload 慢加载. 
@@ -647,9 +620,14 @@ $(function(){
 })
 
 
+
 /***/ }),
-/* 9 */
+/* 8 */
 /***/ (function(module, exports) {
+
+
+
+
 
 // 显隐文件日期
 function fileNameDate() {
@@ -686,82 +664,8 @@ $("#allCateTagPostBtn").click(  function() { showAllTagsandPosts()  } );
 
 
 
-
 /***/ }),
-/* 10 */
-/***/ (function(module, exports, __webpack_require__) {
-
-//////////// js 文件引入
-__webpack_require__(1);
-
-__webpack_require__(2);
-
-__webpack_require__(3);
-// pjax 必须和这个放一起.. 分开就是不行  奇怪了...
-__webpack_require__(6);
-__webpack_require__(7);
-__webpack_require__(5);
-__webpack_require__(8);
-//require("./webpack/js/9serviceworker.js");
-__webpack_require__(9);
-
-
-__webpack_require__(4);
-
-
-
-
-
-
-
-////// css 文件引入
-__webpack_require__(0);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-///// Misc
-
-// document.getElementById('app').innerHTML="这是我第一个打包成功的程序";
-
-
-
-
-
-
-
-
-
-// css 成功引入
-//require("!style-loader!css-loader!./css/main.css");
-
-
-
-
-//var $ = require('jquery');
-//$('body').html('Hello');
-
-
-// import $ from 'jquery';
-//$('body').html('Hello');
-
-
-
-
-
-/***/ }),
-/* 11 */
+/* 9 */
 /***/ (function(module, exports) {
 
 /*
@@ -1013,10 +917,10 @@ function updateLink(linkElement, obj) {
 
 
 /***/ }),
-/* 12 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(13)();
+exports = module.exports = __webpack_require__(11)();
 // imports
 
 
@@ -1027,7 +931,7 @@ exports.push([module.i, "@charset \"UTF-8\";\n* {\n  padding: 0;\n  margin: 0;\n
 
 
 /***/ }),
-/* 13 */
+/* 11 */
 /***/ (function(module, exports) {
 
 /*
@@ -1083,11 +987,66 @@ module.exports = function() {
 
 
 /***/ }),
-/* 14 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(10);
-(function webpackMissingModule() { throw new Error("Cannot find module \"bundle.js\""); }());
+// js 文件引入
+  __webpack_require__(1);
+  __webpack_require__(2);
+  __webpack_require__(3);
+  // pjax 必须和这个放一起.. 分开就是不行  奇怪了...
+  __webpack_require__(5);
+  __webpack_require__(6);
+  __webpack_require__(4);
+  __webpack_require__(7);
+  //require("./webpack/js/9serviceworker.js");
+  __webpack_require__(8);
+
+
+
+
+// SASS 文件引入(import的子sass 写在main.sass中)
+__webpack_require__(0);
+// CSS 文件引入
+//require("!style-loader!css-loader!./css/main.css");
+
+
+
+
+
+
+
+
+
+
+
+
+///// Misc
+
+// document.getElementById('app').innerHTML="这是我第一个打包成功的程序";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//var $ = require('jquery');
+//$('body').html('Hello');
+
+
+// import $ from 'jquery';
+//$('body').html('Hello');
+
+
+
 
 
 /***/ })

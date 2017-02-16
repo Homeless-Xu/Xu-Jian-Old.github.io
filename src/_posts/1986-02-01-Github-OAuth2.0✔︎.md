@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Github-OAuth2.0✔︎
-tags: Github
+tags: Git
 categories: Tooles
 ---
 

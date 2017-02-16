@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Webpack-别名alias
-tags: Webpack/React
+tags: React
 categories: Tooles
 ---
 

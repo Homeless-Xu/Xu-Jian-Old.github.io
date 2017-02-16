@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Github&Coding双线部署✔︎
-tags: Git/Github
+tags: Git
 categories: Tooles
 ---
 

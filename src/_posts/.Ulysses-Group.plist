@@ -6,7 +6,7 @@
 	<array>
 		<string>.❤️❤️86-Tooles❤️❤️.Ulysses_Public_Filter</string>
 		<string>.01-GDT-Chrome.Ulysses_Public_Filter</string>
-		<string>.02-Git-Github.Ulysses_Public_Filter</string>
+		<string>.02-Git.Ulysses_Public_Filter</string>
 		<string>.03-包管理器.Ulysses_Public_Filter</string>
 		<string>.--- 04-Brew.Ulysses_Public_Filter</string>
 		<string>.04--APP.Ulysses_Public_Filter</string>
@@ -14,7 +14,7 @@
 		<string>.06-LAMP.Ulysses_Public_Filter</string>
 		<string>.--- 06-Gulp.Ulysses_Public_Filter</string>
 		<string>.--- 07-Gem.Ulysses_Public_Filter</string>
-		<string>.08-Webpack-React.Ulysses_Public_Filter</string>
+		<string>.08-React.Ulysses_Public_Filter</string>
 		<string>.--- 09-Babel.Ulysses_Public_Filter</string>
 		<string>.--- 09-.Ulysses_Public_Filter</string>
 		<string>.09-Firebase.Ulysses_Public_Filter</string>
@@ -437,14 +437,14 @@
 					<integer>692</integer>
 				</dict>
 			</dict>
-			<key>.02-Git-Github.Ulysses_Public_Filter</key>
+			<key>.02-Git.Ulysses_Public_Filter</key>
 			<dict>
 				<key>lastModification</key>
-				<real>508825031.165528</real>
+				<real>508900589.029302</real>
 				<key>version</key>
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>715</integer>
+					<integer>899</integer>
 				</dict>
 			</dict>
 			<key>.02-IT-Admin.Ulysses_Public_Filter</key>
@@ -691,14 +691,14 @@
 					<integer>784</integer>
 				</dict>
 			</dict>
-			<key>.08-Webpack-React.Ulysses_Public_Filter</key>
+			<key>.08-React.Ulysses_Public_Filter</key>
 			<dict>
 				<key>lastModification</key>
-				<real>508825047.727346</real>
+				<real>508900538.925695</real>
 				<key>version</key>
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>719</integer>
+					<integer>898</integer>
 				</dict>
 			</dict>
 			<key>.08-算法.Ulysses_Public_Filter</key>
@@ -14015,7 +14015,7 @@
 		<key>childOrder</key>
 		<dict>
 			<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-			<integer>897</integer>
+			<integer>899</integer>
 		</dict>
 		<key>sheetClusters</key>
 		<dict>

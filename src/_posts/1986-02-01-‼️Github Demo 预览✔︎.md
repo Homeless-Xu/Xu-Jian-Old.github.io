@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ‼️Github Demo 预览
-tags: Github
+tags: Git
 categories: Tooles
 ---
 

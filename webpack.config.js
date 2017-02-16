@@ -15,7 +15,7 @@ module.exports = {
     app: "./entry.js",
   },
   output: {
-    path: "./js",
+    path: "./src/js",
     filename: "bundle.js",
   },
 
@@ -36,7 +36,7 @@ module: {
       test:   /\.js/,
       loader: 'babel-loader',
       include: __dirname + '/entry.js',
-      include: __dirname + '/js',
+      include: __dirname + '/src/js',
   	},
   	
   	// CSS

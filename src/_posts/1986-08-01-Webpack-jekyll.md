@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Webpack-jekyll
-tags: Webpack/React
+tags: React
 categories: Tooles
 ---
 

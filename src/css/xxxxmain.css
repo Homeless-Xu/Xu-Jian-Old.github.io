@@ -23,6 +23,7 @@ sup                  { color: red; float:right; font-size:0.7em; }
 .sortBtn {width: 30px; height: 30px; flex-grow: 1; flex-shrink: 0;}
 
 
+cateDiv li { height: 25px;}
 
 
 

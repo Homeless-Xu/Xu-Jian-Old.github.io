@@ -7,8 +7,6 @@ Phone: 186 219 23213
 
 
 
-
-
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -19,7 +17,7 @@ github_username:  jekyll
 markdown: kramdown
 kramdown:
   input: GFM
-#   syntax_highlighter: rouge
+#  syntax_highlighter: rouge
 
 
 
@@ -41,7 +39,10 @@ exclude:
 
 
 
-
+# destination: public
+# 下面这步非常关键. 关系到 jekyll build. 因为node_modules文件夹的存在.会导致你本地预览 多花上30+秒.
+# 用了 src 把build 所有需要的文件 都移到src文件夹里. 再build 就会把 node_modules 排除在外了.
+source: src
 
 
 ###########################################   顶部链接 设置
