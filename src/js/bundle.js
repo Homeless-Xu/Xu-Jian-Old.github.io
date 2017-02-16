@@ -669,7 +669,7 @@ $("#allCateTagPostBtn").click(  function() { showAllTagsandPosts()  } );
 /***/ (function(module, exports) {
 
 $(function (){ 
-// 集成 Firebase 就是把你的firebase账户信息 加到你的网页. 然后就能进行互动了. 
+	// 集成 Firebase 就是把你的firebase账户信息 加到你的网页. 然后就能进行互动了. 
   const config = {
     apiKey: "AIzaSyCRkzJi6Ir5LIFqQ1HLymzY9GM7MxiMEVM",
     authDomain: "cms-jekyll-71cdf.firebaseapp.com",
@@ -682,9 +682,9 @@ $(function (){
 
 
 
-// 连接 Object 数据库. 
-const preObject = document.getElementById('Object')
-const  dbRefObject = firebase.database().ref().child('Object');
+	// 连接 Object 数据库. 
+	const preObject = document.getElementById('Object')
+	const  dbRefObject = firebase.database().ref().child('Object');
 	 // dbRefObject.on('value', snap => console.log( snap.val())); 
 	 // 这个是把数据显示到 console 中.   下面是用json格式显示到 pre标签上.
 	dbRefObject.on('value', snap => {  preObject.innerText = JSON.stringify(snap.val(),null,3);   });
@@ -695,9 +695,9 @@ const  dbRefObject = firebase.database().ref().child('Object');
 
 
 
-// 连接 MyAssetes 数据库
-const ulList = document.getElementById('List');
-const dbRefList = firebase.database().ref().child('MyAssetes');
+	// 连接 MyAssetes 数据库
+	const ulList = document.getElementById('List');
+	const dbRefList = firebase.database().ref().child('MyAssetes');
 	// 数据库添加数据 实时到本地
 	dbRefList.on("child_added", snap => {
 	    const li = document.createElement('li');
@@ -723,81 +723,115 @@ const dbRefList = firebase.database().ref().child('MyAssetes');
 
 
 
-// js 变量 绑定html里的 id.
-const textEmail = document.getElementById('txtEmail');
-const textPassword = document.getElementById('txtPassword');
-const btnLogin = document.getElementById('btnLogin');
-const btnSignUp = document.getElementById('btnSignUp');
-const btnLogOut = document.getElementById('btnLogOut');
+	// js 变量 绑定html里的 id.
+	const textEmail = document.getElementById('txtEmail');
+	const textPassword = document.getElementById('txtPassword');
+	const btnLogin = document.getElementById('btnLogin');
+	const btnSignUp = document.getElementById('btnSignUp');
+	const btnLogOut = document.getElementById('btnLogOut');
+	const githubLogin = document.getElementById('githubLogin');
+	const githubLogOut = document.getElementById('githubLogOut');
 
-// 登录按钮
-btnLogin.addEventListener('click', e => {
-  const email = txtEmail.value;
-  const pass = txtPassword.value;
-  const auth = firebase.auth();
-  const promise = auth.signInWithEmailAndPassword (email,pass);
-  promise.catch ( e => console.log(e.messgae));
+
+
+	// 登录 登出按钮 &  验证信息反馈
+  /*
+	btnLogin.addEventListener('click', e => {
+	  const email = txtEmail.value;
+	  const pass = txtPassword.value;
+	  const auth = firebase.auth();
+	  const promise = auth.signInWithEmailAndPassword (email,pass);
+	  promise.catch ( e => console.log(e.messgae));
+	});
+	
+	
+	btnLogOut.addEventListener('click', e=> {
+	  firebase.auth().signOut();
+	})
+	
+	
+	firebase.auth().onAuthStateChanged(firebaseUser => {
+	  if(firebaseUser) { 
+	    console.log("成功登录"+firebaseUser);
+	    btnLogOut.classList.remove('hide');
+	  }else { 
+	    console.log('not logged in');
+	    btnLogOut.classList.add('hide');
+	  }
+	})
+  */
+
+
+
+
+
+
+	// 注册按钮(邮箱密码注册)
+	/*
+	btnSignUp.addEventListener('click', e => {
+	  const email = txtEmail.value;
+	  const pass = txtPassword.value;
+	  const auth = firebase.auth();
+	  const promise = auth.createUserWithEmailAndPassword(email,pass);
+	  promise.catch ( e => console.log(e.messgae));
+	});
+	*/
+
+
+
+
+
+
+
+
+
+
+
+	// github 登录
+	var provider = new firebase.auth.GithubAuthProvider();
+	
+	githubLogin.addEventListener('click', e => {
+
+	   firebase.auth().signInWithPopup(provider)
+		   
+		   .then(function(result) {
+		      var token = result.credential.accessToken;
+		      var user = result.user;
+				
+		      console.log(token)
+		      console.log(user)
+		   }).catch(function(error) {
+		      var errorCode = error.code;
+		      var errorMessage = error.message;
+				
+		      console.log(error.code)
+		      console.log(error.message)
+		   });
+	});
+	
+	// github 登出
+	githubLogOut.addEventListener('click', e => {
+	  firebase.auth().signOut()
+		   .then(function() {
+		      console.log('Signout successful!')
+		   }, function(error) {
+		      console.log('Signout failed')
+		   });   
+	});
+
+
+
+
+
+
+
+
+
+
+
+
+
 });
-// 注册按钮(邮箱密码注册)
-btnSignUp.addEventListener('click', e => {
-  const email = txtEmail.value;
-  const pass = txtPassword.value;
-  const auth = firebase.auth();
-  const promise = auth.createUserWithEmailAndPassword(email,pass);
-  promise.catch ( e => console.log(e.messgae));
-});
-// 登出按钮
-btnLogOut.addEventListener('click', e=> {
-  firebase.auth().signOut();
-})
-
-// 验证信息反馈(console)
-firebase.auth().onAuthStateChanged(firebaseUser => {
-  if(firebaseUser) { 
-    console.log("成功登录"+firebaseUser);
-    btnLogOut.classList.remove('hide');
-  }else { 
-    console.log('not logged in');
-    btnLogOut.classList.add('hide');
-  }
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
 
 /***/ }),
 /* 10 */
