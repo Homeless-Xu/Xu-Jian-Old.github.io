@@ -10,26 +10,38 @@ const webpack = require("webpack");
 // module.exports 也是es6 的模块导出功能.
 
 module.exports = {
- // context: "./webpack",
+ // webpack的 入口文件(配置文件. 根据这个文件来打包)
    entry: {
     app: "./entry.js",
   },
+  
+  // 最终打包好的文件的输出路径 和 输出名字.
   output: {
+    // 文件路径: 可以用绝对路径(/开头),也可以用相对路径(.开头)
     path: "./src/js",
+    // 打包后的文件名
     filename: "bundle.js",
   },
+  
+  // 请求重定向:把用户的一个请求重定向到另一个路径。
+  //  文件查找是要时间的. 直接给个具体的路径 能省很多时间.
+  //  require('comps/Loading.jsx'); 其实就等价于require('src/pages/components/Loading.jsx')。
+ //resolve: {
+ //  alias: {
+ //      styles: path.join(__dirname, 'sass') 
+ //  }
+//},
 
 
-resolve: {
-   alias: {
-       styles: path.join(__dirname, 'sass') 
-   }
-},
 
-
-
-
+// module 下都是各类 loader
 module: {
+	
+	// 忽略解析的文件
+	// noParse: [],            
+	 
+	 
+	 
   loaders: [
 	  // JS-ES6
     {
@@ -50,6 +62,7 @@ module: {
 		{
 		  test: /\.less$/,
 		  loader: 'style-loader!css-loader!less-loader'
+		  // “！”链式loader，从右向左依次执行!
 		},
 		
 		// SASS
@@ -58,7 +71,19 @@ module: {
 		  loader: 'style-loader!css-loader!sass-loader',                
 		} 
   ],
-}
+},
+
+
+
+
+// 启用自带压缩
+//  plugins: [
+//    new webpack.optimize.UglifyJsPlugin({
+//      compress: {
+//        warnings: false
+//      }
+//    })
+//  ]
 
 
 

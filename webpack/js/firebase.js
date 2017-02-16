@@ -118,7 +118,10 @@ $(function (){
 
 
 	// github 登录
+	// 创建一个 GitHub 提供程序对象的实例
 	var provider = new firebase.auth.GithubAuthProvider();
+	
+	provider.addScope('repo');
 	
 	githubLogin.addEventListener('click', e => {
 
@@ -148,7 +151,6 @@ $(function (){
 		      console.log('Signout failed')
 		   });   
 	});
-
 
 
 
