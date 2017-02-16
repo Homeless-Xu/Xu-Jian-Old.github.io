@@ -27,7 +27,7 @@
 		<string>.❤️❤️87-Web✔︎❤️❤️.Ulysses_Public_Filter</string>
 		<string>.03-缓存.Ulysses_Public_Filter</string>
 		<string>.04-SEO.Ulysses_Public_Filter</string>
-		<string>.05-JSON-AJAX.Ulysses_Public_Filter</string>
+		<string>.05-JSON&amp;AJAX.Ulysses_Public_Filter</string>
 		<string>.---06-Ajax.Ulysses_Public_Filter</string>
 		<string>.07-资源.Ulysses_Public_Filter</string>
 		<string>.08-API.Ulysses_Public_Filter</string>
@@ -579,14 +579,14 @@
 					<integer>717</integer>
 				</dict>
 			</dict>
-			<key>.05-JSON-AJAX.Ulysses_Public_Filter</key>
+			<key>.05-JSON&amp;AJAX.Ulysses_Public_Filter</key>
 			<dict>
 				<key>lastModification</key>
-				<real>508825469.81482601</real>
+				<real>508914027.24385101</real>
 				<key>version</key>
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>782</integer>
+					<integer>900</integer>
 				</dict>
 			</dict>
 			<key>.05-SHELL.Ulysses_Public_Filter</key>
@@ -2364,6 +2364,16 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>20141</integer>
+				</dict>
+			</dict>
+			<key>1986-09-01-jelyll-Firebase-实例.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>508915273.16598499</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>20620</integer>
 				</dict>
 			</dict>
 			<key>1986-09-01-jelyll-Firebase-登录验证✔︎.md</key>
@@ -11229,6 +11239,9 @@
 			<string>1986-03-01-CNPM.md</string>
 		</array>
 		<array>
+			<string>1986-09-01-jelyll-Firebase-实例.md</string>
+		</array>
+		<array>
 			<string>1989-01-12-02-‼️数据存入json.md</string>
 		</array>
 		<array>
@@ -14015,12 +14028,12 @@
 		<key>childOrder</key>
 		<dict>
 			<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-			<integer>899</integer>
+			<integer>900</integer>
 		</dict>
 		<key>sheetClusters</key>
 		<dict>
 			<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-			<integer>20615</integer>
+			<integer>20621</integer>
 		</dict>
 		<key>sheetOrder</key>
 		<dict>

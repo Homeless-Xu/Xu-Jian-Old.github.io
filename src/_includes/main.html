@@ -8,7 +8,18 @@
             {% assign catePosts = someCate | last %}
                 <li id="{{cateClicked}}" class="cateNames"><span>{{ cateClicked }}</span><sup class="cateSup">{{catePosts | size }}</sup></a></li>
         {% endfor %}
-    </ul>
+        
+        
+			        <br><br><br><br> 
+			  <pre id="Object">Firebase</pre>
+			  <ul id="List">Firebase: List test</ul>
+			  
+			  <input id="txtEmail" type="email" placeholder="Email">
+			  <input id="txtPassword" type="password" placeholder="Password">
+			  <button id="btnSignUp" > Sign Up </button>
+			  <button id="btnLogin" > login </button>
+			  <button id="btnLogOut" style="display: none" > Log Out </button>
+    </ul>   
 </div>
 
 <!-- ----------------------------------------------------------------------------------------------- -->
@@ -100,6 +111,21 @@
 		meta: {{page.meta}} <hr>
 	{% endif %}
 	<!-- 这里判断一下 有没有设置meta 有就显示 没有就不显示 -->
+
+
+
+
+
+
+<div>
+  <ul id=“list”></ul>
+</div>
+
+
+
+
+
+  
 
 
 
