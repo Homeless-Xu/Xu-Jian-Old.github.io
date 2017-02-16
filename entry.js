@@ -40,6 +40,7 @@ require("!style-loader!css-loader!sass-loader!./webpack/sass/main.sass");
 
 
 
+console.log("Hello, world!")
 
 
 
