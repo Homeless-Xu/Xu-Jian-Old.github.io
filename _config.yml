@@ -43,7 +43,7 @@ exclude:
 # 下面这步非常关键. 关系到 jekyll build. 因为node_modules文件夹的存在.会导致你本地预览 多花上30+秒.
 # 用了 src 把build 所有需要的文件 都移到src文件夹里. 再build 就会把 node_modules 排除在外了.
 source: src
-
+destination: _site
 
 ###########################################   顶部链接 设置
 githubHomeURL:  https://github.com/Xu-Jian
