@@ -99,9 +99,10 @@
 * [x] 文件结构栏: 文章滚动高亮标题 ( h2-h5 )
 * [x] 文件结构栏: 标题锚点跳转.
 * [x] 文件名栏: 显隐文件时间.配合本地Ulysses 方便本地排序.
+* [x] Firebase 数据库(聊天功能)
 * [x] Service Worker 缓存 (废弃 manifest缓存 )
 * [x] Webpack (SASS & ES6 & CSS内联)
-* [x] 启用 Lazyload (待进一步优化)
+* [x] 启用 Lazyload 
 
 
 

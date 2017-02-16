@@ -1,6 +1,5 @@
 <div id="Div">
 <!-- ----------------------------------------------------------------------------------------------- -->
-
 <div id="cateDiv">
     <ul id="catenameUL" style="overflow: scroll;" >	
         {% for someCate in site.categories %}
@@ -8,17 +7,6 @@
             {% assign catePosts = someCate | last %}
                 <li id="{{cateClicked}}" class="cateNames"><span>{{ cateClicked }}</span><sup class="cateSup">{{catePosts | size }}</sup></a></li>
         {% endfor %}
-        
-        
-			        <br><br><br><br> 
-			  <pre id="Object">Firebase</pre>
-			  <ul id="List">Firebase: List test</ul>
-			  
-			  <input id="txtEmail" type="email" placeholder="Email">
-			  <input id="txtPassword" type="password" placeholder="Password">
-			  <button id="btnSignUp" > Sign Up </button>
-			  <button id="btnLogin" > login </button>
-			  <button id="btnLogOut" style="display: none" > Log Out </button>
     </ul>   
 </div>
 

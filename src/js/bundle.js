@@ -669,64 +669,68 @@ $("#allCateTagPostBtn").click(  function() { showAllTagsandPosts()  } );
 /***/ (function(module, exports) {
 
 $(function (){ 
-  // Initialize Firebase 
-    const config = {
-      apiKey: "AIzaSyCRkzJi6Ir5LIFqQ1HLymzY9GM7MxiMEVM",
-      authDomain: "cms-jekyll-71cdf.firebaseapp.com",
-      databaseURL: "https://cms-jekyll-71cdf.firebaseio.com",
-      storageBucket: "cms-jekyll-71cdf.appspot.com",
-      messagingSenderId: "727659745071"
-    };
-    firebase.initializeApp(config);
+// 集成 Firebase 就是把你的firebase账户信息 加到你的网页. 然后就能进行互动了. 
+  const config = {
+    apiKey: "AIzaSyCRkzJi6Ir5LIFqQ1HLymzY9GM7MxiMEVM",
+    authDomain: "cms-jekyll-71cdf.firebaseapp.com",
+    databaseURL: "https://cms-jekyll-71cdf.firebaseio.com",
+    storageBucket: "cms-jekyll-71cdf.appspot.com",
+    messagingSenderId: "727659745071"
+  };
+  firebase.initializeApp(config);
+
+
+
+
+// 连接 Object 数据库. 
+const preObject = document.getElementById('Object')
+const  dbRefObject = firebase.database().ref().child('Object');
+	 // dbRefObject.on('value', snap => console.log( snap.val())); 
+	 // 这个是把数据显示到 console 中.   下面是用json格式显示到 pre标签上.
+	dbRefObject.on('value', snap => {  preObject.innerText = JSON.stringify(snap.val(),null,3);   });
 
 
 
 
 
-	
-	
-	
-	
 
 
-  const preObject = document.getElementById('Object')
-  const  dbRefObject = firebase.database().ref().child('Object');
- // dbRefObject.on('value', snap => console.log( snap.val())); 
- // 这个是把数据显示到 console 中.   下面是用json格式显示到 pre标签上.
-dbRefObject.on('value', snap => {  preObject.innerText = JSON.stringify(snap.val(),null,3);   });
-
-
-
-
-
+// 连接 MyAssetes 数据库
 const ulList = document.getElementById('List');
 const dbRefList = firebase.database().ref().child('MyAssetes');
-dbRefList.on("child_added", snap => {
-    const li = document.createElement('li');
-    li.innerText = snap.val();
-    li.id = snap.key;
-    ulList.appendChild(li);
-  });
-dbRefList.on("child_removed", snap => {
-    const liRemoved = document.getElementById(snap.key);
-    liRemoved.remove();
-  });
-dbRefList.on("child_changed", snap => {
-    const liChanged = document.getElementById(snap.key);
-    liChanged.innerText = snap.val();
-});
+	// 数据库添加数据 实时到本地
+	dbRefList.on("child_added", snap => {
+	    const li = document.createElement('li');
+	    li.innerText = snap.val();
+	    li.id = snap.key;
+	    ulList.appendChild(li);
+	  });
+	// 数据库删除数据 实时到本地
+	
+	dbRefList.on("child_removed", snap => {
+	    const liRemoved = document.getElementById(snap.key);
+	    liRemoved.remove();
+	  });
+	// 数据库修改数据 实时到本地
+	dbRefList.on("child_changed", snap => {
+	    const liChanged = document.getElementById(snap.key);
+	    liChanged.innerText = snap.val();
+	});
 
 
 
 
 
 
+
+// js 变量 绑定html里的 id.
 const textEmail = document.getElementById('txtEmail');
 const textPassword = document.getElementById('txtPassword');
 const btnLogin = document.getElementById('btnLogin');
 const btnSignUp = document.getElementById('btnSignUp');
 const btnLogOut = document.getElementById('btnLogOut');
 
+// 登录按钮
 btnLogin.addEventListener('click', e => {
   const email = txtEmail.value;
   const pass = txtPassword.value;
@@ -734,7 +738,7 @@ btnLogin.addEventListener('click', e => {
   const promise = auth.signInWithEmailAndPassword (email,pass);
   promise.catch ( e => console.log(e.messgae));
 });
-
+// 注册按钮(邮箱密码注册)
 btnSignUp.addEventListener('click', e => {
   const email = txtEmail.value;
   const pass = txtPassword.value;
@@ -742,11 +746,12 @@ btnSignUp.addEventListener('click', e => {
   const promise = auth.createUserWithEmailAndPassword(email,pass);
   promise.catch ( e => console.log(e.messgae));
 });
-
+// 登出按钮
 btnLogOut.addEventListener('click', e=> {
   firebase.auth().signOut();
 })
 
+// 验证信息反馈(console)
 firebase.auth().onAuthStateChanged(firebaseUser => {
   if(firebaseUser) { 
     console.log("成功登录"+firebaseUser);
