@@ -13,6 +13,24 @@
 
 
 
+// require import 区别.
+/*
+两个都是模块导入. 都不是webpack发明的. 都不能直接用于浏览器.	
+于是 webpack 需要 通过 loader (babel) / plugin 将其转义 使得可以用于浏览器.
+
+require 是 nodeJS 的 属于 commonJS 一部分.
+import ES2015(也就是es6) 里的新模块规范
+	
+*/
+
+
+
+
+
+
+
+
+
 
 // SASS 文件引入(import的子sass 写在main.sass中)
 require("!style-loader!css-loader!sass-loader!./webpack/sass/main.sass");
