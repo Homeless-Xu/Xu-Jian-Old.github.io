@@ -9,8 +9,8 @@
   require("./webpack/js/9lazyload.js");
   require("./webpack/js/9serviceworker.js");
   require("./webpack/js/9showAll(eye).js");
-  require("./webpack/js/firebase.js");
-
+  // require("./webpack/js/firebase.js");
+  // require("./webpack/js/sw.js");
 
 
 // require import 区别.

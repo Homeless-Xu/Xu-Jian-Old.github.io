@@ -625,6 +625,29 @@ $(function(){
 /* 8 */
 /***/ (function(module, exports) {
 
+$(function(){
+  if (navigator.serviceWorker) {
+      navigator.serviceWorker.register('sw.js').then(function(registration) {
+          console.log('service worker 注册成功');
+      }).catch(function (err) {
+          console.log('servcie worker 注册失败')
+      });
+  }
+});
+
+
+
+
+// Service-Worker 文件缓存. 注册成功. 也是激活的 但是不知道怎么用.........
+
+
+
+
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports) {
+
 
 
 
@@ -663,177 +686,6 @@ $("#allCateTagPostBtn").click(  function() { showAllTagsandPosts()  } );
 
 
 
-
-/***/ }),
-/* 9 */
-/***/ (function(module, exports) {
-
-$(function (){ 
-	// 集成 Firebase 就是把你的firebase账户信息 加到你的网页. 然后就能进行互动了. 
-  const config = {
-    apiKey: "AIzaSyCRkzJi6Ir5LIFqQ1HLymzY9GM7MxiMEVM",
-    authDomain: "cms-jekyll-71cdf.firebaseapp.com",
-    databaseURL: "https://cms-jekyll-71cdf.firebaseio.com",
-    storageBucket: "cms-jekyll-71cdf.appspot.com",
-    messagingSenderId: "727659745071"
-  };
-  firebase.initializeApp(config);
-
-
-
-
-	// 连接 Object 数据库. 
-	const preObject = document.getElementById('Object')
-	const  dbRefObject = firebase.database().ref().child('Object');
-	 // dbRefObject.on('value', snap => console.log( snap.val())); 
-	 // 这个是把数据显示到 console 中.   下面是用json格式显示到 pre标签上.
-	dbRefObject.on('value', snap => {  preObject.innerText = JSON.stringify(snap.val(),null,3);   });
-
-
-
-
-
-
-
-	// 连接 MyAssetes 数据库
-	const ulList = document.getElementById('List');
-	const dbRefList = firebase.database().ref().child('MyAssetes');
-	// 数据库添加数据 实时到本地
-	dbRefList.on("child_added", snap => {
-	    const li = document.createElement('li');
-	    li.innerText = snap.val();
-	    li.id = snap.key;
-	    ulList.appendChild(li);
-	  });
-	// 数据库删除数据 实时到本地
-	
-	dbRefList.on("child_removed", snap => {
-	    const liRemoved = document.getElementById(snap.key);
-	    liRemoved.remove();
-	  });
-	// 数据库修改数据 实时到本地
-	dbRefList.on("child_changed", snap => {
-	    const liChanged = document.getElementById(snap.key);
-	    liChanged.innerText = snap.val();
-	});
-
-
-
-
-
-
-
-	// js 变量 绑定html里的 id.
-	const textEmail = document.getElementById('txtEmail');
-	const textPassword = document.getElementById('txtPassword');
-	const btnLogin = document.getElementById('btnLogin');
-	const btnSignUp = document.getElementById('btnSignUp');
-	const btnLogOut = document.getElementById('btnLogOut');
-	const githubLogin = document.getElementById('githubLogin');
-	const githubLogOut = document.getElementById('githubLogOut');
-
-
-
-	// 登录 登出按钮 &  验证信息反馈
-  /*
-	btnLogin.addEventListener('click', e => {
-	  const email = txtEmail.value;
-	  const pass = txtPassword.value;
-	  const auth = firebase.auth();
-	  const promise = auth.signInWithEmailAndPassword (email,pass);
-	  promise.catch ( e => console.log(e.messgae));
-	});
-	
-	
-	btnLogOut.addEventListener('click', e=> {
-	  firebase.auth().signOut();
-	})
-	
-	
-	firebase.auth().onAuthStateChanged(firebaseUser => {
-	  if(firebaseUser) { 
-	    console.log("成功登录"+firebaseUser);
-	    btnLogOut.classList.remove('hide');
-	  }else { 
-	    console.log('not logged in');
-	    btnLogOut.classList.add('hide');
-	  }
-	})
-  */
-
-
-
-
-
-
-	// 注册按钮(邮箱密码注册)
-	/*
-	btnSignUp.addEventListener('click', e => {
-	  const email = txtEmail.value;
-	  const pass = txtPassword.value;
-	  const auth = firebase.auth();
-	  const promise = auth.createUserWithEmailAndPassword(email,pass);
-	  promise.catch ( e => console.log(e.messgae));
-	});
-	*/
-
-
-
-
-
-
-
-
-
-
-
-	// github 登录
-	// 创建一个 GitHub 提供程序对象的实例
-	var provider = new firebase.auth.GithubAuthProvider();
-	
-	provider.addScope('repo');
-	
-	githubLogin.addEventListener('click', e => {
-
-	   firebase.auth().signInWithPopup(provider)
-		   
-		   .then(function(result) {
-		      var token = result.credential.accessToken;
-		      var user = result.user;
-				
-		      console.log(token)
-		      console.log(user)
-		   }).catch(function(error) {
-		      var errorCode = error.code;
-		      var errorMessage = error.message;
-				
-		      console.log(error.code)
-		      console.log(error.message)
-		   });
-	});
-	
-	// github 登出
-	githubLogOut.addEventListener('click', e => {
-	  firebase.auth().signOut()
-		   .then(function() {
-		      console.log('Signout successful!')
-		   }, function(error) {
-		      console.log('Signout failed')
-		   });   
-	});
-
-
-
-
-
-
-
-
-
-
-
-
-});
 
 /***/ }),
 /* 10 */
@@ -1096,7 +948,7 @@ exports = module.exports = __webpack_require__(12)();
 
 
 // module
-exports.push([module.i, "@charset \"UTF-8\";\n* {\n  padding: 0;\n  margin: 0;\n  font-family: \"Ubuntu Mono\",Verdana,Arial,Helvetica,sans-serif; }\n\nli {\n  list-style: none; }\n\na {\n  text-decoration: none;\n  color: black; }\n\nsup {\n  color: red;\n  float: right;\n  font-size: 0.7em; }\n\n.active {\n  background-color: yellow; }\n\n#bigDiv {\n  height: 100%; }\n\n/* 这里必须用 100%  而不能用100vh. 不然会在safari 网页放大缩小的时候有问题. */\n#arrowNav {\n  width: 90px;\n  height: 30px;\n  position: absolute;\n  bottom: 0px;\n  right: 0px; }\n\n.hidden {\n  display: none !important;\n  visibility: hidden !important; }\n\n#allCateTagPostBtn {\n  padding: 0px;\n  margin: 0px; }\n\n.sortBtn {\n  width: 30px;\n  height: 30px;\n  flex-grow: 1;\n  flex-shrink: 0; }\n\n/*-----------------------------------* *  滚动条设置.\n *\\*----------------------------------- */\n/* 强制隐藏滚动条. 不知为什么会有滚动条... */\nhtml {\n  overflow: hidden; }\n\n/* 既可以滚动 .又不显示滚动条. */\n#catenameUL::-webkit-scrollbar, #tagnameUL::-webkit-scrollbar, #filenameUL::-webkit-scrollbar, #rightNavbar::-webkit-scrollbar, #pageContent::-webkit-scrollbar, #contentDiv::-webkit-scrollbar {\n  display: none; }\n\n#tagnameUL, #filenameUL {\n  overflow-x: hidden; }\n\n#OuterFilenameUL {\n  position: relative;\n  overflow: hidden; }\n\n/* 设置filenameDiv 排序按钮的间距+位置.   这里还要实现居中.. 居中就靠 transform 来实现了 .相对自身大小 来偏移... */\n#filenameDiSearch {\n  position: absolute;\n  left: 0%;\n  top: 0; }\n\n#allCateTagPostBtn {\n  position: absolute;\n  left: 50%;\n  top: 0;\n  transform: translate(-50%, 0); }\n\n#filenameDivDate {\n  position: absolute;\n  right: 0%;\n  top: 0; }\n\n#topbarDiv {\n  height: 30px;\n  display: flex;\n  justify-content: space-between;\n  background-color: rgba(210, 52, 219, 0.18); }\n  #topbarDiv i {\n    padding-top: 3px;\n    padding-bottom: 3px; }\n\n#Div {\n  display: flex;\n  position: absolute;\n  top: 30px;\n  bottom: 0px;\n  left: 0px;\n  right: 0px; }\n\n/* 这个是上下布局的重点. top/bottom 同时用 还要用 absolute;  还必须用 left+right */\n.cateNames, .tagNames, .postNames {\n  padding: 2px 0; }\n\n/*-----------------------------------* *  博 客 主 体\n *\\*----------------------------------- */\n#cateDiv {\n  flex-basis: 83px;\n  flex-grow: 0;\n  flex-shrink: 0;\n  max-width: 300px;\n  min-width: 14px;\n  position: relative;\n  background-color: rgba(92, 47, 125, 0.34);\n  padding: 0px 4px 4px 4px;\n  display: relative; }\n\n#tagDiv {\n  flex-basis: 100px;\n  flex-grow: 0;\n  flex-shrink: 0;\n  max-width: 300px;\n  min-width: 48px;\n  position: relative;\n  background-color: rgba(212, 117, 204, 0.53);\n  padding: 0px 0px 4px 4px;\n  display: relative; }\n\n#filenameDiv {\n  flex-basis: 219px;\n  flex-grow: 0;\n  flex-shrink: 0;\n  max-width: 1450px;\n  min-width: 188px;\n  background-color: pink;\n  position: relative;\n  padding: 4px 0px 4px 0px;\n  display: relative; }\n\n#contentDiv {\n  flex-grow: 1;\n  flex-shrink: 1;\n  padding: 5px;\n  background-color: rgba(161, 203, 55, 0.3);\n  flex-basis: 150px;\n  overflow: scroll; }\n\n#pageContent {\n  overflow-x: scroll;\n  word-wrap: break-word;\n  word-break: normal; }\n\n#rightNavbar {\n  flex-grow: 0;\n  flex-shrink: 0;\n  height: 100%;\n  flex-basis: 90px;\n  font-size: 0.8em;\n  padding: 0px;\n  background-color: rgba(127, 127, 127, 0.13);\n  overflow-x: hidden;\n  overflow-y: scroll;\n  white-space: nowrap; }\n\n@media screen and (max-width: 414px) {\n  #cateDiv, #tagDiv {\n    display: none;\n    flex-basis: 88px; }\n  .cateSup, .tagSup {\n    display: none; }\n  #lineLeft, #lineRight, #lineSide {\n    display: none !important; } }\n\n@media screen and (max-width: 700px) {\n  #cateDiv, #tagDiv {\n    display: none;\n    flex-basis: 88px; }\n  .cateSup, .tagSup {\n    display: none; }\n  #lineLeft, #lineRight, #lineSide {\n    display: none !important; }\n  /*-- 未知原因. lineSide 一定要强制隐藏... 不然有个 display:block .....-- */\n  #filenameDiv, #rightNavbar, #arrowNav, #donate, #githubReadme, #githubHome, #GithubStar {\n    display: none; }\n  #filenameDivDate {\n    position: absolute;\n    right: 6%;\n    top: 0; } }\n\n.lineFlex {\n  display: flex;\n  height: 100%;\n  width: 10px; }\n\n.lineInDiv {\n  flex-basis: 2px;\n  height: 100%;\n  background-color: gray;\n  margin-left: auto;\n  margin-right: auto; }\n\n#lineLeft {\n  width: 10px;\n  height: 100%;\n  cursor: col-resize; }\n\n#lineLeft-left {\n  flex-basis: 50%;\n  height: 100%;\n  background-color: rgba(212, 117, 204, 0.53); }\n\n#lineLeft-right {\n  flex-basis: 50%;\n  height: 100%;\n  background-color: pink; }\n\n#lineRight {\n  width: 10px;\n  height: 100%;\n  cursor: col-resize; }\n\n#lineRight-left {\n  flex-basis: 50%;\n  height: 100%;\n  background-color: pink; }\n\n#lineRight-right {\n  flex-basis: 50%;\n  height: 100%;\n  background-color: #e3f0c3; }\n\n#lineSide {\n  width: 10px;\n  height: 100%;\n  cursor: col-resize; }\n\n#lineSide-left {\n  flex-basis: 50%;\n  height: 100%;\n  background-color: #e3f0c3; }\n\n#lineSide-right {\n  flex-basis: 50%;\n  height: 100%;\n  background-color: rgba(127, 127, 127, 0.13); }\n\n#topbarLeft, #topbarRight {\n  flex-basis: 150px; }\n\n/*三级导航栏简介:\n * 一级: 网页显示             → 手机 resume 邮件\n * 二级: 一级栏上鼠标悬浮显示   → 鼠标悬浮resume上: 简历预览, 简历下载\n * 三级: 二级栏上鼠标悬浮显示   → 鼠标悬浮简历下载上: DOC格式下载,PDF格式下载\n *\n * <div class=\"navbox\">\n *    <ul class=\"clearfix\">\n *        <li><a href=\"#\">左箭头图标</a></li>\n *        <li><a href=\"#\">手机图标</a></li>\n *        <li><a href=\"#\">(Resume)</a>\n *            <ul class=\"subnav\">\n *                <li><a href=\"#\">简历预览</a></li>\n *                <li><a href=\"#\">简历下载</a>\n *                    <ul class=\"threenav\">\n *                        <li><a href=\"#\">DOC格式下载</a></li>\n *                        <li><a href=\"#\">PDF格式下载</a></li>\n *                    </ul>\n *                </li>\n *            </ul>\n *        </li>\n *        <li><a href=\"#\">邮件图标</a></li>\n *        <li><a href=\"#\">右箭头图标</a></li>\n *    </ul>\n * </div> */\n/*一级导航栏 外观设置 */\n.navbox {\n  height: 30px;\n  display: inline-block; }\n  .navbox > ul > li {\n    float: left;\n    height: 30px;\n    line-height: 30px;\n    text-align: center;\n    font-size: 16px; }\n  .navbox ul li a {\n    display: block;\n    cursor: pointer;\n    height: 30px; }\n    .navbox ul li a:hover {\n      text-decoration: none;\n      background: #00bfff; }\n\n/*一级导航栏 内容外观设置: 默认列表是垂直显示的.这里用 float:left 把它弄成水平显示 */\n/*一级导航栏 内容默认样式+鼠标悬浮样式. */\n/*默认隐藏二级菜单: 也就是隐藏鼠标悬浮到一级导航栏上会显示出来的内容 */\n.subnav {\n  display: none; }\n\n/*鼠标悬浮到一级导航栏上会显示二级菜单的内容, 这个关系有点复杂..大概就是如果鼠标悬浮在一级导航某项上 那么 二级菜单subnav 就显示出来 */\n.navbox ul li:hover .subnav {\n  display: block; }\n\n/* 二级菜单显示的位置. 相对于一级菜单显示 */\nsubnav > li {\n  position: relative; }\n\n/* 三级菜单显示的位置. 相对于二级菜单显示 */\n.threenav {\n  position: relative;\n  left: 100%;\n  top: -30px; }\n\n.subnav, .threenav {\n  display: none; }\n\n.subnav li:hover .threenav {\n  display: block; }\n\n.icon {\n  width: 1em;\n  height: 1em;\n  fill: currentColor;\n  overflow: hidden;\n  font-size: 25px;\n  padding: 2.5px; }\n\n.iconfont {\n  font-family: \"iconfont\";\n  font-size: 16px;\n  font-style: normal;\n  -webkit-font-smoothing: antialiased;\n  -webkit-text-stroke-width: 0.2px;\n  -moz-osx-font-smoothing: grayscale;\n  padding-left: 20px; }\n\n.gh-btn, .gh-count {\n  padding: 4px 4px 2px 4px;\n  height: 16px !important;\n  margin-top: 3px;\n  color: #333;\n  text-decoration: none;\n  text-shadow: 0 1px 0 #fff;\n  white-space: nowrap;\n  cursor: pointer;\n  border-radius: 3px; }\n", ""]);
+exports.push([module.i, "@charset \"UTF-8\";\n* {\n  padding: 0;\n  margin: 0;\n  font-family: \"Ubuntu Mono\",Verdana,Arial,Helvetica,sans-serif; }\n\nli {\n  list-style: none; }\n\na {\n  text-decoration: none;\n  color: black; }\n\nsup {\n  color: red;\n  float: right;\n  font-size: 0.7em; }\n\n.active {\n  background-color: yellow; }\n\n#bigDiv {\n  height: 100%; }\n\n/* 这里必须用 100%  而不能用100vh. 不然会在safari 网页放大缩小的时候有问题. */\n#arrowNav {\n  width: 90px;\n  height: 30px;\n  position: absolute;\n  bottom: 0px;\n  right: 0px; }\n\n.hidden {\n  display: none !important;\n  visibility: hidden !important; }\n\n#allCateTagPostBtn {\n  padding: 0px;\n  margin: 0px; }\n\n.sortBtn {\n  width: 30px;\n  height: 30px;\n  flex-grow: 1;\n  flex-shrink: 0; }\n\n/*-----------------------------------* *  滚动条设置.\n *\\*----------------------------------- */\n/* 强制隐藏滚动条. 不知为什么会有滚动条... */\nhtml {\n  overflow: hidden; }\n\n/* 既可以滚动 .又不显示滚动条. */\n#catenameUL::-webkit-scrollbar, #tagnameUL::-webkit-scrollbar, #filenameUL::-webkit-scrollbar, #rightNavbar::-webkit-scrollbar, #pageContent::-webkit-scrollbar, #contentDiv::-webkit-scrollbar {\n  display: none; }\n\n#tagnameUL, #filenameUL {\n  overflow-x: hidden; }\n\n#OuterFilenameUL {\n  position: relative;\n  overflow: hidden; }\n\n/* 设置filenameDiv 排序按钮的间距+位置.   这里还要实现居中.. 居中就靠 transform 来实现了 .相对自身大小 来偏移... */\n#filenameDiSearch {\n  position: absolute;\n  left: 0%;\n  top: 0; }\n\n#allCateTagPostBtn {\n  position: absolute;\n  left: 50%;\n  top: 0;\n  transform: translate(-50%, 0); }\n\n#filenameDivDate {\n  position: absolute;\n  right: 0%;\n  top: 0; }\n\n#topbarDiv {\n  height: 30px;\n  display: flex;\n  justify-content: space-between;\n  background-color: rgba(210, 52, 219, 0.18); }\n  #topbarDiv i {\n    padding-top: 3px;\n    padding-bottom: 3px; }\n\n#Div {\n  display: flex;\n  position: absolute;\n  top: 30px;\n  bottom: 0px;\n  left: 0px;\n  right: 0px; }\n\n/* 这个是上下布局的重点. top/bottom 同时用 还要用 absolute;  还必须用 left+right */\n.cateNames, .tagNames, .postNames {\n  padding: 2px 0; }\n\n/*-----------------------------------* *  博 客 主 体\n *\\*----------------------------------- */\n#cateDiv {\n  flex-basis: 83px;\n  flex-grow: 0;\n  flex-shrink: 0;\n  max-width: 300px;\n  min-width: 14px;\n  position: relative;\n  background-color: rgba(92, 47, 125, 0.34);\n  padding: 0px 4px 4px 4px;\n  display: relative; }\n\n#tagDiv {\n  flex-basis: 100px;\n  flex-grow: 0;\n  flex-shrink: 0;\n  max-width: 300px;\n  min-width: 48px;\n  position: relative;\n  background-color: rgba(212, 117, 204, 0.53);\n  padding: 0px 0px 4px 4px;\n  display: relative; }\n\n#filenameDiv {\n  flex-basis: 219px;\n  flex-grow: 0;\n  flex-shrink: 0;\n  max-width: 1450px;\n  min-width: 188px;\n  background-color: pink;\n  position: relative;\n  padding: 4px 0px 4px 0px;\n  display: relative; }\n\n#contentDiv {\n  flex-grow: 1;\n  flex-shrink: 1;\n  padding: 5px;\n  background-color: rgba(161, 203, 55, 0.3);\n  flex-basis: 150px;\n  overflow: scroll; }\n\n#pageContent {\n  overflow-x: scroll;\n  word-wrap: break-word;\n  word-break: normal; }\n\n#rightNavbar {\n  flex-grow: 0;\n  flex-shrink: 0;\n  height: 100%;\n  flex-basis: 90px;\n  font-size: 0.8em;\n  padding: 0px;\n  background-color: rgba(127, 127, 127, 0.13);\n  overflow-x: hidden;\n  overflow-y: scroll;\n  white-space: nowrap; }\n\n@media screen and (max-width: 414px) {\n  html, body {\n    overflow: hidden;\n    height: 100%; }\n    html #cateDiv, html #tagDiv, body #cateDiv, body #tagDiv {\n      display: none;\n      flex-basis: 88px; }\n    html .cateSup, html .tagSup, body .cateSup, body .tagSup {\n      display: none; }\n    html #lineLeft, html #lineRight, html #lineSide, body #lineLeft, body #lineRight, body #lineSide {\n      display: none !important; } }\n\n@media screen and (max-width: 700px) {\n  #cateDiv, #tagDiv {\n    display: none;\n    flex-basis: 88px; }\n  .cateSup, .tagSup {\n    display: none; }\n  #lineLeft, #lineRight, #lineSide {\n    display: none !important; }\n  /*-- 未知原因. lineSide 一定要强制隐藏... 不然有个 display:block .....-- */\n  #filenameDiv, #rightNavbar, #arrowNav, #donate, #githubReadme, #githubHome, #GithubStar {\n    display: none; }\n  #filenameDivDate {\n    position: absolute;\n    right: 6%;\n    top: 0; } }\n\n.lineFlex {\n  display: flex;\n  height: 100%;\n  width: 10px; }\n\n.lineInDiv {\n  flex-basis: 2px;\n  height: 100%;\n  background-color: gray;\n  margin-left: auto;\n  margin-right: auto; }\n\n#lineLeft {\n  width: 10px;\n  height: 100%;\n  cursor: col-resize; }\n\n#lineLeft-left {\n  flex-basis: 50%;\n  height: 100%;\n  background-color: rgba(212, 117, 204, 0.53); }\n\n#lineLeft-right {\n  flex-basis: 50%;\n  height: 100%;\n  background-color: pink; }\n\n#lineRight {\n  width: 10px;\n  height: 100%;\n  cursor: col-resize; }\n\n#lineRight-left {\n  flex-basis: 50%;\n  height: 100%;\n  background-color: pink; }\n\n#lineRight-right {\n  flex-basis: 50%;\n  height: 100%;\n  background-color: #e3f0c3; }\n\n#lineSide {\n  width: 10px;\n  height: 100%;\n  cursor: col-resize; }\n\n#lineSide-left {\n  flex-basis: 50%;\n  height: 100%;\n  background-color: #e3f0c3; }\n\n#lineSide-right {\n  flex-basis: 50%;\n  height: 100%;\n  background-color: rgba(127, 127, 127, 0.13); }\n\n#topbarLeft, #topbarRight {\n  flex-basis: 150px; }\n\n/*三级导航栏简介:\n * 一级: 网页显示             → 手机 resume 邮件\n * 二级: 一级栏上鼠标悬浮显示   → 鼠标悬浮resume上: 简历预览, 简历下载\n * 三级: 二级栏上鼠标悬浮显示   → 鼠标悬浮简历下载上: DOC格式下载,PDF格式下载\n *\n * <div class=\"navbox\">\n *    <ul class=\"clearfix\">\n *        <li><a href=\"#\">左箭头图标</a></li>\n *        <li><a href=\"#\">手机图标</a></li>\n *        <li><a href=\"#\">(Resume)</a>\n *            <ul class=\"subnav\">\n *                <li><a href=\"#\">简历预览</a></li>\n *                <li><a href=\"#\">简历下载</a>\n *                    <ul class=\"threenav\">\n *                        <li><a href=\"#\">DOC格式下载</a></li>\n *                        <li><a href=\"#\">PDF格式下载</a></li>\n *                    </ul>\n *                </li>\n *            </ul>\n *        </li>\n *        <li><a href=\"#\">邮件图标</a></li>\n *        <li><a href=\"#\">右箭头图标</a></li>\n *    </ul>\n * </div> */\n/*一级导航栏 外观设置 */\n.navbox {\n  height: 30px;\n  display: inline-block; }\n  .navbox > ul > li {\n    float: left;\n    height: 30px;\n    line-height: 30px;\n    text-align: center;\n    font-size: 16px; }\n  .navbox ul li a {\n    display: block;\n    cursor: pointer;\n    height: 30px; }\n    .navbox ul li a:hover {\n      text-decoration: none;\n      background: #00bfff; }\n\n/*一级导航栏 内容外观设置: 默认列表是垂直显示的.这里用 float:left 把它弄成水平显示 */\n/*一级导航栏 内容默认样式+鼠标悬浮样式. */\n/*默认隐藏二级菜单: 也就是隐藏鼠标悬浮到一级导航栏上会显示出来的内容 */\n.subnav {\n  display: none; }\n\n/*鼠标悬浮到一级导航栏上会显示二级菜单的内容, 这个关系有点复杂..大概就是如果鼠标悬浮在一级导航某项上 那么 二级菜单subnav 就显示出来 */\n.navbox ul li:hover .subnav {\n  display: block; }\n\n/* 二级菜单显示的位置. 相对于一级菜单显示 */\nsubnav > li {\n  position: relative; }\n\n/* 三级菜单显示的位置. 相对于二级菜单显示 */\n.threenav {\n  position: relative;\n  left: 100%;\n  top: -30px; }\n\n.subnav, .threenav {\n  display: none; }\n\n.subnav li:hover .threenav {\n  display: block; }\n\n.icon {\n  width: 1em;\n  height: 1em;\n  fill: currentColor;\n  overflow: hidden;\n  font-size: 25px;\n  padding: 2.5px; }\n\n.iconfont {\n  font-family: \"iconfont\";\n  font-size: 16px;\n  font-style: normal;\n  -webkit-font-smoothing: antialiased;\n  -webkit-text-stroke-width: 0.2px;\n  -moz-osx-font-smoothing: grayscale;\n  padding-left: 20px; }\n\n.gh-btn, .gh-count {\n  padding: 4px 4px 2px 4px;\n  height: 16px !important;\n  margin-top: 3px;\n  color: #333;\n  text-decoration: none;\n  text-shadow: 0 1px 0 #fff;\n  white-space: nowrap;\n  cursor: pointer;\n  border-radius: 3px; }\n", ""]);
 
 // exports
 
@@ -1165,14 +1017,32 @@ module.exports = function() {
   __webpack_require__(1);
   __webpack_require__(2);
   __webpack_require__(3);
-  // pjax 必须和这个放一起.. 分开就是不行  奇怪了...
+  // pjax 必须和这个放一起.. 分开就是不行  奇怪了... 应该是模块的原因
   __webpack_require__(5);
   __webpack_require__(6);
   __webpack_require__(4);
   __webpack_require__(7);
-  //require("./webpack/js/9serviceworker.js");
   __webpack_require__(8);
   __webpack_require__(9);
+  // require("./webpack/js/firebase.js");
+  // require("./webpack/js/sw.js");
+
+
+// require import 区别.
+/*
+两个都是模块导入. 都不是webpack发明的. 都不能直接用于浏览器.	
+于是 webpack 需要 通过 loader (babel) / plugin 将其转义 使得可以用于浏览器.
+
+require 是 nodeJS 的 属于 commonJS 一部分.
+import ES2015(也就是es6) 里的新模块规范
+	
+*/
+
+
+
+
+
+
 
 
 
@@ -1199,12 +1069,14 @@ __webpack_require__(0);
 
 
 
+// var colors = require('colors'); console.log('Hello,'.red, 'npm!'.green);  
 
 
 
 
 
-console.log("Hello, world!")
+
+// console.log("Hello, world!")
 
 
 
