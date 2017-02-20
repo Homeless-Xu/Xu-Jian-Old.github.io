@@ -1,3 +1,6 @@
+# 浏览器要求:
+浏览器: Chrome >> Firefox >> Safari;     不支持IE(主题核心过滤功能使用 HTML5 的 data属性)
+
 # CMS-Jekyll: 
 > 大类: 不能有英文的.; (可以有:-)不然不能过滤出对应标签&文章.  
 > 标签: 不能有下划线_; 不能有斜杆/;不能有空格(有空格是多标签.本主题不支持)
@@ -13,6 +16,87 @@
 
 ## CMS-Jkeyll-Theme Download:
 <a href="https://coding.net/u/xx0219/p/xx0219.coding.me/git/archive/master">0214.live</a>
+
+
+
+
+## Done (主要功能)
+
+* [x] 三级标签过滤 & 统一时间排序: Categories → Tags → fileName 
+* [x] 拖动条 + 滚动条 + Nprogress进度条 + PJAX
+* [x] 自动高亮:  点击文件名自动高亮并过滤出对应 Tags & Categories.
+* [x] 文件结构栏: 文章滚动自动高亮标题(h2-h5), 并实现锚点跳转.
+* [x] Service Worker 缓存 (废弃 manifest缓存 )
+* [x] Webpack (SASS & ES6 & CSS内联)
+* [x] 启用 Lazyload 
+
+
+
+
+## Done (次要功能)
+* [x] 文件名栏: 显隐文件时间.配合本地Ulysses 方便本地排序.
+* [x] Git: Github + Coding 双线部署; Github Star数集成
+* [x] 谷歌网站统计分析 + SSL/HTTPS + 图片七牛CDN
+* [x] icon 全套图标适配: 适合所有浏览器,所有平台.  
+* [x] 文章可添加meta标签来优化SEO
+* [x] 阿里iconfont 代替 fontawesone
+* [x] 发布主题到 Rubygems
+* [x] 顶栏前后篇 pjax按钮 ( 绑定contentDiv链接实现 )
+* [x] 移动端界面适配
+* [x] 404页面.
+
+
+
+## ToDo
+* [ ] 首页文件列表模块化主题+预览(card-theme)
+* [ ] http2.0
+* [ ] gzip压缩
+* [ ] JS 上下键 控制高亮光标.
+* [ ] 多主题切换/多布局切换
+* [ ] 搜索功能(谷歌CES搜索)
+* [ ] 左右抽屉显隐效果 留白问题...
+* [ ] 在线编辑功能??
+* [ ] 开放UGC???
+* [ ] 最爱文章?
+* [ ] 移动端左右滑动
+* [ ] URL 自动链接
+* [ ] 前后篇 高亮设置.
+* [ ] 文章分享功能
+* [ ] 白噪声功能.
+* [ ] require.js 按需加载..
+* [ ] 文章阅读进度条.
+* [ ] 三级导航条
+
+
+
+## 待定功能
+* [ ] 侧边栏: 首次点击文章显示.  然后隐藏掉... 手动开启
+* [ ] 文章浏览时间, 浏览量, 字数统计
+* [ ] 文章分享功能.
+
+
+
+## GiveUP
+* [ ] 七牛CDN加速 (域名必须备案! HTTPS 还要上传证书信息.... )
+* [ ] CDN 请求合并 (CDNJS.com 需年费..)
+* [ ] Firebase 数据库(聊天功能. 被墙.实在慢.寻找国内替代)
+
+
+
+
+## issues
+- 左右拖动 会选中文字.....
+
+
+
+
+
+
+
+
+
+
+
 
 ## 排序实例:(主题重点)  
 
@@ -89,82 +173,6 @@
 * 每篇文章一个日期.
 * 文章很多还可以用时分秒.
 > 这个是最简单的自定义排序方法!!!
-
-## Done (主要功能)
-
-* [x] 三级标签过滤: Categories → Tags → fileName 
-* [x] 三级标签排序: 时间越旧排越上面.
-* [x] 拖动条 + 滚动条 + Nprogress进度条 + PJAX
-* [x] 自动高亮:  点击文件名自动高亮并过滤出对应 Tags & Categories.
-* [x] 文件结构栏: 文章滚动高亮标题 ( h2-h5 )
-* [x] 文件结构栏: 标题锚点跳转.
-* [x] 文件名栏: 显隐文件时间.配合本地Ulysses 方便本地排序.
-* [x] Firebase 数据库(聊天功能)
-* [x] Service Worker 缓存 (废弃 manifest缓存 )
-* [x] Webpack (SASS & ES6 & CSS内联)
-* [x] 启用 Lazyload 
-
-
-
-
-## Done (次要功能)
-* [x] 谷歌网站统计分析 + SSL/HTTPS + 图片七牛CDN
-* [x] icon 全套图标适配: 适合所有浏览器,所有平台.  
-* [x] yml可添加meta标签来优化SEO
-* [x] 阿里iconfont 代替 fontawesone
-* [x] Git: Github + Coding 双线部署; Github Star数集成
-* [x] 发布主题到 Rubygems
-* [x] 顶栏前后篇 pjax按钮 ( 绑定contentDiv链接实现 )
-* [x] 404页面.
-* [x] 移动端界面适配
-
-
-
-
-## ToDo
-* [ ] 首页文件列表优化(card-theme)
-* [ ] http2.0
-* [ ] gzip压缩
-* [ ] JS 上下键 控制高亮光标.
-* [ ] 多主题切换/多布局切换
-* [ ] 搜索功能
-* [ ] 左右抽屉显隐效果 留白问题...
-* [ ] 在线编辑功能??
-* [ ] 开放UGC???
-* [ ] 最爱文章?
-* [ ] 文章预览?
-* [ ] 移动端左右滑动
-* [ ] URL 自动链接
-* [ ] 前后篇 高亮设置.
-* [ ] firebase 评论系统/聊天系统..
-* [ ] 文章分享功能
-* [ ] 白噪声功能.
-* [ ] require.js 按需加载..
-* [ ] 文章阅读 进度条.
-* [ ] 三级导航条
-
-
-
-## 待定功能
-* [ ] cate 移到顶部????
-* [ ] 侧边栏: 首次点击文章显示.  然后隐藏掉... 手动开启
-* [ ] 文章浏览时间.
-* [ ] 文章浏览量
-* [ ] 文章分享到 qq/weibo/wechat ....
-* [ ] 文章字数统计
-* [ ] 文章作者 + 文章日期 显示在内容头部
-
-
-
-## GiveUP
-* [ ] 七牛CDN加速 (域名必须备案! HTTPS 还要上传证书信息.... )
-* [ ] CDN 请求合并 (CDNJS.com 需年费..)
-
-
-
-## issues
-- 左右拖动 会选中文字.....
-
 
 
 
@@ -272,17 +280,15 @@ default.html → arrowNav div下 → 绝对定位
 如果没有，则删掉该文件；  
 
 
-### Github Star 按钮(左上角)
-topbar.html → 找ID= githubstar → 按照注释改.
+### Github Star数图标
 
+topbar.html → 找ID= githubstar → 按照注释改.
+由于国内网络环境.这个严重影响加载.不建议开启.
 
 
 ### service worker 缓存
 默认开启所有除了 CDN 的文件. 包括 main.css man.js
-如果你修改了 css 文件. 
-必须改 sw.js 文件 (比如加减个空格,只要sw.js文件有变化 就会重新载入缓存.你的css文件的变化也能生效了.)
-更新缓存 要关闭本地浏览器中 所有和这个页面有关的页面..  再重新加载.
-
+如果你修改了 css 文件.要查看修改后效果. 最简单的就是清空浏览器缓存.再重新加载.
 
 
 
