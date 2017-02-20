@@ -1,22 +1,16 @@
 # 浏览器要求:
-浏览器: Chrome >> Firefox >> Safari;     不支持IE(主题核心过滤功能使用 HTML5 的 data属性)
+浏览器推荐: Chrome >> Firefox >> Safari;   
+不支持 IE8-; IE9+ 未测试.
+> 主题核心过滤功能使用 HTML5 的 data属性.
 
 # CMS-Jekyll: 
 > 大类: 不能有英文的.; (可以有:-)不然不能过滤出对应标签&文章.  
 > 标签: 不能有下划线_; 不能有斜杆/;不能有空格(有空格是多标签.本主题不支持)
 
-## CMS-Jkeyll-Theme Demo:  
-<a href="https://www.0214.live">0214.live</a>
+## CMS-Jkeyll-Theme Demo:   <a href="https://www.0214.live">0214.live</a>
 
 ## CMS-Jkeyll-Theme Preview:
-<img src="http://oduizitoj.bkt.clouddn.com/2017-02-09-Untitled.jpeg">
-
-## CMS-Jkeyll-Theme Repo HomePage:
-<a href="https://coding.net/u/xx0219/p/xx0219.coding.me/git">0214.live</a>
-
-## CMS-Jkeyll-Theme Download:
-<a href="https://coding.net/u/xx0219/p/xx0219.coding.me/git/archive/master">0214.live</a>
-
+<img src="http://oduizitoj.bkt.clouddn.com/2017-02-20-ScreenShot.jpeg">
 
 
 
@@ -31,13 +25,10 @@
 * [x] 启用 Lazyload 
 
 
-
-
 ## Done (次要功能)
-* [x] 文件名栏: 显隐文件时间.配合本地Ulysses 方便本地排序.
 * [x] Git: Github + Coding 双线部署; Github Star数集成
-* [x] 谷歌网站统计分析 + SSL/HTTPS + 图片七牛CDN
-* [x] icon 全套图标适配: 适合所有浏览器,所有平台.  
+* [x] 谷歌网站统计分析 + SSL/HTTPS
+* [x] 所有平台 icon 图标适配 
 * [x] 文章可添加meta标签来优化SEO
 * [x] 阿里iconfont 代替 fontawesone
 * [x] 发布主题到 Rubygems
@@ -104,46 +95,46 @@
 	 > 一个类下的 这个类下的所有文件名都是一个年份的有效.    
 
 
-	|-- Cate1
-	|   |--  Tag11
-	|          |-- post111 → 2000-01-01-post111.md
-	|          |-- post112 → 2000-01-02-post112.md 
-	|          |-- post113 → 2000-01-03-post113.md
-	|   |--  Tag12
-	|          |-- post121 → 2000-02-01-post121.md
-	|          |-- post122 → 2000-02-02-post122.md
-	|          |-- post123 → 2000-02-03-post123.md
-	|   |--  Tag13
-	|          |-- post131 → 2000-03-01-post131.md
-	|          |-- post132 → 2000-03-02-post132.md
-	|          |-- post133 → 2000-03-03-post133.md
-	|
-	|-- Cate2
-	|   |--  Tag21
-	|          |-- post211 → 2010-01-01-post211.md
-	|          |-- post212 → 2010-01-02-post212.md
-	|          |-- post213 → 2010-01-03-post213.md
-	|   |--  Tag22
-	|          |-- post221 → 2010-02-01-post221.md
-	|          |-- post222 → 2010-02-02-post222.md
-	|          |-- post223 → 2010-02-03-post223.md
-	|   |--  Tag23
-	|          |-- post231 → 2010-03-01-post231.md
-	|          |-- post232 → 2010-03-02-post232.md
-	|          |-- post233 → 2010-03-03-post233.md
-	|-- Cate3 
-	|   |--  Tag31
-	|          |-- post311 → 2016-01-01-post311.md
-	|          |-- post312 → 2016-01-02-post312.md
-	|          |-- post313 → 2016-01-03-post313.md
-	|   |--  Tag32
-	|          |-- post321 → 2016-02-01-post321.md
-	|          |-- post322 → 2016-02-02-post322.md
-	|          |-- post323 → 2016-02-03-post323.md
-	|   |--  Tag33
-	|          |-- post331 → 2016-03-01-post331.md
-	|          |-- post332 → 2016-03-02-post332.md
-	|          |-- post333 → 2016-03-03-post333.md
+	|-- Cate1  
+	|   |--  Tag11  
+	|          |-- post111 → 2000-01-01-post111.md  
+	|          |-- post112 → 2000-01-02-post112.md   
+	|          |-- post113 → 2000-01-03-post113.md  
+	|   |--  Tag12  
+	|          |-- post121 → 2000-02-01-post121.md  
+	|          |-- post122 → 2000-02-02-post122.md  
+	|          |-- post123 → 2000-02-03-post123.md  
+	|   |--  Tag13  
+	|          |-- post131 → 2000-03-01-post131.md  
+	|          |-- post132 → 2000-03-02-post132.md  
+	|          |-- post133 → 2000-03-03-post133.md  
+	|  
+	|-- Cate2  
+	|   |--  Tag21  
+	|          |-- post211 → 2010-01-01-post211.md  
+	|          |-- post212 → 2010-01-02-post212.md  
+	|          |-- post213 → 2010-01-03-post213.md  
+	|   |--  Tag22  
+	|          |-- post221 → 2010-02-01-post221.md  
+	|          |-- post222 → 2010-02-02-post222.md  
+	|          |-- post223 → 2010-02-03-post223.md  
+	|   |--  Tag23  
+	|          |-- post231 → 2010-03-01-post231.md  
+	|          |-- post232 → 2010-03-02-post232.md  
+	|          |-- post233 → 2010-03-03-post233.md  
+	|-- Cate3   
+	|   |--  Tag31  
+	|          |-- post311 → 2016-01-01-post311.md  
+	|          |-- post312 → 2016-01-02-post312.md  
+	|          |-- post313 → 2016-01-03-post313.md  
+	|   |--  Tag32  
+	|          |-- post321 → 2016-02-01-post321.md  
+	|          |-- post322 → 2016-02-02-post322.md  
+	|          |-- post323 → 2016-02-03-post323.md  
+	|   |--  Tag33  
+	|          |-- post331 → 2016-03-01-post331.md  
+	|          |-- post332 → 2016-03-02-post332.md  
+	|          |-- post333 → 2016-03-03-post333.md  
 
 ## 排序结果:
 
@@ -295,5 +286,4 @@ topbar.html → 找ID= githubstar → 按照注释改.
 
 
 ## 版权 MIT
-[各版权区别][2]
 
