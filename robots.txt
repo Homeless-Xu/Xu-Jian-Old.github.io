@@ -1,0 +1,3 @@
+User-agent: * Allow: /
+
+// 允许所有 百度/谷歌/bing.... 等等..

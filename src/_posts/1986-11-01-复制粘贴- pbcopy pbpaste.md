@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "复制粘贴: pbcopy pbpaste"
-tags: Shell
+tags: CLI
 categories: Tooles
 ---
 

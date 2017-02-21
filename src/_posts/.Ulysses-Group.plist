@@ -19,7 +19,7 @@
 		<string>.--- 09-.Ulysses_Public_Filter</string>
 		<string>.09-Firebase.Ulysses_Public_Filter</string>
 		<string>.10-Wireshark.Ulysses_Public_Filter</string>
-		<string>.11-Shell.Ulysses_Public_Filter</string>
+		<string>.11-CLI.Ulysses_Public_Filter</string>
 		<string>.12-Misc.Ulysses_Public_Filter</string>
 		<string>.-----------------------.Ulysses_Public_Filter</string>
 		<string>.★★★★★★★★★★.Ulysses_Public_Filter</string>
@@ -31,7 +31,6 @@
 		<string>.---06-Ajax.Ulysses_Public_Filter</string>
 		<string>.07-资源.Ulysses_Public_Filter</string>
 		<string>.08-API.Ulysses_Public_Filter</string>
-		<string>.---10-工具.Ulysses_Public_Filter</string>
 		<string>.11-MWeb.Ulysses_Public_Filter</string>
 		<string>.---12-Misc - 3.Ulysses_Public_Filter</string>
 		<string>.❤️❤️❤️❤️❤️ - 2.Ulysses_Public_Filter</string>
@@ -45,7 +44,6 @@
 		<string>.---05-Post.Ulysses_Public_Filter</string>
 		<string>.06-主题功能.Ulysses_Public_Filter</string>
 		<string>.---07-Firebase.Ulysses_Public_Filter</string>
-		<string>.---08-Git.Ulysses_Public_Filter</string>
 		<string>.12-Misc - 2.Ulysses_Public_Filter</string>
 		<string>.------------------------- - 3.Ulysses_Public_Filter</string>
 		<string>.❤️❤️❤️❤️❤️ - 2 - 2.Ulysses_Public_Filter</string>
@@ -363,34 +361,6 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>691</integer>
-				</dict>
-			</dict>
-			<key>.---08-Git.Ulysses_Public_Filter</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>508311290.48279601</real>
-				<key>lastModification</key>
-				<real>508311290.48279601</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>637</integer>
-				</dict>
-			</dict>
-			<key>.---10-工具.Ulysses_Public_Filter</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>508323255.03674001</real>
-				<key>lastModification</key>
-				<real>508323255.03674001</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>653</integer>
 				</dict>
 			</dict>
 			<key>.---12-Misc - 3.Ulysses_Public_Filter</key>
@@ -751,6 +721,16 @@
 					<integer>721</integer>
 				</dict>
 			</dict>
+			<key>.11-CLI.Ulysses_Public_Filter</key>
+			<dict>
+				<key>lastModification</key>
+				<real>509353816.97982299</real>
+				<key>version</key>
+				<dict>
+					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
+					<integer>901</integer>
+				</dict>
+			</dict>
 			<key>.11-ES6.Ulysses_Public_Filter</key>
 			<dict>
 				<key>lastModification</key>
@@ -769,16 +749,6 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>785</integer>
-				</dict>
-			</dict>
-			<key>.11-Shell.Ulysses_Public_Filter</key>
-			<dict>
-				<key>lastModification</key>
-				<real>508825062.33289099</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>722</integer>
 				</dict>
 			</dict>
 			<key>.12-Misc - 2 - 2.Ulysses_Public_Filter</key>
@@ -2210,20 +2180,6 @@
 					<integer>20451</integer>
 				</dict>
 			</dict>
-			<key>1986-08-01-Webpack-CDN.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>508748229.462161</real>
-				<key>lastModification</key>
-				<real>508748229.462161</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>19763</integer>
-				</dict>
-			</dict>
 			<key>1986-08-01-Webpack-CSS✔︎.md</key>
 			<dict>
 				<key>lastModification</key>
@@ -2252,20 +2208,6 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>19618</integer>
-				</dict>
-			</dict>
-			<key>1986-08-01-Webpack-loader.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>508478397.63119799</real>
-				<key>lastModification</key>
-				<real>508478397.63119799</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>19595</integer>
 				</dict>
 			</dict>
 			<key>1986-08-01-Webpack-别名alias.md</key>
@@ -3342,20 +3284,6 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>19419</integer>
-				</dict>
-			</dict>
-			<key>1987-10-01-01-GEM.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>508323242.87018502</real>
-				<key>lastModification</key>
-				<real>508323242.87018502</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>19554</integer>
 				</dict>
 			</dict>
 			<key>1987-11-Html5移动端触摸事件.md</key>
@@ -4994,20 +4922,6 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>20580</integer>
-				</dict>
-			</dict>
-			<key>1991-11-11-21-字体属性.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>508679931.935588</real>
-				<key>lastModification</key>
-				<real>508679931.935588</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>19706</integer>
 				</dict>
 			</dict>
 			<key>1991-11-11-21-层叠规则 ✔︎.md</key>
@@ -8822,34 +8736,6 @@
 					<integer>19655</integer>
 				</dict>
 			</dict>
-			<key>2002-12-31-SS &amp; Wall SS-Share.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>508663006.59490901</real>
-				<key>lastModification</key>
-				<real>508663006.59490901</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>19647</integer>
-				</dict>
-			</dict>
-			<key>2002-12-31-SS 翻墙.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>508662958.02414399</real>
-				<key>lastModification</key>
-				<real>508662958.02414399</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>19646</integer>
-				</dict>
-			</dict>
 			<key>2002-12-31-Shadowsocks.md</key>
 			<dict>
 				<key>lastModification</key>
@@ -8858,20 +8744,6 @@
 				<dict>
 					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
 					<integer>18790</integer>
-				</dict>
-			</dict>
-			<key>2002-12-31-Surge - Wall.md</key>
-			<dict>
-				<key>explicitUnassignment</key>
-				<true/>
-				<key>firstUnassignment</key>
-				<real>508663030.46951503</real>
-				<key>lastModification</key>
-				<real>508663030.46951503</real>
-				<key>version</key>
-				<dict>
-					<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-					<integer>19648</integer>
 				</dict>
 			</dict>
 			<key>2002-12-31-TOR 浏览器.md</key>
@@ -11233,9 +11105,6 @@
 	<key>sheetClusters</key>
 	<array>
 		<array>
-			<string>1986-08-01-Webpack-loader.md</string>
-		</array>
-		<array>
 			<string>1986-03-01-CNPM.md</string>
 		</array>
 		<array>
@@ -11321,9 +11190,6 @@
 		</array>
 		<array>
 			<string>1986-08-01-Webpack-插件.md</string>
-		</array>
-		<array>
-			<string>1986-08-01-Webpack-CDN.md</string>
 		</array>
 		<array>
 			<string>1986-08-01-Webpack-别名alias.md</string>
@@ -11552,9 +11418,6 @@
 		</array>
 		<array>
 			<string>1987-12-12-01-‼️网站全套图标Favicon.md</string>
-		</array>
-		<array>
-			<string>1987-10-01-01-GEM.md</string>
 		</array>
 		<array>
 			<string>1992-06-12-01-函数(forEach)✔︎.md</string>
@@ -12476,15 +12339,6 @@
 		</array>
 		<array>
 			<string>2002-12-31-Shadowsocks.md</string>
-		</array>
-		<array>
-			<string>2002-12-31-Surge - Wall.md</string>
-		</array>
-		<array>
-			<string>2002-12-31-SS &amp; Wall SS-Share.md</string>
-		</array>
-		<array>
-			<string>2002-12-31-SS 翻墙.md</string>
 		</array>
 		<array>
 			<string>2013-02-02-Session 会话.md</string>
@@ -13759,9 +13613,6 @@
 			<string>1991-11-11-21-后代选择器.md</string>
 		</array>
 		<array>
-			<string>1991-11-11-21-字体属性.md</string>
-		</array>
-		<array>
 			<string>1991-11-11-21-居中.md</string>
 		</array>
 		<array>
@@ -14028,7 +13879,7 @@
 		<key>childOrder</key>
 		<dict>
 			<key>c400b460bfb905e5d160b90c1921641871707208f5646f8956074bb3571fb6b8</key>
-			<integer>900</integer>
+			<integer>901</integer>
 		</dict>
 		<key>sheetClusters</key>
 		<dict>

@@ -48,16 +48,13 @@ sup
 
 
 
-/*-----------------------------------*\
- *  滚动条设置.
- *\*-----------------------------------
-
-/* 强制隐藏滚动条. 不知为什么会有滚动条...
+//   滚动条设置.
+// 强制隐藏滚动条. 不知为什么会有滚动条...
 
 html
   overflow: hidden
 
-/* 既可以滚动 .又不显示滚动条.
+// 既可以滚动 .又不显示滚动条.
 
 #catenameUL::-webkit-scrollbar, #tagnameUL::-webkit-scrollbar, #filenameUL::-webkit-scrollbar, #rightNavbar::-webkit-scrollbar, #pageContent::-webkit-scrollbar, #contentDiv::-webkit-scrollbar
   display: none
@@ -69,7 +66,7 @@ html
   position: relative
   overflow: hidden
 
-/* 设置filenameDiv 排序按钮的间距+位置.   这里还要实现居中.. 居中就靠 transform 来实现了 .相对自身大小 来偏移...
+// 设置filenameDiv 排序按钮的间距+位置.   这里还要实现居中.. 居中就靠 transform 来实现了 .相对自身大小 来偏移...
 
 #filenameDiSearch
   position: absolute
@@ -105,14 +102,12 @@ html
   left: 0px
   right: 0px
 
-/* 这个是上下布局的重点. top/bottom 同时用 还要用 absolute;  还必须用 left+right
+// 这个是上下布局的重点. top/bottom 同时用 还要用 absolute;  还必须用 left+right
 
 .cateNames, .tagNames, .postNames
   padding: 2px 0
 
-/*-----------------------------------*\
- *  博 客 主 体
- *\*-----------------------------------
+//  博 客 主 体
 
 #cateDiv
   flex-basis: 83px
@@ -180,6 +175,7 @@ html
 @import './webpack/sass/1-Dragbar';
 @import './webpack/sass/2-Topbar';
 @import './webpack/sass/6-icon';
+@import './webpack/sass/7-syntax';
 
 
 

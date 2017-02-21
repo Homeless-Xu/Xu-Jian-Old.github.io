@@ -83,7 +83,38 @@
 
 
 
+## 项目架构
 
+.
+├─ webpack/                    # Webpack 目录  
+├─ _site/                      # jekyll build 默认生成的所有文件都在这里.也就是我们看到的网页文章(每篇文章一个html)  
+├─ node_modules/               # 就是因为这个文件夹才 必须新建个 src 文件夹. 不然jekyll build.就会处理这个文件夹. 耗时30+秒. 不能忍!!!  
+├─ src/                        # jekyll build 所需要的文件都在这个. 这个文件夹非常重要.  
+│   ├─ assets/                 # 放置需要经由 Webpack 处理的静态文件  
+│   ├─ components/             # 组件（COMPONENT）  
+│   ├─ redux/                  # Redux 一箩筐  
+│   │   ├─ actions/            # （ACTION）  
+│   │   ├─ reducers/           # （REDUCER）  
+│   │   ├─ store/              # （STORE）  
+│   ├── routes/                # 路由（ROUTE）  
+│   ├── services/              # 服务（SERVICE，用于统一管理 XHR 请求，这是从 Vue Demo 中直接复制过来的）  
+│   ├── utils/                 # 工具库（UTIL）  
+│   │   ├─ HoC/                # 高阶组件（HOC，全称 Higher Order Component）  
+│   │   ├─ mixins/             # 混合（MIXIN）  
+│   ├── views/                 # 路由视图基页（VIEW）  
+│   │   ├─ layout/             # 全局布局  
+│   ├── app.js                 # 启动文件  
+│   ├── index.html             # 静态基页  
+├── _config.yml                # jekyll 的配置文件  
+├── CNAME                      # 博客自定义域名设置  
+├── entry.js                   # webpack 入口文件  
+├── Gemfile                    # jekyll build 需要  
+├── Gemfile.lock               # jekyll build 需要  
+├── jekyll-theme-CMS-2.2.2.gem # 主题发布到 Gemruby 需要文件  
+├── jekyll-theme-CMS.gemspec   # 主题发布到 Gemruby 需要文件  
+├── package.json               # npm 配置文件  
+├── README.md                  # 项目的 readme 文件  
+├── webpack.config.js          # webpack 配置  
 
 
 

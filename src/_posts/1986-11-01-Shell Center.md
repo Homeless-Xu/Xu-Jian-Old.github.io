@@ -1,7 +1,7 @@
 ---
 layout: post
 title: “Shell Center”
-tags: Shell
+tags: CLI
 categories: Tooles
 ---
 
@@ -93,10 +93,10 @@ Linux 最常用打包程序tar
 	
 	tar命令基本用法： 
 	　　tar命令的选项有很多(用man tar可以查看到)，但常用的就那么几个选项
-	 
+	
 	　　\# tar -cf all.tar \*.jpg 
 	　　这条命令是将所有.jpg的文件打成一个名为all.tar的包。-c是表示产生新的包 ，-f指定包的文件名。 
-	　　
+ 　　
 	tar -rf all.tar \*.gif
 	　　这条命令是将所有.gif的文件增加到all.tar的包里面去。-r是表示增加文件的意思。 
 	
@@ -121,7 +121,7 @@ Linux 最常用打包程序tar
 	　　将所有.jpg的文件打成一个tar包，并用gzip压缩，包名为all.tar.gz 
 	　　\# tar -xzf all.tar.gz 
 	　　这条命令是将上面产生的包解开。 
-	　　
+ 　　
 	2) tar调用bzip2 
 	　　bzip2是一个压缩能力更强的压缩程序，.bz2结尾。 
 	  与bzip2相对的解压程序是bunzip2。tar中使用-j这个参数来调用gzip。
@@ -135,21 +135,21 @@ Linux 最常用打包程序tar
 	下面对于tar系列的压缩文 件作一个小结： 
 	　　1)对于.tar结尾的文件 
 	　　tar -xf all.tar 
-	　
+ 　
 	　2)对于.gz结尾的文件 
 	　　gzip -d all.gz 
 	　　gunzip all.gz 
-	　
+ 　
 	　3)对于.tgz或.tar.gz结尾的文件 
 	　　tar -xzf all.tar.gz 
 	　　tar -xzf all.tgz 
-	　　
+ 　　
 	4)对于.bz2结尾的文件 
 	　　bzip2 -d all.bz2 
 	　　bunzip2 all.bz2 
 	　　5)对于tar.bz2结尾的文件 
 	　　tar -xjf all.tar.bz2 
-	　
+ 　
 	　　另外对于Window下的常见压缩文件.zip和.rar，Linux也有相应的方法来解压它 们： 
 	1)对于.zip 
 	　　linux下提供了zip和unzip程序，zip是压缩程序，unzip是解压程序。
@@ -221,7 +221,7 @@ Linux 最常用打包程序tar
 	7、\*.tar.Z 用tar –xZf 解压 
 	8、\*.rar 用 unrar e解压 
 	9、\*.zip 用 unzip 解压
-	
+ 
 
 
 
@@ -437,8 +437,8 @@ UID
 4. 修改/etc/passwd即可，把用户名的ID和ID组修改成0。
 
 
-	    
-	    
+		 
+		 
 # 禁用Root远程登陆
    新建账号 改到 root 权限的话 自己账号也会进不去的.
        先在ssh的配置文件里修改Root 远程登陆参数。 禁用root远程登陆。 然后创建一个远程登陆用户。 用这个用户登陆之后，在切换到root用户，拿到最高权限。
@@ -2448,6 +2448,8 @@ M%:  物理内存占用的百分比.
 
 head 显示一个或多个文件开头n行的内容  
 tail 显示一个或多个文件最后n行的内容  
+
+
 
 
 

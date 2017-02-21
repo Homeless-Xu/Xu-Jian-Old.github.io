@@ -1,5 +1,6 @@
 // js 文件引入
   require("./webpack/js/0filter&highlight.js");
+  require("./webpack/js/4iconfont.js");
   require("./webpack/js/5mobile.js");
   require("./webpack/js/7structurebar(pjax).js");
   // pjax 必须和这个放一起.. 分开就是不行  奇怪了... 应该是模块的原因
@@ -10,7 +11,6 @@
   require("./webpack/js/9serviceworker.js");
   require("./webpack/js/9showAll(eye).js");
   // require("./webpack/js/firebase.js");
-  // require("./webpack/js/sw.js");
 
 
 // require import 区别.
