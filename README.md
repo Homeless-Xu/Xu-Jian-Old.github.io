@@ -7,7 +7,7 @@
 > 大类: 不能有英文的.; (可以有:-)不然不能过滤出对应标签&文章.  
 > 标签: 不能有下划线_; 不能有斜杆/;不能有空格(有空格是多标签.本主题不支持)
 
-## CMS-Jkeyll-Theme Demo:   <a href="https://www.0214.live">0214.live</a>
+## CMS-Jkeyll-Theme <a href="https://xx0219.coding.me/"> Demo </a>
 
 ## CMS-Jkeyll-Theme Preview:
 <img src="http://oduizitoj.bkt.clouddn.com/2017-02-20-ScreenShot.jpeg">
